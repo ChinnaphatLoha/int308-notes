@@ -31,7 +31,7 @@ A regular office can't guarantee any of this. That's why data centers exist — 
 
 ---
 
-## 2. Data Center Standards — The Rulebook
+## 2. Data Center Standards
 
 Before anyone builds a data center, they follow **standards** — official guidelines written by expert organizations. These standards exist so that every data center is built safely, consistently, and reliably.
 
@@ -73,7 +73,7 @@ They publish two ranges:
 
 ---
 
-## 3. The Tier System — How Reliable Is This Data Center?
+## 3. The Tier System
 
 Not all data centers are built equal. Some are basic; others are built to survive almost anything. The **Uptime Institute** created a ranking system called **Tiers** to classify data centers by reliability.
 
@@ -122,7 +122,7 @@ To minimize downtime, data centers are designed around four principles:
 
 ---
 
-## 4. The Physical Building — Structure and Layout
+## 4. The Physical Building
 
 ### What Does a Data Center Look Like Inside?
 
@@ -152,7 +152,7 @@ The floor tiles come in two types:
 
 ---
 
-## 5. Power — Keeping Everything Running
+## 5. Power
 
 ### Why Power Is the Most Critical System
 
@@ -206,11 +206,13 @@ These are the final connection points that deliver power to individual servers w
 - **Single-Phase Power** — Standard household electricity. Used for lighter equipment.
 - **Three-Phase Power** — Industrial-strength electricity that delivers more power more efficiently. Most data center equipment uses three-phase.
 
+> [YouTube: Data Center Power Flow](https://youtu.be/Y_8P3wzxsqY?si=GGeRwcyiV-d2HiSg)
+
 > **Summary:** Data centers have **at least three layers** of power backup: utility power → UPS (batteries) → generators. This way, even if the power grid goes down for days, the data center stays on.
 
 ---
 
-## 6. Cooling — The Silent Hero
+## 6. Cooling
 
 ### Why Cooling Matters So Much
 
@@ -259,6 +261,8 @@ Instead of refrigerant, it uses **chilled water** from a central chiller plant t
 | Operating cost | Higher | Lower |
 | Maintenance | Simpler | More complex |
 | Best for | Small to medium rooms | Large data centers |
+
+> [YouTube: CRAC vs CRAH](https://youtu.be/5iTHrqeVAO8?si=aR76_sNRVdqdMv8p)
 
 > **Simple way to remember:** CRAC = self-contained unit (like a window AC). CRAH = part of a larger system (like central air in a big building).
 
@@ -315,9 +319,11 @@ PUE = Total Facility Power ÷ IT Equipment Power
 
 > **Example:** If a data center uses 10 MW total and the servers use 7 MW, the PUE is 10 ÷ 7 = **1.43**. That means for every watt powering a server, an additional 0.43 watts is spent on cooling, lighting, and other systems.
 
+> [YouTube: how are data centre cooled cold aisle containment hvacr](https://youtu.be/vZkA0z9JRgw?si=TL4oW_1yXm9LjmyH)
+
 ---
 
-## 7. Fire Protection — Fighting Fire Without Water
+## 7. Fire Protection
 
 ### The Challenge
 
@@ -344,7 +350,7 @@ When fire is confirmed, data centers use **clean agent** fire suppression — ga
 
 ---
 
-## 8. Security — Protecting the Physical Building
+## 8. Security
 
 Data centers hold some of the most valuable and sensitive information in the world. Physical security is just as important as cybersecurity.
 
@@ -362,7 +368,7 @@ Think of data center security like layers of an onion — an attacker would have
 
 ---
 
-## 9. Monitoring — Watching Everything, All the Time
+## 9. Monitoring
 
 ### The Network Operations Center (NOC)
 
@@ -387,7 +393,7 @@ If a server goes down, a temperature sensor spikes, or a power unit fails, the N
 
 ---
 
-## 10. Disaster Recovery — Planning for the Worst
+## 10. Disaster Recovery
 
 ### Why Disaster Recovery Exists
 
