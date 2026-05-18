@@ -5,8 +5,7 @@
     "title": "Data Center"
   },
   "quiz": {
-    "title": "Data Center Comprehensive Quiz",
-    "language": "en",
+    "title": "Data Center Quiz",
     "choiceCount": 5
   },
   "questions": [
