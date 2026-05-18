@@ -1,0 +1,5101 @@
+{
+  "version": "1.0",
+  "source": {
+    "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+    "title": "Database and Cloud Security"
+  },
+  "quiz": {
+    "title": "Database and Cloud Security Quiz",
+    "choiceCount": 5
+  },
+  "questions": [
+    {
+      "id": "dbc-001",
+      "section": "Database and Cloud Security",
+      "topic": "Modern applications and data",
+      "difficulty": "easy",
+      "question": "What is the main reason the guide starts by discussing data?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Almost every modern application relies on data such as passwords, financial records, or personal messages."
+        },
+        {
+          "id": "B",
+          "text": "Modern applications rarely store information because cloud providers keep everything temporary."
+        },
+        {
+          "id": "C",
+          "text": "Only financial applications rely on data; messaging and passwords are not included."
+        },
+        {
+          "id": "D",
+          "text": "Applications mainly need data centers, not databases or cloud infrastructure."
+        },
+        {
+          "id": "E",
+          "text": "Data is important only after attackers have already stolen database files."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The introduction says almost every modern application relies on data and gives passwords, financial records, and personal messages as examples.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "1-5"
+      },
+      "tags": [
+        "intro",
+        "data"
+      ]
+    },
+    {
+      "id": "dbc-002",
+      "section": "Database and Cloud Security",
+      "topic": "Data security goals",
+      "difficulty": "easy",
+      "question": "After storing data, what must also be ensured?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The data must be stored only in plain text files for simplicity."
+        },
+        {
+          "id": "B",
+          "text": "The data must remain available, accurate over time, and protected from unauthorized access."
+        },
+        {
+          "id": "C",
+          "text": "The data must be copied to every user device without access controls."
+        },
+        {
+          "id": "D",
+          "text": "The data must be encrypted only after it is no longer needed."
+        },
+        {
+          "id": "E",
+          "text": "The data must be visible to everyone so applications can scale quickly."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The guide names availability, accuracy over time, and protection from unauthorized access as requirements after storage.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "3-7"
+      },
+      "tags": [
+        "intro",
+        "availability",
+        "integrity",
+        "confidentiality"
+      ]
+    },
+    {
+      "id": "dbc-003",
+      "section": "Database and Cloud Security",
+      "topic": "Database and cloud combination",
+      "difficulty": "medium",
+      "question": "What combination does the guide say is required to protect modern data?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Simple text files plus public cloud storage with no extra security."
+        },
+        {
+          "id": "B",
+          "text": "RAID alone, because physical availability solves every security issue."
+        },
+        {
+          "id": "C",
+          "text": "Strong database management plus secure cloud infrastructure."
+        },
+        {
+          "id": "D",
+          "text": "Encryption alone, because it removes the need for access control."
+        },
+        {
+          "id": "E",
+          "text": "A web application alone, because the database should trust all inputs."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The introduction says strong database management and increasingly secure cloud infrastructure are required.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "3-7"
+      },
+      "tags": [
+        "intro",
+        "cloud-security",
+        "database-management"
+      ]
+    },
+    {
+      "id": "dbc-004",
+      "section": "Database and Cloud Security",
+      "topic": "Guide scope",
+      "difficulty": "easy",
+      "question": "Which set best matches the guide scope?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only physical server cooling and raised floor design."
+        },
+        {
+          "id": "B",
+          "text": "Only how to buy hardware firewalls for a local office."
+        },
+        {
+          "id": "C",
+          "text": "Only how to write SQL queries faster for reporting."
+        },
+        {
+          "id": "D",
+          "text": "Database structure, protection from internal mistakes and external attacks, and cloud security changes."
+        },
+        {
+          "id": "E",
+          "text": "Only how to compare Gmail and Salesforce pricing."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The guide says it explores database structure, protection from internal and external threats, and how security changes in the cloud.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "7-9"
+      },
+      "tags": [
+        "intro",
+        "scope"
+      ]
+    },
+    {
+      "id": "dbc-005",
+      "section": "How Data is Stored and Managed",
+      "topic": "Need for dedicated data systems",
+      "difficulty": "easy",
+      "question": "Why do applications not simply write important data into a text file?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Text files automatically provide RAID, authorization tables, and parameterized queries."
+        },
+        {
+          "id": "B",
+          "text": "Text files are always more secure than database management systems."
+        },
+        {
+          "id": "C",
+          "text": "Applications do not need to remember information after users close them."
+        },
+        {
+          "id": "D",
+          "text": "Cloud providers forbid all databases and require text files instead."
+        },
+        {
+          "id": "E",
+          "text": "They need a dedicated system to organize, find, and protect data efficiently."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The section explains that applications need a dedicated system rather than simple text files.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "11-13"
+      },
+      "tags": [
+        "storage",
+        "database-management"
+      ]
+    },
+    {
+      "id": "dbc-006",
+      "section": "How Data is Stored and Managed",
+      "topic": "Physical storage availability problem",
+      "difficulty": "medium",
+      "question": "What fundamental physical problem must be solved before complex database security rules?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Hard drives can break, and if the drive holding the database fails, the data is lost."
+        },
+        {
+          "id": "B",
+          "text": "Users can guess weak passwords before data is ever stored."
+        },
+        {
+          "id": "C",
+          "text": "SQL Injection can only happen after a disk is mirrored."
+        },
+        {
+          "id": "D",
+          "text": "Cloud APIs can delete infrastructure before a database exists."
+        },
+        {
+          "id": "E",
+          "text": "Views can reveal all columns unless they are encrypted."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The notes frame hard drive failure as the basic physical availability problem.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "15-19"
+      },
+      "tags": [
+        "storage",
+        "availability",
+        "hardware"
+      ]
+    },
+    {
+      "id": "dbc-007",
+      "section": "How Data is Stored and Managed",
+      "topic": "RAID acronym",
+      "difficulty": "easy",
+      "question": "What does RAID stand for?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Reliable Access for Internal Databases."
+        },
+        {
+          "id": "B",
+          "text": "Redundant Array of Independent Disks."
+        },
+        {
+          "id": "C",
+          "text": "Remote Array of Indexed Data."
+        },
+        {
+          "id": "D",
+          "text": "Role Authorization and Identity Directory."
+        },
+        {
+          "id": "E",
+          "text": "Runtime Analysis of Injection Defenses."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The source expands RAID as Redundant Array of Independent Disks.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "19-21"
+      },
+      "tags": [
+        "raid",
+        "availability"
+      ]
+    },
+    {
+      "id": "dbc-008",
+      "section": "How Data is Stored and Managed",
+      "topic": "RAID basic idea",
+      "difficulty": "easy",
+      "question": "What is the basic idea behind RAID?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "One drive is encrypted so no other storage devices are required."
+        },
+        {
+          "id": "B",
+          "text": "A DBMS replaces physical hard drives with browser cookies."
+        },
+        {
+          "id": "C",
+          "text": "Multiple drives are connected together so they act as one large unit."
+        },
+        {
+          "id": "D",
+          "text": "Every user receives a separate physical hard drive."
+        },
+        {
+          "id": "E",
+          "text": "SQL privileges are copied across roles automatically."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "RAID connects multiple drives so they function together as one large storage unit.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "21-23"
+      },
+      "tags": [
+        "raid",
+        "storage"
+      ]
+    },
+    {
+      "id": "dbc-009",
+      "section": "How Data is Stored and Managed",
+      "topic": "RAID mirroring",
+      "difficulty": "medium",
+      "question": "What does RAID mirroring provide?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It splits data across drives mainly to make reading and writing faster."
+        },
+        {
+          "id": "B",
+          "text": "It encrypts sensitive columns such as passwords and credit card numbers."
+        },
+        {
+          "id": "C",
+          "text": "It assigns permissions to users through an authorization table."
+        },
+        {
+          "id": "D",
+          "text": "It copies data across drives so the same information still exists if one drive breaks."
+        },
+        {
+          "id": "E",
+          "text": "It forces stolen data to be sent to an attacker-controlled server."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The source says mirroring copies data so another drive still has the same information after one drive fails.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "21-23"
+      },
+      "tags": [
+        "raid",
+        "mirroring",
+        "availability"
+      ]
+    },
+    {
+      "id": "dbc-010",
+      "section": "How Data is Stored and Managed",
+      "topic": "RAID striping",
+      "difficulty": "medium",
+      "question": "What does RAID striping do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It copies the same data onto multiple drives for failure survival only."
+        },
+        {
+          "id": "B",
+          "text": "It hides sensitive table columns from unauthorized users."
+        },
+        {
+          "id": "C",
+          "text": "It checks whether a user has permission to modify a record."
+        },
+        {
+          "id": "D",
+          "text": "It routes office network traffic through a cloud security provider."
+        },
+        {
+          "id": "E",
+          "text": "It splits data across drives to make reading and writing much faster."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The notes say striping splits data across drives for faster read and write operations.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "21-23"
+      },
+      "tags": [
+        "raid",
+        "striping",
+        "performance"
+      ]
+    },
+    {
+      "id": "dbc-011",
+      "section": "How Data is Stored and Managed",
+      "topic": "RAID availability outcome",
+      "difficulty": "medium",
+      "question": "What availability outcome does RAID provide?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A single hardware failure should not bring down the entire system."
+        },
+        {
+          "id": "B",
+          "text": "A single SQL Injection attempt should automatically encrypt all records."
+        },
+        {
+          "id": "C",
+          "text": "A single user role should be able to access every database object."
+        },
+        {
+          "id": "D",
+          "text": "A single cloud API key should control all provider customers."
+        },
+        {
+          "id": "E",
+          "text": "A single view should expose all sensitive columns for convenience."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "RAID provides fundamental availability by preventing one disk failure from taking down the whole system.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "21-23"
+      },
+      "tags": [
+        "raid",
+        "availability"
+      ]
+    },
+    {
+      "id": "dbc-012",
+      "section": "How Data is Stored and Managed",
+      "topic": "DBMS acronym",
+      "difficulty": "easy",
+      "question": "What does DBMS stand for?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Database Mirroring Service."
+        },
+        {
+          "id": "B",
+          "text": "Database Management System."
+        },
+        {
+          "id": "C",
+          "text": "Distributed Backup Management Server."
+        },
+        {
+          "id": "D",
+          "text": "Data Breach Mitigation Standard."
+        },
+        {
+          "id": "E",
+          "text": "Dynamic Browser Message Store."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "DBMS is expanded as Database Management System.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "25-27"
+      },
+      "tags": [
+        "dbms"
+      ]
+    },
+    {
+      "id": "dbc-013",
+      "section": "How Data is Stored and Managed",
+      "topic": "DBMS librarian analogy",
+      "difficulty": "easy",
+      "question": "In the guide analogy, what is a DBMS like?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A security guard guest list that approves event entry."
+        },
+        {
+          "id": "B",
+          "text": "A private house rented by a cloud database customer."
+        },
+        {
+          "id": "C",
+          "text": "An intelligent librarian who knows how to find, update, or safely store the requested book."
+        },
+        {
+          "id": "D",
+          "text": "A water bill that charges only for what you consume."
+        },
+        {
+          "id": "E",
+          "text": "A hacker who types malicious SQL into a login field."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The DBMS is compared to a librarian that knows how to locate, update, and store data safely.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "27-31"
+      },
+      "tags": [
+        "dbms",
+        "analogy"
+      ]
+    },
+    {
+      "id": "dbc-014",
+      "section": "How Data is Stored and Managed",
+      "topic": "DBMS layer",
+      "difficulty": "medium",
+      "question": "Where does the DBMS sit?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Between the attacker and their out-of-band server."
+        },
+        {
+          "id": "B",
+          "text": "Between the cloud customer and the provider billing page only."
+        },
+        {
+          "id": "C",
+          "text": "Between a user role and a human resources job title."
+        },
+        {
+          "id": "D",
+          "text": "Between the application and the physical data."
+        },
+        {
+          "id": "E",
+          "text": "Between a public cloud and a private cloud in hybrid deployment only."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The source defines the DBMS as the software layer between applications and physical data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "27-31"
+      },
+      "tags": [
+        "dbms",
+        "architecture"
+      ]
+    },
+    {
+      "id": "dbc-015",
+      "section": "How Data is Stored and Managed",
+      "topic": "DBMS operations",
+      "difficulty": "easy",
+      "question": "What standardized operations does the DBMS provide?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Phishing administrator accounts and deleting infrastructure."
+        },
+        {
+          "id": "B",
+          "text": "Creating cloud firewalls and scanning files for malware only."
+        },
+        {
+          "id": "C",
+          "text": "Encrypting entire databases without needing a key."
+        },
+        {
+          "id": "D",
+          "text": "Splitting hot and cold data across public websites."
+        },
+        {
+          "id": "E",
+          "text": "Creating, modifying, and retrieving information safely."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The DBMS provides a standardized way to create, modify, and retrieve information safely.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "31-31"
+      },
+      "tags": [
+        "dbms",
+        "data-management"
+      ]
+    },
+    {
+      "id": "dbc-016",
+      "section": "How Data is Stored and Managed",
+      "topic": "Concurrent access analogy",
+      "difficulty": "easy",
+      "question": "Which example is used to explain concurrent access problems?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Two people trying to buy the last airplane seat at the exact same time."
+        },
+        {
+          "id": "B",
+          "text": "Two companies sharing the same cloud provider account."
+        },
+        {
+          "id": "C",
+          "text": "Two disks mirroring the same database block."
+        },
+        {
+          "id": "D",
+          "text": "Two administrators granting a role to support agents."
+        },
+        {
+          "id": "E",
+          "text": "Two firewalls inspecting the same SQL query."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The guide uses the last airplane seat example to show why simultaneous changes need careful control.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "33-37"
+      },
+      "tags": [
+        "concurrency",
+        "integrity"
+      ]
+    },
+    {
+      "id": "dbc-017",
+      "section": "How Data is Stored and Managed",
+      "topic": "Concurrent access definition",
+      "difficulty": "medium",
+      "question": "What does concurrent access management handle?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Multiple cloud customers paying for exactly what they consume."
+        },
+        {
+          "id": "B",
+          "text": "Multiple users or processes trying to read or change the same shared data simultaneously."
+        },
+        {
+          "id": "C",
+          "text": "Multiple drives acting as one large storage unit only."
+        },
+        {
+          "id": "D",
+          "text": "Multiple service models deciding who can rent an application."
+        },
+        {
+          "id": "E",
+          "text": "Multiple firewalls replacing parameterized queries."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Concurrent access concerns simultaneous reads or changes against shared data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "33-37"
+      },
+      "tags": [
+        "concurrency",
+        "dbms"
+      ]
+    },
+    {
+      "id": "dbc-018",
+      "section": "How Data is Stored and Managed",
+      "topic": "Concurrency controls",
+      "difficulty": "medium",
+      "question": "How can a DBMS keep data accurate during concurrent access?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "By letting the fastest request overwrite all slower requests."
+        },
+        {
+          "id": "B",
+          "text": "By trusting cookies and server variables without validation."
+        },
+        {
+          "id": "C",
+          "text": "By carefully locking records or placing transactions in order."
+        },
+        {
+          "id": "D",
+          "text": "By moving all users to a public cloud deployment model."
+        },
+        {
+          "id": "E",
+          "text": "By encrypting the RAID controller instead of managing transactions."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The DBMS maintains integrity by locking records or ordering transactions.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "35-37"
+      },
+      "tags": [
+        "concurrency",
+        "integrity",
+        "transactions"
+      ]
+    },
+    {
+      "id": "dbc-019",
+      "section": "How Data is Stored and Managed",
+      "topic": "Relational database structure",
+      "difficulty": "easy",
+      "question": "How do relational databases organize data?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Into browser cookies that are trusted by the application."
+        },
+        {
+          "id": "B",
+          "text": "Into one unstructured text file per user."
+        },
+        {
+          "id": "C",
+          "text": "Into security dashboards operated by the cloud provider."
+        },
+        {
+          "id": "D",
+          "text": "Into structured tables, much like spreadsheets."
+        },
+        {
+          "id": "E",
+          "text": "Into physical sensors and scanners only."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The guide says relational databases organize information into structured tables like spreadsheets.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "39-45"
+      },
+      "tags": [
+        "relational-database",
+        "tables"
+      ]
+    },
+    {
+      "id": "dbc-020",
+      "section": "How Data is Stored and Managed",
+      "topic": "Primary key",
+      "difficulty": "easy",
+      "question": "What is a primary key?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A link from one table to another table."
+        },
+        {
+          "id": "B",
+          "text": "A saved search result that behaves like a virtual table."
+        },
+        {
+          "id": "C",
+          "text": "A permission to read database data."
+        },
+        {
+          "id": "D",
+          "text": "A malicious SQL string stored for later execution."
+        },
+        {
+          "id": "E",
+          "text": "A unique identifier for every row in a table."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "A primary key uniquely identifies each row.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "43-43"
+      },
+      "tags": [
+        "relational-database",
+        "primary-key"
+      ]
+    },
+    {
+      "id": "dbc-021",
+      "section": "How Data is Stored and Managed",
+      "topic": "Primary key example",
+      "difficulty": "easy",
+      "question": "Why is a Student ID a good primary key in the guide example?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "No two students have the same ID."
+        },
+        {
+          "id": "B",
+          "text": "It links an Order table to a Customer table."
+        },
+        {
+          "id": "C",
+          "text": "It hides sensitive columns through a saved search."
+        },
+        {
+          "id": "D",
+          "text": "It grants update privileges to every student."
+        },
+        {
+          "id": "E",
+          "text": "It stores encrypted passwords and credit card numbers."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The notes use Student ID as an example because it is unique for each student.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "43-43"
+      },
+      "tags": [
+        "relational-database",
+        "primary-key"
+      ]
+    },
+    {
+      "id": "dbc-022",
+      "section": "How Data is Stored and Managed",
+      "topic": "Foreign key",
+      "difficulty": "easy",
+      "question": "What is a foreign key?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A unique identifier for every row in one table."
+        },
+        {
+          "id": "B",
+          "text": "A way to link two tables together."
+        },
+        {
+          "id": "C",
+          "text": "A database view that hides sensitive columns."
+        },
+        {
+          "id": "D",
+          "text": "A role that groups job-based permissions."
+        },
+        {
+          "id": "E",
+          "text": "A cloud service model where users rent raw hardware."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A foreign key connects related rows across tables.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "44-44"
+      },
+      "tags": [
+        "relational-database",
+        "foreign-key"
+      ]
+    },
+    {
+      "id": "dbc-023",
+      "section": "How Data is Stored and Managed",
+      "topic": "Foreign key example",
+      "difficulty": "medium",
+      "question": "In the guide example, how might an Order table use a foreign key?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It might contain a Student ID to guarantee no two students match."
+        },
+        {
+          "id": "B",
+          "text": "It might contain a view that reveals only authorized columns."
+        },
+        {
+          "id": "C",
+          "text": "It might contain a Customer ID to show which customer made the purchase."
+        },
+        {
+          "id": "D",
+          "text": "It might contain a cloud provider API key for infrastructure deletion."
+        },
+        {
+          "id": "E",
+          "text": "It might contain a RAID stripe for faster disk writes."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The source uses Customer ID in an Order table as the foreign key example.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "44-44"
+      },
+      "tags": [
+        "relational-database",
+        "foreign-key"
+      ]
+    },
+    {
+      "id": "dbc-024",
+      "section": "How Data is Stored and Managed",
+      "topic": "View virtual table",
+      "difficulty": "medium",
+      "question": "What is a database view?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A physical copy of every disk in a RAID array."
+        },
+        {
+          "id": "B",
+          "text": "A password guessing attack against a cloud administrator."
+        },
+        {
+          "id": "C",
+          "text": "A SQL command that takes privileges away from a user."
+        },
+        {
+          "id": "D",
+          "text": "A custom, saved search result that acts like a new virtual table."
+        },
+        {
+          "id": "E",
+          "text": "A cloud deployment dedicated to one organization."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The guide defines a view as a saved result that behaves like a virtual table.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "45-45"
+      },
+      "tags": [
+        "relational-database",
+        "view"
+      ]
+    },
+    {
+      "id": "dbc-025",
+      "section": "How Data is Stored and Managed",
+      "topic": "View security use",
+      "difficulty": "medium",
+      "question": "How can a view improve database security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It can make hard drives impossible to break."
+        },
+        {
+          "id": "B",
+          "text": "It can execute user input as SQL code safely."
+        },
+        {
+          "id": "C",
+          "text": "It can replace every need for cloud access controls."
+        },
+        {
+          "id": "D",
+          "text": "It can give all users update permission by default."
+        },
+        {
+          "id": "E",
+          "text": "It can show only permitted columns while hiding sensitive information."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Views are often used to limit users to specific columns they are allowed to see.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "45-45"
+      },
+      "tags": [
+        "relational-database",
+        "view",
+        "security"
+      ]
+    },
+    {
+      "id": "dbc-026",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Access control problem",
+      "difficulty": "easy",
+      "question": "After data is stored and structured, what is the next access-control problem?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Controlling who is allowed to see or change the data."
+        },
+        {
+          "id": "B",
+          "text": "Choosing whether hard drives should stripe or mirror blocks."
+        },
+        {
+          "id": "C",
+          "text": "Deciding whether a cloud provider has massive data centers."
+        },
+        {
+          "id": "D",
+          "text": "Making all data public so applications can retrieve it faster."
+        },
+        {
+          "id": "E",
+          "text": "Replacing every SQL command with browser cookies."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The access control section starts with who can see or change data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "49-53"
+      },
+      "tags": [
+        "access-control"
+      ]
+    },
+    {
+      "id": "dbc-027",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Confidentiality",
+      "difficulty": "easy",
+      "question": "Which security goal is explicitly tied to strict access rules?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Elasticity."
+        },
+        {
+          "id": "B",
+          "text": "Confidentiality."
+        },
+        {
+          "id": "C",
+          "text": "Measured service."
+        },
+        {
+          "id": "D",
+          "text": "Striping."
+        },
+        {
+          "id": "E",
+          "text": "Out-of-band delivery."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The notes say strict rules are needed to protect confidentiality.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "51-53"
+      },
+      "tags": [
+        "access-control",
+        "confidentiality"
+      ]
+    },
+    {
+      "id": "dbc-028",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Authorization table role",
+      "difficulty": "medium",
+      "question": "What is the purpose of an authorization table?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It physically mirrors data across drives to survive disk failure."
+        },
+        {
+          "id": "B",
+          "text": "It stores malicious SQL strings until an administrator views them."
+        },
+        {
+          "id": "C",
+          "text": "It lets the database check whether a user or role has the required permission for a specific action."
+        },
+        {
+          "id": "D",
+          "text": "It routes office network traffic through a cloud security provider."
+        },
+        {
+          "id": "E",
+          "text": "It measures how much cloud service a customer consumed."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The authorization table enforces access rules by checking permissions for users or roles.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "55-59"
+      },
+      "tags": [
+        "access-control",
+        "authorization-table"
+      ]
+    },
+    {
+      "id": "dbc-029",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Authorization table analogy",
+      "difficulty": "easy",
+      "question": "What analogy is used for the authorization table?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "An intelligent librarian finding a book."
+        },
+        {
+          "id": "B",
+          "text": "A private house rented by one customer."
+        },
+        {
+          "id": "C",
+          "text": "A water or electricity bill."
+        },
+        {
+          "id": "D",
+          "text": "A guest list held by a security guard at a private event."
+        },
+        {
+          "id": "E",
+          "text": "A website search box accepting user input."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The guide compares the authorization table to a security guard checking a guest list.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "55-59"
+      },
+      "tags": [
+        "access-control",
+        "analogy"
+      ]
+    },
+    {
+      "id": "dbc-030",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Authorization denial",
+      "difficulty": "medium",
+      "question": "What happens if a user is not authorized for a specific database action?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The database automatically creates a new role for the user."
+        },
+        {
+          "id": "B",
+          "text": "The request is converted into an encrypted column."
+        },
+        {
+          "id": "C",
+          "text": "The DBMS treats the action as harmless application data."
+        },
+        {
+          "id": "D",
+          "text": "The cloud provider mirrors the data across customers."
+        },
+        {
+          "id": "E",
+          "text": "Access is denied."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "If the user or role is not on the authorization list for that action, the database denies access.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "57-59"
+      },
+      "tags": [
+        "access-control",
+        "authorization-table"
+      ]
+    },
+    {
+      "id": "dbc-031",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Centralized policy",
+      "difficulty": "easy",
+      "question": "Which administrative policy has one administrator or security team control all permissions?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Centralized."
+        },
+        {
+          "id": "B",
+          "text": "Ownership-based."
+        },
+        {
+          "id": "C",
+          "text": "Decentralized."
+        },
+        {
+          "id": "D",
+          "text": "Role-based only."
+        },
+        {
+          "id": "E",
+          "text": "Multi-tenant."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Centralized permission management uses one administrator or dedicated security team.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "61-67"
+      },
+      "tags": [
+        "access-control",
+        "policy"
+      ]
+    },
+    {
+      "id": "dbc-032",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Ownership-based policy",
+      "difficulty": "easy",
+      "question": "Which administrative policy lets the data creator decide who else may see or change it?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Centralized."
+        },
+        {
+          "id": "B",
+          "text": "Ownership-based."
+        },
+        {
+          "id": "C",
+          "text": "Decentralized."
+        },
+        {
+          "id": "D",
+          "text": "Measured service."
+        },
+        {
+          "id": "E",
+          "text": "Public cloud."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Ownership-based policies give permission decisions to the person who created the data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "65-67"
+      },
+      "tags": [
+        "access-control",
+        "policy"
+      ]
+    },
+    {
+      "id": "dbc-033",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Decentralized policy",
+      "difficulty": "easy",
+      "question": "Which administrative policy lets different departments or teams manage their own access controls independently?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Centralized."
+        },
+        {
+          "id": "B",
+          "text": "Ownership-based."
+        },
+        {
+          "id": "C",
+          "text": "Decentralized."
+        },
+        {
+          "id": "D",
+          "text": "Parameterized."
+        },
+        {
+          "id": "E",
+          "text": "Inband."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Decentralized access control lets teams or departments manage permissions independently.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "65-67"
+      },
+      "tags": [
+        "access-control",
+        "policy"
+      ]
+    },
+    {
+      "id": "dbc-034",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Grant command",
+      "difficulty": "easy",
+      "question": "What does the SQL Grant command do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It takes a privilege away from a user."
+        },
+        {
+          "id": "B",
+          "text": "It reads data from a table."
+        },
+        {
+          "id": "C",
+          "text": "It creates a foreign key to this data."
+        },
+        {
+          "id": "D",
+          "text": "It gives a privilege to a user."
+        },
+        {
+          "id": "E",
+          "text": "It builds safe query objects instead of strings."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Grant is listed as the command that gives a privilege.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "69-74"
+      },
+      "tags": [
+        "sql-access-control",
+        "grant"
+      ]
+    },
+    {
+      "id": "dbc-035",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Revoke command",
+      "difficulty": "easy",
+      "question": "What does the SQL Revoke command do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It gives a privilege to a user."
+        },
+        {
+          "id": "B",
+          "text": "It adds new data to a table."
+        },
+        {
+          "id": "C",
+          "text": "It deletes the entire database after injection."
+        },
+        {
+          "id": "D",
+          "text": "It creates a finished cloud application."
+        },
+        {
+          "id": "E",
+          "text": "It takes a privilege away from a user."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Revoke is listed as the command that removes a privilege.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "73-74"
+      },
+      "tags": [
+        "sql-access-control",
+        "revoke"
+      ]
+    },
+    {
+      "id": "dbc-036",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Select privilege",
+      "difficulty": "easy",
+      "question": "What does the Select privilege allow?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Reading data."
+        },
+        {
+          "id": "B",
+          "text": "Adding new data."
+        },
+        {
+          "id": "C",
+          "text": "Removing data."
+        },
+        {
+          "id": "D",
+          "text": "Modifying existing data."
+        },
+        {
+          "id": "E",
+          "text": "Linking tables with a foreign key."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Select is the permission to read data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "77-81"
+      },
+      "tags": [
+        "sql-access-control",
+        "privileges"
+      ]
+    },
+    {
+      "id": "dbc-037",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Insert privilege",
+      "difficulty": "easy",
+      "question": "What does the Insert privilege allow?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Reading data."
+        },
+        {
+          "id": "B",
+          "text": "Adding new data."
+        },
+        {
+          "id": "C",
+          "text": "Removing data."
+        },
+        {
+          "id": "D",
+          "text": "Modifying existing data."
+        },
+        {
+          "id": "E",
+          "text": "Creating a foreign key link."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Insert is the permission to add new data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "77-81"
+      },
+      "tags": [
+        "sql-access-control",
+        "privileges"
+      ]
+    },
+    {
+      "id": "dbc-038",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Delete privilege",
+      "difficulty": "easy",
+      "question": "What does the Delete privilege allow?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Reading data."
+        },
+        {
+          "id": "B",
+          "text": "Adding new data."
+        },
+        {
+          "id": "C",
+          "text": "Removing data."
+        },
+        {
+          "id": "D",
+          "text": "Modifying existing data."
+        },
+        {
+          "id": "E",
+          "text": "Linking a table to this data."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Delete is the permission to remove data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "77-81"
+      },
+      "tags": [
+        "sql-access-control",
+        "privileges"
+      ]
+    },
+    {
+      "id": "dbc-039",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Update privilege",
+      "difficulty": "easy",
+      "question": "What does the Update privilege allow?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Reading data only."
+        },
+        {
+          "id": "B",
+          "text": "Adding brand-new data only."
+        },
+        {
+          "id": "C",
+          "text": "Removing data only."
+        },
+        {
+          "id": "D",
+          "text": "Modifying existing data."
+        },
+        {
+          "id": "E",
+          "text": "Creating a foreign key only."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Update is the permission to modify existing data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "77-81"
+      },
+      "tags": [
+        "sql-access-control",
+        "privileges"
+      ]
+    },
+    {
+      "id": "dbc-040",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "References privilege",
+      "difficulty": "medium",
+      "question": "What does the References privilege allow?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Reading data without seeing sensitive columns."
+        },
+        {
+          "id": "B",
+          "text": "Adding new rows to the protected table."
+        },
+        {
+          "id": "C",
+          "text": "Deleting rows from the protected table."
+        },
+        {
+          "id": "D",
+          "text": "Changing all existing values in the protected table."
+        },
+        {
+          "id": "E",
+          "text": "Linking a user's own tables to this data by creating a foreign key."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "References permits linking tables through a foreign key.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "77-81"
+      },
+      "tags": [
+        "sql-access-control",
+        "privileges",
+        "foreign-key"
+      ]
+    },
+    {
+      "id": "dbc-041",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "RBAC acronym",
+      "difficulty": "easy",
+      "question": "What does RBAC stand for?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Role-Based Access Control."
+        },
+        {
+          "id": "B",
+          "text": "Redundant Backup Access Controller."
+        },
+        {
+          "id": "C",
+          "text": "Runtime Breach Alert Console."
+        },
+        {
+          "id": "D",
+          "text": "Relational Block Authorization Code."
+        },
+        {
+          "id": "E",
+          "text": "Resource-Based Application Cloud."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "RBAC is expanded as Role-Based Access Control.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "83-89"
+      },
+      "tags": [
+        "rbac",
+        "access-control"
+      ]
+    },
+    {
+      "id": "dbc-042",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "RBAC problem",
+      "difficulty": "medium",
+      "question": "What administrative problem does the 500 customer support agents example illustrate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Support agents cannot use relational databases at all."
+        },
+        {
+          "id": "B",
+          "text": "Assigning permissions individually would be slow and prone to mistakes."
+        },
+        {
+          "id": "C",
+          "text": "A DBMS cannot handle more than 500 concurrent users."
+        },
+        {
+          "id": "D",
+          "text": "Every support agent needs their own physical cloud database."
+        },
+        {
+          "id": "E",
+          "text": "SQL Injection is caused by too many support agents."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The guide uses 500 customer support agents to show why individual permission assignment does not scale well.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "83-87"
+      },
+      "tags": [
+        "rbac",
+        "administration"
+      ]
+    },
+    {
+      "id": "dbc-043",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "RBAC focus",
+      "difficulty": "medium",
+      "question": "What does RBAC shift the focus toward?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Physical disks instead of permissions."
+        },
+        {
+          "id": "B",
+          "text": "Cloud providers instead of customers."
+        },
+        {
+          "id": "C",
+          "text": "Job functions instead of individuals."
+        },
+        {
+          "id": "D",
+          "text": "Encryption keys instead of database roles."
+        },
+        {
+          "id": "E",
+          "text": "Browser cookies instead of login forms."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "RBAC focuses permission assignment on roles or job functions.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "87-91"
+      },
+      "tags": [
+        "rbac",
+        "roles"
+      ]
+    },
+    {
+      "id": "dbc-044",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "Support Agent role",
+      "difficulty": "easy",
+      "question": "In the RBAC example, what role is created?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Database Owner."
+        },
+        {
+          "id": "B",
+          "text": "Cloud Provider."
+        },
+        {
+          "id": "C",
+          "text": "Security Guard."
+        },
+        {
+          "id": "D",
+          "text": "Support Agent."
+        },
+        {
+          "id": "E",
+          "text": "Primary Key."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The administrator creates a role called Support Agent in the example.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "87-91"
+      },
+      "tags": [
+        "rbac",
+        "roles"
+      ]
+    },
+    {
+      "id": "dbc-045",
+      "section": "Protecting the Database from Inside: Access Control",
+      "topic": "RBAC lifecycle changes",
+      "difficulty": "medium",
+      "question": "How does RBAC simplify changes when someone changes jobs or leaves?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "All permissions must be manually removed from every table one by one."
+        },
+        {
+          "id": "B",
+          "text": "Their old account is kept active so queries do not break."
+        },
+        {
+          "id": "C",
+          "text": "The database is encrypted and the key is discarded."
+        },
+        {
+          "id": "D",
+          "text": "Their data is moved from public cloud to community cloud."
+        },
+        {
+          "id": "E",
+          "text": "Access is updated by changing their role."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "RBAC makes access easier to update because the user-role assignment can be changed.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "89-91"
+      },
+      "tags": [
+        "rbac",
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "dbc-046",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "External bypass context",
+      "difficulty": "medium",
+      "question": "Why can SQL Injection matter even when internal access controls are well configured?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "An insecure web application connected to the database can let an external attacker bypass the rules."
+        },
+        {
+          "id": "B",
+          "text": "RAID mirroring disables authorization tables by design."
+        },
+        {
+          "id": "C",
+          "text": "Cloud elasticity automatically grants attackers database roles."
+        },
+        {
+          "id": "D",
+          "text": "Encryption keys are always stored in login boxes."
+        },
+        {
+          "id": "E",
+          "text": "Views must execute every search term as SQL code."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The SQLi section warns that a vulnerable web application can bypass otherwise good internal controls.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "93-99"
+      },
+      "tags": [
+        "sqli",
+        "web-application"
+      ]
+    },
+    {
+      "id": "dbc-047",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "SQLi definition",
+      "difficulty": "medium",
+      "question": "What is SQL Injection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "An administrator grants a user permission to read data through SQL."
+        },
+        {
+          "id": "B",
+          "text": "An attacker types malicious SQL commands into a normal input field, and an unchecked application executes them in the database."
+        },
+        {
+          "id": "C",
+          "text": "A DBMS locks records to stop two users from buying the same seat."
+        },
+        {
+          "id": "D",
+          "text": "A provider pools resources to serve many cloud customers invisibly."
+        },
+        {
+          "id": "E",
+          "text": "A database encrypts columns so they are unreadable without a key."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SQLi happens when malicious input is inserted into a SQL query and executed by the database.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "97-103"
+      },
+      "tags": [
+        "sqli",
+        "definition"
+      ]
+    },
+    {
+      "id": "dbc-048",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Website search flow",
+      "difficulty": "easy",
+      "question": "What normal application behavior creates an opportunity for SQL Injection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A website mirrors hard drives so data remains available after failure."
+        },
+        {
+          "id": "B",
+          "text": "A website rents virtual servers from Amazon, Microsoft, or Google."
+        },
+        {
+          "id": "C",
+          "text": "A website takes user text and inserts it into a database query to find results."
+        },
+        {
+          "id": "D",
+          "text": "A website assigns Alice and Bob to a Support Agent role."
+        },
+        {
+          "id": "E",
+          "text": "A website displays only allowed columns through a view."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The guide explains SQLi using the normal case of website input being used in a database query.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "97-101"
+      },
+      "tags": [
+        "sqli",
+        "input"
+      ]
+    },
+    {
+      "id": "dbc-049",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "SQLi input fields",
+      "difficulty": "easy",
+      "question": "Which normal input fields are given as examples for SQL Injection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A RAID controller or disk stripe."
+        },
+        {
+          "id": "B",
+          "text": "A cloud firewall or IAM console."
+        },
+        {
+          "id": "C",
+          "text": "A private cloud or community cloud."
+        },
+        {
+          "id": "D",
+          "text": "A login box or search bar."
+        },
+        {
+          "id": "E",
+          "text": "A primary key or foreign key constraint."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The guide names login boxes and search bars as normal fields attackers may abuse.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "99-101"
+      },
+      "tags": [
+        "sqli",
+        "input"
+      ]
+    },
+    {
+      "id": "dbc-050",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "SQLi impact",
+      "difficulty": "medium",
+      "question": "Which set of impacts can SQL Injection have?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only slow down RAID striping, with no security impact."
+        },
+        {
+          "id": "B",
+          "text": "Only create a database view, without changing real data."
+        },
+        {
+          "id": "C",
+          "text": "Only improve elasticity by adding cloud servers."
+        },
+        {
+          "id": "D",
+          "text": "Only revoke privileges from the attacker automatically."
+        },
+        {
+          "id": "E",
+          "text": "Steal sensitive data, modify records, or delete the entire database."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The source says SQLi can steal data, modify records, or delete the entire database.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "101-103"
+      },
+      "tags": [
+        "sqli",
+        "impact"
+      ]
+    },
+    {
+      "id": "dbc-051",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "SQLi CIA impact",
+      "difficulty": "medium",
+      "question": "Which security properties does SQL Injection threaten at once?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Confidentiality, integrity, and availability."
+        },
+        {
+          "id": "B",
+          "text": "Elasticity, measured service, and resource pooling."
+        },
+        {
+          "id": "C",
+          "text": "Select, insert, and references only."
+        },
+        {
+          "id": "D",
+          "text": "Centralized, ownership-based, and decentralized policies."
+        },
+        {
+          "id": "E",
+          "text": "Public, private, and hybrid deployment models."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The notes explicitly say SQLi threatens confidentiality, integrity, and availability all at once.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "101-103"
+      },
+      "tags": [
+        "sqli",
+        "cia"
+      ]
+    },
+    {
+      "id": "dbc-052",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Inband attack",
+      "difficulty": "medium",
+      "question": "What is an inband SQL Injection attack?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The attacker infers results from subtle page changes or response delays."
+        },
+        {
+          "id": "B",
+          "text": "The attacker sends the malicious query and sees stolen data immediately in the normal application interface."
+        },
+        {
+          "id": "C",
+          "text": "The attacker forces the database to send data to a different server they control."
+        },
+        {
+          "id": "D",
+          "text": "The attacker stores a malicious username that triggers only when viewed later."
+        },
+        {
+          "id": "E",
+          "text": "The attacker uses scanners or sensors to send data into the application."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Inband is the direct technique where results appear in the normal interface.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "105-111"
+      },
+      "tags": [
+        "sqli",
+        "inband"
+      ]
+    },
+    {
+      "id": "dbc-053",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Blind attack",
+      "difficulty": "medium",
+      "question": "What is an inferential or blind SQL Injection attack?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The attacker sees stolen data immediately in the normal interface."
+        },
+        {
+          "id": "B",
+          "text": "The attacker forces the database to send stolen data to another server."
+        },
+        {
+          "id": "C",
+          "text": "The attacker guesses what is happening by observing clues such as page differences or response delays."
+        },
+        {
+          "id": "D",
+          "text": "The attacker receives a role called Support Agent."
+        },
+        {
+          "id": "E",
+          "text": "The attacker gets data by reading only permitted view columns."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Blind SQLi relies on indirect clues because the database output is not shown directly.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "109-111"
+      },
+      "tags": [
+        "sqli",
+        "blind"
+      ]
+    },
+    {
+      "id": "dbc-054",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Out-of-band attack",
+      "difficulty": "medium",
+      "question": "What is an out-of-band SQL Injection attack?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The attacker sees the stolen data immediately in the normal application interface."
+        },
+        {
+          "id": "B",
+          "text": "The attacker infers data only from page load timing."
+        },
+        {
+          "id": "C",
+          "text": "The attacker changes their role through a centralized administrator."
+        },
+        {
+          "id": "D",
+          "text": "The attacker forces the database to send stolen data to a different server controlled by the attacker."
+        },
+        {
+          "id": "E",
+          "text": "The attacker encrypts the database but loses the decryption key."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Out-of-band SQLi exfiltrates data through a separate attacker-controlled server.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "109-111"
+      },
+      "tags": [
+        "sqli",
+        "out-of-band"
+      ]
+    },
+    {
+      "id": "dbc-055",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "User input avenue",
+      "difficulty": "easy",
+      "question": "Which SQL Injection avenue includes forms, search boxes, and login fields?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Server Variables."
+        },
+        {
+          "id": "B",
+          "text": "Cookies."
+        },
+        {
+          "id": "C",
+          "text": "Second-Order Injection."
+        },
+        {
+          "id": "D",
+          "text": "Physical Devices."
+        },
+        {
+          "id": "E",
+          "text": "User Input."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Forms, search boxes, and login fields are listed under User Input.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "113-121"
+      },
+      "tags": [
+        "sqli",
+        "attack-avenues"
+      ]
+    },
+    {
+      "id": "dbc-056",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Server variables avenue",
+      "difficulty": "medium",
+      "question": "What are server variables in the SQLi attack avenues list?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Hidden information sent by the browser, such as network headers."
+        },
+        {
+          "id": "B",
+          "text": "Small browser files used to remember the user."
+        },
+        {
+          "id": "C",
+          "text": "Forms, search boxes, and login fields."
+        },
+        {
+          "id": "D",
+          "text": "Scanners, sensors, or external systems sending data."
+        },
+        {
+          "id": "E",
+          "text": "Malicious code stored in the database that triggers later."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Server variables are described as hidden browser-sent information like network headers.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "117-121"
+      },
+      "tags": [
+        "sqli",
+        "server-variables"
+      ]
+    },
+    {
+      "id": "dbc-057",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Cookie avenue",
+      "difficulty": "medium",
+      "question": "How can cookies become an SQL Injection avenue?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cookies always prevent SQL Injection because they are stored in the browser."
+        },
+        {
+          "id": "B",
+          "text": "If the application trusts a modified browser cookie, it might build a dangerous query."
+        },
+        {
+          "id": "C",
+          "text": "Cookies are physical devices that send sensor data to the application."
+        },
+        {
+          "id": "D",
+          "text": "Cookies are SQL commands that revoke privileges from a user."
+        },
+        {
+          "id": "E",
+          "text": "Cookies force the database to send output to another server."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The notes warn that trusting modified cookies can lead to dangerous queries.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "117-121"
+      },
+      "tags": [
+        "sqli",
+        "cookies"
+      ]
+    },
+    {
+      "id": "dbc-058",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Second-order injection",
+      "difficulty": "medium",
+      "question": "What makes second-order injection different?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The attacker immediately sees results in the normal interface."
+        },
+        {
+          "id": "B",
+          "text": "The database sends stolen data to a different server immediately."
+        },
+        {
+          "id": "C",
+          "text": "Malicious code is stored in the database first and triggers later when that record is used, such as when an administrator views it."
+        },
+        {
+          "id": "D",
+          "text": "The attack uses only network headers and never stores data."
+        },
+        {
+          "id": "E",
+          "text": "The attack is prevented only by RAID mirroring."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Second-order injection is delayed: malicious input is stored first and executed later in another context.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "120-120"
+      },
+      "tags": [
+        "sqli",
+        "second-order"
+      ]
+    },
+    {
+      "id": "dbc-059",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Physical devices avenue",
+      "difficulty": "medium",
+      "question": "Which examples are listed under physical devices as SQL Injection avenues?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Forms, search boxes, and login fields."
+        },
+        {
+          "id": "B",
+          "text": "Network headers hidden in browser requests."
+        },
+        {
+          "id": "C",
+          "text": "Small files stored in the browser to remember users."
+        },
+        {
+          "id": "D",
+          "text": "Scanners, sensors, or external systems that send data into the application."
+        },
+        {
+          "id": "E",
+          "text": "Parameterized placeholders inside SQL commands."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The guide includes scanners, sensors, and external systems as data sources that can be manipulated.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "120-121"
+      },
+      "tags": [
+        "sqli",
+        "physical-devices"
+      ]
+    },
+    {
+      "id": "dbc-060",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "SQLi security mindset",
+      "difficulty": "easy",
+      "question": "What security mindset is recommended for stopping SQL Injection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Trust all outside data if it comes from a logged-in browser."
+        },
+        {
+          "id": "B",
+          "text": "Trust cookies because they are stored on the user device."
+        },
+        {
+          "id": "C",
+          "text": "Trust server variables because users cannot see them directly."
+        },
+        {
+          "id": "D",
+          "text": "Trust input only when RAID is enabled."
+        },
+        {
+          "id": "E",
+          "text": "Treat all outside data as potentially dangerous."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The countermeasures section says developers must treat all outside data as potentially dangerous.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "123-127"
+      },
+      "tags": [
+        "sqli",
+        "countermeasures"
+      ]
+    },
+    {
+      "id": "dbc-061",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Validation and sanitization",
+      "difficulty": "medium",
+      "question": "What do validation and sanitization do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They check input for expected characters and strip out dangerous symbols."
+        },
+        {
+          "id": "B",
+          "text": "They write data to both cloud sites at the same time."
+        },
+        {
+          "id": "C",
+          "text": "They encrypt the whole database without key management."
+        },
+        {
+          "id": "D",
+          "text": "They create a role and assign all users to it."
+        },
+        {
+          "id": "E",
+          "text": "They pool physical resources across many customers."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Validation and sanitization check and clean user input before it reaches queries.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "127-130"
+      },
+      "tags": [
+        "sqli",
+        "defensive-coding"
+      ]
+    },
+    {
+      "id": "dbc-062",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Parameterized queries",
+      "difficulty": "medium",
+      "question": "Why are parameterized queries described as the most effective SQL Injection defense?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They let users paste SQL directly into commands if they have a role."
+        },
+        {
+          "id": "B",
+          "text": "They use safe placeholders so the database treats input as data, never as executable code."
+        },
+        {
+          "id": "C",
+          "text": "They encrypt all input and discard the decryption key."
+        },
+        {
+          "id": "D",
+          "text": "They detect anomalies by scanning web traffic signatures only."
+        },
+        {
+          "id": "E",
+          "text": "They convert public clouds into private clouds for sensitive data."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Parameterized queries prevent input from being interpreted as SQL code.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "127-130"
+      },
+      "tags": [
+        "sqli",
+        "parameterized-queries"
+      ]
+    },
+    {
+      "id": "dbc-063",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "SQL DOM",
+      "difficulty": "medium",
+      "question": "What is the SQL DOM countermeasure described as?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A database view that hides sensitive columns from users."
+        },
+        {
+          "id": "B",
+          "text": "A cloud service that rents raw hardware and networks."
+        },
+        {
+          "id": "C",
+          "text": "Building queries with safe programming objects instead of manually gluing text strings together."
+        },
+        {
+          "id": "D",
+          "text": "A RAID method that splits data for faster disk writes."
+        },
+        {
+          "id": "E",
+          "text": "A privilege that lets tables create foreign key links."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "SQL DOM is described as using safe programming objects rather than manual string concatenation.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "127-130"
+      },
+      "tags": [
+        "sqli",
+        "sql-dom"
+      ]
+    },
+    {
+      "id": "dbc-064",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Signature detection",
+      "difficulty": "medium",
+      "question": "What does signature-based detection look for?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only unknown behavior with no pattern matching."
+        },
+        {
+          "id": "B",
+          "text": "Only cloud billing records like a water bill."
+        },
+        {
+          "id": "C",
+          "text": "Only physical hard drive failures in RAID arrays."
+        },
+        {
+          "id": "D",
+          "text": "Known attack patterns in web traffic."
+        },
+        {
+          "id": "E",
+          "text": "Only employee job function changes."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The detection section says systems can look for known attack patterns called signatures.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "132-134"
+      },
+      "tags": [
+        "sqli",
+        "detection"
+      ]
+    },
+    {
+      "id": "dbc-065",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Anomaly detection",
+      "difficulty": "medium",
+      "question": "What does anomaly detection flag?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only known exact attack strings."
+        },
+        {
+          "id": "B",
+          "text": "Only successful role assignments."
+        },
+        {
+          "id": "C",
+          "text": "Only encrypted columns with missing keys."
+        },
+        {
+          "id": "D",
+          "text": "Only resource pooling across customers."
+        },
+        {
+          "id": "E",
+          "text": "Unusual database behavior."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Anomaly detection flags unusual database behavior.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "132-134"
+      },
+      "tags": [
+        "sqli",
+        "detection"
+      ]
+    },
+    {
+      "id": "dbc-066",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Code scanning",
+      "difficulty": "easy",
+      "question": "What should developers do before publishing code?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Scan their code for weaknesses."
+        },
+        {
+          "id": "B",
+          "text": "Disable all access controls to simplify testing."
+        },
+        {
+          "id": "C",
+          "text": "Store malicious input for administrators to view later."
+        },
+        {
+          "id": "D",
+          "text": "Trust cookies so fewer validations are needed."
+        },
+        {
+          "id": "E",
+          "text": "Move every database to public cloud automatically."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The guide says developers should scan their code for weaknesses before publishing it.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "132-134"
+      },
+      "tags": [
+        "sqli",
+        "secure-development"
+      ]
+    },
+    {
+      "id": "dbc-067",
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "topic": "Run-time prevention",
+      "difficulty": "medium",
+      "question": "What is run-time SQL Injection prevention in the notes?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A DBMS locks records so two buyers cannot get the same seat."
+        },
+        {
+          "id": "B",
+          "text": "Specialized firewalls monitor and block suspicious SQL queries while the application is running."
+        },
+        {
+          "id": "C",
+          "text": "A cloud provider pools resources for multiple customers invisibly."
+        },
+        {
+          "id": "D",
+          "text": "A private cloud dedicates infrastructure to one organization."
+        },
+        {
+          "id": "E",
+          "text": "A view shows only permitted columns from a saved query."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Run-time prevention uses specialized firewalls to block suspicious SQL queries during operation.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "136-139"
+      },
+      "tags": [
+        "sqli",
+        "runtime-prevention"
+      ]
+    },
+    {
+      "id": "dbc-068",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Encryption last line context",
+      "difficulty": "medium",
+      "question": "When is database encryption described as the last line of defense?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "When a developer needs to create a new server from a cloud dashboard."
+        },
+        {
+          "id": "B",
+          "text": "When a user needs permission to add a row to a table."
+        },
+        {
+          "id": "C",
+          "text": "When an attacker bypasses the web application, bypasses access controls, and steals the actual database files."
+        },
+        {
+          "id": "D",
+          "text": "When two customers share the same multi-tenant database system."
+        },
+        {
+          "id": "E",
+          "text": "When a RAID stripe speeds up reading and writing."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The encryption section frames encryption as protection after multiple other defenses fail and files are stolen.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "141-145"
+      },
+      "tags": [
+        "encryption",
+        "defense-in-depth"
+      ]
+    },
+    {
+      "id": "dbc-069",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Encryption definition",
+      "difficulty": "easy",
+      "question": "What does encryption do to data?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It grants a privilege to a user through SQL."
+        },
+        {
+          "id": "B",
+          "text": "It splits data across drives for faster reads."
+        },
+        {
+          "id": "C",
+          "text": "It lets many tenants share the same database safely by default."
+        },
+        {
+          "id": "D",
+          "text": "It scrambles data so it is unreadable without a specific mathematical key."
+        },
+        {
+          "id": "E",
+          "text": "It detects known attack patterns in web traffic."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Encryption makes data unreadable unless the correct key is available.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "145-146"
+      },
+      "tags": [
+        "encryption"
+      ]
+    },
+    {
+      "id": "dbc-070",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Encryption scope choices",
+      "difficulty": "medium",
+      "question": "Which encryption scope options are listed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only browser cookies, server variables, and login boxes."
+        },
+        {
+          "id": "B",
+          "text": "Only public cloud, private cloud, and hybrid cloud."
+        },
+        {
+          "id": "C",
+          "text": "Only Select, Insert, Delete, Update, and References."
+        },
+        {
+          "id": "D",
+          "text": "Only inband, blind, and out-of-band attacks."
+        },
+        {
+          "id": "E",
+          "text": "The entire database, specific tables, or sensitive columns."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The guide says encryption can cover the whole database, certain tables, or selected columns.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "145-146"
+      },
+      "tags": [
+        "encryption",
+        "scope"
+      ]
+    },
+    {
+      "id": "dbc-071",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Sensitive encrypted columns",
+      "difficulty": "easy",
+      "question": "Which sensitive columns are given as examples for encryption?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Passwords and credit card numbers."
+        },
+        {
+          "id": "B",
+          "text": "Customer IDs and order IDs only."
+        },
+        {
+          "id": "C",
+          "text": "Network headers and cookies only."
+        },
+        {
+          "id": "D",
+          "text": "Virtual servers and storage networks."
+        },
+        {
+          "id": "E",
+          "text": "Support Agent roles and access policies."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Passwords and credit card numbers are examples of highly sensitive columns.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "145-146"
+      },
+      "tags": [
+        "encryption",
+        "sensitive-data"
+      ]
+    },
+    {
+      "id": "dbc-072",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Lost key risk",
+      "difficulty": "medium",
+      "question": "What happens if the decryption key is lost?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The database automatically creates a replacement key."
+        },
+        {
+          "id": "B",
+          "text": "The data is lost forever."
+        },
+        {
+          "id": "C",
+          "text": "The data becomes public but remains readable."
+        },
+        {
+          "id": "D",
+          "text": "The DBMS turns the encrypted column into a view."
+        },
+        {
+          "id": "E",
+          "text": "The cloud provider converts the service to SaaS."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The key management trade-off states that if you lose the decryption key, you lose the data forever.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "147-152"
+      },
+      "tags": [
+        "encryption",
+        "key-management"
+      ]
+    },
+    {
+      "id": "dbc-073",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Stolen key risk",
+      "difficulty": "medium",
+      "question": "Why is encryption useless if an attacker steals both the database and the key?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The attacker can only perform RAID striping, not read data."
+        },
+        {
+          "id": "B",
+          "text": "The key automatically revokes the attacker privileges."
+        },
+        {
+          "id": "C",
+          "text": "The attacker can decrypt the data because they have the required key."
+        },
+        {
+          "id": "D",
+          "text": "The database becomes unavailable but still confidential."
+        },
+        {
+          "id": "E",
+          "text": "The cloud provider cannot inspect physical servers anymore."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Encryption depends on key secrecy; stealing both data and key defeats the protection.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "151-151"
+      },
+      "tags": [
+        "encryption",
+        "key-management"
+      ]
+    },
+    {
+      "id": "dbc-074",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Key management difficulty",
+      "difficulty": "easy",
+      "question": "What does the guide say is difficult about encryption keys?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Using them to make RAID reads faster."
+        },
+        {
+          "id": "B",
+          "text": "Using them to assign job functions to users."
+        },
+        {
+          "id": "C",
+          "text": "Using them to pool cloud resources invisibly."
+        },
+        {
+          "id": "D",
+          "text": "Safely storing and managing them."
+        },
+        {
+          "id": "E",
+          "text": "Using them to create a saved virtual table."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The key management bullet says safe storage and management are difficult.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "151-151"
+      },
+      "tags": [
+        "encryption",
+        "key-management"
+      ]
+    },
+    {
+      "id": "dbc-075",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Encrypted search performance",
+      "difficulty": "medium",
+      "question": "Why can encryption hurt database performance?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Encrypted data always deletes itself after one query."
+        },
+        {
+          "id": "B",
+          "text": "Encryption makes hard drives physically break more often."
+        },
+        {
+          "id": "C",
+          "text": "Encryption prevents any user from being assigned a role."
+        },
+        {
+          "id": "D",
+          "text": "Encryption forces every service to become public cloud."
+        },
+        {
+          "id": "E",
+          "text": "Searching through scrambled text is very slow."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The performance trade-off says searching scrambled text is slow.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "151-152"
+      },
+      "tags": [
+        "encryption",
+        "performance"
+      ]
+    },
+    {
+      "id": "dbc-076",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Encryption inflexibility",
+      "difficulty": "medium",
+      "question": "Besides search speed, what processing tasks become harder when data is encrypted?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Filtering, sorting, and processing information efficiently."
+        },
+        {
+          "id": "B",
+          "text": "Granting and revoking privileges only."
+        },
+        {
+          "id": "C",
+          "text": "Creating raw virtual servers and networks only."
+        },
+        {
+          "id": "D",
+          "text": "Sending stolen data to an out-of-band server only."
+        },
+        {
+          "id": "E",
+          "text": "Pooling resources for many cloud customers only."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The guide says encrypted data is harder to filter, sort, and process efficiently.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "151-152"
+      },
+      "tags": [
+        "encryption",
+        "performance"
+      ]
+    },
+    {
+      "id": "dbc-077",
+      "section": "The Last Line of Defense: Database Encryption",
+      "topic": "Selective encryption",
+      "difficulty": "medium",
+      "question": "Why do organizations usually encrypt only their most sensitive data?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Encryption works only on public data and cannot protect sensitive data."
+        },
+        {
+          "id": "B",
+          "text": "Encryption has trade-offs, so firewalls and access controls often protect the rest."
+        },
+        {
+          "id": "C",
+          "text": "Encryption eliminates the need for every other security control."
+        },
+        {
+          "id": "D",
+          "text": "Encrypted columns cannot be stored in relational databases."
+        },
+        {
+          "id": "E",
+          "text": "Cloud providers prohibit encryption of database tables."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Because encryption has key and performance challenges, organizations reserve it for highly sensitive data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "154-156"
+      },
+      "tags": [
+        "encryption",
+        "trade-offs"
+      ]
+    },
+    {
+      "id": "dbc-078",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Traditional local servers",
+      "difficulty": "easy",
+      "question": "What traditional database hosting approach does the guide contrast with cloud computing?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Organizations always rented Gmail and Salesforce for every database workload."
+        },
+        {
+          "id": "B",
+          "text": "Organizations stored databases only in browser cookies."
+        },
+        {
+          "id": "C",
+          "text": "Organizations bought physical servers, placed them in a secure room, and ran databases there."
+        },
+        {
+          "id": "D",
+          "text": "Organizations avoided DBMS software and used simple text files."
+        },
+        {
+          "id": "E",
+          "text": "Organizations used only shared apartment multi-tenant databases."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The cloud section contrasts cloud with buying and securing local physical servers.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "158-162"
+      },
+      "tags": [
+        "cloud",
+        "traditional-hosting"
+      ]
+    },
+    {
+      "id": "dbc-079",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Cloud computing definition",
+      "difficulty": "medium",
+      "question": "What is cloud computing?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Buying all hardware and placing it in a local secure room."
+        },
+        {
+          "id": "B",
+          "text": "Encrypting specific database columns such as passwords."
+        },
+        {
+          "id": "C",
+          "text": "Granting database privileges to users through SQL commands."
+        },
+        {
+          "id": "D",
+          "text": "Renting computing resources such as servers, storage, and databases over the internet from a provider."
+        },
+        {
+          "id": "E",
+          "text": "Saving user input directly into SQL commands."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The guide defines cloud computing as renting compute resources over the internet.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "162-166"
+      },
+      "tags": [
+        "cloud",
+        "definition"
+      ]
+    },
+    {
+      "id": "dbc-080",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Cloud provider examples",
+      "difficulty": "easy",
+      "question": "Which providers are named as cloud examples?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Gmail, Salesforce, and Support Agent."
+        },
+        {
+          "id": "B",
+          "text": "RAID, DBMS, and RBAC."
+        },
+        {
+          "id": "C",
+          "text": "Select, Insert, and Update."
+        },
+        {
+          "id": "D",
+          "text": "Inband, Blind, and Out-of-band."
+        },
+        {
+          "id": "E",
+          "text": "Amazon, Microsoft, or Google."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The source gives Amazon, Microsoft, and Google as provider examples.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "162-166"
+      },
+      "tags": [
+        "cloud",
+        "providers"
+      ]
+    },
+    {
+      "id": "dbc-081",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Cloud benefits",
+      "difficulty": "medium",
+      "question": "Which benefits are listed for cloud computing?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Innovate faster, scale resources instantly, and save money by only paying for what they use."
+        },
+        {
+          "id": "B",
+          "text": "Avoid all access control, trust all input, and remove encryption keys."
+        },
+        {
+          "id": "C",
+          "text": "Guarantee no cloud risks, no shared hardware, and no account hijacking."
+        },
+        {
+          "id": "D",
+          "text": "Make every database a text file, remove DBMS software, and skip RAID."
+        },
+        {
+          "id": "E",
+          "text": "Disable APIs, delete infrastructure, and avoid network access."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The guide lists faster innovation, instant scaling, and saving money by only paying for what they use.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "164-166"
+      },
+      "tags": [
+        "cloud",
+        "benefits"
+      ]
+    },
+    {
+      "id": "dbc-082",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Resource pooling",
+      "difficulty": "medium",
+      "question": "What is resource pooling?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A developer creates a server in seconds without speaking to a provider employee."
+        },
+        {
+          "id": "B",
+          "text": "The provider pools massive data center resources to serve many customers simultaneously, invisibly to users."
+        },
+        {
+          "id": "C",
+          "text": "The cloud automatically adds and removes servers as traffic changes."
+        },
+        {
+          "id": "D",
+          "text": "Customers pay only for exactly what they consume."
+        },
+        {
+          "id": "E",
+          "text": "Services are available over the internet from many device types."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Resource pooling is provider-side sharing of large resource pools across many customers.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "168-176"
+      },
+      "tags": [
+        "cloud",
+        "essential-characteristics"
+      ]
+    },
+    {
+      "id": "dbc-083",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "On-demand self-service",
+      "difficulty": "medium",
+      "question": "What is on-demand self-service?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The provider pools massive resources to serve many customers invisibly."
+        },
+        {
+          "id": "B",
+          "text": "The cloud adds servers when a website goes viral and removes them later."
+        },
+        {
+          "id": "C",
+          "text": "A developer can create a new server or database from a dashboard in seconds without speaking to a human at the provider."
+        },
+        {
+          "id": "D",
+          "text": "The customer pays only for what they consume like a utility bill."
+        },
+        {
+          "id": "E",
+          "text": "Services are reachable from laptops, phones, or other servers anywhere."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "On-demand self-service means users provision resources themselves quickly through a dashboard.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "172-176"
+      },
+      "tags": [
+        "cloud",
+        "essential-characteristics"
+      ]
+    },
+    {
+      "id": "dbc-084",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Elasticity",
+      "difficulty": "medium",
+      "question": "What does elasticity mean when a website suddenly goes viral?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The provider serves many customers from pooled resources invisibly."
+        },
+        {
+          "id": "B",
+          "text": "A developer can create a database without talking to a human."
+        },
+        {
+          "id": "C",
+          "text": "The customer pays exactly for consumed resources."
+        },
+        {
+          "id": "D",
+          "text": "The cloud can automatically add servers for sudden traffic and remove them when traffic drops."
+        },
+        {
+          "id": "E",
+          "text": "The service can be accessed from phones and laptops worldwide."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Elasticity means that if a website suddenly goes viral, the cloud can add capacity and later remove it when demand drops.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "172-176"
+      },
+      "tags": [
+        "cloud",
+        "elasticity"
+      ]
+    },
+    {
+      "id": "dbc-085",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Measured service",
+      "difficulty": "easy",
+      "question": "What is measured service compared to?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A guest list checked by a security guard."
+        },
+        {
+          "id": "B",
+          "text": "A private house rented instead of an apartment."
+        },
+        {
+          "id": "C",
+          "text": "A librarian finding a book in a library."
+        },
+        {
+          "id": "D",
+          "text": "A login field accepting malicious SQL."
+        },
+        {
+          "id": "E",
+          "text": "A water or electricity bill where you pay only for what you consume."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Measured service is compared to utility billing based on exact consumption.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "172-176"
+      },
+      "tags": [
+        "cloud",
+        "measured-service"
+      ]
+    },
+    {
+      "id": "dbc-086",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Broad network access",
+      "difficulty": "easy",
+      "question": "What does broad network access mean?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cloud services are available over the internet from laptops, phones, or other servers anywhere in the world."
+        },
+        {
+          "id": "B",
+          "text": "Cloud services are available only from the provider physical data center."
+        },
+        {
+          "id": "C",
+          "text": "Cloud services are available only to one department inside one office."
+        },
+        {
+          "id": "D",
+          "text": "Cloud services are reachable only through local hard drives."
+        },
+        {
+          "id": "E",
+          "text": "Cloud services require a provider employee to manually create each request."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Broad network access means internet availability across device types and locations.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "172-176"
+      },
+      "tags": [
+        "cloud",
+        "network-access"
+      ]
+    },
+    {
+      "id": "dbc-087",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "IaaS",
+      "difficulty": "medium",
+      "question": "What do you rent in Infrastructure as a Service (IaaS)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A ready environment where you only deploy your code and database."
+        },
+        {
+          "id": "B",
+          "text": "Raw hardware such as virtual servers, storage, and networks."
+        },
+        {
+          "id": "C",
+          "text": "A finished application like Gmail or Salesforce."
+        },
+        {
+          "id": "D",
+          "text": "A database view that hides sensitive columns."
+        },
+        {
+          "id": "E",
+          "text": "A security application delivered as SaaS."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "IaaS rents raw infrastructure resources.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "182-186"
+      },
+      "tags": [
+        "cloud",
+        "iaas",
+        "service-models"
+      ]
+    },
+    {
+      "id": "dbc-088",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "IaaS responsibility tradeoff",
+      "difficulty": "medium",
+      "question": "Which responsibility and trade-off belongs to IaaS?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The provider handles servers and the operating system while you only deploy code."
+        },
+        {
+          "id": "B",
+          "text": "You only log in and use a finished complete application."
+        },
+        {
+          "id": "C",
+          "text": "You install your own operating system and software; it takes the most effort but gives the most control."
+        },
+        {
+          "id": "D",
+          "text": "A provider delivers security applications over the internet as SaaS."
+        },
+        {
+          "id": "E",
+          "text": "A provider dedicates infrastructure exclusively to one organization."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "IaaS gives maximum control but requires the customer to manage OS and software.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "184-184"
+      },
+      "tags": [
+        "cloud",
+        "iaas"
+      ]
+    },
+    {
+      "id": "dbc-089",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "PaaS",
+      "difficulty": "medium",
+      "question": "What is Platform as a Service (PaaS)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Raw hardware where you install your own operating system and software."
+        },
+        {
+          "id": "B",
+          "text": "A finished complete application that you simply log in and use."
+        },
+        {
+          "id": "C",
+          "text": "Infrastructure dedicated exclusively to one organization."
+        },
+        {
+          "id": "D",
+          "text": "A ready environment for your code where the provider handles servers and the operating system."
+        },
+        {
+          "id": "E",
+          "text": "A shared database where tenants are separated by identifiers."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "PaaS is an environment ready for your code: the provider handles the servers and operating system, while you deploy the application and database.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "184-186"
+      },
+      "tags": [
+        "cloud",
+        "paas",
+        "service-models"
+      ]
+    },
+    {
+      "id": "dbc-090",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "SaaS",
+      "difficulty": "medium",
+      "question": "What is Software as a Service (SaaS)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Raw virtual servers, storage, and networks that you configure yourself."
+        },
+        {
+          "id": "B",
+          "text": "An environment ready for code where you deploy your application and database."
+        },
+        {
+          "id": "C",
+          "text": "A cloud deployment used only by one organization."
+        },
+        {
+          "id": "D",
+          "text": "A SQL command that gives a privilege to a user."
+        },
+        {
+          "id": "E",
+          "text": "A finished, complete application that you log in and use, such as Gmail or Salesforce."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "SaaS provides a complete application for users to consume directly.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "184-186"
+      },
+      "tags": [
+        "cloud",
+        "saas",
+        "service-models"
+      ]
+    },
+    {
+      "id": "dbc-091",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Service model control gradient",
+      "difficulty": "hard",
+      "question": "Which service model gives the most control but also requires the most effort?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "IaaS."
+        },
+        {
+          "id": "B",
+          "text": "PaaS."
+        },
+        {
+          "id": "C",
+          "text": "SaaS."
+        },
+        {
+          "id": "D",
+          "text": "SECaaS."
+        },
+        {
+          "id": "E",
+          "text": "Community Cloud."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The IaaS description explicitly says it requires the most effort but gives the most control.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "184-186"
+      },
+      "tags": [
+        "cloud",
+        "service-models"
+      ]
+    },
+    {
+      "id": "dbc-092",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Public cloud",
+      "difficulty": "medium",
+      "question": "What is a public cloud?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Infrastructure dedicated exclusively to one single organization."
+        },
+        {
+          "id": "B",
+          "text": "Provider-owned infrastructure shared over the public internet with anyone who wants to rent it."
+        },
+        {
+          "id": "C",
+          "text": "A combination of private sensitive systems and public website systems."
+        },
+        {
+          "id": "D",
+          "text": "Infrastructure shared only by organizations with common concerns."
+        },
+        {
+          "id": "E",
+          "text": "A finished application such as Gmail or Salesforce."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Public cloud is provider-owned shared infrastructure available over the public internet.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "188-193"
+      },
+      "tags": [
+        "cloud",
+        "deployment-models",
+        "public-cloud"
+      ]
+    },
+    {
+      "id": "dbc-093",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Private cloud",
+      "difficulty": "medium",
+      "question": "What is a private cloud?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Provider-owned infrastructure rented by anyone over the public internet."
+        },
+        {
+          "id": "B",
+          "text": "A combination of public and private cloud resources."
+        },
+        {
+          "id": "C",
+          "text": "Infrastructure dedicated exclusively to one organization; it is more secure but more expensive."
+        },
+        {
+          "id": "D",
+          "text": "Infrastructure shared by organizations with common concerns only."
+        },
+        {
+          "id": "E",
+          "text": "A ready platform where only application code is deployed."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Private cloud is dedicated to one organization and trades cost for security.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "190-193"
+      },
+      "tags": [
+        "cloud",
+        "deployment-models",
+        "private-cloud"
+      ]
+    },
+    {
+      "id": "dbc-094",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Hybrid cloud",
+      "difficulty": "medium",
+      "question": "What is a hybrid cloud?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A provider-owned public service rented by anyone."
+        },
+        {
+          "id": "B",
+          "text": "Infrastructure dedicated exclusively to one organization only."
+        },
+        {
+          "id": "C",
+          "text": "Infrastructure shared only by hospitals with common concerns."
+        },
+        {
+          "id": "D",
+          "text": "A combination of public and private cloud, such as private sensitive data plus a public website."
+        },
+        {
+          "id": "E",
+          "text": "A raw hardware rental where customers install their own OS."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Hybrid cloud combines public and private use cases, with the guide example of sensitive data private and public website public.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "190-193"
+      },
+      "tags": [
+        "cloud",
+        "deployment-models",
+        "hybrid-cloud"
+      ]
+    },
+    {
+      "id": "dbc-095",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Community cloud",
+      "difficulty": "medium",
+      "question": "What is a community cloud?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Provider-owned infrastructure available to anyone over the internet."
+        },
+        {
+          "id": "B",
+          "text": "Infrastructure dedicated to one organization only."
+        },
+        {
+          "id": "C",
+          "text": "A combination of a private cloud and a public website."
+        },
+        {
+          "id": "D",
+          "text": "A finished application that users only log in to use."
+        },
+        {
+          "id": "E",
+          "text": "Infrastructure shared by a specific group of organizations with common concerns."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Community cloud is shared by organizations with common concerns.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "190-193"
+      },
+      "tags": [
+        "cloud",
+        "deployment-models",
+        "community-cloud"
+      ]
+    },
+    {
+      "id": "dbc-096",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "Community cloud example",
+      "difficulty": "easy",
+      "question": "Which example is given for community cloud?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Several hospitals sharing a compliant healthcare cloud."
+        },
+        {
+          "id": "B",
+          "text": "A company keeping sensitive data private but running its public website publicly."
+        },
+        {
+          "id": "C",
+          "text": "Anyone renting provider infrastructure over the public internet."
+        },
+        {
+          "id": "D",
+          "text": "A single organization paying more for dedicated infrastructure."
+        },
+        {
+          "id": "E",
+          "text": "A user logging into Gmail or Salesforce."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The source gives hospitals sharing a compliant healthcare cloud as the community cloud example.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "190-193"
+      },
+      "tags": [
+        "cloud",
+        "community-cloud"
+      ]
+    },
+    {
+      "id": "dbc-097",
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "topic": "NIST note",
+      "difficulty": "medium",
+      "question": "What does the NIST Cloud Computing Reference Architecture provide according to the note?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A list of SQL privileges such as Select, Insert, Delete, Update, and References."
+        },
+        {
+          "id": "B",
+          "text": "A common framework for discussing cloud concepts, focusing on what services provide rather than how they are built."
+        },
+        {
+          "id": "C",
+          "text": "A RAID technique for mirroring and striping hard drives."
+        },
+        {
+          "id": "D",
+          "text": "A cloud firewall that blocks suspicious SQL queries at run time."
+        },
+        {
+          "id": "E",
+          "text": "A physical access-control policy for data owners and departments."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The note says NIST provides a common framework focused on service capabilities rather than implementation details.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "195-197"
+      },
+      "tags": [
+        "cloud",
+        "nist"
+      ]
+    },
+    {
+      "id": "dbc-098",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Cloud risk context",
+      "difficulty": "medium",
+      "question": "Why do new security risks appear when data moves to the cloud?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "RAID stops working whenever data is in a relational table."
+        },
+        {
+          "id": "B",
+          "text": "Cloud computing removes every need for APIs and logins."
+        },
+        {
+          "id": "C",
+          "text": "Data leaves your own building and runs on a cloud provider's servers."
+        },
+        {
+          "id": "D",
+          "text": "Encryption keys cannot exist outside a local secure room."
+        },
+        {
+          "id": "E",
+          "text": "DBMS software cannot run on rented infrastructure."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The risk section starts by noting that data moves from your building to provider servers.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "199-203"
+      },
+      "tags": [
+        "cloud-risks"
+      ]
+    },
+    {
+      "id": "dbc-099",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Unknown risk profile",
+      "difficulty": "medium",
+      "question": "What is the unknown risk profile cloud risk?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A provider isolation failure lets one customer see another customer data."
+        },
+        {
+          "id": "B",
+          "text": "Stolen API keys let attackers delete or steal infrastructure."
+        },
+        {
+          "id": "C",
+          "text": "Developers misconfigure databases and expose them publicly."
+        },
+        {
+          "id": "D",
+          "text": "You cannot inspect the physical servers yourself and must trust the provider manages security properly."
+        },
+        {
+          "id": "E",
+          "text": "Attackers rent cheap cloud servers to host malware."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Unknown risk profile comes from lack of direct visibility into provider physical infrastructure.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "203-203"
+      },
+      "tags": [
+        "cloud-risks",
+        "unknown-risk-profile"
+      ]
+    },
+    {
+      "id": "dbc-100",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Shared technology issues",
+      "difficulty": "medium",
+      "question": "What is the shared technology issue in public clouds?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "API keys are stolen because user logins are weak."
+        },
+        {
+          "id": "B",
+          "text": "A dishonest provider employee abuses administrative access."
+        },
+        {
+          "id": "C",
+          "text": "Attackers rent cheap servers to launch attacks."
+        },
+        {
+          "id": "D",
+          "text": "Developers accidentally leave databases open to the public internet."
+        },
+        {
+          "id": "E",
+          "text": "Customer data may sit on the same physical hardware as other companies, so isolation failure could expose another customer's data."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The source highlights shared physical hardware and reliance on isolation software.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "204-204"
+      },
+      "tags": [
+        "cloud-risks",
+        "shared-technology"
+      ]
+    },
+    {
+      "id": "dbc-101",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Insecure interfaces and APIs",
+      "difficulty": "medium",
+      "question": "Why are insecure interfaces and APIs dangerous in the cloud?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cloud resources are controlled over the internet using APIs, so stolen API keys or weak logins can let attackers delete or steal infrastructure."
+        },
+        {
+          "id": "B",
+          "text": "They force users to install their own operating system in SaaS applications."
+        },
+        {
+          "id": "C",
+          "text": "They make RAID mirroring copy data to only one disk."
+        },
+        {
+          "id": "D",
+          "text": "They prevent applications from using parameterized queries."
+        },
+        {
+          "id": "E",
+          "text": "They make views reveal only authorized columns."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The guide says API-key theft or weak login security can compromise entire infrastructure.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "205-205"
+      },
+      "tags": [
+        "cloud-risks",
+        "apis"
+      ]
+    },
+    {
+      "id": "dbc-102",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Account hijacking",
+      "difficulty": "medium",
+      "question": "What is account hijacking in the cloud risk list?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Developers accidentally make databases public on the internet."
+        },
+        {
+          "id": "B",
+          "text": "Attackers guess passwords or use phishing to access cloud administrator accounts."
+        },
+        {
+          "id": "C",
+          "text": "A cloud provider employee abuses administrative access."
+        },
+        {
+          "id": "D",
+          "text": "One tenant sees another tenant data because isolation fails."
+        },
+        {
+          "id": "E",
+          "text": "Cloud servers are rented to host malware or launch attacks."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Account hijacking targets administrator accounts through password guessing or phishing.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "206-206"
+      },
+      "tags": [
+        "cloud-risks",
+        "account-hijacking"
+      ]
+    },
+    {
+      "id": "dbc-103",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Data loss or leakage",
+      "difficulty": "medium",
+      "question": "What causes data loss or leakage in the cloud example?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cloud customers cannot inspect physical servers directly."
+        },
+        {
+          "id": "B",
+          "text": "Provider employees always need to steal both database and key."
+        },
+        {
+          "id": "C",
+          "text": "Developers accidentally misconfigure databases, leaving them open to the public internet."
+        },
+        {
+          "id": "D",
+          "text": "Attackers force a DBMS to send data to another server."
+        },
+        {
+          "id": "E",
+          "text": "Tenants use unique identifiers to separate records correctly."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The notes connect cloud ease-of-change with accidental public database exposure.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "207-207"
+      },
+      "tags": [
+        "cloud-risks",
+        "misconfiguration"
+      ]
+    },
+    {
+      "id": "dbc-104",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Malicious insiders",
+      "difficulty": "medium",
+      "question": "Who is the malicious insider in the cloud risk list?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A developer who creates a server from a dashboard without speaking to a human."
+        },
+        {
+          "id": "B",
+          "text": "A customer who pays only for consumed resources."
+        },
+        {
+          "id": "C",
+          "text": "An administrator who assigns Alice and Bob to Support Agent."
+        },
+        {
+          "id": "D",
+          "text": "A dishonest employee at the cloud provider who abuses administrative access to steal customer data."
+        },
+        {
+          "id": "E",
+          "text": "A DBMS that locks records to maintain integrity."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The malicious insider risk involves provider employees with administrative access.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "208-208"
+      },
+      "tags": [
+        "cloud-risks",
+        "insiders"
+      ]
+    },
+    {
+      "id": "dbc-105",
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "topic": "Abuse of cloud services",
+      "difficulty": "medium",
+      "question": "What is abuse of cloud services?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Customers use cloud servers to scale a viral website legitimately."
+        },
+        {
+          "id": "B",
+          "text": "Cloud providers pool resources across customers invisibly."
+        },
+        {
+          "id": "C",
+          "text": "Organizations route traffic through cloud security providers."
+        },
+        {
+          "id": "D",
+          "text": "A single organization uses dedicated private cloud infrastructure."
+        },
+        {
+          "id": "E",
+          "text": "Attackers rent cheap, powerful cloud servers to host malware or launch massive attacks."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The risk is attackers using the same cheap powerful resources for malicious activity.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "209-209"
+      },
+      "tags": [
+        "cloud-risks",
+        "abuse"
+      ]
+    },
+    {
+      "id": "dbc-106",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Shared responsibility",
+      "difficulty": "easy",
+      "question": "Because customers do not own the physical hardware, what does cloud data security become?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A shared responsibility between the customer and the cloud provider."
+        },
+        {
+          "id": "B",
+          "text": "The exclusive responsibility of the customer with no provider role."
+        },
+        {
+          "id": "C",
+          "text": "The exclusive responsibility of the provider with no customer role."
+        },
+        {
+          "id": "D",
+          "text": "A RAID-only problem solved by mirroring disks."
+        },
+        {
+          "id": "E",
+          "text": "A SQL-only problem solved by granting all privileges."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The guide states that cloud security becomes a shared responsibility.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "213-217"
+      },
+      "tags": [
+        "cloud-security",
+        "shared-responsibility"
+      ]
+    },
+    {
+      "id": "dbc-107",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Database service architecture choices",
+      "difficulty": "easy",
+      "question": "What are the two main database service architecture models listed?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Public and community only."
+        },
+        {
+          "id": "B",
+          "text": "Multi-instance and multi-tenant."
+        },
+        {
+          "id": "C",
+          "text": "IaaS and SaaS only."
+        },
+        {
+          "id": "D",
+          "text": "Grant and Revoke."
+        },
+        {
+          "id": "E",
+          "text": "Select and Update."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The cloud data protection section compares multi-instance and multi-tenant models.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "217-221"
+      },
+      "tags": [
+        "cloud-security",
+        "database-service-models"
+      ]
+    },
+    {
+      "id": "dbc-108",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Housing analogy",
+      "difficulty": "easy",
+      "question": "What housing analogy explains multi-instance versus multi-tenant?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A librarian versus a security guard."
+        },
+        {
+          "id": "B",
+          "text": "A water bill versus an electricity bill."
+        },
+        {
+          "id": "C",
+          "text": "A private house versus an apartment in a shared building."
+        },
+        {
+          "id": "D",
+          "text": "A login box versus a search bar."
+        },
+        {
+          "id": "E",
+          "text": "A hard drive mirror versus a stripe."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The notes compare multi-instance to a private house and multi-tenant to a shared apartment.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "217-230"
+      },
+      "tags": [
+        "cloud-security",
+        "analogy"
+      ]
+    },
+    {
+      "id": "dbc-109",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Multi-instance definition",
+      "difficulty": "medium",
+      "question": "What is the multi-instance model?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Multiple customers share the exact same underlying database system."
+        },
+        {
+          "id": "B",
+          "text": "A provider delivers security applications over the internet as SaaS."
+        },
+        {
+          "id": "C",
+          "text": "A customer rents raw hardware and installs their own operating system."
+        },
+        {
+          "id": "D",
+          "text": "Each customer gets a dedicated, isolated database system running on its own virtual machine."
+        },
+        {
+          "id": "E",
+          "text": "A company combines private sensitive data with a public website."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Multi-instance gives each customer a separate database system and VM.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "223-228"
+      },
+      "tags": [
+        "cloud-security",
+        "multi-instance"
+      ]
+    },
+    {
+      "id": "dbc-110",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Multi-instance advantage",
+      "difficulty": "medium",
+      "question": "Which advantage belongs to the multi-instance model?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Maximum efficiency and low cost because all customers share one database system."
+        },
+        {
+          "id": "B",
+          "text": "Very easy provider management because tenants are separated only by tags."
+        },
+        {
+          "id": "C",
+          "text": "No need for any virtual machine or dedicated environment."
+        },
+        {
+          "id": "D",
+          "text": "It relies entirely on provider logic to separate all customer rows."
+        },
+        {
+          "id": "E",
+          "text": "Strong security isolation and deep customization because the environment belongs entirely to the customer."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The advantages listed are strong isolation, customization, and low risk of seeing another customer data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "227-228"
+      },
+      "tags": [
+        "cloud-security",
+        "multi-instance"
+      ]
+    },
+    {
+      "id": "dbc-111",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Multi-instance disadvantage",
+      "difficulty": "medium",
+      "question": "What is the disadvantage of the multi-instance model?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It requires more resources, making it more expensive."
+        },
+        {
+          "id": "B",
+          "text": "It is impossible to customize because all customers share one environment."
+        },
+        {
+          "id": "C",
+          "text": "It has severe breach risk whenever tag logic fails."
+        },
+        {
+          "id": "D",
+          "text": "It cannot provide strong security isolation."
+        },
+        {
+          "id": "E",
+          "text": "It requires every customer to use Gmail or Salesforce."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The source says multi-instance uses more resources and costs more.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "227-228"
+      },
+      "tags": [
+        "cloud-security",
+        "multi-instance",
+        "cost"
+      ]
+    },
+    {
+      "id": "dbc-112",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Multi-tenant definition",
+      "difficulty": "medium",
+      "question": "What is the multi-tenant model?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Each customer gets a dedicated database system on its own virtual machine."
+        },
+        {
+          "id": "B",
+          "text": "Multiple customers share the same underlying database system, with software separating their data."
+        },
+        {
+          "id": "C",
+          "text": "Each organization buys physical servers and runs them in a secure room."
+        },
+        {
+          "id": "D",
+          "text": "A developer creates a server without talking to a provider employee."
+        },
+        {
+          "id": "E",
+          "text": "A user logs into a finished complete application."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Multi-tenant database services share one system across tenants.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "230-235"
+      },
+      "tags": [
+        "cloud-security",
+        "multi-tenant"
+      ]
+    },
+    {
+      "id": "dbc-113",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Multi-tenant separation mechanism",
+      "difficulty": "medium",
+      "question": "How does multi-tenant software separate customer data?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Using separate virtual machines for every customer."
+        },
+        {
+          "id": "B",
+          "text": "Using only physical guards and locked server rooms."
+        },
+        {
+          "id": "C",
+          "text": "Using unique identifiers or tags behind the scenes."
+        },
+        {
+          "id": "D",
+          "text": "Using SQL Injection to infer which data belongs to whom."
+        },
+        {
+          "id": "E",
+          "text": "Using lost encryption keys to make data unreadable."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The notes say the software separates tenant data with unique identifiers or tags.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "230-234"
+      },
+      "tags": [
+        "cloud-security",
+        "multi-tenant"
+      ]
+    },
+    {
+      "id": "dbc-114",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Multi-tenant advantages",
+      "difficulty": "medium",
+      "question": "Which advantages belong to the multi-tenant model?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It provides dedicated VMs and deep customization for each customer."
+        },
+        {
+          "id": "B",
+          "text": "It removes every risk of a breach caused by separation logic."
+        },
+        {
+          "id": "C",
+          "text": "It costs more because each tenant has a private database system."
+        },
+        {
+          "id": "D",
+          "text": "It is efficient, cost-effective, and easy for the provider to manage and scale."
+        },
+        {
+          "id": "E",
+          "text": "It requires customers to install their own operating systems."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Multi-tenant is efficient and cheaper because resources are shared, and providers can manage and scale it easily.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "234-235"
+      },
+      "tags": [
+        "cloud-security",
+        "multi-tenant"
+      ]
+    },
+    {
+      "id": "dbc-115",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Multi-tenant disadvantage",
+      "difficulty": "medium",
+      "question": "What is the main security disadvantage of multi-tenant databases?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Every tenant gets too much customization and dedicated isolation."
+        },
+        {
+          "id": "B",
+          "text": "Every customer must manage their own physical hardware."
+        },
+        {
+          "id": "C",
+          "text": "The model cannot share resources, so it is never cost-effective."
+        },
+        {
+          "id": "D",
+          "text": "The model requires users to lose their encryption keys."
+        },
+        {
+          "id": "E",
+          "text": "Security depends on provider software keeping tenant data separate; a logic flaw could cause a severe breach."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The source warns that security relies on the provider's software successfully keeping the data separate; a flaw could cause a severe data breach.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "234-235"
+      },
+      "tags": [
+        "cloud-security",
+        "multi-tenant",
+        "risk"
+      ]
+    },
+    {
+      "id": "dbc-116",
+      "section": "Protecting Data in the Cloud",
+      "topic": "SECaaS acronym",
+      "difficulty": "easy",
+      "question": "What does SECaaS stand for?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Security as a Service."
+        },
+        {
+          "id": "B",
+          "text": "Software Encryption Control as a Service."
+        },
+        {
+          "id": "C",
+          "text": "Secure Elastic Cloud as a Service."
+        },
+        {
+          "id": "D",
+          "text": "Server Endpoint Compliance as a Service."
+        },
+        {
+          "id": "E",
+          "text": "Shared Encryption Cluster as a Service."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "SECaaS is expanded as Security as a Service.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "237-242"
+      },
+      "tags": [
+        "secaas"
+      ]
+    },
+    {
+      "id": "dbc-117",
+      "section": "Protecting Data in the Cloud",
+      "topic": "SECaaS definition",
+      "difficulty": "medium",
+      "question": "What is Security as a Service (SECaaS)?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A provider gives every customer a dedicated database VM."
+        },
+        {
+          "id": "B",
+          "text": "A provider delivers security applications over the internet as a SaaS."
+        },
+        {
+          "id": "C",
+          "text": "A database copies data across drives for hardware availability."
+        },
+        {
+          "id": "D",
+          "text": "An administrator gives privileges using SQL Grant."
+        },
+        {
+          "id": "E",
+          "text": "An attacker sends stolen data to an out-of-band server."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SECaaS delivers security tools over the internet using a SaaS model.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "237-242"
+      },
+      "tags": [
+        "secaas",
+        "saas"
+      ]
+    },
+    {
+      "id": "dbc-118",
+      "section": "Protecting Data in the Cloud",
+      "topic": "SECaaS traffic routing",
+      "difficulty": "medium",
+      "question": "How does the guide describe SECaaS replacing traditional local security tools?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Instead of using parameterized queries, developers trust every input field."
+        },
+        {
+          "id": "B",
+          "text": "Instead of using RAID, every disk is allowed to fail independently."
+        },
+        {
+          "id": "C",
+          "text": "Instead of buying hardware firewalls or installing heavy antivirus locally, traffic is routed through a cloud security provider."
+        },
+        {
+          "id": "D",
+          "text": "Instead of using roles, every user is granted all table privileges."
+        },
+        {
+          "id": "E",
+          "text": "Instead of using private cloud, every sensitive database is placed in public cloud."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The SECaaS section contrasts cloud-delivered security with local hardware firewalls and heavy antivirus installations.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "240-244"
+      },
+      "tags": [
+        "secaas",
+        "cloud-security"
+      ]
+    },
+    {
+      "id": "dbc-119",
+      "section": "Protecting Data in the Cloud",
+      "topic": "SECaaS protection scope",
+      "difficulty": "medium",
+      "question": "What can SECaaS protect?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only the provider physical servers, never customer networks."
+        },
+        {
+          "id": "B",
+          "text": "Only browser cookies, never cloud resources."
+        },
+        {
+          "id": "C",
+          "text": "Only local hard drives, never cloud applications."
+        },
+        {
+          "id": "D",
+          "text": "Both resources inside the cloud and the company's local office networks."
+        },
+        {
+          "id": "E",
+          "text": "Only relational views, never network traffic."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The notes say SECaaS can protect cloud resources and local office networks.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "242-244"
+      },
+      "tags": [
+        "secaas",
+        "scope"
+      ]
+    },
+    {
+      "id": "dbc-120",
+      "section": "Protecting Data in the Cloud",
+      "topic": "IAM example",
+      "difficulty": "medium",
+      "question": "What does Identity and Access Management (IAM) provide in the SECaaS examples?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Filtering malicious web traffic before it reaches the application."
+        },
+        {
+          "id": "B",
+          "text": "Continuously scanning files and activity for known attacks."
+        },
+        {
+          "id": "C",
+          "text": "Monitoring outgoing traffic for accidental sensitive uploads."
+        },
+        {
+          "id": "D",
+          "text": "Copying data to a safe cloud location after ransomware or destruction."
+        },
+        {
+          "id": "E",
+          "text": "Cloud systems that manage user logins and permissions across multiple applications."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "IAM is listed as managing logins and permissions across applications.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "246-250"
+      },
+      "tags": [
+        "secaas",
+        "iam"
+      ]
+    },
+    {
+      "id": "dbc-121",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Cloud firewalls example",
+      "difficulty": "medium",
+      "question": "What do cloud firewalls do in the SECaaS examples?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Filter malicious web traffic before it reaches the application."
+        },
+        {
+          "id": "B",
+          "text": "Manage user logins and permissions across applications."
+        },
+        {
+          "id": "C",
+          "text": "Scan files and activity for known attacks."
+        },
+        {
+          "id": "D",
+          "text": "Monitor outgoing traffic for sensitive uploads."
+        },
+        {
+          "id": "E",
+          "text": "Copy data to a safe cloud location for disaster recovery."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Cloud firewalls are listed as filtering malicious web traffic before application delivery.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "246-250"
+      },
+      "tags": [
+        "secaas",
+        "cloud-firewalls"
+      ]
+    },
+    {
+      "id": "dbc-122",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Threat detection and antivirus example",
+      "difficulty": "medium",
+      "question": "What do threat detection and antivirus services do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Manage user logins and permissions across multiple applications."
+        },
+        {
+          "id": "B",
+          "text": "Continuously scan files and activity for known attacks."
+        },
+        {
+          "id": "C",
+          "text": "Filter malicious web traffic before it reaches the application."
+        },
+        {
+          "id": "D",
+          "text": "Monitor outgoing traffic to stop accidental sensitive uploads."
+        },
+        {
+          "id": "E",
+          "text": "Automatically copy data to a safe cloud location after ransomware."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Threat detection and antivirus continuously scan for known attacks.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "246-250"
+      },
+      "tags": [
+        "secaas",
+        "threat-detection"
+      ]
+    },
+    {
+      "id": "dbc-123",
+      "section": "Protecting Data in the Cloud",
+      "topic": "DLP example",
+      "difficulty": "medium",
+      "question": "What does Data Loss Prevention monitor?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "User logins and permissions across multiple applications."
+        },
+        {
+          "id": "B",
+          "text": "Malicious web traffic before it reaches the application."
+        },
+        {
+          "id": "C",
+          "text": "Outgoing traffic to ensure employees do not accidentally upload sensitive information."
+        },
+        {
+          "id": "D",
+          "text": "Files and activity for known attacks only."
+        },
+        {
+          "id": "E",
+          "text": "Automatic backup copies after ransomware."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "DLP is described as monitoring outgoing traffic for accidental sensitive uploads.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "246-250"
+      },
+      "tags": [
+        "secaas",
+        "dlp"
+      ]
+    },
+    {
+      "id": "dbc-124",
+      "section": "Protecting Data in the Cloud",
+      "topic": "Backup and DR example",
+      "difficulty": "medium",
+      "question": "What does the Backup and Disaster Recovery SECaaS example do?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Manages user logins and permissions across multiple applications."
+        },
+        {
+          "id": "B",
+          "text": "Filters malicious web traffic before it reaches the app."
+        },
+        {
+          "id": "C",
+          "text": "Scans files and activity for known attacks only."
+        },
+        {
+          "id": "D",
+          "text": "Automatically copies data to a safe cloud location if the main system is destroyed or hit by ransomware."
+        },
+        {
+          "id": "E",
+          "text": "Monitors outgoing traffic for accidental sensitive uploads only."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The backup and DR example copies data safely in case of destruction or ransomware.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "246-250"
+      },
+      "tags": [
+        "secaas",
+        "backup",
+        "disaster-recovery"
+      ]
+    },
+    {
+      "id": "dbc-125",
+      "section": "Protecting Data in the Cloud",
+      "topic": "SECaaS cloud power benefit",
+      "difficulty": "medium",
+      "question": "What final benefit does the guide attribute to SECaaS?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Organizations can stop using databases because security tools store all data."
+        },
+        {
+          "id": "B",
+          "text": "Organizations can make every tenant share all customer data openly."
+        },
+        {
+          "id": "C",
+          "text": "Organizations can avoid all key management by deleting encryption keys."
+        },
+        {
+          "id": "D",
+          "text": "Organizations can guarantee no developer will ever misconfigure a database."
+        },
+        {
+          "id": "E",
+          "text": "Organizations can use the massive computing power of the cloud to defend databases and applications more effectively than on their own."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "The final paragraph says SECaaS leverages cloud computing power for stronger defense than most organizations can build alone.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "250-251"
+      },
+      "tags": [
+        "secaas",
+        "cloud-security"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section": "Database and Cloud Security",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "1-9"
+      },
+      "questionIds": [
+        "dbc-001",
+        "dbc-002",
+        "dbc-003",
+        "dbc-004"
+      ]
+    },
+    {
+      "section": "How Data is Stored and Managed",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "11-47"
+      },
+      "questionIds": [
+        "dbc-005",
+        "dbc-006",
+        "dbc-007",
+        "dbc-008",
+        "dbc-009",
+        "dbc-010",
+        "dbc-011",
+        "dbc-012",
+        "dbc-013",
+        "dbc-014",
+        "dbc-015",
+        "dbc-016",
+        "dbc-017",
+        "dbc-018",
+        "dbc-019",
+        "dbc-020",
+        "dbc-021",
+        "dbc-022",
+        "dbc-023",
+        "dbc-024",
+        "dbc-025"
+      ]
+    },
+    {
+      "section": "Protecting the Database from Inside: Access Control",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "49-91"
+      },
+      "questionIds": [
+        "dbc-026",
+        "dbc-027",
+        "dbc-028",
+        "dbc-029",
+        "dbc-030",
+        "dbc-031",
+        "dbc-032",
+        "dbc-033",
+        "dbc-034",
+        "dbc-035",
+        "dbc-036",
+        "dbc-037",
+        "dbc-038",
+        "dbc-039",
+        "dbc-040",
+        "dbc-041",
+        "dbc-042",
+        "dbc-043",
+        "dbc-044",
+        "dbc-045"
+      ]
+    },
+    {
+      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "93-139"
+      },
+      "questionIds": [
+        "dbc-046",
+        "dbc-047",
+        "dbc-048",
+        "dbc-049",
+        "dbc-050",
+        "dbc-051",
+        "dbc-052",
+        "dbc-053",
+        "dbc-054",
+        "dbc-055",
+        "dbc-056",
+        "dbc-057",
+        "dbc-058",
+        "dbc-059",
+        "dbc-060",
+        "dbc-061",
+        "dbc-062",
+        "dbc-063",
+        "dbc-064",
+        "dbc-065",
+        "dbc-066",
+        "dbc-067"
+      ]
+    },
+    {
+      "section": "The Last Line of Defense: Database Encryption",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "141-156"
+      },
+      "questionIds": [
+        "dbc-068",
+        "dbc-069",
+        "dbc-070",
+        "dbc-071",
+        "dbc-072",
+        "dbc-073",
+        "dbc-074",
+        "dbc-075",
+        "dbc-076",
+        "dbc-077"
+      ]
+    },
+    {
+      "section": "Moving Beyond the Local Server: Cloud Security",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "158-197"
+      },
+      "questionIds": [
+        "dbc-078",
+        "dbc-079",
+        "dbc-080",
+        "dbc-081",
+        "dbc-082",
+        "dbc-083",
+        "dbc-084",
+        "dbc-085",
+        "dbc-086",
+        "dbc-087",
+        "dbc-088",
+        "dbc-089",
+        "dbc-090",
+        "dbc-091",
+        "dbc-092",
+        "dbc-093",
+        "dbc-094",
+        "dbc-095",
+        "dbc-096",
+        "dbc-097"
+      ]
+    },
+    {
+      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "199-211"
+      },
+      "questionIds": [
+        "dbc-098",
+        "dbc-099",
+        "dbc-100",
+        "dbc-101",
+        "dbc-102",
+        "dbc-103",
+        "dbc-104",
+        "dbc-105"
+      ]
+    },
+    {
+      "section": "Protecting Data in the Cloud",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "213-251"
+      },
+      "questionIds": [
+        "dbc-106",
+        "dbc-107",
+        "dbc-108",
+        "dbc-109",
+        "dbc-110",
+        "dbc-111",
+        "dbc-112",
+        "dbc-113",
+        "dbc-114",
+        "dbc-115",
+        "dbc-116",
+        "dbc-117",
+        "dbc-118",
+        "dbc-119",
+        "dbc-120",
+        "dbc-121",
+        "dbc-122",
+        "dbc-123",
+        "dbc-124",
+        "dbc-125"
+      ]
+    }
+  ]
+}
