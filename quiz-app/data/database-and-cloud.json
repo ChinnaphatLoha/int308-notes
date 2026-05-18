@@ -915,7 +915,7 @@
     },
     {
       "id": "dbc-026",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Access control problem",
       "difficulty": "easy",
       "question": "After data is stored and structured, what is the next access-control problem?",
@@ -953,7 +953,7 @@
     },
     {
       "id": "dbc-027",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Confidentiality",
       "difficulty": "easy",
       "question": "Which security goal is explicitly tied to strict access rules?",
@@ -992,7 +992,7 @@
     },
     {
       "id": "dbc-028",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Authorization table role",
       "difficulty": "medium",
       "question": "What is the purpose of an authorization table?",
@@ -1031,7 +1031,7 @@
     },
     {
       "id": "dbc-030",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Authorization denial",
       "difficulty": "medium",
       "question": "What happens if a user is not authorized for a specific database action?",
@@ -1070,7 +1070,7 @@
     },
     {
       "id": "dbc-031",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Centralized policy",
       "difficulty": "easy",
       "question": "Which administrative policy has one administrator or security team control all permissions?",
@@ -1109,7 +1109,7 @@
     },
     {
       "id": "dbc-032",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Ownership-based policy",
       "difficulty": "easy",
       "question": "Which administrative policy lets the data creator decide who else may see or change it?",
@@ -1148,7 +1148,7 @@
     },
     {
       "id": "dbc-033",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Decentralized policy",
       "difficulty": "easy",
       "question": "Which administrative policy lets different departments or teams manage their own access controls independently?",
@@ -1187,7 +1187,7 @@
     },
     {
       "id": "dbc-034",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Grant command",
       "difficulty": "easy",
       "question": "What does the SQL Grant command do?",
@@ -1226,7 +1226,7 @@
     },
     {
       "id": "dbc-035",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Revoke command",
       "difficulty": "easy",
       "question": "What does the SQL Revoke command do?",
@@ -1265,7 +1265,7 @@
     },
     {
       "id": "dbc-036",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Select privilege",
       "difficulty": "easy",
       "question": "What does the Select privilege allow?",
@@ -1304,7 +1304,7 @@
     },
     {
       "id": "dbc-037",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Insert privilege",
       "difficulty": "easy",
       "question": "What does the Insert privilege allow?",
@@ -1343,7 +1343,7 @@
     },
     {
       "id": "dbc-038",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Delete privilege",
       "difficulty": "easy",
       "question": "What does the Delete privilege allow?",
@@ -1382,7 +1382,7 @@
     },
     {
       "id": "dbc-039",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Update privilege",
       "difficulty": "easy",
       "question": "What does the Update privilege allow?",
@@ -1421,7 +1421,7 @@
     },
     {
       "id": "dbc-040",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "References privilege",
       "difficulty": "medium",
       "question": "What does the References privilege allow?",
@@ -1461,7 +1461,7 @@
     },
     {
       "id": "dbc-041",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "RBAC acronym",
       "difficulty": "easy",
       "question": "What does RBAC stand for?",
@@ -1500,7 +1500,7 @@
     },
     {
       "id": "dbc-042",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "RBAC problem",
       "difficulty": "medium",
       "question": "What administrative problem does the 500 customer support agents example illustrate?",
@@ -1539,7 +1539,7 @@
     },
     {
       "id": "dbc-043",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "RBAC focus",
       "difficulty": "medium",
       "question": "What does RBAC shift the focus toward?",
@@ -1578,7 +1578,7 @@
     },
     {
       "id": "dbc-044",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "Support Agent role",
       "difficulty": "easy",
       "question": "In the RBAC example, what role is created?",
@@ -1617,7 +1617,7 @@
     },
     {
       "id": "dbc-045",
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "topic": "RBAC lifecycle changes",
       "difficulty": "medium",
       "question": "How does RBAC simplify changes when someone changes jobs or leaves?",
@@ -1656,7 +1656,7 @@
     },
     {
       "id": "dbc-046",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "External bypass context",
       "difficulty": "medium",
       "question": "Why can SQL Injection matter even when internal access controls are well configured?",
@@ -1695,7 +1695,7 @@
     },
     {
       "id": "dbc-047",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "SQLi definition",
       "difficulty": "medium",
       "question": "What is SQL Injection?",
@@ -1734,7 +1734,7 @@
     },
     {
       "id": "dbc-048",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Website search flow",
       "difficulty": "easy",
       "question": "What normal application behavior creates an opportunity for SQL Injection?",
@@ -1773,7 +1773,7 @@
     },
     {
       "id": "dbc-049",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "SQLi input fields",
       "difficulty": "easy",
       "question": "Which normal input fields are given as examples for SQL Injection?",
@@ -1812,7 +1812,7 @@
     },
     {
       "id": "dbc-050",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "SQLi impact",
       "difficulty": "medium",
       "question": "Which set of impacts can SQL Injection have?",
@@ -1851,7 +1851,7 @@
     },
     {
       "id": "dbc-051",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "SQLi CIA impact",
       "difficulty": "medium",
       "question": "Which security properties does SQL Injection threaten at once?",
@@ -1890,7 +1890,7 @@
     },
     {
       "id": "dbc-052",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Inband attack",
       "difficulty": "medium",
       "question": "What is an inband SQL Injection attack?",
@@ -1929,7 +1929,7 @@
     },
     {
       "id": "dbc-053",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Blind attack",
       "difficulty": "medium",
       "question": "What is an inferential or blind SQL Injection attack?",
@@ -1968,7 +1968,7 @@
     },
     {
       "id": "dbc-054",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Out-of-band attack",
       "difficulty": "medium",
       "question": "What is an out-of-band SQL Injection attack?",
@@ -2007,7 +2007,7 @@
     },
     {
       "id": "dbc-055",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "User input avenue",
       "difficulty": "easy",
       "question": "Which SQL Injection avenue includes forms, search boxes, and login fields?",
@@ -2046,7 +2046,7 @@
     },
     {
       "id": "dbc-056",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Server variables avenue",
       "difficulty": "medium",
       "question": "What are server variables in the SQLi attack avenues list?",
@@ -2085,7 +2085,7 @@
     },
     {
       "id": "dbc-057",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Cookie avenue",
       "difficulty": "medium",
       "question": "How can cookies become an SQL Injection avenue?",
@@ -2124,7 +2124,7 @@
     },
     {
       "id": "dbc-058",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Second-order injection",
       "difficulty": "medium",
       "question": "What makes second-order injection different?",
@@ -2163,7 +2163,7 @@
     },
     {
       "id": "dbc-059",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Physical devices avenue",
       "difficulty": "medium",
       "question": "Which examples are listed under physical devices as SQL Injection avenues?",
@@ -2202,7 +2202,7 @@
     },
     {
       "id": "dbc-060",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "SQLi security mindset",
       "difficulty": "easy",
       "question": "What security mindset is recommended for stopping SQL Injection?",
@@ -2241,7 +2241,7 @@
     },
     {
       "id": "dbc-061",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Validation and sanitization",
       "difficulty": "medium",
       "question": "What do validation and sanitization do?",
@@ -2280,7 +2280,7 @@
     },
     {
       "id": "dbc-062",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Parameterized queries",
       "difficulty": "medium",
       "question": "Why are parameterized queries described as the most effective SQL Injection defense?",
@@ -2319,7 +2319,7 @@
     },
     {
       "id": "dbc-063",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "SQL DOM",
       "difficulty": "medium",
       "question": "What is the SQL DOM countermeasure described as?",
@@ -2358,7 +2358,7 @@
     },
     {
       "id": "dbc-064",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Signature detection",
       "difficulty": "medium",
       "question": "What does signature-based detection look for?",
@@ -2397,7 +2397,7 @@
     },
     {
       "id": "dbc-065",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Anomaly detection",
       "difficulty": "medium",
       "question": "What does anomaly detection flag?",
@@ -2436,7 +2436,7 @@
     },
     {
       "id": "dbc-066",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Code scanning",
       "difficulty": "easy",
       "question": "What should developers do before publishing code?",
@@ -2475,7 +2475,7 @@
     },
     {
       "id": "dbc-067",
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "topic": "Run-time prevention",
       "difficulty": "medium",
       "question": "What is run-time SQL Injection prevention?",
@@ -2514,7 +2514,7 @@
     },
     {
       "id": "dbc-068",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Encryption last line context",
       "difficulty": "medium",
       "question": "When is database encryption described as the last line of defense?",
@@ -2553,7 +2553,7 @@
     },
     {
       "id": "dbc-069",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Encryption definition",
       "difficulty": "easy",
       "question": "What does encryption do to data?",
@@ -2591,7 +2591,7 @@
     },
     {
       "id": "dbc-070",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Encryption scope choices",
       "difficulty": "medium",
       "question": "Which encryption scope options are listed?",
@@ -2630,7 +2630,7 @@
     },
     {
       "id": "dbc-071",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Sensitive encrypted columns",
       "difficulty": "easy",
       "question": "Which sensitive columns are given as examples for encryption?",
@@ -2669,7 +2669,7 @@
     },
     {
       "id": "dbc-072",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Lost key risk",
       "difficulty": "medium",
       "question": "What happens if the decryption key is lost?",
@@ -2708,7 +2708,7 @@
     },
     {
       "id": "dbc-073",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Stolen key risk",
       "difficulty": "medium",
       "question": "Why is encryption useless if an attacker steals both the database and the key?",
@@ -2747,7 +2747,7 @@
     },
     {
       "id": "dbc-074",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Key management difficulty",
       "difficulty": "easy",
       "question": "What is difficult about encryption keys?",
@@ -2786,7 +2786,7 @@
     },
     {
       "id": "dbc-075",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Encrypted search performance",
       "difficulty": "medium",
       "question": "Why can encryption hurt database performance?",
@@ -2825,7 +2825,7 @@
     },
     {
       "id": "dbc-076",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Encryption inflexibility",
       "difficulty": "medium",
       "question": "Besides search speed, what processing tasks become harder when data is encrypted?",
@@ -2864,7 +2864,7 @@
     },
     {
       "id": "dbc-077",
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "topic": "Selective encryption",
       "difficulty": "medium",
       "question": "Why do organizations usually encrypt only their most sensitive data?",
@@ -2903,7 +2903,7 @@
     },
     {
       "id": "dbc-078",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Traditional local servers",
       "difficulty": "easy",
       "question": "What traditional database hosting approach is contrasted with cloud computing?",
@@ -2942,7 +2942,7 @@
     },
     {
       "id": "dbc-079",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Cloud computing definition",
       "difficulty": "medium",
       "question": "What is cloud computing?",
@@ -2981,7 +2981,7 @@
     },
     {
       "id": "dbc-080",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Cloud provider examples",
       "difficulty": "easy",
       "question": "Which providers are named as cloud examples?",
@@ -3020,7 +3020,7 @@
     },
     {
       "id": "dbc-081",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Cloud benefits",
       "difficulty": "medium",
       "question": "Which benefits are listed for cloud computing?",
@@ -3059,7 +3059,7 @@
     },
     {
       "id": "dbc-082",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Resource pooling",
       "difficulty": "medium",
       "question": "What is resource pooling?",
@@ -3098,7 +3098,7 @@
     },
     {
       "id": "dbc-083",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "On-demand self-service",
       "difficulty": "medium",
       "question": "What is on-demand self-service?",
@@ -3137,7 +3137,7 @@
     },
     {
       "id": "dbc-084",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Elasticity",
       "difficulty": "medium",
       "question": "What does elasticity mean when a website suddenly goes viral?",
@@ -3176,7 +3176,7 @@
     },
     {
       "id": "dbc-085",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Measured service",
       "difficulty": "easy",
       "question": "What is measured service compared to?",
@@ -3215,7 +3215,7 @@
     },
     {
       "id": "dbc-086",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Broad network access",
       "difficulty": "easy",
       "question": "What does broad network access mean?",
@@ -3254,7 +3254,7 @@
     },
     {
       "id": "dbc-087",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "IaaS",
       "difficulty": "medium",
       "question": "What do you rent in Infrastructure as a Service (IaaS)?",
@@ -3294,7 +3294,7 @@
     },
     {
       "id": "dbc-088",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "IaaS responsibility tradeoff",
       "difficulty": "medium",
       "question": "Which responsibility and trade-off belongs to IaaS?",
@@ -3333,7 +3333,7 @@
     },
     {
       "id": "dbc-089",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "PaaS",
       "difficulty": "medium",
       "question": "What is Platform as a Service (PaaS)?",
@@ -3373,7 +3373,7 @@
     },
     {
       "id": "dbc-090",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "SaaS",
       "difficulty": "medium",
       "question": "What is Software as a Service (SaaS)?",
@@ -3413,7 +3413,7 @@
     },
     {
       "id": "dbc-091",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Service model control gradient",
       "difficulty": "hard",
       "question": "Which service model gives the most control but also requires the most effort?",
@@ -3452,7 +3452,7 @@
     },
     {
       "id": "dbc-092",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Public cloud",
       "difficulty": "medium",
       "question": "What is a public cloud?",
@@ -3492,7 +3492,7 @@
     },
     {
       "id": "dbc-093",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Private cloud",
       "difficulty": "medium",
       "question": "What is a private cloud?",
@@ -3532,7 +3532,7 @@
     },
     {
       "id": "dbc-094",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Hybrid cloud",
       "difficulty": "medium",
       "question": "What is a hybrid cloud?",
@@ -3572,7 +3572,7 @@
     },
     {
       "id": "dbc-095",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Community cloud",
       "difficulty": "medium",
       "question": "What is a community cloud?",
@@ -3612,7 +3612,7 @@
     },
     {
       "id": "dbc-096",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "Community cloud example",
       "difficulty": "easy",
       "question": "Which example is given for community cloud?",
@@ -3651,7 +3651,7 @@
     },
     {
       "id": "dbc-097",
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "topic": "NIST note",
       "difficulty": "medium",
       "question": "What does the NIST Cloud Computing Reference Architecture provide according to the note?",
@@ -3690,7 +3690,7 @@
     },
     {
       "id": "dbc-098",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Cloud risk context",
       "difficulty": "medium",
       "question": "Why do new security risks appear when data moves to the cloud?",
@@ -3728,7 +3728,7 @@
     },
     {
       "id": "dbc-099",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Unknown risk profile",
       "difficulty": "medium",
       "question": "What is the unknown risk profile cloud risk?",
@@ -3767,7 +3767,7 @@
     },
     {
       "id": "dbc-100",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Shared technology issues",
       "difficulty": "medium",
       "question": "What is the shared technology issue in public clouds?",
@@ -3806,7 +3806,7 @@
     },
     {
       "id": "dbc-101",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Insecure interfaces and APIs",
       "difficulty": "medium",
       "question": "Why are insecure interfaces and APIs dangerous in the cloud?",
@@ -3845,7 +3845,7 @@
     },
     {
       "id": "dbc-102",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Account hijacking",
       "difficulty": "medium",
       "question": "What is account hijacking in the cloud risk list?",
@@ -3884,7 +3884,7 @@
     },
     {
       "id": "dbc-103",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Data loss or leakage",
       "difficulty": "medium",
       "question": "What causes data loss or leakage in the cloud example?",
@@ -3923,7 +3923,7 @@
     },
     {
       "id": "dbc-104",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Malicious insiders",
       "difficulty": "medium",
       "question": "Who is the malicious insider in the cloud risk list?",
@@ -3962,7 +3962,7 @@
     },
     {
       "id": "dbc-105",
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "topic": "Abuse of cloud services",
       "difficulty": "medium",
       "question": "What is abuse of cloud services?",
@@ -4786,7 +4786,7 @@
       ]
     },
     {
-      "section": "Protecting the Database from Inside: Access Control",
+      "section": "Access Control",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "49-91"
@@ -4814,7 +4814,7 @@
       ]
     },
     {
-      "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
+      "section": "SQL Injection (SQLi)",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "93-139"
@@ -4845,7 +4845,7 @@
       ]
     },
     {
-      "section": "The Last Line of Defense: Database Encryption",
+      "section": "Database Encryption",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "141-156"
@@ -4864,7 +4864,7 @@
       ]
     },
     {
-      "section": "Moving Beyond the Local Server: Cloud Security",
+      "section": "Cloud Security",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "158-197"
@@ -4893,7 +4893,7 @@
       ]
     },
     {
-      "section": "The Dangers of the Cloud (Cloud Security Risks)",
+      "section": "Cloud Security Risks",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "199-211"
