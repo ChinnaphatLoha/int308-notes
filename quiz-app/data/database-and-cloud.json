@@ -483,45 +483,6 @@
       ]
     },
     {
-      "id": "dbc-013",
-      "section": "How Data is Stored and Managed",
-      "topic": "DBMS librarian analogy",
-      "difficulty": "easy",
-      "question": "In the analogy, what is a DBMS like?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A security guard guest list that approves event entry."
-        },
-        {
-          "id": "B",
-          "text": "A private house rented by a cloud database customer."
-        },
-        {
-          "id": "C",
-          "text": "An intelligent librarian who knows how to find, update, or safely store the requested book."
-        },
-        {
-          "id": "D",
-          "text": "A water bill that charges only for what you consume."
-        },
-        {
-          "id": "E",
-          "text": "A hacker who types malicious SQL into a login field."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "The DBMS is compared to a librarian that knows how to locate, update, and store data safely.",
-      "source": {
-        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
-        "lines": "27-31"
-      },
-      "tags": [
-        "dbms",
-        "analogy"
-      ]
-    },
-    {
       "id": "dbc-014",
       "section": "How Data is Stored and Managed",
       "topic": "DBMS layer",
@@ -597,45 +558,6 @@
       "tags": [
         "dbms",
         "data-management"
-      ]
-    },
-    {
-      "id": "dbc-016",
-      "section": "How Data is Stored and Managed",
-      "topic": "Concurrent access analogy",
-      "difficulty": "easy",
-      "question": "Which example is used to explain concurrent access problems?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Two people trying to buy the last airplane seat at the exact same time."
-        },
-        {
-          "id": "B",
-          "text": "Two companies sharing the same cloud provider account."
-        },
-        {
-          "id": "C",
-          "text": "Two disks mirroring the same database block."
-        },
-        {
-          "id": "D",
-          "text": "Two administrators granting a role to support agents."
-        },
-        {
-          "id": "E",
-          "text": "Two firewalls inspecting the same SQL query."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The last airplane seat example shows why simultaneous changes need careful control.",
-      "source": {
-        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
-        "lines": "33-37"
-      },
-      "tags": [
-        "concurrency",
-        "integrity"
       ]
     },
     {
@@ -1105,45 +1027,6 @@
       "tags": [
         "access-control",
         "authorization-table"
-      ]
-    },
-    {
-      "id": "dbc-029",
-      "section": "Protecting the Database from Inside: Access Control",
-      "topic": "Authorization table analogy",
-      "difficulty": "easy",
-      "question": "What analogy is used for the authorization table?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "An intelligent librarian finding a book."
-        },
-        {
-          "id": "B",
-          "text": "A private house rented by one customer."
-        },
-        {
-          "id": "C",
-          "text": "A water or electricity bill."
-        },
-        {
-          "id": "D",
-          "text": "A guest list held by a security guard at a private event."
-        },
-        {
-          "id": "E",
-          "text": "A website search box accepting user input."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "The authorization table is compared to a security guard checking a guest list.",
-      "source": {
-        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
-        "lines": "55-59"
-      },
-      "tags": [
-        "access-control",
-        "analogy"
       ]
     },
     {
@@ -4195,45 +4078,6 @@
       ]
     },
     {
-      "id": "dbc-108",
-      "section": "Protecting Data in the Cloud",
-      "topic": "Housing analogy",
-      "difficulty": "easy",
-      "question": "What housing analogy explains multi-instance versus multi-tenant?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A librarian versus a security guard."
-        },
-        {
-          "id": "B",
-          "text": "A water bill versus an electricity bill."
-        },
-        {
-          "id": "C",
-          "text": "A private house versus an apartment in a shared building."
-        },
-        {
-          "id": "D",
-          "text": "A login box versus a search bar."
-        },
-        {
-          "id": "E",
-          "text": "A hard drive mirror versus a stripe."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "Multi-instance is compared to a private house and multi-tenant to a shared apartment.",
-      "source": {
-        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
-        "lines": "217-230"
-      },
-      "tags": [
-        "cloud-security",
-        "analogy"
-      ]
-    },
-    {
       "id": "dbc-109",
       "section": "Protecting Data in the Cloud",
       "topic": "Multi-instance definition",
@@ -4928,10 +4772,8 @@
         "dbc-010",
         "dbc-011",
         "dbc-012",
-        "dbc-013",
         "dbc-014",
         "dbc-015",
-        "dbc-016",
         "dbc-017",
         "dbc-018",
         "dbc-019",
@@ -4953,7 +4795,6 @@
         "dbc-026",
         "dbc-027",
         "dbc-028",
-        "dbc-029",
         "dbc-030",
         "dbc-031",
         "dbc-032",
@@ -5077,7 +4918,6 @@
       "questionIds": [
         "dbc-106",
         "dbc-107",
-        "dbc-108",
         "dbc-109",
         "dbc-110",
         "dbc-111",

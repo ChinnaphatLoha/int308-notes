@@ -49,45 +49,6 @@
       ]
     },
     {
-      "id": "dc-002",
-      "section": "Data Center Standards",
-      "topic": "Building code analogy",
-      "difficulty": "easy",
-      "question": "Data center standards are compared to which familiar concept?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Building codes for a house, including wiring, plumbing, and fire safety rules."
-        },
-        {
-          "id": "B",
-          "text": "Driver manuals for choosing the fastest route to a house."
-        },
-        {
-          "id": "C",
-          "text": "Restaurant menus that define customer service options."
-        },
-        {
-          "id": "D",
-          "text": "Hospital patient charts that list server temperatures."
-        },
-        {
-          "id": "E",
-          "text": "Office dress codes for staff entering secure rooms."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The standards are compared to building codes, but stricter and specialized for data centers.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "36-38"
-      },
-      "tags": [
-        "standards",
-        "analogy"
-      ]
-    },
-    {
       "id": "dc-003",
       "section": "Data Center Standards",
       "topic": "TIA meaning",
@@ -515,46 +476,6 @@
         "standards",
         "ashrae",
         "ranges"
-      ]
-    },
-    {
-      "id": "dc-014",
-      "section": "Data Center Standards",
-      "topic": "ASHRAE doctor analogy",
-      "difficulty": "hard",
-      "question": "In the ASHRAE doctor analogy, what is the main lesson?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Servers must always run at the same temperature as human patients."
-        },
-        {
-          "id": "B",
-          "text": "Humidity is irrelevant if temperature stays exactly between 36 and 37 degrees C."
-        },
-        {
-          "id": "C",
-          "text": "Equipment may survive outside ideal conditions, but operating near the limits is risky."
-        },
-        {
-          "id": "D",
-          "text": "ASHRAE controls hospital patient care, not data center climate."
-        },
-        {
-          "id": "E",
-          "text": "Allowable ranges are safer than recommended ranges because they are wider."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "The analogy says a patient should be in an ideal range and can survive nearby values, but with risk; this maps to recommended versus allowable ranges.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "57-62"
-      },
-      "tags": [
-        "standards",
-        "analogy",
-        "ashrae"
       ]
     },
     {
@@ -1140,162 +1061,6 @@
       "tags": [
         "tiers",
         "uptime"
-      ]
-    },
-    {
-      "id": "dc-030",
-      "section": "The Tier System",
-      "topic": "Tier I analogy",
-      "difficulty": "easy",
-      "question": "In the road analogy, what represents Tier I?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A house with two roads and automatic route switching."
-        },
-        {
-          "id": "B",
-          "text": "A house with the same road but a spare tire in the car."
-        },
-        {
-          "id": "C",
-          "text": "A house with two roads so one can be used while the other is blocked."
-        },
-        {
-          "id": "D",
-          "text": "A house with one road leading to it; if the road is blocked, you cannot get home."
-        },
-        {
-          "id": "E",
-          "text": "A fully stocked second home ready for immediate use."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "Tier I is compared to a house with one road; a blockage prevents access.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "89-94"
-      },
-      "tags": [
-        "tiers",
-        "analogy"
-      ]
-    },
-    {
-      "id": "dc-031",
-      "section": "The Tier System",
-      "topic": "Tier II analogy",
-      "difficulty": "easy",
-      "question": "What does the spare tire represent in the Tier II analogy?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Automatic fault tolerance across two roads."
-        },
-        {
-          "id": "B",
-          "text": "A complete second data center that takes over immediately."
-        },
-        {
-          "id": "C",
-          "text": "No backup components and no maintenance option."
-        },
-        {
-          "id": "D",
-          "text": "A temperature range defined by ASHRAE."
-        },
-        {
-          "id": "E",
-          "text": "Backup components while still having only the same single road/path."
-        }
-      ],
-      "correctChoiceId": "E",
-      "explanation": "Tier II is still the same road, but with a spare tire, matching backup components on a single path.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "89-94"
-      },
-      "tags": [
-        "tiers",
-        "analogy"
-      ]
-    },
-    {
-      "id": "dc-032",
-      "section": "The Tier System",
-      "topic": "Tier III analogy",
-      "difficulty": "easy",
-      "question": "In the analogy, what does Tier III add?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Two roads, so if one is blocked you take the other without stopping."
-        },
-        {
-          "id": "B",
-          "text": "One road and no spare tire."
-        },
-        {
-          "id": "C",
-          "text": "One road plus a spare tire only."
-        },
-        {
-          "id": "D",
-          "text": "Two roads with automatic route switching before you notice a problem."
-        },
-        {
-          "id": "E",
-          "text": "An empty apartment that must be furnished before use."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "Tier III is represented by two roads, matching multiple paths and maintainability.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "89-94"
-      },
-      "tags": [
-        "tiers",
-        "analogy"
-      ]
-    },
-    {
-      "id": "dc-033",
-      "section": "The Tier System",
-      "topic": "Tier IV analogy",
-      "difficulty": "easy",
-      "question": "In the analogy, what does Tier IV represent?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "One road with no spare tire."
-        },
-        {
-          "id": "B",
-          "text": "Two roads and automatic route switching if a problem is detected ahead."
-        },
-        {
-          "id": "C",
-          "text": "One road with a spare tire."
-        },
-        {
-          "id": "D",
-          "text": "Two roads but manual switching after a shutdown."
-        },
-        {
-          "id": "E",
-          "text": "A single bridge that must be closed for maintenance."
-        }
-      ],
-      "correctChoiceId": "B",
-      "explanation": "Tier IV adds automatic switching, matching fault tolerance.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "89-94"
-      },
-      "tags": [
-        "tiers",
-        "analogy"
       ]
     },
     {
@@ -3049,45 +2814,6 @@
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "215-221"
-      },
-      "tags": [
-        "cooling",
-        "heat"
-      ]
-    },
-    {
-      "id": "dc-079",
-      "section": "Cooling",
-      "topic": "Rack heat analogy",
-      "difficulty": "medium",
-      "question": "A single rack can generate about as much heat as what?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "1 to 2 laptop chargers running simultaneously."
-        },
-        {
-          "id": "B",
-          "text": "30 to 90 raised-floor pedestals."
-        },
-        {
-          "id": "C",
-          "text": "10 to 20 space heaters running simultaneously."
-        },
-        {
-          "id": "D",
-          "text": "40 to 50 km of network fiber."
-        },
-        {
-          "id": "E",
-          "text": "5 to 30 UPS batteries in standby mode."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "The source compares a single rack heat output to 10 to 20 space heaters.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "217-221"
       },
       "tags": [
         "cooling",
@@ -5132,46 +4858,6 @@
       ]
     },
     {
-      "id": "dc-132",
-      "section": "Fire Protection",
-      "topic": "VESDA analogy",
-      "difficulty": "easy",
-      "question": "How does the VESDA analogy contrast it with regular smoke detectors?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Regular detectors wait for smoke to drift up; VESDA actively samples air everywhere all the time."
-        },
-        {
-          "id": "B",
-          "text": "Regular detectors sample air everywhere; VESDA waits for smoke to drift up."
-        },
-        {
-          "id": "C",
-          "text": "Regular detectors use lasers; VESDA uses only human inspection."
-        },
-        {
-          "id": "D",
-          "text": "Regular detectors suppress fires; VESDA only measures humidity."
-        },
-        {
-          "id": "E",
-          "text": "Regular detectors are for data centers; VESDA is for homes only."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The analogy says VESDA actively sniffs air, unlike regular detectors that wait.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "341-341"
-      },
-      "tags": [
-        "fire-protection",
-        "vesda",
-        "analogy"
-      ]
-    },
-    {
       "id": "dc-133",
       "section": "Fire Protection",
       "topic": "Clean agent definition",
@@ -6732,123 +6418,6 @@
       ]
     },
     {
-      "id": "dc-173",
-      "section": "Disaster Recovery",
-      "topic": "DR apartment analogy cold",
-      "difficulty": "easy",
-      "question": "In the DR analogy, what is a cold site compared to?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A furnished apartment where you still need to unpack."
-        },
-        {
-          "id": "B",
-          "text": "An empty apartment you would need to furnish."
-        },
-        {
-          "id": "C",
-          "text": "A fully stocked second home with clothes already in the closet."
-        },
-        {
-          "id": "D",
-          "text": "A house with two roads and automatic route switching."
-        },
-        {
-          "id": "E",
-          "text": "A hospital with specialized systems for patients."
-        }
-      ],
-      "correctChoiceId": "B",
-      "explanation": "The analogy compares a cold site to an empty apartment needing furniture.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "424-424"
-      },
-      "tags": [
-        "disaster-recovery",
-        "analogy"
-      ]
-    },
-    {
-      "id": "dc-174",
-      "section": "Disaster Recovery",
-      "topic": "DR apartment analogy warm",
-      "difficulty": "easy",
-      "question": "In the DR analogy, what is a warm site compared to?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "An empty apartment you would need to furnish."
-        },
-        {
-          "id": "B",
-          "text": "A fully stocked second home with clothes already in the closet."
-        },
-        {
-          "id": "C",
-          "text": "A furnished apartment where you still need to unpack your things."
-        },
-        {
-          "id": "D",
-          "text": "A house with one road and a spare tire."
-        },
-        {
-          "id": "E",
-          "text": "A window AC self-contained cooling unit."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "The analogy compares a warm site to a furnished apartment where you still need to unpack.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "424-424"
-      },
-      "tags": [
-        "disaster-recovery",
-        "analogy"
-      ]
-    },
-    {
-      "id": "dc-175",
-      "section": "Disaster Recovery",
-      "topic": "DR apartment analogy hot",
-      "difficulty": "easy",
-      "question": "In the DR analogy, what is a hot site compared to?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "An empty apartment you would need to furnish."
-        },
-        {
-          "id": "B",
-          "text": "A furnished apartment where you still need to unpack."
-        },
-        {
-          "id": "C",
-          "text": "A hospital room where a patient can survive at risky temperatures."
-        },
-        {
-          "id": "D",
-          "text": "A fully stocked second home with your clothes already in the closet."
-        },
-        {
-          "id": "E",
-          "text": "A house with one blocked road."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "The analogy maps a hot site to a fully stocked second home ready for use.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "424-424"
-      },
-      "tags": [
-        "disaster-recovery",
-        "analogy"
-      ]
-    },
-    {
       "id": "dc-176",
       "section": "Disaster Recovery",
       "topic": "RTO definition",
@@ -7772,10 +7341,6 @@
         "dc-027",
         "dc-028",
         "dc-029",
-        "dc-030",
-        "dc-031",
-        "dc-032",
-        "dc-033",
         "dc-034"
       ]
     },
@@ -7848,7 +7413,6 @@
         "dc-076",
         "dc-077",
         "dc-078",
-        "dc-079",
         "dc-080",
         "dc-081",
         "dc-082",
@@ -7910,7 +7474,6 @@
         "dc-129",
         "dc-130",
         "dc-131",
-        "dc-132",
         "dc-133",
         "dc-134",
         "dc-135",
@@ -7977,9 +7540,7 @@
         "dc-169",
         "dc-170",
         "dc-171",
-        "dc-172",
-        "dc-173",
-        "dc-174"
+        "dc-172"
       ]
     },
     {
@@ -7989,7 +7550,6 @@
         "lines": "396-480"
       },
       "questionIds": [
-        "dc-175",
         "dc-176",
         "dc-177",
         "dc-178",
@@ -8012,21 +7572,7 @@
         "dc-195",
         "dc-196",
         "dc-197",
-        "dc-198",
-        "dc-199",
-        "dc-200",
-        "dc-201",
-        "dc-202",
-        "dc-203",
-        "dc-204",
-        "dc-205",
-        "dc-206",
-        "dc-207",
-        "dc-208",
-        "dc-209",
-        "dc-210",
-        "dc-211",
-        "dc-212"
+        "dc-198"
       ]
     }
   ]

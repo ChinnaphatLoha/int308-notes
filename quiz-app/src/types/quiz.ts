@@ -49,3 +49,23 @@ export type QuizCollection = QuizFile & {
   questionCount: number;
   sectionCount: number;
 };
+
+export type RuntimeQuestion = QuizQuestion & {
+  displayNumber: number; // 1 to N
+  shuffledChoices: Choice[];
+};
+
+export type QuizSettings = {
+  shuffleQuestions: boolean;
+  shuffleChoices: boolean;
+  difficultyFilter: string[]; // e.g. ['easy', 'medium'], empty means all
+  sectionFilter: string[]; // empty means all
+};
+
+export type AnswerState = {
+  choiceId?: Choice['id'];
+  skipped: boolean;
+};
+
+export type AnswerMap = Record<string, AnswerState>;
+
