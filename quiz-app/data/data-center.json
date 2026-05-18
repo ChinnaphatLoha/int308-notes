@@ -11,556 +11,10 @@
   "questions": [
     {
       "id": "dc-001",
-      "section": "What Is a Data Center?",
-      "topic": "Basic definition",
-      "difficulty": "easy",
-      "question": "Which definition best matches the notes definition of a data center?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A physical building that keeps servers running safely 24 hours a day, 365 days a year."
-        },
-        {
-          "id": "B",
-          "text": "A software platform that stores websites, apps, email, and banking records in one database."
-        },
-        {
-          "id": "C",
-          "text": "A normal office floor with extra computers and a faster internet connection."
-        },
-        {
-          "id": "D",
-          "text": "A warehouse used mainly to store boxed computer hardware before shipment."
-        },
-        {
-          "id": "E",
-          "text": "A cybersecurity department that protects servers but does not house physical equipment."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The notes define a data center as the physical building that keeps many servers running safely all the time.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "3-7"
-      },
-      "tags": [
-        "definition",
-        "data-center"
-      ]
-    },
-    {
-      "id": "dc-002",
-      "section": "What Is a Data Center?",
-      "topic": "Servers and services",
-      "difficulty": "easy",
-      "question": "In the notes, what are the computers inside a data center called, and what do they run?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "They are routers, and they only connect office workers to the internet."
-        },
-        {
-          "id": "B",
-          "text": "They are servers, and they run websites, apps, email, and online banking."
-        },
-        {
-          "id": "C",
-          "text": "They are workstations, and they run only employee desktop applications."
-        },
-        {
-          "id": "D",
-          "text": "They are terminals, and they store only offline backup copies."
-        },
-        {
-          "id": "E",
-          "text": "They are clients, and they mainly request services from user devices."
-        }
-      ],
-      "correctChoiceId": "B",
-      "explanation": "The computers are called servers; the examples given are websites, apps, emails, and online banking.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "5-7"
-      },
-      "tags": [
-        "servers",
-        "services"
-      ]
-    },
-    {
-      "id": "dc-003",
-      "section": "What Is a Data Center?",
-      "topic": "Scale analogy",
-      "difficulty": "easy",
-      "question": "The opening analogy compares a data center to what kind of place?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A small office closet that stores documents instead of servers."
-        },
-        {
-          "id": "B",
-          "text": "A public library that stores books and laptops for visitors."
-        },
-        {
-          "id": "C",
-          "text": "A giant, secure warehouse that stores computers instead of boxes."
-        },
-        {
-          "id": "D",
-          "text": "A hospital ward that stores patients instead of networking equipment."
-        },
-        {
-          "id": "E",
-          "text": "A factory line that manufactures new servers continuously."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "The notes introduce the concept with a giant secure warehouse, but the stored items are computers.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "3-5"
-      },
-      "tags": [
-        "analogy",
-        "definition"
-      ]
-    },
-    {
-      "id": "dc-004",
-      "section": "What Is a Data Center?",
-      "topic": "Reliable electricity need",
-      "difficulty": "medium",
-      "question": "Why does the source say a normal office is unsuitable for critical server workloads?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Offices usually supply too much redundant power, which can damage server batteries."
-        },
-        {
-          "id": "B",
-          "text": "Servers need power only during business hours, but offices keep power on all night."
-        },
-        {
-          "id": "C",
-          "text": "Office electricity is too cold and dry for server processors to operate correctly."
-        },
-        {
-          "id": "D",
-          "text": "Even a 1-second power cut can crash critical systems, so constant reliable electricity is required."
-        },
-        {
-          "id": "E",
-          "text": "A power cut is acceptable if the office has fast internet and locked doors."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "One stated requirement is constant, reliable electricity because even a brief power interruption can crash critical systems.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "9-16"
-      },
-      "tags": [
-        "power",
-        "office-comparison"
-      ]
-    },
-    {
-      "id": "dc-005",
-      "section": "What Is a Data Center?",
-      "topic": "Temperature and humidity need",
-      "difficulty": "medium",
-      "question": "Which office limitation is most directly tied to server overheating?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A normal office cannot guarantee enough visitor badges for all employees."
-        },
-        {
-          "id": "B",
-          "text": "A normal office cannot guarantee enough decorative lighting near racks."
-        },
-        {
-          "id": "C",
-          "text": "A normal office cannot guarantee that all websites are reachable from every country."
-        },
-        {
-          "id": "D",
-          "text": "A normal office cannot guarantee that staff will use only biometric logins."
-        },
-        {
-          "id": "E",
-          "text": "A normal office cannot guarantee precise temperature and humidity for heat-producing servers."
-        }
-      ],
-      "correctChoiceId": "E",
-      "explanation": "Servers generate enormous heat and can fail if they overheat, so precise temperature and humidity are required.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "13-18"
-      },
-      "tags": [
-        "cooling",
-        "office-comparison"
-      ]
-    },
-    {
-      "id": "dc-006",
-      "section": "What Is a Data Center?",
-      "topic": "Physical security need",
-      "difficulty": "medium",
-      "question": "Why is physical security listed as a basic server requirement?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Because the machines hold sensitive data, unauthorized physical access could be catastrophic."
-        },
-        {
-          "id": "B",
-          "text": "Because cameras improve the PUE score of a data center."
-        },
-        {
-          "id": "C",
-          "text": "Because physical access is useful only for cooling system repairs."
-        },
-        {
-          "id": "D",
-          "text": "Because sensitive data is stored only on guards personal devices."
-        },
-        {
-          "id": "E",
-          "text": "Because biometric systems replace all cybersecurity controls."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The notes emphasize that physical access matters because servers hold sensitive data.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "15-18"
-      },
-      "tags": [
-        "security",
-        "office-comparison"
-      ]
-    },
-    {
-      "id": "dc-007",
-      "section": "What Is a Data Center?",
-      "topic": "Network requirement",
-      "difficulty": "easy",
-      "question": "What networking requirement does the source connect to users around the world?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A single local network cable so nearby employees can reach printers."
-        },
-        {
-          "id": "B",
-          "text": "Fast, reliable network connections so services can be reached instantly."
-        },
-        {
-          "id": "C",
-          "text": "Low-speed backup internet reserved only for scheduled maintenance windows."
-        },
-        {
-          "id": "D",
-          "text": "A dedicated CCTV network that replaces external internet connectivity."
-        },
-        {
-          "id": "E",
-          "text": "Wireless-only access so server racks do not need cable trays."
-        }
-      ],
-      "correctChoiceId": "B",
-      "explanation": "The notes say data centers need fast, reliable network connections so users around the world can reach services instantly.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "13-18"
-      },
-      "tags": [
-        "network",
-        "connectivity"
-      ]
-    },
-    {
-      "id": "dc-008",
-      "section": "What Is a Data Center?",
-      "topic": "Purpose-built environment",
-      "difficulty": "medium",
-      "question": "What is the core reason data centers exist according to the office comparison?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "They are cheaper office spaces designed to reduce the number of servers needed."
-        },
-        {
-          "id": "B",
-          "text": "They are temporary warehouses designed to store retired equipment safely."
-        },
-        {
-          "id": "C",
-          "text": "They are purpose-built environments designed to keep servers alive and healthy at all times."
-        },
-        {
-          "id": "D",
-          "text": "They are network-only rooms designed to remove the need for power backup."
-        },
-        {
-          "id": "E",
-          "text": "They are software licenses designed to make user devices run faster."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "After listing office limitations, the notes summarize data centers as purpose-built environments for keeping servers alive and healthy.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "17-20"
-      },
-      "tags": [
-        "purpose",
-        "data-center"
-      ]
-    },
-    {
-      "id": "dc-009",
-      "section": "What Is a Data Center?",
-      "topic": "Hospital analogy",
-      "difficulty": "medium",
-      "question": "In the hospital analogy, what role does the data center play for servers?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "It is a waiting room where servers stay idle until users request them."
-        },
-        {
-          "id": "B",
-          "text": "It is an insurance office that pays for outages after failures occur."
-        },
-        {
-          "id": "C",
-          "text": "It is a pharmacy that supplies replacement processors but not electricity."
-        },
-        {
-          "id": "D",
-          "text": "It is a controlled environment with specialized systems such as power, cooling, monitoring, and security."
-        },
-        {
-          "id": "E",
-          "text": "It is a public hallway where any user can access machines directly."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "The analogy compares data centers to hospitals because both provide controlled environments and specialized support systems.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "20-20"
-      },
-      "tags": [
-        "analogy",
-        "systems"
-      ]
-    },
-    {
-      "id": "dc-010",
-      "section": "What Is a Data Center?",
-      "topic": "Safe physical home",
-      "difficulty": "easy",
-      "question": "Which data center provision maps to the need for a safe physical home for equipment?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Industrial air conditioning systems running 24/7."
-        },
-        {
-          "id": "B",
-          "text": "High-speed internet connections to the outside world."
-        },
-        {
-          "id": "C",
-          "text": "Backup generators, battery systems, and multiple power feeds."
-        },
-        {
-          "id": "D",
-          "text": "Staff and software watching every system around the clock."
-        },
-        {
-          "id": "E",
-          "text": "Secure rooms with racks, locked doors, and surveillance."
-        }
-      ],
-      "correctChoiceId": "E",
-      "explanation": "The table maps a safe physical home to secure rooms with racks, locked doors, and surveillance.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "22-30"
-      },
-      "tags": [
-        "physical-security",
-        "facilities"
-      ]
-    },
-    {
-      "id": "dc-011",
-      "section": "What Is a Data Center?",
-      "topic": "Non-stop electricity provision",
-      "difficulty": "easy",
-      "question": "Which provision directly supports non-stop electricity?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Backup generators, battery systems, and multiple power feeds."
-        },
-        {
-          "id": "B",
-          "text": "Secure rooms with racks, locked doors, and surveillance."
-        },
-        {
-          "id": "C",
-          "text": "Industrial air conditioning systems running 24/7."
-        },
-        {
-          "id": "D",
-          "text": "High-speed internet connections to the outside world."
-        },
-        {
-          "id": "E",
-          "text": "Staff and software watching every system around the clock."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The table pairs non-stop electricity with backup generators, battery systems, and multiple power feeds.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "24-30"
-      },
-      "tags": [
-        "power",
-        "facilities"
-      ]
-    },
-    {
-      "id": "dc-012",
-      "section": "What Is a Data Center?",
-      "topic": "Temperature control provision",
-      "difficulty": "easy",
-      "question": "Which facility provision is listed for temperature control?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Multiple power feeds plus generator coils."
-        },
-        {
-          "id": "B",
-          "text": "Industrial air conditioning systems running 24/7."
-        },
-        {
-          "id": "C",
-          "text": "Locked doors, mantraps, and visitor logs only."
-        },
-        {
-          "id": "D",
-          "text": "High-speed internet links to outside users."
-        },
-        {
-          "id": "E",
-          "text": "Database transaction logs copied to a DR site."
-        }
-      ],
-      "correctChoiceId": "B",
-      "explanation": "The notes say temperature control is provided by industrial air conditioning systems that run continuously.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "24-30"
-      },
-      "tags": [
-        "cooling",
-        "facilities"
-      ]
-    },
-    {
-      "id": "dc-013",
-      "section": "What Is a Data Center?",
-      "topic": "Network connectivity provision",
-      "difficulty": "easy",
-      "question": "What does the data center provide for network connectivity?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Perforated tiles that send cold air into aisles."
-        },
-        {
-          "id": "B",
-          "text": "Battery systems that bridge generator startup time."
-        },
-        {
-          "id": "C",
-          "text": "High-speed internet connections to the outside world."
-        },
-        {
-          "id": "D",
-          "text": "FM-200 gas that absorbs heat from fires."
-        },
-        {
-          "id": "E",
-          "text": "An empty building with power and cooling only."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "For network connectivity, the listed provision is high-speed internet connections to the outside world.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "24-30"
-      },
-      "tags": [
-        "network",
-        "facilities"
-      ]
-    },
-    {
-      "id": "dc-014",
-      "section": "What Is a Data Center?",
-      "topic": "Monitoring provision",
-      "difficulty": "easy",
-      "question": "Which provision is associated with monitoring in the introductory table?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Only CCTV cameras recording every visitor at the gate."
-        },
-        {
-          "id": "B",
-          "text": "Only power panels that connect to individual servers."
-        },
-        {
-          "id": "C",
-          "text": "Only a chiller plant located outside the building."
-        },
-        {
-          "id": "D",
-          "text": "Staff and software watching every system around the clock."
-        },
-        {
-          "id": "E",
-          "text": "Only a second disaster recovery location."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "The introductory table says monitoring is provided by staff and software watching systems around the clock.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "24-30"
-      },
-      "tags": [
-        "monitoring",
-        "facilities"
-      ]
-    },
-    {
-      "id": "dc-015",
       "section": "Data Center Standards",
       "topic": "Purpose of standards",
       "difficulty": "easy",
-      "question": "Why do data center standards exist according to the notes?",
+      "question": "Why do data center standards exist?",
       "choices": [
         {
           "id": "A",
@@ -595,11 +49,11 @@
       ]
     },
     {
-      "id": "dc-016",
+      "id": "dc-002",
       "section": "Data Center Standards",
       "topic": "Building code analogy",
       "difficulty": "easy",
-      "question": "The notes compare data center standards to which familiar concept?",
+      "question": "Data center standards are compared to which familiar concept?",
       "choices": [
         {
           "id": "A",
@@ -634,7 +88,7 @@
       ]
     },
     {
-      "id": "dc-017",
+      "id": "dc-003",
       "section": "Data Center Standards",
       "topic": "TIA meaning",
       "difficulty": "easy",
@@ -662,7 +116,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes explicitly expand TIA as Telecommunications Industry Association.",
+      "explanation": "TIA stands for Telecommunications Industry Association.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "40-44"
@@ -673,11 +127,11 @@
       ]
     },
     {
-      "id": "dc-018",
+      "id": "dc-004",
       "section": "Data Center Standards",
       "topic": "TIA-942 role",
       "difficulty": "medium",
-      "question": "How is TIA-942 characterized in the notes?",
+      "question": "How is TIA-942 characterized?",
       "choices": [
         {
           "id": "A",
@@ -712,7 +166,7 @@
       ]
     },
     {
-      "id": "dc-019",
+      "id": "dc-005",
       "section": "Data Center Standards",
       "topic": "TIA room layout",
       "difficulty": "medium",
@@ -751,7 +205,7 @@
       ]
     },
     {
-      "id": "dc-020",
+      "id": "dc-006",
       "section": "Data Center Standards",
       "topic": "TIA cabling",
       "difficulty": "easy",
@@ -790,7 +244,7 @@
       ]
     },
     {
-      "id": "dc-021",
+      "id": "dc-007",
       "section": "Data Center Standards",
       "topic": "TIA electrical design",
       "difficulty": "medium",
@@ -829,7 +283,7 @@
       ]
     },
     {
-      "id": "dc-022",
+      "id": "dc-008",
       "section": "Data Center Standards",
       "topic": "TIA cooling systems",
       "difficulty": "medium",
@@ -868,11 +322,11 @@
       ]
     },
     {
-      "id": "dc-023",
+      "id": "dc-009",
       "section": "Data Center Standards",
       "topic": "TIA fire protection",
       "difficulty": "medium",
-      "question": "What does TIA-942 fire protection cover according to the notes?",
+      "question": "What does TIA-942 fire protection cover?",
       "choices": [
         {
           "id": "A",
@@ -907,7 +361,7 @@
       ]
     },
     {
-      "id": "dc-024",
+      "id": "dc-010",
       "section": "Data Center Standards",
       "topic": "TIA tier system",
       "difficulty": "easy",
@@ -946,11 +400,11 @@
       ]
     },
     {
-      "id": "dc-025",
+      "id": "dc-011",
       "section": "Data Center Standards",
       "topic": "ASHRAE expansion",
       "difficulty": "easy",
-      "question": "What does ASHRAE stand for in the notes?",
+      "question": "What does ASHRAE stand for?",
       "choices": [
         {
           "id": "A",
@@ -974,7 +428,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes expand ASHRAE as the American Society of Heating, Refrigerating and Air-Conditioning Engineers.",
+      "explanation": "ASHRAE stands for American Society of Heating, Refrigerating and Air-Conditioning Engineers.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "53-56"
@@ -985,7 +439,7 @@
       ]
     },
     {
-      "id": "dc-026",
+      "id": "dc-012",
       "section": "Data Center Standards",
       "topic": "ASHRAE role",
       "difficulty": "medium",
@@ -1024,11 +478,11 @@
       ]
     },
     {
-      "id": "dc-027",
+      "id": "dc-013",
       "section": "Data Center Standards",
       "topic": "Recommended vs allowable range",
       "difficulty": "medium",
-      "question": "How do the notes distinguish ASHRAE recommended and allowable ranges?",
+      "question": "How are ASHRAE recommended and allowable ranges distinguished?",
       "choices": [
         {
           "id": "A",
@@ -1064,7 +518,7 @@
       ]
     },
     {
-      "id": "dc-028",
+      "id": "dc-014",
       "section": "Data Center Standards",
       "topic": "ASHRAE doctor analogy",
       "difficulty": "hard",
@@ -1104,7 +558,7 @@
       ]
     },
     {
-      "id": "dc-029",
+      "id": "dc-015",
       "section": "Data Center Standards",
       "topic": "NFPA expansion",
       "difficulty": "easy",
@@ -1132,7 +586,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The notes expand NFPA as National Fire Protection Association.",
+      "explanation": "NFPA stands for National Fire Protection Association.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "63-66"
@@ -1143,11 +597,11 @@
       ]
     },
     {
-      "id": "dc-030",
+      "id": "dc-016",
       "section": "Data Center Standards",
       "topic": "NFPA general role",
       "difficulty": "easy",
-      "question": "What general area do NFPA rules cover in the notes?",
+      "question": "What general area do NFPA rules cover?",
       "choices": [
         {
           "id": "A",
@@ -1182,7 +636,7 @@
       ]
     },
     {
-      "id": "dc-031",
+      "id": "dc-017",
       "section": "Data Center Standards",
       "topic": "NFPA 75",
       "difficulty": "medium",
@@ -1221,7 +675,7 @@
       ]
     },
     {
-      "id": "dc-032",
+      "id": "dc-018",
       "section": "Data Center Standards",
       "topic": "NFPA 76",
       "difficulty": "medium",
@@ -1260,7 +714,7 @@
       ]
     },
     {
-      "id": "dc-033",
+      "id": "dc-019",
       "section": "Data Center Standards",
       "topic": "NFPA 70 NEC",
       "difficulty": "medium",
@@ -1299,7 +753,7 @@
       ]
     },
     {
-      "id": "dc-034",
+      "id": "dc-020",
       "section": "Data Center Standards",
       "topic": "NFPA 13",
       "difficulty": "medium",
@@ -1338,11 +792,11 @@
       ]
     },
     {
-      "id": "dc-035",
+      "id": "dc-021",
       "section": "The Tier System",
       "topic": "Creator of tiers",
       "difficulty": "easy",
-      "question": "Who created the Tiers ranking system described in the notes?",
+      "question": "Who created the Tiers ranking system?",
       "choices": [
         {
           "id": "A",
@@ -1366,7 +820,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes state that the Uptime Institute created the Tiers ranking system.",
+      "explanation": "The Uptime Institute created the Tiers ranking system.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "76-80"
@@ -1377,7 +831,7 @@
       ]
     },
     {
-      "id": "dc-036",
+      "id": "dc-022",
       "section": "The Tier System",
       "topic": "Tier purpose",
       "difficulty": "easy",
@@ -1416,7 +870,7 @@
       ]
     },
     {
-      "id": "dc-037",
+      "id": "dc-023",
       "section": "The Tier System",
       "topic": "Tier I row",
       "difficulty": "medium",
@@ -1455,7 +909,7 @@
       ]
     },
     {
-      "id": "dc-038",
+      "id": "dc-024",
       "section": "The Tier System",
       "topic": "Tier II row",
       "difficulty": "medium",
@@ -1494,7 +948,7 @@
       ]
     },
     {
-      "id": "dc-039",
+      "id": "dc-025",
       "section": "The Tier System",
       "topic": "Tier III row",
       "difficulty": "medium",
@@ -1533,7 +987,7 @@
       ]
     },
     {
-      "id": "dc-040",
+      "id": "dc-026",
       "section": "The Tier System",
       "topic": "Tier IV row",
       "difficulty": "medium",
@@ -1572,7 +1026,7 @@
       ]
     },
     {
-      "id": "dc-041",
+      "id": "dc-027",
       "section": "The Tier System",
       "topic": "Tier uptime comparison",
       "difficulty": "medium",
@@ -1596,7 +1050,7 @@
         },
         {
           "id": "E",
-          "text": "No tier in the notes."
+          "text": "Not a recognized tier."
         }
       ],
       "correctChoiceId": "A",
@@ -1611,7 +1065,7 @@
       ]
     },
     {
-      "id": "dc-042",
+      "id": "dc-028",
       "section": "The Tier System",
       "topic": "Tier IV downtime",
       "difficulty": "medium",
@@ -1650,7 +1104,7 @@
       ]
     },
     {
-      "id": "dc-043",
+      "id": "dc-029",
       "section": "The Tier System",
       "topic": "Tier II downtime",
       "difficulty": "medium",
@@ -1689,7 +1143,7 @@
       ]
     },
     {
-      "id": "dc-044",
+      "id": "dc-030",
       "section": "The Tier System",
       "topic": "Tier I analogy",
       "difficulty": "easy",
@@ -1728,7 +1182,7 @@
       ]
     },
     {
-      "id": "dc-045",
+      "id": "dc-031",
       "section": "The Tier System",
       "topic": "Tier II analogy",
       "difficulty": "easy",
@@ -1767,7 +1221,7 @@
       ]
     },
     {
-      "id": "dc-046",
+      "id": "dc-032",
       "section": "The Tier System",
       "topic": "Tier III analogy",
       "difficulty": "easy",
@@ -1806,7 +1260,7 @@
       ]
     },
     {
-      "id": "dc-047",
+      "id": "dc-033",
       "section": "The Tier System",
       "topic": "Tier IV analogy",
       "difficulty": "easy",
@@ -1845,7 +1299,7 @@
       ]
     },
     {
-      "id": "dc-048",
+      "id": "dc-034",
       "section": "The Tier System",
       "topic": "Tier cost takeaway",
       "difficulty": "medium",
@@ -1885,7 +1339,7 @@
       ]
     },
     {
-      "id": "dc-049",
+      "id": "dc-035",
       "section": "The Tier System",
       "topic": "Tier use cases",
       "difficulty": "medium",
@@ -1913,7 +1367,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The notes say banks and hospitals typically need Tier III or IV, while a small company blog might be fine with Tier I.",
+      "explanation": "Banks and hospitals typically need Tier III or IV, while a small company blog might be fine with Tier I.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "96-96"
@@ -1924,11 +1378,11 @@
       ]
     },
     {
-      "id": "dc-050",
+      "id": "dc-036",
       "section": "The Tier System",
       "topic": "Small blog tier",
       "difficulty": "easy",
-      "question": "What tier might be sufficient for a small company blog according to the notes?",
+      "question": "What tier might be sufficient for a small company blog?",
       "choices": [
         {
           "id": "A",
@@ -1952,7 +1406,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes contrast banks and hospitals with a small company blog that might be fine with Tier I.",
+      "explanation": "The guide contrast banks and hospitals with a small company blog that might be fine with Tier I.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "96-96"
@@ -1963,7 +1417,7 @@
       ]
     },
     {
-      "id": "dc-051",
+      "id": "dc-037",
       "section": "The Tier System",
       "topic": "Downtime planned maintenance",
       "difficulty": "medium",
@@ -2002,7 +1456,7 @@
       ]
     },
     {
-      "id": "dc-052",
+      "id": "dc-038",
       "section": "The Tier System",
       "topic": "Downtime server software",
       "difficulty": "medium",
@@ -2041,7 +1495,7 @@
       ]
     },
     {
-      "id": "dc-053",
+      "id": "dc-039",
       "section": "The Tier System",
       "topic": "Downtime human error",
       "difficulty": "medium",
@@ -2080,7 +1534,7 @@
       ]
     },
     {
-      "id": "dc-054",
+      "id": "dc-040",
       "section": "The Tier System",
       "topic": "Downtime hardware failure",
       "difficulty": "medium",
@@ -2119,7 +1573,7 @@
       ]
     },
     {
-      "id": "dc-055",
+      "id": "dc-041",
       "section": "The Tier System",
       "topic": "Downtime five percent causes",
       "difficulty": "hard",
@@ -2158,11 +1612,11 @@
       ]
     },
     {
-      "id": "dc-056",
+      "id": "dc-042",
       "section": "The Tier System",
       "topic": "Sixty percent downtime insight",
       "difficulty": "medium",
-      "question": "What does the notes say accounts for 60% of downtime?",
+      "question": "What accounts for 60% of downtime?",
       "choices": [
         {
           "id": "A",
@@ -2186,7 +1640,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes highlight that planned work and software problems together account for 60% of downtime.",
+      "explanation": "The guide highlight that planned work and software problems together account for 60% of downtime.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "112-112"
@@ -2197,11 +1651,11 @@
       ]
     },
     {
-      "id": "dc-057",
+      "id": "dc-043",
       "section": "The Tier System",
       "topic": "Management importance",
       "difficulty": "medium",
-      "question": "What conclusion does the notes draw from the downtime causes?",
+      "question": "What conclusion is drawn from the downtime causes?",
       "choices": [
         {
           "id": "A",
@@ -2225,7 +1679,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "Because many outages come from planned work and software, the notes emphasize management and processes.",
+      "explanation": "Because many outages come from planned work and software, the guide emphasize management and processes.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "112-112"
@@ -2236,7 +1690,7 @@
       ]
     },
     {
-      "id": "dc-058",
+      "id": "dc-044",
       "section": "The Tier System",
       "topic": "Reliability pillar",
       "difficulty": "easy",
@@ -2275,7 +1729,7 @@
       ]
     },
     {
-      "id": "dc-059",
+      "id": "dc-045",
       "section": "The Tier System",
       "topic": "Resiliency pillar",
       "difficulty": "easy",
@@ -2314,7 +1768,7 @@
       ]
     },
     {
-      "id": "dc-060",
+      "id": "dc-046",
       "section": "The Tier System",
       "topic": "Availability pillar",
       "difficulty": "easy",
@@ -2352,7 +1806,7 @@
       ]
     },
     {
-      "id": "dc-061",
+      "id": "dc-047",
       "section": "The Tier System",
       "topic": "Serviceability pillar",
       "difficulty": "easy",
@@ -2391,7 +1845,7 @@
       ]
     },
     {
-      "id": "dc-062",
+      "id": "dc-048",
       "section": "The Physical Building",
       "topic": "Interior appearance",
       "difficulty": "easy",
@@ -2419,7 +1873,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes describe long rows of tall metal cabinets called racks.",
+      "explanation": "The guide describe long rows of tall metal cabinets called racks.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "125-131"
@@ -2430,7 +1884,7 @@
       ]
     },
     {
-      "id": "dc-063",
+      "id": "dc-049",
       "section": "The Physical Building",
       "topic": "Server rack purpose",
       "difficulty": "easy",
@@ -2469,7 +1923,7 @@
       ]
     },
     {
-      "id": "dc-064",
+      "id": "dc-050",
       "section": "The Physical Building",
       "topic": "Cable trays and ladder racks",
       "difficulty": "easy",
@@ -2508,7 +1962,7 @@
       ]
     },
     {
-      "id": "dc-065",
+      "id": "dc-051",
       "section": "The Physical Building",
       "topic": "Aisles purpose",
       "difficulty": "easy",
@@ -2547,7 +2001,7 @@
       ]
     },
     {
-      "id": "dc-066",
+      "id": "dc-052",
       "section": "The Physical Building",
       "topic": "Ramps purpose",
       "difficulty": "easy",
@@ -2586,7 +2040,7 @@
       ]
     },
     {
-      "id": "dc-067",
+      "id": "dc-053",
       "section": "The Physical Building",
       "topic": "Structural floor",
       "difficulty": "easy",
@@ -2625,7 +2079,7 @@
       ]
     },
     {
-      "id": "dc-068",
+      "id": "dc-054",
       "section": "The Physical Building",
       "topic": "Raised floor height",
       "difficulty": "medium",
@@ -2653,7 +2107,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The notes state that most raised floors are about 30 to 90 cm above the actual concrete floor.",
+      "explanation": "Most raised floors are about 30 to 90 cm above the actual concrete floor.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "139-141"
@@ -2664,7 +2118,7 @@
       ]
     },
     {
-      "id": "dc-069",
+      "id": "dc-055",
       "section": "The Physical Building",
       "topic": "Raised floor support",
       "difficulty": "medium",
@@ -2703,7 +2157,7 @@
       ]
     },
     {
-      "id": "dc-070",
+      "id": "dc-056",
       "section": "The Physical Building",
       "topic": "Plenum definition",
       "difficulty": "easy",
@@ -2742,7 +2196,7 @@
       ]
     },
     {
-      "id": "dc-071",
+      "id": "dc-057",
       "section": "The Physical Building",
       "topic": "Cold air delivery through plenum",
       "difficulty": "medium",
@@ -2770,7 +2224,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes explain that cold air moves through the plenum and up through perforated tiles.",
+      "explanation": "The guide explain that cold air moves through the plenum and up through perforated tiles.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "143-147"
@@ -2782,7 +2236,7 @@
       ]
     },
     {
-      "id": "dc-072",
+      "id": "dc-058",
       "section": "The Physical Building",
       "topic": "Raised floor cable routing",
       "difficulty": "easy",
@@ -2821,7 +2275,7 @@
       ]
     },
     {
-      "id": "dc-073",
+      "id": "dc-059",
       "section": "The Physical Building",
       "topic": "Raised floor grounding",
       "difficulty": "medium",
@@ -2860,7 +2314,7 @@
       ]
     },
     {
-      "id": "dc-074",
+      "id": "dc-060",
       "section": "The Physical Building",
       "topic": "Solid tiles",
       "difficulty": "easy",
@@ -2899,7 +2353,7 @@
       ]
     },
     {
-      "id": "dc-075",
+      "id": "dc-061",
       "section": "The Physical Building",
       "topic": "Perforated tiles",
       "difficulty": "easy",
@@ -2939,7 +2393,7 @@
       ]
     },
     {
-      "id": "dc-076",
+      "id": "dc-062",
       "section": "Power",
       "topic": "Power criticality",
       "difficulty": "easy",
@@ -2967,7 +2421,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes say everything stops if the data center loses power.",
+      "explanation": "Everything stops if the data center loses power.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "155-161"
@@ -2978,7 +2432,7 @@
       ]
     },
     {
-      "id": "dc-077",
+      "id": "dc-063",
       "section": "Power",
       "topic": "Power protection layers",
       "difficulty": "medium",
@@ -3006,7 +2460,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes explain that multiple protection layers back each other up.",
+      "explanation": "The guide explain that multiple protection layers back each other up.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "157-161"
@@ -3017,7 +2471,7 @@
       ]
     },
     {
-      "id": "dc-078",
+      "id": "dc-064",
       "section": "Power",
       "topic": "Power chain order",
       "difficulty": "medium",
@@ -3056,7 +2510,7 @@
       ]
     },
     {
-      "id": "dc-079",
+      "id": "dc-065",
       "section": "Power",
       "topic": "Utility power",
       "difficulty": "easy",
@@ -3095,7 +2549,7 @@
       ]
     },
     {
-      "id": "dc-080",
+      "id": "dc-066",
       "section": "Power",
       "topic": "ATS function",
       "difficulty": "medium",
@@ -3134,7 +2588,7 @@
       ]
     },
     {
-      "id": "dc-081",
+      "id": "dc-067",
       "section": "Power",
       "topic": "STS function",
       "difficulty": "medium",
@@ -3173,7 +2627,7 @@
       ]
     },
     {
-      "id": "dc-082",
+      "id": "dc-068",
       "section": "Power",
       "topic": "UPS purpose",
       "difficulty": "medium",
@@ -3212,11 +2666,11 @@
       ]
     },
     {
-      "id": "dc-083",
+      "id": "dc-069",
       "section": "Power",
       "topic": "UPS runtime",
       "difficulty": "medium",
-      "question": "How long does the UPS keep systems running according to the notes?",
+      "question": "How long does the UPS typically keep systems running?",
       "choices": [
         {
           "id": "A",
@@ -3240,7 +2694,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The notes say the UPS keeps everything running for 5 to 30 minutes.",
+      "explanation": "The UPS keeps everything running for 5 to 30 minutes.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "186-191"
@@ -3251,7 +2705,7 @@
       ]
     },
     {
-      "id": "dc-084",
+      "id": "dc-070",
       "section": "Power",
       "topic": "Generator role",
       "difficulty": "easy",
@@ -3290,7 +2744,7 @@
       ]
     },
     {
-      "id": "dc-085",
+      "id": "dc-071",
       "section": "Power",
       "topic": "Generator parts",
       "difficulty": "medium",
@@ -3329,7 +2783,7 @@
       ]
     },
     {
-      "id": "dc-086",
+      "id": "dc-072",
       "section": "Power",
       "topic": "PDU role",
       "difficulty": "medium",
@@ -3368,11 +2822,11 @@
       ]
     },
     {
-      "id": "dc-087",
+      "id": "dc-073",
       "section": "Power",
       "topic": "Power panels",
       "difficulty": "easy",
-      "question": "What are power panels in the notes?",
+      "question": "What are power panels?",
       "choices": [
         {
           "id": "A",
@@ -3407,7 +2861,7 @@
       ]
     },
     {
-      "id": "dc-088",
+      "id": "dc-074",
       "section": "Power",
       "topic": "Single-phase power",
       "difficulty": "easy",
@@ -3446,7 +2900,7 @@
       ]
     },
     {
-      "id": "dc-089",
+      "id": "dc-075",
       "section": "Power",
       "topic": "Three-phase power",
       "difficulty": "easy",
@@ -3485,11 +2939,11 @@
       ]
     },
     {
-      "id": "dc-090",
+      "id": "dc-076",
       "section": "Power",
       "topic": "Three layers summary",
       "difficulty": "medium",
-      "question": "Which summary matches the notes minimum power backup layers?",
+      "question": "Which summary matches the minimum power backup layers?",
       "choices": [
         {
           "id": "A",
@@ -3524,7 +2978,7 @@
       ]
     },
     {
-      "id": "dc-091",
+      "id": "dc-077",
       "section": "Power",
       "topic": "Grid down for days",
       "difficulty": "medium",
@@ -3552,7 +3006,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes say that even if the power grid goes down for days, the layered power system keeps the data center on.",
+      "explanation": "Even if the power grid goes down for days, the layered power system keeps the data center on.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "209-211"
@@ -3563,7 +3017,7 @@
       ]
     },
     {
-      "id": "dc-092",
+      "id": "dc-078",
       "section": "Cooling",
       "topic": "Heat generation scale",
       "difficulty": "easy",
@@ -3591,7 +3045,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes emphasize the heat from thousands of servers running in tightly packed racks.",
+      "explanation": "The heat from thousands of servers running in tightly packed racks.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "215-221"
@@ -3602,7 +3056,7 @@
       ]
     },
     {
-      "id": "dc-093",
+      "id": "dc-079",
       "section": "Cooling",
       "topic": "Rack heat analogy",
       "difficulty": "medium",
@@ -3641,7 +3095,7 @@
       ]
     },
     {
-      "id": "dc-094",
+      "id": "dc-080",
       "section": "Cooling",
       "topic": "Overheating consequence",
       "difficulty": "easy",
@@ -3680,7 +3134,7 @@
       ]
     },
     {
-      "id": "dc-095",
+      "id": "dc-081",
       "section": "Cooling",
       "topic": "Performance degradation",
       "difficulty": "medium",
@@ -3708,7 +3162,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes state that processors slow down to reduce heat, causing performance degradation.",
+      "explanation": "Processors slow down to reduce heat, causing performance degradation.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "222-225"
@@ -3719,11 +3173,11 @@
       ]
     },
     {
-      "id": "dc-096",
+      "id": "dc-082",
       "section": "Cooling",
       "topic": "Hardware lifespan",
       "difficulty": "easy",
-      "question": "According to the notes, what is the number one enemy of electronics?",
+      "question": "What is the number one enemy of electronics?",
       "choices": [
         {
           "id": "A",
@@ -3747,7 +3201,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes say hardware lifespan shrinks because heat is the number one enemy of electronics.",
+      "explanation": "Hardware lifespan shrinks because heat is the number one enemy of electronics.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "222-225"
@@ -3758,7 +3212,7 @@
       ]
     },
     {
-      "id": "dc-097",
+      "id": "dc-083",
       "section": "Cooling",
       "topic": "Service outage from cooling",
       "difficulty": "easy",
@@ -3797,7 +3251,7 @@
       ]
     },
     {
-      "id": "dc-098",
+      "id": "dc-084",
       "section": "Cooling",
       "topic": "ASHRAE temperature range",
       "difficulty": "medium",
@@ -3837,7 +3291,7 @@
       ]
     },
     {
-      "id": "dc-099",
+      "id": "dc-085",
       "section": "Cooling",
       "topic": "ASHRAE humidity range",
       "difficulty": "medium",
@@ -3876,7 +3330,7 @@
       ]
     },
     {
-      "id": "dc-100",
+      "id": "dc-086",
       "section": "Cooling",
       "topic": "Dew point",
       "difficulty": "medium",
@@ -3915,7 +3369,7 @@
       ]
     },
     {
-      "id": "dc-101",
+      "id": "dc-087",
       "section": "Cooling",
       "topic": "Humidity too dry",
       "difficulty": "medium",
@@ -3954,7 +3408,7 @@
       ]
     },
     {
-      "id": "dc-102",
+      "id": "dc-088",
       "section": "Cooling",
       "topic": "Humidity too humid",
       "difficulty": "medium",
@@ -3993,7 +3447,7 @@
       ]
     },
     {
-      "id": "dc-103",
+      "id": "dc-089",
       "section": "Cooling",
       "topic": "PAC vs regular AC",
       "difficulty": "medium",
@@ -4032,7 +3486,7 @@
       ]
     },
     {
-      "id": "dc-104",
+      "id": "dc-090",
       "section": "Cooling",
       "topic": "Regular AC purpose",
       "difficulty": "medium",
@@ -4060,7 +3514,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The notes contrast regular AC for people and moisture removal with PAC for servers and heat.",
+      "explanation": "The guide contrast regular AC for people and moisture removal with PAC for servers and heat.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "239-242"
@@ -4071,7 +3525,7 @@
       ]
     },
     {
-      "id": "dc-105",
+      "id": "dc-091",
       "section": "Cooling",
       "topic": "SHR",
       "difficulty": "medium",
@@ -4111,7 +3565,7 @@
       ]
     },
     {
-      "id": "dc-106",
+      "id": "dc-092",
       "section": "Cooling",
       "topic": "PAC humidity management",
       "difficulty": "easy",
@@ -4151,7 +3605,7 @@
       ]
     },
     {
-      "id": "dc-107",
+      "id": "dc-093",
       "section": "Cooling",
       "topic": "PAC air pressure control",
       "difficulty": "medium",
@@ -4191,7 +3645,7 @@
       ]
     },
     {
-      "id": "dc-108",
+      "id": "dc-094",
       "section": "Cooling",
       "topic": "CRAC method",
       "difficulty": "medium",
@@ -4230,7 +3684,7 @@
       ]
     },
     {
-      "id": "dc-109",
+      "id": "dc-095",
       "section": "Cooling",
       "topic": "CRAH method",
       "difficulty": "medium",
@@ -4269,7 +3723,7 @@
       ]
     },
     {
-      "id": "dc-110",
+      "id": "dc-096",
       "section": "Cooling",
       "topic": "CRAC vs CRAH efficiency",
       "difficulty": "medium",
@@ -4309,7 +3763,7 @@
       ]
     },
     {
-      "id": "dc-111",
+      "id": "dc-097",
       "section": "Cooling",
       "topic": "CRAC vs CRAH installation cost",
       "difficulty": "medium",
@@ -4333,7 +3787,7 @@
         },
         {
           "id": "E",
-          "text": "Installation cost is not compared in the notes."
+          "text": "Installation cost is not compared."
         }
       ],
       "correctChoiceId": "A",
@@ -4348,7 +3802,7 @@
       ]
     },
     {
-      "id": "dc-112",
+      "id": "dc-098",
       "section": "Cooling",
       "topic": "CRAC vs CRAH operating cost",
       "difficulty": "medium",
@@ -4387,7 +3841,7 @@
       ]
     },
     {
-      "id": "dc-113",
+      "id": "dc-099",
       "section": "Cooling",
       "topic": "CRAC vs CRAH maintenance",
       "difficulty": "medium",
@@ -4426,7 +3880,7 @@
       ]
     },
     {
-      "id": "dc-114",
+      "id": "dc-100",
       "section": "Cooling",
       "topic": "CRAC vs CRAH best fit",
       "difficulty": "medium",
@@ -4466,11 +3920,11 @@
       ]
     },
     {
-      "id": "dc-115",
+      "id": "dc-101",
       "section": "Cooling",
       "topic": "CRAC memory aid",
       "difficulty": "easy",
-      "question": "What memory aid does the notes give for CRAC?",
+      "question": "What is a memory aid for CRAC?",
       "choices": [
         {
           "id": "A",
@@ -4494,7 +3948,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes summarize CRAC as a self-contained unit like window AC.",
+      "explanation": "CRAC as a self-contained unit like window AC.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "265-267"
@@ -4505,11 +3959,11 @@
       ]
     },
     {
-      "id": "dc-116",
+      "id": "dc-102",
       "section": "Cooling",
       "topic": "CRAH memory aid",
       "difficulty": "easy",
-      "question": "What memory aid does the notes give for CRAH?",
+      "question": "What is a memory aid for CRAH?",
       "choices": [
         {
           "id": "A",
@@ -4533,7 +3987,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes say CRAH is part of a larger system, comparable to central air.",
+      "explanation": "CRAH is part of a larger system, comparable to central air.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "265-267"
@@ -4544,7 +3998,7 @@
       ]
     },
     {
-      "id": "dc-117",
+      "id": "dc-103",
       "section": "Cooling",
       "topic": "In-row cooling",
       "difficulty": "medium",
@@ -4583,7 +4037,7 @@
       ]
     },
     {
-      "id": "dc-118",
+      "id": "dc-104",
       "section": "Cooling",
       "topic": "Liquid cooling",
       "difficulty": "medium",
@@ -4622,7 +4076,7 @@
       ]
     },
     {
-      "id": "dc-119",
+      "id": "dc-105",
       "section": "Cooling",
       "topic": "Hot/cold aisle arrangement",
       "difficulty": "medium",
@@ -4661,7 +4115,7 @@
       ]
     },
     {
-      "id": "dc-120",
+      "id": "dc-106",
       "section": "Cooling",
       "topic": "Cold aisle server side",
       "difficulty": "easy",
@@ -4700,7 +4154,7 @@
       ]
     },
     {
-      "id": "dc-121",
+      "id": "dc-107",
       "section": "Cooling",
       "topic": "Hot aisle server side",
       "difficulty": "easy",
@@ -4739,7 +4193,7 @@
       ]
     },
     {
-      "id": "dc-122",
+      "id": "dc-108",
       "section": "Cooling",
       "topic": "Perforated tiles cold aisle",
       "difficulty": "medium",
@@ -4778,7 +4232,7 @@
       ]
     },
     {
-      "id": "dc-123",
+      "id": "dc-109",
       "section": "Cooling",
       "topic": "Hot air return path",
       "difficulty": "medium",
@@ -4806,7 +4260,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The notes describe the hot air rising, being captured, cooled, and returned under the floor.",
+      "explanation": "The guide describe the hot air rising, being captured, cooled, and returned under the floor.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "278-283"
@@ -4817,7 +4271,7 @@
       ]
     },
     {
-      "id": "dc-124",
+      "id": "dc-110",
       "section": "Cooling",
       "topic": "Containment purpose",
       "difficulty": "medium",
@@ -4856,7 +4310,7 @@
       ]
     },
     {
-      "id": "dc-125",
+      "id": "dc-111",
       "section": "Cooling",
       "topic": "HAC enclosed aisle",
       "difficulty": "medium",
@@ -4895,7 +4349,7 @@
       ]
     },
     {
-      "id": "dc-126",
+      "id": "dc-112",
       "section": "Cooling",
       "topic": "CAC enclosed aisle",
       "difficulty": "medium",
@@ -4934,7 +4388,7 @@
       ]
     },
     {
-      "id": "dc-127",
+      "id": "dc-113",
       "section": "Cooling",
       "topic": "HAC operation",
       "difficulty": "medium",
@@ -4973,7 +4427,7 @@
       ]
     },
     {
-      "id": "dc-128",
+      "id": "dc-114",
       "section": "Cooling",
       "topic": "CAC operation",
       "difficulty": "medium",
@@ -5012,7 +4466,7 @@
       ]
     },
     {
-      "id": "dc-129",
+      "id": "dc-115",
       "section": "Cooling",
       "topic": "HAC vs CAC efficiency",
       "difficulty": "medium",
@@ -5051,7 +4505,7 @@
       ]
     },
     {
-      "id": "dc-130",
+      "id": "dc-116",
       "section": "Cooling",
       "topic": "HAC vs CAC complexity",
       "difficulty": "medium",
@@ -5090,7 +4544,7 @@
       ]
     },
     {
-      "id": "dc-131",
+      "id": "dc-117",
       "section": "Cooling",
       "topic": "HAC vs CAC best fit",
       "difficulty": "medium",
@@ -5129,7 +4583,7 @@
       ]
     },
     {
-      "id": "dc-132",
+      "id": "dc-118",
       "section": "Cooling",
       "topic": "PUE definition",
       "difficulty": "easy",
@@ -5168,7 +4622,7 @@
       ]
     },
     {
-      "id": "dc-133",
+      "id": "dc-119",
       "section": "Cooling",
       "topic": "PUE purpose",
       "difficulty": "medium",
@@ -5207,7 +4661,7 @@
       ]
     },
     {
-      "id": "dc-134",
+      "id": "dc-120",
       "section": "Cooling",
       "topic": "PUE formula",
       "difficulty": "medium",
@@ -5247,7 +4701,7 @@
       ]
     },
     {
-      "id": "dc-135",
+      "id": "dc-121",
       "section": "Cooling",
       "topic": "PUE 1.0",
       "difficulty": "easy",
@@ -5275,7 +4729,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes say PUE 1.0 is perfect because all power goes to servers.",
+      "explanation": "PUE 1.0 is perfect because all power goes to servers.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "316-318"
@@ -5286,7 +4740,7 @@
       ]
     },
     {
-      "id": "dc-136",
+      "id": "dc-122",
       "section": "Cooling",
       "topic": "PUE 2.0",
       "difficulty": "medium",
@@ -5325,7 +4779,7 @@
       ]
     },
     {
-      "id": "dc-137",
+      "id": "dc-123",
       "section": "Cooling",
       "topic": "Good modern PUE",
       "difficulty": "medium",
@@ -5353,7 +4807,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes describe a good modern PUE as 1.2 to 1.4.",
+      "explanation": "The guide describe a good modern PUE as 1.2 to 1.4.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "316-318"
@@ -5364,11 +4818,11 @@
       ]
     },
     {
-      "id": "dc-138",
+      "id": "dc-124",
       "section": "Cooling",
       "topic": "PUE calculation example",
       "difficulty": "medium",
-      "question": "If total facility power is 10 MW and IT equipment power is 7 MW, what PUE is given in the notes?",
+      "question": "If total facility power is 10 MW and IT equipment power is 7 MW, what PUE is given?",
       "choices": [
         {
           "id": "A",
@@ -5404,11 +4858,11 @@
       ]
     },
     {
-      "id": "dc-139",
+      "id": "dc-125",
       "section": "Cooling",
       "topic": "PUE overhead example",
       "difficulty": "hard",
-      "question": "In the 10 MW total and 7 MW IT example, what does the notes say about overhead per server watt?",
+      "question": "In the 10 MW total and 7 MW IT example, what does the guide say about overhead per server watt?",
       "choices": [
         {
           "id": "A",
@@ -5444,7 +4898,7 @@
       ]
     },
     {
-      "id": "dc-140",
+      "id": "dc-126",
       "section": "Fire Protection",
       "topic": "Fire suppression challenge",
       "difficulty": "easy",
@@ -5472,7 +4926,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes state that water can destroy servers just like fire can.",
+      "explanation": "Water can destroy servers just like fire can.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "326-333"
@@ -5483,7 +4937,7 @@
       ]
     },
     {
-      "id": "dc-141",
+      "id": "dc-127",
       "section": "Fire Protection",
       "topic": "Fire detection requirement",
       "difficulty": "medium",
@@ -5511,7 +4965,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes say data centers must detect fire extremely early before flames appear.",
+      "explanation": "Data centers must detect fire extremely early before flames appear.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "328-333"
@@ -5522,7 +4976,7 @@
       ]
     },
     {
-      "id": "dc-142",
+      "id": "dc-128",
       "section": "Fire Protection",
       "topic": "Fire suppression requirement",
       "difficulty": "medium",
@@ -5561,7 +5015,7 @@
       ]
     },
     {
-      "id": "dc-143",
+      "id": "dc-129",
       "section": "Fire Protection",
       "topic": "VESDA expansion",
       "difficulty": "easy",
@@ -5600,7 +5054,7 @@
       ]
     },
     {
-      "id": "dc-144",
+      "id": "dc-130",
       "section": "Fire Protection",
       "topic": "VESDA operation",
       "difficulty": "medium",
@@ -5639,7 +5093,7 @@
       ]
     },
     {
-      "id": "dc-145",
+      "id": "dc-131",
       "section": "Fire Protection",
       "topic": "VESDA sensitivity",
       "difficulty": "medium",
@@ -5667,7 +5121,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes emphasize very early detection, before human detection and sometimes before visible flame.",
+      "explanation": "Very early detection, before human detection and sometimes before visible flame.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "335-341"
@@ -5678,7 +5132,7 @@
       ]
     },
     {
-      "id": "dc-146",
+      "id": "dc-132",
       "section": "Fire Protection",
       "topic": "VESDA analogy",
       "difficulty": "easy",
@@ -5718,7 +5172,7 @@
       ]
     },
     {
-      "id": "dc-147",
+      "id": "dc-133",
       "section": "Fire Protection",
       "topic": "Clean agent definition",
       "difficulty": "medium",
@@ -5757,7 +5211,7 @@
       ]
     },
     {
-      "id": "dc-148",
+      "id": "dc-134",
       "section": "Fire Protection",
       "topic": "FM-200",
       "difficulty": "medium",
@@ -5796,11 +5250,11 @@
       ]
     },
     {
-      "id": "dc-149",
+      "id": "dc-135",
       "section": "Fire Protection",
       "topic": "Novec 1230",
       "difficulty": "medium",
-      "question": "What distinguishes Novec 1230 in the notes?",
+      "question": "What distinguishes Novec 1230?",
       "choices": [
         {
           "id": "A",
@@ -5835,7 +5289,7 @@
       ]
     },
     {
-      "id": "dc-150",
+      "id": "dc-136",
       "section": "Fire Protection",
       "topic": "Water mist",
       "difficulty": "medium",
@@ -5874,7 +5328,7 @@
       ]
     },
     {
-      "id": "dc-151",
+      "id": "dc-137",
       "section": "Security",
       "topic": "Physical security importance",
       "difficulty": "easy",
@@ -5913,7 +5367,7 @@
       ]
     },
     {
-      "id": "dc-152",
+      "id": "dc-138",
       "section": "Security",
       "topic": "Security layer concept",
       "difficulty": "easy",
@@ -5941,7 +5395,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes compare security to layers: an attacker must pass every layer.",
+      "explanation": "The guide compare security to layers: an attacker must pass every layer.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "357-367"
@@ -5952,7 +5406,7 @@
       ]
     },
     {
-      "id": "dc-153",
+      "id": "dc-139",
       "section": "Security",
       "topic": "Perimeter security",
       "difficulty": "easy",
@@ -5991,7 +5445,7 @@
       ]
     },
     {
-      "id": "dc-154",
+      "id": "dc-140",
       "section": "Security",
       "topic": "Building access",
       "difficulty": "easy",
@@ -6030,11 +5484,11 @@
       ]
     },
     {
-      "id": "dc-155",
+      "id": "dc-141",
       "section": "Security",
       "topic": "Biometric authentication",
       "difficulty": "easy",
-      "question": "Which set contains examples of biometric authentication in the notes?",
+      "question": "Which set contains examples of biometric authentication?",
       "choices": [
         {
           "id": "A",
@@ -6069,7 +5523,7 @@
       ]
     },
     {
-      "id": "dc-156",
+      "id": "dc-142",
       "section": "Security",
       "topic": "Mantrap entry",
       "difficulty": "medium",
@@ -6108,7 +5562,7 @@
       ]
     },
     {
-      "id": "dc-157",
+      "id": "dc-143",
       "section": "Security",
       "topic": "Tailgating",
       "difficulty": "medium",
@@ -6136,7 +5590,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes define tailgating as someone sneaking in behind an authorized person.",
+      "explanation": "The guide define tailgating as someone sneaking in behind an authorized person.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "361-367"
@@ -6147,7 +5601,7 @@
       ]
     },
     {
-      "id": "dc-158",
+      "id": "dc-144",
       "section": "Security",
       "topic": "CCTV surveillance",
       "difficulty": "easy",
@@ -6186,7 +5640,7 @@
       ]
     },
     {
-      "id": "dc-159",
+      "id": "dc-145",
       "section": "Security",
       "topic": "Security alarms",
       "difficulty": "easy",
@@ -6225,7 +5679,7 @@
       ]
     },
     {
-      "id": "dc-160",
+      "id": "dc-146",
       "section": "Security",
       "topic": "Visitor management",
       "difficulty": "easy",
@@ -6264,7 +5718,7 @@
       ]
     },
     {
-      "id": "dc-161",
+      "id": "dc-147",
       "section": "Monitoring",
       "topic": "NOC meaning",
       "difficulty": "easy",
@@ -6303,11 +5757,11 @@
       ]
     },
     {
-      "id": "dc-162",
+      "id": "dc-148",
       "section": "Monitoring",
       "topic": "NOC pronunciation",
       "difficulty": "easy",
-      "question": "How does the notes say NOC is pronounced?",
+      "question": "How does the guide say NOC is pronounced?",
       "choices": [
         {
           "id": "A",
@@ -6331,7 +5785,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes say NOC is pronounced \"knock\".",
+      "explanation": "NOC is pronounced \"knock\".",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "373-373"
@@ -6342,7 +5796,7 @@
       ]
     },
     {
-      "id": "dc-163",
+      "id": "dc-149",
       "section": "Monitoring",
       "topic": "NOC role",
       "difficulty": "easy",
@@ -6381,7 +5835,7 @@
       ]
     },
     {
-      "id": "dc-164",
+      "id": "dc-150",
       "section": "Monitoring",
       "topic": "NOC room appearance",
       "difficulty": "easy",
@@ -6420,11 +5874,11 @@
       ]
     },
     {
-      "id": "dc-165",
+      "id": "dc-151",
       "section": "Monitoring",
       "topic": "NOC response examples",
       "difficulty": "medium",
-      "question": "Which set of events would the NOC team see immediately according to the notes?",
+      "question": "Which set of events would the NOC team see immediately?",
       "choices": [
         {
           "id": "A",
@@ -6448,7 +5902,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes give server down, temperature spike, and power unit failure as NOC visibility examples.",
+      "explanation": "The guide give server down, temperature spike, and power unit failure as NOC visibility examples.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "373-377"
@@ -6459,7 +5913,7 @@
       ]
     },
     {
-      "id": "dc-166",
+      "id": "dc-152",
       "section": "Monitoring",
       "topic": "Power monitoring",
       "difficulty": "easy",
@@ -6498,7 +5952,7 @@
       ]
     },
     {
-      "id": "dc-167",
+      "id": "dc-153",
       "section": "Monitoring",
       "topic": "Cooling monitoring",
       "difficulty": "easy",
@@ -6537,7 +5991,7 @@
       ]
     },
     {
-      "id": "dc-168",
+      "id": "dc-154",
       "section": "Monitoring",
       "topic": "Network monitoring",
       "difficulty": "easy",
@@ -6576,7 +6030,7 @@
       ]
     },
     {
-      "id": "dc-169",
+      "id": "dc-155",
       "section": "Monitoring",
       "topic": "Security monitoring",
       "difficulty": "easy",
@@ -6615,7 +6069,7 @@
       ]
     },
     {
-      "id": "dc-170",
+      "id": "dc-156",
       "section": "Monitoring",
       "topic": "Leak monitoring",
       "difficulty": "medium",
@@ -6654,7 +6108,7 @@
       ]
     },
     {
-      "id": "dc-171",
+      "id": "dc-157",
       "section": "Monitoring",
       "topic": "Environment monitoring",
       "difficulty": "easy",
@@ -6693,7 +6147,7 @@
       ]
     },
     {
-      "id": "dc-172",
+      "id": "dc-158",
       "section": "Monitoring",
       "topic": "DCIM expansion",
       "difficulty": "easy",
@@ -6732,7 +6186,7 @@
       ]
     },
     {
-      "id": "dc-173",
+      "id": "dc-159",
       "section": "Monitoring",
       "topic": "DCIM role",
       "difficulty": "medium",
@@ -6771,11 +6225,11 @@
       ]
     },
     {
-      "id": "dc-174",
+      "id": "dc-160",
       "section": "Monitoring",
       "topic": "DCIM tracked items",
       "difficulty": "medium",
-      "question": "Which items does DCIM track according to the notes?",
+      "question": "Which items does DCIM track?",
       "choices": [
         {
           "id": "A",
@@ -6810,7 +6264,7 @@
       ]
     },
     {
-      "id": "dc-175",
+      "id": "dc-161",
       "section": "Disaster Recovery",
       "topic": "Why DR exists",
       "difficulty": "easy",
@@ -6838,7 +6292,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes list disasters and major hardware failure as reasons DR planning is needed.",
+      "explanation": "The guide list disasters and major hardware failure as reasons DR planning is needed.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "396-400"
@@ -6849,11 +6303,11 @@
       ]
     },
     {
-      "id": "dc-176",
+      "id": "dc-162",
       "section": "Disaster Recovery",
       "topic": "DR core idea",
       "difficulty": "easy",
-      "question": "What is the core idea of disaster recovery in the notes?",
+      "question": "What is the core idea of disaster recovery?",
       "choices": [
         {
           "id": "A",
@@ -6888,11 +6342,11 @@
       ]
     },
     {
-      "id": "dc-177",
+      "id": "dc-163",
       "section": "Disaster Recovery",
       "topic": "Primary site naming",
       "difficulty": "easy",
-      "question": "What does the notes call the main data center in DR context?",
+      "question": "What does the guide call the main data center in DR context?",
       "choices": [
         {
           "id": "A",
@@ -6916,7 +6370,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes identify the main data center as the primary site or DC.",
+      "explanation": "The guide identify the main data center as the primary site or DC.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "400-402"
@@ -6927,7 +6381,7 @@
       ]
     },
     {
-      "id": "dc-178",
+      "id": "dc-164",
       "section": "Disaster Recovery",
       "topic": "Separation tradeoff",
       "difficulty": "medium",
@@ -6966,7 +6420,7 @@
       ]
     },
     {
-      "id": "dc-179",
+      "id": "dc-165",
       "section": "Disaster Recovery",
       "topic": "Minimum DR distance",
       "difficulty": "medium",
@@ -7005,7 +6459,7 @@
       ]
     },
     {
-      "id": "dc-180",
+      "id": "dc-166",
       "section": "Disaster Recovery",
       "topic": "Recommended DR distance",
       "difficulty": "medium",
@@ -7044,7 +6498,7 @@
       ]
     },
     {
-      "id": "dc-181",
+      "id": "dc-167",
       "section": "Disaster Recovery",
       "topic": "Recommended DR distance purpose",
       "difficulty": "medium",
@@ -7083,7 +6537,7 @@
       ]
     },
     {
-      "id": "dc-182",
+      "id": "dc-168",
       "section": "Disaster Recovery",
       "topic": "Maximum practical DR distance",
       "difficulty": "medium",
@@ -7122,11 +6576,11 @@
       ]
     },
     {
-      "id": "dc-183",
+      "id": "dc-169",
       "section": "Disaster Recovery",
       "topic": "DR sweet spot",
       "difficulty": "medium",
-      "question": "What distance range does the notes call the usual sweet spot?",
+      "question": "What distance range does the guide call the usual sweet spot?",
       "choices": [
         {
           "id": "A",
@@ -7161,7 +6615,7 @@
       ]
     },
     {
-      "id": "dc-184",
+      "id": "dc-170",
       "section": "Disaster Recovery",
       "topic": "Cold site",
       "difficulty": "medium",
@@ -7200,7 +6654,7 @@
       ]
     },
     {
-      "id": "dc-185",
+      "id": "dc-171",
       "section": "Disaster Recovery",
       "topic": "Warm site",
       "difficulty": "medium",
@@ -7239,7 +6693,7 @@
       ]
     },
     {
-      "id": "dc-186",
+      "id": "dc-172",
       "section": "Disaster Recovery",
       "topic": "Hot site",
       "difficulty": "medium",
@@ -7278,7 +6732,7 @@
       ]
     },
     {
-      "id": "dc-187",
+      "id": "dc-173",
       "section": "Disaster Recovery",
       "topic": "DR apartment analogy cold",
       "difficulty": "easy",
@@ -7317,7 +6771,7 @@
       ]
     },
     {
-      "id": "dc-188",
+      "id": "dc-174",
       "section": "Disaster Recovery",
       "topic": "DR apartment analogy warm",
       "difficulty": "easy",
@@ -7356,7 +6810,7 @@
       ]
     },
     {
-      "id": "dc-189",
+      "id": "dc-175",
       "section": "Disaster Recovery",
       "topic": "DR apartment analogy hot",
       "difficulty": "easy",
@@ -7395,7 +6849,7 @@
       ]
     },
     {
-      "id": "dc-190",
+      "id": "dc-176",
       "section": "Disaster Recovery",
       "topic": "RTO definition",
       "difficulty": "medium",
@@ -7434,7 +6888,7 @@
       ]
     },
     {
-      "id": "dc-191",
+      "id": "dc-177",
       "section": "Disaster Recovery",
       "topic": "RTO example",
       "difficulty": "medium",
@@ -7462,7 +6916,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes give a 4-hour RTO as requiring restoration within 4 hours.",
+      "explanation": "The guide give a 4-hour RTO as requiring restoration within 4 hours.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "430-432"
@@ -7473,7 +6927,7 @@
       ]
     },
     {
-      "id": "dc-192",
+      "id": "dc-178",
       "section": "Disaster Recovery",
       "topic": "RPO definition",
       "difficulty": "medium",
@@ -7512,7 +6966,7 @@
       ]
     },
     {
-      "id": "dc-193",
+      "id": "dc-179",
       "section": "Disaster Recovery",
       "topic": "RPO example",
       "difficulty": "medium",
@@ -7540,7 +6994,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The notes explain that a 1-hour RPO means the backup copy must be at most 1 hour old.",
+      "explanation": "The guide explain that a 1-hour RPO means the backup copy must be at most 1 hour old.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "434-438"
@@ -7551,7 +7005,7 @@
       ]
     },
     {
-      "id": "dc-194",
+      "id": "dc-180",
       "section": "Disaster Recovery",
       "topic": "RTO table question",
       "difficulty": "easy",
@@ -7590,7 +7044,7 @@
       ]
     },
     {
-      "id": "dc-195",
+      "id": "dc-181",
       "section": "Disaster Recovery",
       "topic": "RPO table question",
       "difficulty": "easy",
@@ -7629,7 +7083,7 @@
       ]
     },
     {
-      "id": "dc-196",
+      "id": "dc-182",
       "section": "Disaster Recovery",
       "topic": "Need for replication",
       "difficulty": "easy",
@@ -7657,7 +7111,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes say the DR site needs a copy of data to be useful.",
+      "explanation": "The DR site needs a copy of data to be useful.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "445-447"
@@ -7668,7 +7122,7 @@
       ]
     },
     {
-      "id": "dc-197",
+      "id": "dc-183",
       "section": "Disaster Recovery",
       "topic": "Offline replication",
       "difficulty": "medium",
@@ -7707,7 +7161,7 @@
       ]
     },
     {
-      "id": "dc-198",
+      "id": "dc-184",
       "section": "Disaster Recovery",
       "topic": "Offline replication advantage",
       "difficulty": "medium",
@@ -7746,7 +7200,7 @@
       ]
     },
     {
-      "id": "dc-199",
+      "id": "dc-185",
       "section": "Disaster Recovery",
       "topic": "Offline replication disadvantage",
       "difficulty": "medium",
@@ -7785,7 +7239,7 @@
       ]
     },
     {
-      "id": "dc-200",
+      "id": "dc-186",
       "section": "Disaster Recovery",
       "topic": "Online replication",
       "difficulty": "medium",
@@ -7824,7 +7278,7 @@
       ]
     },
     {
-      "id": "dc-201",
+      "id": "dc-187",
       "section": "Disaster Recovery",
       "topic": "Synchronous replication",
       "difficulty": "medium",
@@ -7863,7 +7317,7 @@
       ]
     },
     {
-      "id": "dc-202",
+      "id": "dc-188",
       "section": "Disaster Recovery",
       "topic": "Synchronous RPO",
       "difficulty": "medium",
@@ -7891,7 +7345,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes say synchronous replication has zero data loss and RPO approximately 0.",
+      "explanation": "Synchronous replication has zero data loss and RPO approximately 0.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "461-463"
@@ -7903,7 +7357,7 @@
       ]
     },
     {
-      "id": "dc-203",
+      "id": "dc-189",
       "section": "Disaster Recovery",
       "topic": "Synchronous distance requirement",
       "difficulty": "medium",
@@ -7943,7 +7397,7 @@
       ]
     },
     {
-      "id": "dc-204",
+      "id": "dc-190",
       "section": "Disaster Recovery",
       "topic": "Asynchronous replication",
       "difficulty": "medium",
@@ -7982,7 +7436,7 @@
       ]
     },
     {
-      "id": "dc-205",
+      "id": "dc-191",
       "section": "Disaster Recovery",
       "topic": "Asynchronous distance",
       "difficulty": "medium",
@@ -8010,7 +7464,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes say asynchronous replication works over long distances.",
+      "explanation": "Asynchronous replication works over long distances.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "466-468"
@@ -8021,7 +7475,7 @@
       ]
     },
     {
-      "id": "dc-206",
+      "id": "dc-192",
       "section": "Disaster Recovery",
       "topic": "Asynchronous data loss",
       "difficulty": "medium",
@@ -8061,7 +7515,7 @@
       ]
     },
     {
-      "id": "dc-207",
+      "id": "dc-193",
       "section": "Disaster Recovery",
       "topic": "Storage/block replication",
       "difficulty": "medium",
@@ -8100,7 +7554,7 @@
       ]
     },
     {
-      "id": "dc-208",
+      "id": "dc-194",
       "section": "Disaster Recovery",
       "topic": "Storage/block best for",
       "difficulty": "medium",
@@ -8139,7 +7593,7 @@
       ]
     },
     {
-      "id": "dc-209",
+      "id": "dc-195",
       "section": "Disaster Recovery",
       "topic": "Database-level replication",
       "difficulty": "medium",
@@ -8178,7 +7632,7 @@
       ]
     },
     {
-      "id": "dc-210",
+      "id": "dc-196",
       "section": "Disaster Recovery",
       "topic": "Database-level best for",
       "difficulty": "medium",
@@ -8217,7 +7671,7 @@
       ]
     },
     {
-      "id": "dc-211",
+      "id": "dc-197",
       "section": "Disaster Recovery",
       "topic": "Application/file-level replication",
       "difficulty": "medium",
@@ -8256,7 +7710,7 @@
       ]
     },
     {
-      "id": "dc-212",
+      "id": "dc-198",
       "section": "Disaster Recovery",
       "topic": "Application/file-level best for",
       "difficulty": "medium",
@@ -8293,422 +7747,9 @@
         "disaster-recovery",
         "file-replication"
       ]
-    },
-    {
-      "id": "dc-213",
-      "section": "Quick Reference Summary",
-      "topic": "Data center summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference takeaway summarizes a data center?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A software-only service that replaces physical power and cooling."
-        },
-        {
-          "id": "B",
-          "text": "A fire-safety rulebook covering sprinkler systems only."
-        },
-        {
-          "id": "C",
-          "text": "A specialized building that keeps servers running 24/7 with power, cooling, security, and connectivity."
-        },
-        {
-          "id": "D",
-          "text": "A backup metric that defines acceptable data loss."
-        },
-        {
-          "id": "E",
-          "text": "A cooling formula where total facility power is divided by IT power."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "The quick reference summarizes a data center as a specialized building for keeping servers running with core support systems.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "482-495"
-      },
-      "tags": [
-        "summary",
-        "data-center"
-      ]
-    },
-    {
-      "id": "dc-214",
-      "section": "Quick Reference Summary",
-      "topic": "Standards summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference mapping is correct for standards?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "TIA-942 covers climate, ASHRAE covers fire safety, and NFPA covers design."
-        },
-        {
-          "id": "B",
-          "text": "TIA-942 covers replication, ASHRAE covers PUE, and NFPA covers visitor logs."
-        },
-        {
-          "id": "C",
-          "text": "TIA-942 covers only sprinklers, ASHRAE covers only tiers, and NFPA covers only cooling."
-        },
-        {
-          "id": "D",
-          "text": "TIA-942 covers design, ASHRAE covers climate, and NFPA covers fire safety."
-        },
-        {
-          "id": "E",
-          "text": "TIA-942, ASHRAE, and NFPA are all monitoring dashboards."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "The quick reference directly maps TIA-942 to design, ASHRAE to climate, and NFPA to fire safety.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "484-488"
-      },
-      "tags": [
-        "summary",
-        "standards"
-      ]
-    },
-    {
-      "id": "dc-215",
-      "section": "Quick Reference Summary",
-      "topic": "Tiers summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference tier takeaway is correct?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Tier I is fault-tolerant and Tier IV is basic; higher tier means more downtime."
-        },
-        {
-          "id": "B",
-          "text": "Tier II is the only tier that has multiple paths and automatic failure survival."
-        },
-        {
-          "id": "C",
-          "text": "Tier III has no backup components and only one path."
-        },
-        {
-          "id": "D",
-          "text": "Tier IV is mainly a humidity and dew point standard."
-        },
-        {
-          "id": "E",
-          "text": "Tier I is basic and Tier IV is fault-tolerant; higher tier means less downtime and more cost."
-        }
-      ],
-      "correctChoiceId": "E",
-      "explanation": "The summary states Tier I to Tier IV progress from basic to fault-tolerant, with less downtime and higher cost.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "486-488"
-      },
-      "tags": [
-        "summary",
-        "tiers"
-      ]
-    },
-    {
-      "id": "dc-216",
-      "section": "Quick Reference Summary",
-      "topic": "Power summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference power takeaway is correct?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "Utility power, UPS batteries, and generators form three layers so power never stops."
-        },
-        {
-          "id": "B",
-          "text": "Utility power, CRAC, and VESDA form the three power layers."
-        },
-        {
-          "id": "C",
-          "text": "Power protection relies only on single-phase power in most data centers."
-        },
-        {
-          "id": "D",
-          "text": "Generators are used only before UPS batteries take over."
-        },
-        {
-          "id": "E",
-          "text": "Power stops whenever the public grid fails."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The quick reference gives utility, UPS, and generator as the three power layers.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "489-489"
-      },
-      "tags": [
-        "summary",
-        "power"
-      ]
-    },
-    {
-      "id": "dc-217",
-      "section": "Quick Reference Summary",
-      "topic": "Cooling summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference cooling takeaway is correct?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "VESDA and clean agents keep servers at 18 to 27 degrees C."
-        },
-        {
-          "id": "B",
-          "text": "CRAC/CRAH systems plus hot/cold aisle design keep servers at 18 to 27 degrees C."
-        },
-        {
-          "id": "C",
-          "text": "Hot sites and cold sites keep servers at 40% to 60 degrees C."
-        },
-        {
-          "id": "D",
-          "text": "Mantraps and CCTV keep servers within the ASHRAE temperature range."
-        },
-        {
-          "id": "E",
-          "text": "UPS and generators are the main systems for removing server heat."
-        }
-      ],
-      "correctChoiceId": "B",
-      "explanation": "The quick reference ties cooling to CRAC/CRAH, hot/cold aisle design, and 18 to 27 degrees C.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "490-490"
-      },
-      "tags": [
-        "summary",
-        "cooling"
-      ]
-    },
-    {
-      "id": "dc-218",
-      "section": "Quick Reference Summary",
-      "topic": "Fire protection summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference fire protection takeaway is correct?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "VESDA suppresses fire with water, while FM-200 detects smoke early."
-        },
-        {
-          "id": "B",
-          "text": "Sprinklers are preferred because water does not damage servers."
-        },
-        {
-          "id": "C",
-          "text": "VESDA detects smoke early; clean agents such as FM-200 and Novec suppress fire without water damage."
-        },
-        {
-          "id": "D",
-          "text": "Clean agents are used mainly to keep humidity between 40% and 60%."
-        },
-        {
-          "id": "E",
-          "text": "Novec and FM-200 are power transfer switches."
-        }
-      ],
-      "correctChoiceId": "C",
-      "explanation": "The summary links VESDA with early detection and clean agents with water-safe suppression.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "491-491"
-      },
-      "tags": [
-        "summary",
-        "fire-protection"
-      ]
-    },
-    {
-      "id": "dc-219",
-      "section": "Quick Reference Summary",
-      "topic": "Security summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference security layer sequence is listed?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "UPS batteries, generators, PDUs, and panels."
-        },
-        {
-          "id": "B",
-          "text": "CRAC, CRAH, HAC, and CAC."
-        },
-        {
-          "id": "C",
-          "text": "Cold sites, warm sites, hot sites, and RPO."
-        },
-        {
-          "id": "D",
-          "text": "Access cards, biometrics, mantraps, and cameras."
-        },
-        {
-          "id": "E",
-          "text": "Storage blocks, database logs, files, and applications."
-        }
-      ],
-      "correctChoiceId": "D",
-      "explanation": "The summary gives access cards, biometrics, mantraps, and cameras as security layers.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "492-492"
-      },
-      "tags": [
-        "summary",
-        "security"
-      ]
-    },
-    {
-      "id": "dc-220",
-      "section": "Quick Reference Summary",
-      "topic": "Monitoring summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference monitoring takeaway is correct?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "NFPA staff and sprinkler software watch everything 24/7."
-        },
-        {
-          "id": "B",
-          "text": "UPS batteries and generator coils watch everything 24/7."
-        },
-        {
-          "id": "C",
-          "text": "Cold sites and warm sites watch everything 24/7."
-        },
-        {
-          "id": "D",
-          "text": "CRAC refrigerant and CRAH chilled water watch everything 24/7."
-        },
-        {
-          "id": "E",
-          "text": "NOC staff and DCIM software watch everything 24/7."
-        }
-      ],
-      "correctChoiceId": "E",
-      "explanation": "The monitoring summary says NOC staff plus DCIM software watch everything around the clock.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "493-493"
-      },
-      "tags": [
-        "summary",
-        "monitoring"
-      ]
-    },
-    {
-      "id": "dc-221",
-      "section": "Quick Reference Summary",
-      "topic": "DR summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference disaster recovery takeaway is correct?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "A backup site such as cold, warm, or hot takes over if the primary fails; RTO is recovery speed and RPO is data loss tolerance."
-        },
-        {
-          "id": "B",
-          "text": "A backup site improves cooling only; RTO is temperature and RPO is power usage."
-        },
-        {
-          "id": "C",
-          "text": "A hot aisle takes over if the primary fails; RTO is uptime and RPO is PUE."
-        },
-        {
-          "id": "D",
-          "text": "A cold site is always fully equipped; RTO and RPO are fire safety standards."
-        },
-        {
-          "id": "E",
-          "text": "Disaster recovery removes the need for primary data centers."
-        }
-      ],
-      "correctChoiceId": "A",
-      "explanation": "The quick reference summarizes DR sites and the meanings of RTO and RPO.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "494-494"
-      },
-      "tags": [
-        "summary",
-        "disaster-recovery"
-      ]
-    },
-    {
-      "id": "dc-222",
-      "section": "Quick Reference Summary",
-      "topic": "PUE summary",
-      "difficulty": "easy",
-      "question": "Which quick-reference PUE takeaway is correct?",
-      "choices": [
-        {
-          "id": "A",
-          "text": "PUE is IT power divided by total power, and closer to 2.0 is always better."
-        },
-        {
-          "id": "B",
-          "text": "PUE is total power divided by IT power, and closer to 1.0 is better."
-        },
-        {
-          "id": "C",
-          "text": "PUE is annual downtime divided by uptime, and closer to 0 is impossible."
-        },
-        {
-          "id": "D",
-          "text": "PUE is RTO divided by RPO, and closer to 300 km is better."
-        },
-        {
-          "id": "E",
-          "text": "PUE is cooling power divided by fire suppression power, and higher is better."
-        }
-      ],
-      "correctChoiceId": "B",
-      "explanation": "The summary restates the PUE formula and the idea that values closer to 1.0 are better.",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "495-495"
-      },
-      "tags": [
-        "summary",
-        "pue"
-      ]
     }
   ],
   "coverage": [
-    {
-      "section": "What Is a Data Center?",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "3-32"
-      },
-      "questionIds": [
-        "dc-001",
-        "dc-002",
-        "dc-003",
-        "dc-004",
-        "dc-005",
-        "dc-006",
-        "dc-007",
-        "dc-008",
-        "dc-009",
-        "dc-010",
-        "dc-011",
-        "dc-012",
-        "dc-013",
-        "dc-014"
-      ]
-    },
     {
       "section": "Data Center Standards",
       "source": {
@@ -8986,25 +8027,6 @@
         "dc-210",
         "dc-211",
         "dc-212"
-      ]
-    },
-    {
-      "section": "Quick Reference Summary",
-      "source": {
-        "file": "data-center/DATA_CENTER_EN.md",
-        "lines": "482-495"
-      },
-      "questionIds": [
-        "dc-213",
-        "dc-214",
-        "dc-215",
-        "dc-216",
-        "dc-217",
-        "dc-218",
-        "dc-219",
-        "dc-220",
-        "dc-221",
-        "dc-222"
       ]
     }
   ]

@@ -14,7 +14,7 @@
       "section": "Database and Cloud Security",
       "topic": "Modern applications and data",
       "difficulty": "easy",
-      "question": "What is the main reason the guide starts by discussing data?",
+      "question": "What is the main reason for discussing data first?",
       "choices": [
         {
           "id": "A",
@@ -77,7 +77,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide names availability, accuracy over time, and protection from unauthorized access as requirements after storage.",
+      "explanation": "Availability, accuracy over time, and protection from unauthorized access are requirements after storage.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "3-7"
@@ -94,7 +94,7 @@
       "section": "Database and Cloud Security",
       "topic": "Database and cloud combination",
       "difficulty": "medium",
-      "question": "What combination does the guide say is required to protect modern data?",
+      "question": "What combination is required to protect modern data?",
       "choices": [
         {
           "id": "A",
@@ -134,7 +134,7 @@
       "section": "Database and Cloud Security",
       "topic": "Guide scope",
       "difficulty": "easy",
-      "question": "Which set best matches the guide scope?",
+      "question": "Which set best matches the scope of this topic?",
       "choices": [
         {
           "id": "A",
@@ -158,7 +158,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide says it explores database structure, protection from internal and external threats, and how security changes in the cloud.",
+      "explanation": "It explores database structure, protection from internal and external threats, and how security changes in the cloud.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "7-9"
@@ -236,7 +236,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes frame hard drive failure as the basic physical availability problem.",
+      "explanation": "Hard drive failure is the basic physical availability problem.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "15-19"
@@ -394,7 +394,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The notes say striping splits data across drives for faster read and write operations.",
+      "explanation": "Striping splits data across drives for faster read and write operations.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "21-23"
@@ -487,7 +487,7 @@
       "section": "How Data is Stored and Managed",
       "topic": "DBMS librarian analogy",
       "difficulty": "easy",
-      "question": "In the guide analogy, what is a DBMS like?",
+      "question": "In the analogy, what is a DBMS like?",
       "choices": [
         {
           "id": "A",
@@ -628,7 +628,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide uses the last airplane seat example to show why simultaneous changes need careful control.",
+      "explanation": "The last airplane seat example shows why simultaneous changes need careful control.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "33-37"
@@ -746,7 +746,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide says relational databases organize information into structured tables like spreadsheets.",
+      "explanation": "Relational databases organize information into structured tables like spreadsheets.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "39-45"
@@ -800,7 +800,7 @@
       "section": "How Data is Stored and Managed",
       "topic": "Primary key example",
       "difficulty": "easy",
-      "question": "Why is a Student ID a good primary key in the guide example?",
+      "question": "Why is a Student ID a good primary key?",
       "choices": [
         {
           "id": "A",
@@ -824,7 +824,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes use Student ID as an example because it is unique for each student.",
+      "explanation": "Student ID is an example because it is unique for each student.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "43-43"
@@ -878,7 +878,7 @@
       "section": "How Data is Stored and Managed",
       "topic": "Foreign key example",
       "difficulty": "medium",
-      "question": "In the guide example, how might an Order table use a foreign key?",
+      "question": "How might an Order table use a foreign key?",
       "choices": [
         {
           "id": "A",
@@ -941,7 +941,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide defines a view as a saved result that behaves like a virtual table.",
+      "explanation": "A view is defined as a saved result that behaves like a virtual table.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "45-45"
@@ -1058,7 +1058,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes say strict rules are needed to protect confidentiality.",
+      "explanation": "Strict rules are needed to protect confidentiality.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "51-53"
@@ -1136,7 +1136,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide compares the authorization table to a security guard checking a guest list.",
+      "explanation": "The authorization table is compared to a security guard checking a guest list.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "55-59"
@@ -1644,7 +1644,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide uses 500 customer support agents to show why individual permission assignment does not scale well.",
+      "explanation": "The example of 500 customer support agents shows why individual permission assignment does not scale well.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "83-87"
@@ -1878,7 +1878,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The guide explains SQLi using the normal case of website input being used in a database query.",
+      "explanation": "SQLi occurs when website input is used in a database query.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "97-101"
@@ -1917,7 +1917,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide names login boxes and search bars as normal fields attackers may abuse.",
+      "explanation": "Login boxes and search bars are normal fields attackers may abuse.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "99-101"
@@ -1995,7 +1995,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The notes explicitly say SQLi threatens confidentiality, integrity, and availability all at once.",
+      "explanation": "SQLi threatens confidentiality, integrity, and availability all at once.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "101-103"
@@ -2229,7 +2229,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The notes warn that trusting modified cookies can lead to dangerous queries.",
+      "explanation": "Trusting modified cookies can lead to dangerous queries.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "117-121"
@@ -2307,7 +2307,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide includes scanners, sensors, and external systems as data sources that can be manipulated.",
+      "explanation": "Scanners, sensors, and external systems are data sources that can be manipulated.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "120-121"
@@ -2580,7 +2580,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide says developers should scan their code for weaknesses before publishing it.",
+      "explanation": "Developers should scan their code for weaknesses before publishing it.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "132-134"
@@ -2595,7 +2595,7 @@
       "section": "Protecting the Database from Outside: SQL Injection (SQLi)",
       "topic": "Run-time prevention",
       "difficulty": "medium",
-      "question": "What is run-time SQL Injection prevention in the notes?",
+      "question": "What is run-time SQL Injection prevention?",
       "choices": [
         {
           "id": "A",
@@ -2735,7 +2735,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The guide says encryption can cover the whole database, certain tables, or selected columns.",
+      "explanation": "Encryption can cover the whole database, certain tables, or selected columns.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "145-146"
@@ -2867,7 +2867,7 @@
       "section": "The Last Line of Defense: Database Encryption",
       "topic": "Key management difficulty",
       "difficulty": "easy",
-      "question": "What does the guide say is difficult about encryption keys?",
+      "question": "What is difficult about encryption keys?",
       "choices": [
         {
           "id": "A",
@@ -2969,7 +2969,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide says encrypted data is harder to filter, sort, and process efficiently.",
+      "explanation": "Encrypted data is harder to filter, sort, and process efficiently.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "151-152"
@@ -3023,7 +3023,7 @@
       "section": "Moving Beyond the Local Server: Cloud Security",
       "topic": "Traditional local servers",
       "difficulty": "easy",
-      "question": "What traditional database hosting approach does the guide contrast with cloud computing?",
+      "question": "What traditional database hosting approach is contrasted with cloud computing?",
       "choices": [
         {
           "id": "A",
@@ -3086,7 +3086,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide defines cloud computing as renting compute resources over the internet.",
+      "explanation": "Cloud computing is defined as renting compute resources over the internet.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "162-166"
@@ -3164,7 +3164,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide lists faster innovation, instant scaling, and saving money by only paying for what they use.",
+      "explanation": "Benefits include faster innovation, instant scaling, and saving money by only paying for usage.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "164-166"
@@ -3676,7 +3676,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "Hybrid cloud combines public and private use cases, with the guide example of sensitive data private and public website public.",
+      "explanation": "Hybrid cloud combines public and private use cases, such as keeping sensitive data private while making a website public.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "190-193"
@@ -3950,7 +3950,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide says API-key theft or weak login security can compromise entire infrastructure.",
+      "explanation": "API-key theft or weak login security can compromise entire infrastructure.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "205-205"
@@ -4028,7 +4028,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The notes connect cloud ease-of-change with accidental public database exposure.",
+      "explanation": "Cloud ease-of-change can lead to accidental public database exposure.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "207-207"
@@ -4145,7 +4145,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide states that cloud security becomes a shared responsibility.",
+      "explanation": "Cloud security becomes a shared responsibility.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "213-217"
@@ -4223,7 +4223,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The notes compare multi-instance to a private house and multi-tenant to a shared apartment.",
+      "explanation": "Multi-instance is compared to a private house and multi-tenant to a shared apartment.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "217-230"
@@ -4419,7 +4419,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The notes say the software separates tenant data with unique identifiers or tags.",
+      "explanation": "The software separates tenant data with unique identifiers or tags.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "230-234"
@@ -4590,7 +4590,7 @@
       "section": "Protecting Data in the Cloud",
       "topic": "SECaaS traffic routing",
       "difficulty": "medium",
-      "question": "How does the guide describe SECaaS replacing traditional local security tools?",
+      "question": "How is SECaaS described as replacing traditional local security tools?",
       "choices": [
         {
           "id": "A",
@@ -4653,7 +4653,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The notes say SECaaS can protect cloud resources and local office networks.",
+      "explanation": "SECaaS can protect cloud resources and local office networks.",
       "source": {
         "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
         "lines": "242-244"
@@ -4864,7 +4864,7 @@
       "section": "Protecting Data in the Cloud",
       "topic": "SECaaS cloud power benefit",
       "difficulty": "medium",
-      "question": "What final benefit does the guide attribute to SECaaS?",
+      "question": "What final benefit is attributed to SECaaS?",
       "choices": [
         {
           "id": "A",
