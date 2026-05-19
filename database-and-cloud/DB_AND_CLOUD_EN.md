@@ -1,6 +1,6 @@
 # Database and Cloud Security
 
-Almost every modern application relies on data. Whether it is user passwords, financial records, or personal messages, information must be stored somewhere. 
+Almost every modern application relies on data. Whether it is user passwords, financial records, or personal messages, information must be stored somewhere.
 
 However, storing data is only the first step. We must also ensure that the data remains available when needed, accurate over time, and strictly protected from unauthorized access. This requires a combination of strong database management and, increasingly, secure cloud infrastructure.
 
@@ -16,9 +16,9 @@ When applications need to remember information, they don't just write it into a 
 
 Before we can even think about hackers or complex security rules, we must solve a fundamental physical problem: hard drives can break. If the physical drive holding our database fails, the data is lost.
 
-To prevent this, databases often use **RAID (Redundant Array of Independent Disks)**. 
+To prevent this, databases often use **RAID (Redundant Array of Independent Disks)**.
 
-Instead of saving data onto a single hard drive, RAID connects multiple drives together so they act as one large unit. It can copy (mirror) data across multiple drives so that if one drive breaks, the exact same information still exists on another. It can also split (stripe) data across drives to make reading and writing much faster. 
+Instead of saving data onto a single hard drive, RAID connects multiple drives together so they act as one large unit. It can copy (mirror) data across multiple drives so that if one drive breaks, the exact same information still exists on another. It can also split (stripe) data across drives to make reading and writing much faster.
 
 RAID ensures that a single hardware failure does not bring down the entire system, providing the fundamental **availability** that databases require.
 
@@ -26,7 +26,7 @@ RAID ensures that a single hardware failure does not bring down the entire syste
 
 We rarely interact with physical hard drives directly. Instead, we use a **Database Management System (DBMS)**.
 
-Think of a DBMS as an intelligent librarian. You do not walk into the library and search every single shelf yourself. Instead, you ask the librarian, and the librarian knows exactly how to find, update, or safely store the book you want. 
+Think of a DBMS as an intelligent librarian. You do not walk into the library and search every single shelf yourself. Instead, you ask the librarian, and the librarian knows exactly how to find, update, or safely store the book you want.
 
 The DBMS is the software layer that sits between the application and the physical data. It provides a standardized way to create, modify, and retrieve information safely.
 
@@ -48,13 +48,13 @@ To make information easy to search and manage, relational databases organize dat
 
 ## Protecting the Database from Inside: Access Control
 
-Now that our data is stored reliably and structured logically, we face our next problem: how do we control who is allowed to see or change it? 
+Now that our data is stored reliably and structured logically, we face our next problem: how do we control who is allowed to see or change it?
 
 We cannot simply allow everyone to access everything. We need strict rules to protect **confidentiality**.
 
 ### The Authorization Table
 
-To enforce access rules, the database uses an **authorization table**. 
+To enforce access rules, the database uses an **authorization table**.
 
 Think of this like a guest list held by a security guard at a private event. When a user tries to read or modify a specific piece of data, the database checks the authorization table to see if that user (or their assigned role) has the required permission. If they are not on the list for that specific action, access is denied.
 
@@ -74,6 +74,7 @@ In practice, administrators manage these rules using specific SQL commands:
 - **Revoke:** Takes a privilege away from a user.
 
 The specific privileges (or rights) a user can be granted include:
+
 - **Select:** Permission to read data.
 - **Insert:** Permission to add new data.
 - **Delete:** Permission to remove data.
@@ -84,7 +85,7 @@ The specific privileges (or rights) a user can be granted include:
 
 Imagine a company with 500 customer support agents. If an administrator had to assign permissions to each agent individually, it would be slow and prone to mistakes.
 
-**Role-Based Access Control (RBAC)** solves this by shifting the focus from individuals to job functions. 
+**Role-Based Access Control (RBAC)** solves this by shifting the focus from individuals to job functions.
 
 Instead of assigning permissions to "Alice" and "Bob," the administrator creates a role called "Support Agent." They assign all the necessary permissions to that role, and then simply assign Alice and Bob to the "Support Agent" role. When someone changes jobs or leaves the company, their access is easily updated by changing their role.
 
@@ -96,7 +97,7 @@ Even if we perfectly configure our internal access controls, our database is oft
 
 ### What is SQL Injection?
 
-When you type a search term into a website, the website takes your text and inserts it into a database query (an SQL command) to find the result. 
+When you type a search term into a website, the website takes your text and inserts it into a database query (an SQL command) to find the result.
 
 **SQL Injection (SQLi)** happens when an attacker types malicious SQL commands into a normal input field (like a login box or search bar). If the application does not properly check the input, it accidentally executes the attacker's commands directly inside the database.
 
@@ -130,7 +131,7 @@ To defeat SQL Injection, developers must treat all outside data as potentially d
    - **SQL DOM:** Building queries using safe programming objects instead of manually gluing text strings together.
 
 2. **Detection:**
-   - Security systems can look for known attack patterns (Signatures) in web traffic, or flag unusual database behavior (Anomaly detection). 
+   - Security systems can look for known attack patterns (Signatures) in web traffic, or flag unusual database behavior (Anomaly detection).
    - Developers should also scan their code for weaknesses before publishing it.
 
 3. **Run-time Prevention:**
@@ -148,8 +149,8 @@ Encryption scrambles the data so that it is entirely unreadable without a specif
 
 While encryption provides excellent security, it comes with significant challenges:
 
-- **Key Management:** If you lose the decryption key, you lose your data forever. Furthermore, if an attacker steals both the database *and* the key, the encryption becomes useless. Safely storing and managing these keys is difficult.
-- **Inflexibility and Performance:** Searching through scrambled text is very slow. Encrypting data makes it much harder for the application to filter, sort, and process information efficiently. 
+- **Key Management:** If you lose the decryption key, you lose your data forever. Furthermore, if an attacker steals both the database _and_ the key, the encryption becomes useless. Safely storing and managing these keys is difficult.
+- **Inflexibility and Performance:** Searching through scrambled text is very slow. Encrypting data makes it much harder for the application to filter, sort, and process information efficiently.
 
 Because of these trade-offs, organizations usually only encrypt their most sensitive data, relying on firewalls and access controls to protect the rest.
 
@@ -161,7 +162,7 @@ Traditionally, organizations bought their own physical servers, placed them in a
 
 ### What is the Cloud?
 
-Instead of purchasing and maintaining your own hardware, **Cloud Computing** allows you to rent computing resources—like servers, storage, and databases—over the internet from a provider (like Amazon, Microsoft, or Google). 
+Instead of purchasing and maintaining your own hardware, **Cloud Computing** allows you to rent computing resources—like servers, storage, and databases—over the internet from a provider (like Amazon, Microsoft, or Google).
 
 This allows organizations to innovate faster, scale resources instantly, and save money by only paying for what they use.
 
@@ -192,7 +193,7 @@ There are different ways to rent cloud services, depending on how much control y
 - **Hybrid Cloud:** A combination of both. A company might keep highly sensitive data in a private cloud, but run their public website on a public cloud.
 - **Community Cloud:** Infrastructure shared by a specific group of organizations with common concerns (like several hospitals sharing a compliant healthcare cloud).
 
-*(Note: The NIST Cloud Computing Reference Architecture provides a common framework for discussing these concepts, focusing on what services provide rather than how they are built).*
+_(Note: The NIST Cloud Computing Reference Architecture provides a common framework for discussing these concepts, focusing on what services provide rather than how they are built)._
 
 ---
 
@@ -216,7 +217,7 @@ Because you do not own the physical hardware, securing data in the cloud require
 
 ### Multi-instance vs. Multi-tenant Models
 
-When a cloud provider offers a database service, they can architect it in two main ways. 
+When a cloud provider offers a database service, they can architect it in two main ways.
 
 Think of this like choosing housing: you can rent your own private house, or you can rent an apartment in a shared building.
 
@@ -240,9 +241,10 @@ Since organizations are already moving their servers, databases, and software to
 
 **Security as a Service (SECaaS)** is a model where a provider delivers security applications over the internet (as a SaaS). Instead of buying expensive hardware firewalls or installing heavy antivirus software on every local computer, the organization routes their traffic through a cloud security provider.
 
-SECaaS can protect both the resources inside the cloud and the company's own local office networks. 
+SECaaS can protect both the resources inside the cloud and the company's own local office networks.
 
 Common examples include:
+
 - **Identity and Access Management (IAM):** Cloud systems that manage user logins and permissions across multiple applications.
 - **Cloud Firewalls:** Filtering out malicious web traffic before it ever reaches the application.
 - **Threat Detection and Antivirus:** Continuously scanning files and activity for known attacks.
