@@ -11,7 +11,7 @@
 	"questions": [
 		{
 			"id": "nitsm-001",
-			"section": "Introduction",
+			"section": "Overview & Integration",
 			"topic": "Main management areas",
 			"difficulty": "easy",
 			"question": "Which four main areas does network management cover?",
@@ -38,7 +38,7 @@
 		},
 		{
 			"id": "nitsm-002",
-			"section": "Shift Toward Integration",
+			"section": "Overview & Integration",
 			"topic": "Past separation",
 			"difficulty": "easy",
 			"question": "Historically, who typically managed voice (telephones) and who managed data (computers)?",
@@ -59,7 +59,7 @@
 		},
 		{
 			"id": "nitsm-003",
-			"section": "Shift Toward Integration",
+			"section": "Overview & Integration",
 			"topic": "Benefits of integration",
 			"difficulty": "medium",
 			"question": "Which of the following is NOT listed as a benefit of integrating voice, data, LANs and WANs?",
@@ -107,7 +107,7 @@
 		},
 		{
 			"id": "nitsm-005",
-			"section": "Managing Users and Software",
+			"section": "Configuration Management",
 			"topic": "Login script",
 			"difficulty": "easy",
 			"question": "What is the primary use of a login script for a new user?",
@@ -131,7 +131,7 @@
 		},
 		{
 			"id": "nitsm-006",
-			"section": "Managing Users and Software",
+			"section": "Configuration Management",
 			"topic": "ESD meaning",
 			"difficulty": "easy",
 			"question": "What does ESD stand for in the context of software updates?",
@@ -152,7 +152,7 @@
 		},
 		{
 			"id": "nitsm-007",
-			"section": "Managing Users and Software",
+			"section": "Configuration Management",
 			"topic": "DMI",
 			"difficulty": "easy",
 			"question": "What is the Desktop Management Interface (DMI) used for?",
@@ -176,7 +176,7 @@
 		},
 		{
 			"id": "nitsm-008",
-			"section": "Documentation",
+			"section": "Configuration Management",
 			"topic": "Hardware documentation",
 			"difficulty": "medium",
 			"question": "Which of these items is explicitly recommended in the hardware documentation list?",
@@ -200,7 +200,7 @@
 		},
 		{
 			"id": "nitsm-009",
-			"section": "Performance and Fault Management",
+			"section": "Performance & Fault Management",
 			"topic": "NOC purpose",
 			"difficulty": "easy",
 			"question": "What is the main role of a Network Operations Center (NOC)?",
@@ -233,7 +233,7 @@
 		},
 		{
 			"id": "nitsm-010",
-			"section": "Performance and Fault Management",
+			"section": "Performance & Fault Management",
 			"topic": "Physical vs logical statistics",
 			"difficulty": "medium",
 			"question": "Which of these is an example of physical statistics collected by the NOC?",
@@ -257,7 +257,7 @@
 		},
 		{
 			"id": "nitsm-011",
-			"section": "The Failure Control Function",
+			"section": "Performance & Fault Management",
 			"topic": "Trouble tickets purpose",
 			"difficulty": "medium",
 			"question": "Which of the following is NOT listed as a core purpose of trouble tickets?",
@@ -293,7 +293,7 @@
 		},
 		{
 			"id": "nitsm-012",
-			"section": "The Failure Control Function",
+			"section": "Performance & Fault Management",
 			"topic": "Trouble log example",
 			"difficulty": "easy",
 			"question": "In the sample trouble log, out of 88 calls, how many were about client computers?",
@@ -314,7 +314,7 @@
 		},
 		{
 			"id": "nitsm-013",
-			"section": "Measuring Reliability",
+			"section": "Performance & Fault Management",
 			"topic": "Availability target",
 			"difficulty": "easy",
 			"question": "What availability target range is mentioned for networks?",
@@ -335,7 +335,7 @@
 		},
 		{
 			"id": "nitsm-014",
-			"section": "Measuring Reliability",
+			"section": "Performance & Fault Management",
 			"topic": "Availability calculation",
 			"difficulty": "medium",
 			"question": "How is monthly availability calculated?",
@@ -356,7 +356,7 @@
 		},
 		{
 			"id": "nitsm-015",
-			"section": "Measuring Reliability",
+			"section": "Performance & Fault Management",
 			"topic": "MTBF definition",
 			"difficulty": "easy",
 			"question": "What does MTBF measure?",
@@ -380,7 +380,7 @@
 		},
 		{
 			"id": "nitsm-016",
-			"section": "Measuring Reliability",
+			"section": "Performance & Fault Management",
 			"topic": "MTTR phases",
 			"difficulty": "medium",
 			"question": "Which of the following is NOT one of the MTTR phases listed?",
@@ -404,7 +404,7 @@
 		},
 		{
 			"id": "nitsm-017",
-			"section": "Measuring Reliability",
+			"section": "Performance & Fault Management",
 			"topic": "Quality Control Charts",
 			"difficulty": "medium",
 			"question": "Why are daily statistics plotted on Quality Control Charts?",
@@ -428,7 +428,7 @@
 		},
 		{
 			"id": "nitsm-018",
-			"section": "Improving Performance Under Pressure",
+			"section": "Performance & Fault Management",
 			"topic": "Policy-Based Management",
 			"difficulty": "easy",
 			"question": "Why would TCP/IP QoS be used to prioritize videoconferencing traffic?",
@@ -461,7 +461,7 @@
 		},
 		{
 			"id": "nitsm-019",
-			"section": "Improving Performance Under Pressure",
+			"section": "Performance & Fault Management",
 			"topic": "SLA examples",
 			"difficulty": "medium",
 			"question": "Which of these sample SLA metrics appears in the document?",
@@ -515,7 +515,7 @@
 		},
 		{
 			"id": "nitsm-021",
-			"section": "Resolution Process",
+			"section": "End User Support",
 			"topic": "Support tiers",
 			"difficulty": "easy",
 			"question": "Which tier is said to solve about 85% of common everyday issues?",
@@ -536,7 +536,7 @@
 		},
 		{
 			"id": "nitsm-022",
-			"section": "Continuous Training",
+			"section": "End User Support",
 			"topic": "Training methods",
 			"difficulty": "easy",
 			"question": "Which training method is NOT mentioned?",
@@ -614,7 +614,7 @@
 		},
 		{
 			"id": "nitsm-025",
-			"section": "Reducing Costs",
+			"section": "Cost Management",
 			"topic": "Automation examples",
 			"difficulty": "medium",
 			"question": "Which pair of technologies is given as examples of automation that save hundreds of hours?",
@@ -641,7 +641,7 @@
 		},
 		{
 			"id": "nitsm-026",
-			"section": "Reducing Costs",
+			"section": "Cost Management",
 			"topic": "Thin clients",
 			"difficulty": "easy",
 			"question": "What cost benefits do thin clients provide?",
@@ -671,7 +671,7 @@
 		},
 		{
 			"id": "nitsm-027",
-			"section": "Reducing Costs",
+			"section": "Cost Management",
 			"topic": "Charge-back policies",
 			"difficulty": "medium",
 			"question": "Charge-back policies (charging departments for their IT usage) are noted as being: ",
@@ -704,7 +704,7 @@
 		},
 		{
 			"id": "nitsm-028",
-			"section": "Incident Management",
+			"section": "Incident Management & ITSM",
 			"topic": "Incident vs fault management",
 			"difficulty": "easy",
 			"question": "Which statement correctly describes the difference between fault management and incident management?",
@@ -734,7 +734,7 @@
 		},
 		{
 			"id": "nitsm-029",
-			"section": "Incident Management",
+			"section": "Incident Management & ITSM",
 			"topic": "Primary goal",
 			"difficulty": "easy",
 			"question": "What is the primary goal of Incident Management?",
@@ -761,7 +761,7 @@
 		},
 		{
 			"id": "nitsm-030",
-			"section": "Incident Management",
+			"section": "Incident Management & ITSM",
 			"topic": "Five elements",
 			"difficulty": "medium",
 			"question": "Which of these is one of the five key elements of a successful incident response?",
@@ -782,7 +782,7 @@
 		},
 		{
 			"id": "nitsm-031",
-			"section": "ITSM",
+			"section": "Incident Management & ITSM",
 			"topic": "ITSM lifecycle",
 			"difficulty": "easy",
 			"question": "Which stage is part of the core ITSM lifecycle?",
@@ -803,7 +803,7 @@
 		},
 		{
 			"id": "nitsm-032",
-			"section": "ITSM",
+			"section": "Incident Management & ITSM",
 			"topic": "Frameworks",
 			"difficulty": "easy",
 			"question": "Which of the following frameworks is recommended as a guide for ITSM practices in the document?",
@@ -825,7 +825,7 @@
 	],
 	"coverage": [
 		{
-			"section": "Introduction",
+			"section": "Overview & Integration",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "1-12"
