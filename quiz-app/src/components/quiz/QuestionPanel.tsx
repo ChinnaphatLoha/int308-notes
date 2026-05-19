@@ -11,7 +11,6 @@ import Tooltip from '@mui/material/Tooltip';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CloseIcon from '@mui/icons-material/Close';
-import DoneAllIcon from '@mui/icons-material/DoneAll';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -141,9 +140,25 @@ export function QuestionPanel({
     <Fade in={showFade} timeout={300}>
       <Paper variant="outlined" sx={{ p: { xs: 2, md: 3 }, height: '100%' }}>
         <Stack spacing={2.5}>
-          <Stack direction={{ xs: 'column', sm: 'row' }} sx={{ justifyContent: 'space-between', gap: 1.5 }}>
-            <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: 'wrap' }}>
-              <Chip size="small" icon={<MenuBookIcon />} label={question.section} />
+          <Stack direction="row" sx={{ justifyContent: 'space-between', gap: 1.5, alignItems: 'center', flexWrap: 'wrap' }}>
+            <Stack
+              direction="row"
+              spacing={1}
+              useFlexGap
+              sx={{
+                flexWrap: 'wrap',
+                alignItems: 'center',
+                maxWidth: { xs: 'calc(100% - 44px)', sm: '100%' }
+              }}
+            >
+              <Chip
+                size="small"
+                icon={<MenuBookIcon />}
+                label={question.section}
+                sx={{
+                  '& .MuiChip-label': { maxWidth: { xs: 120, sm: 200 }, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }
+                }}
+              />
               <Chip
                 size="small"
                 color={getDifficultyColor(question.difficulty)}
@@ -152,8 +167,9 @@ export function QuestionPanel({
               />
               <Chip size="small" label={`${question.displayNumber} / ${total}`} />
             </Stack>
+
             <Tooltip title="Copy Question Details">
-              <IconButton size="small" onClick={handleCopy}>
+              <IconButton size="small" onClick={handleCopy} sx={{ ml: 'auto' }}>
                 <ContentCopyIcon fontSize="small" />
               </IconButton>
             </Tooltip>

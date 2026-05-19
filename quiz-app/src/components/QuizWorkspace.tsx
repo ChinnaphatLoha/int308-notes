@@ -36,6 +36,7 @@ type QuizWorkspaceProps = { quizzes: QuizCollection[] };
 export default function QuizWorkspace({ quizzes }: QuizWorkspaceProps) {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('md'));
+  const isXs = useMediaQuery(theme.breakpoints.down('sm'));
   const [selectedSlug, setSelectedSlug] = useState(quizzes[0]?.slug ?? '');
 
   const [settings, setSettings] = useState<QuizSettings>({
@@ -112,7 +113,7 @@ export default function QuizWorkspace({ quizzes }: QuizWorkspaceProps) {
                   </Stack>
                   <Typography variant="h1">{selectedQuiz.quiz.title}</Typography>
                 </Box>
-                <Stack direction="row" spacing={1} sx={{ alignItems: 'center', flexWrap: 'wrap' }}>
+                <Stack direction="row" spacing={1} sx={{ alignItems: 'center', flexWrap: 'wrap', width: '100%' }}>
                   <QuizSettingsDialog
                     quiz={selectedQuiz}
                     settings={settings}
@@ -121,14 +122,29 @@ export default function QuizWorkspace({ quizzes }: QuizWorkspaceProps) {
                       initializeQuiz(selectedQuiz, newSettings);
                     }}
                   />
-                  <FormControl sx={{ minWidth: { xs: '100%', sm: 260 } }} size="small">
+
+                  <FormControl
+                    size="small"
+                    sx={{
+                      flex: { xs: '1 1 auto', sm: '0 0 260px' },
+                      minWidth: { xs: 120, sm: 260 },
+                      width: { xs: 'auto', sm: '260px' }
+                    }}
+                  >
                     <InputLabel id="quiz-select-label">Question bank</InputLabel>
-                    <Select labelId="quiz-select-label" value={selectedQuiz.slug} label="Question bank" onChange={(e) => setSelectedSlug(e.target.value)}>
+                    <Select
+                      labelId="quiz-select-label"
+                      value={selectedQuiz.slug}
+                      label="Question bank"
+                      onChange={(e) => setSelectedSlug(e.target.value)}
+                      fullWidth={false}
+                    >
                       {quizzes.map((q) => (
                         <MenuItem key={q.slug} value={q.slug}>{q.quiz.title} · {q.questionCount} Qs</MenuItem>
                       ))}
                     </Select>
                   </FormControl>
+
                   <Button
                     variant="outlined"
                     color="inherit"
@@ -136,8 +152,14 @@ export default function QuizWorkspace({ quizzes }: QuizWorkspaceProps) {
                     target="_blank"
                     rel="noopener noreferrer"
                     startIcon={<GitHubIcon />}
+                    sx={{ px: isXs ? 1 : undefined, minWidth: isXs ? 40 : undefined }}
                   >
-                    Repository
+                    {isXs ? <GitHubIcon /> : (
+                      <>
+                        <GitHubIcon sx={{ mr: 1 }} />
+                        Repository
+                      </>
+                    )}
                   </Button>
                 </Stack>
               </Stack>
