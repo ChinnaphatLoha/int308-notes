@@ -19,6 +19,7 @@ import DoneAllIcon from '@mui/icons-material/DoneAll';
 import FactCheckIcon from '@mui/icons-material/FactCheck';
 import QuizIcon from '@mui/icons-material/Quiz';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 import type { Choice, QuizCollection, QuizSettings, AnswerMap, RuntimeQuestion } from '@/types/quiz';
 import { prepareQuizSession } from '@/lib/quiz-engine';
@@ -128,6 +129,16 @@ export default function QuizWorkspace({ quizzes }: QuizWorkspaceProps) {
                       ))}
                     </Select>
                   </FormControl>
+                  <Button
+                    variant="outlined"
+                    color="inherit"
+                    href="https://github.com/ChinnaphatLoha/int308-notes"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    startIcon={<GitHubIcon />}
+                  >
+                    Repository
+                  </Button>
                 </Stack>
               </Stack>
               <Stack direction="row" sx={{ gap: 1.5, flexWrap: 'wrap' }}>
