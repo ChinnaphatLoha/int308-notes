@@ -585,7 +585,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The table maps NFPA 75 to protecting IT equipment from fire.",
+      "explanation": "NFPA 75 to protecting IT equipment from fire.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "67-72"
@@ -624,7 +624,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The table maps NFPA 76 to telecommunications facility protection.",
+      "explanation": "NFPA 76 to telecommunications facility protection.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "67-72"
@@ -702,7 +702,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The table lists NFPA 13 as the standard for sprinkler system design.",
+      "explanation": "NFPA 13 as the standard for sprinkler system design.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "67-72"
@@ -795,7 +795,7 @@
       "section": "The Tier System",
       "topic": "Tier I row",
       "difficulty": "medium",
-      "question": "Which statement matches Tier I in the tier table?",
+      "question": "Which statement matches Tier I?",
       "choices": [
         {
           "id": "A",
@@ -912,7 +912,7 @@
       "section": "The Tier System",
       "topic": "Tier IV row",
       "difficulty": "medium",
-      "question": "Which feature distinguishes Tier IV from Tier III in the table?",
+      "question": "Which feature distinguishes Tier IV from Tier III?",
       "choices": [
         {
           "id": "A",
@@ -1171,7 +1171,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The guide contrast banks and hospitals with a small company blog that might be fine with Tier I.",
+      "explanation": "Banks and hospitals with a small company blog might be fine with Tier I.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "96-96"
@@ -1210,7 +1210,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The downtime table lists planned maintenance at 30%.",
+      "explanation": "Planned maintenance at 30%.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "98-110"
@@ -1249,7 +1249,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "Server software issues are listed at 30% in the downtime table.",
+      "explanation": "Server software issues are listed at 30%.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "102-110"
@@ -1405,7 +1405,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide highlight that planned work and software problems together account for 60% of downtime.",
+      "explanation": "Planned work and software problems together account for 60% of downtime.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "112-112"
@@ -1444,7 +1444,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "Because many outages come from planned work and software, the guide emphasize management and processes.",
+      "explanation": "Because many outages come from planned work and software.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "112-112"
@@ -1638,7 +1638,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide describe long rows of tall metal cabinets called racks.",
+      "explanation": "Data center interior has long rows of tall metal cabinets called racks.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "125-131"
@@ -1989,7 +1989,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide explain that cold air moves through the plenum and up through perforated tiles.",
+      "explanation": "Cold air moves through the plenum and up through perforated tiles.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "143-147"
@@ -2225,7 +2225,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide explain that multiple protection layers back each other up.",
+      "explanation": "Multiple protection layers back each other up.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "157-161"
@@ -3005,7 +3005,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The cooling table lists 18 to 27 degrees C, or 64 to 81 degrees F.",
+      "explanation": "'ASHRAE TC 9.9' lists 18 to 27 degrees C, or 64 to 81 degrees F.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "227-235"
@@ -3045,7 +3045,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The table lists relative humidity at 40% to 60%.",
+      "explanation": "Relative humidity at 40% to 60%.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "231-235"
@@ -3084,7 +3084,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The table lists a dew point of 15 degrees C or 59 degrees F maximum.",
+      "explanation": "A dew point of 15 degrees C or 59 degrees F maximum.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "231-235"
@@ -3216,7 +3216,7 @@
       "section": "Cooling",
       "topic": "Regular AC purpose",
       "difficulty": "medium",
-      "question": "What is regular air conditioning primarily designed for according to the comparison?",
+      "question": "What is regular air conditioning primarily designed for?",
       "choices": [
         {
           "id": "A",
@@ -3240,7 +3240,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The guide contrast regular AC for people and moisture removal with PAC for servers and heat.",
+      "explanation": "Regular AC for people and moisture removal with PAC for servers and heat.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "239-242"
@@ -3477,7 +3477,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The table lists CRAC energy efficiency as lower and CRAH as higher.",
+      "explanation": "CRAC energy efficiency as lower and CRAH as higher.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "256-263"
@@ -3517,7 +3517,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The table lists CRAC installation cost as lower and CRAH as higher.",
+      "explanation": "CRAC installation cost as lower and CRAH as higher.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "256-263"
@@ -3556,7 +3556,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The table says CRAC operating cost is higher and CRAH operating cost is lower.",
+      "explanation": "CRAC operating cost is higher and CRAH operating cost is lower.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "256-263"
@@ -3634,7 +3634,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The table says CRAC fits small to medium rooms and CRAH fits large data centers.",
+      "explanation": "CRAC fits small to medium rooms and CRAH fits large data centers.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "256-263"
@@ -3986,7 +3986,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The guide describe the hot air rising, being captured, cooled, and returned under the floor.",
+      "explanation": "Hot air rising, being captured, cooled, and returned under the floor.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "278-283"
@@ -4064,7 +4064,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The comparison table says HAC seals the hot aisle.",
+      "explanation": "HAC seals the hot aisle.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "298-304"
@@ -4103,7 +4103,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The comparison table says CAC seals the cold aisle.",
+      "explanation": "CAC seals the cold aisle.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "298-304"
@@ -4220,7 +4220,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The table lists HAC cooling efficiency as very high and CAC as high.",
+      "explanation": "HAC cooling efficiency as very high and CAC as high.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "298-304"
@@ -4259,7 +4259,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The table lists HAC complexity as moderate and CAC as simpler.",
+      "explanation": "HAC complexity as moderate and CAC as simpler.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "298-304"
@@ -4298,7 +4298,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The table says HAC fits large-scale, high-density centers, while CAC fits most standard data centers.",
+      "explanation": "HAC fits large-scale, high-density centers, while CAC fits most standard data centers.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "298-304"
@@ -4533,7 +4533,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide describe a good modern PUE as 1.2 to 1.4.",
+      "explanation": "A good modern PUE as 1.2 to 1.4.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "316-318"
@@ -4588,7 +4588,7 @@
       "section": "Cooling",
       "topic": "PUE overhead example",
       "difficulty": "hard",
-      "question": "In the 10 MW total and 7 MW IT example, what does the guide say about overhead per server watt?",
+      "question": "If there are the 10 MW total and 7 MW IT usages, what do you say about overhead per server watt?",
       "choices": [
         {
           "id": "A",
@@ -4901,7 +4901,7 @@
       "section": "Fire Protection",
       "topic": "FM-200",
       "difficulty": "medium",
-      "question": "How does FM-200 work according to the table?",
+      "question": "How does FM-200 work?",
       "choices": [
         {
           "id": "A",
@@ -4964,7 +4964,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The table describes Novec 1230 as similar to FM-200, more environmentally friendly, quick to evaporate, and residue-free.",
+      "explanation": "Novec 1230 as similar to FM-200, more environmentally friendly, quick to evaporate, and residue-free.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "345-349"
@@ -5081,7 +5081,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide compare security to layers: an attacker must pass every layer.",
+      "explanation": "Comparing security to layers: an attacker must pass every layer.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "357-367"
@@ -5276,7 +5276,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide define tailgating as someone sneaking in behind an authorized person.",
+      "explanation": "Tailgating as someone sneaking in behind an authorized person.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "361-367"
@@ -5447,7 +5447,7 @@
       "section": "Monitoring",
       "topic": "NOC pronunciation",
       "difficulty": "easy",
-      "question": "How does the guide say NOC is pronounced?",
+      "question": "How is NOC pronounced?",
       "choices": [
         {
           "id": "A",
@@ -5588,7 +5588,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The guide give server down, temperature spike, and power unit failure as NOC visibility examples.",
+      "explanation": "Server down, temperature spike, and power unit failure as NOC visibility examples.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "373-377"
@@ -5627,7 +5627,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The monitoring table lists utility power status, UPS battery levels, and generator readiness for power.",
+      "explanation": "Utility power status, UPS battery levels, and generator readiness for power.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "381-388"
@@ -5744,7 +5744,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The monitoring table lists access logs, camera feeds, and intrusion alerts for security.",
+      "explanation": "Access logs, camera feeds, and intrusion alerts for security.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "381-388"
@@ -5978,7 +5978,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The guide list disasters and major hardware failure as reasons DR planning is needed.",
+      "explanation": "Disasters and major hardware failure as reasons DR planning is needed.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "396-400"
@@ -6032,7 +6032,7 @@
       "section": "Disaster Recovery",
       "topic": "Primary site naming",
       "difficulty": "easy",
-      "question": "What does the guide call the main data center in DR context?",
+      "question": "What is the main data center in DR context?",
       "choices": [
         {
           "id": "A",
@@ -6056,7 +6056,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The guide identify the main data center as the primary site or DC.",
+      "explanation": "The main data center as the primary site or DC.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "400-402"
@@ -6134,7 +6134,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The table says 40 to 50 km minimum helps ensure different power grids and avoids localized events.",
+      "explanation": "40 to 50 km minimum helps ensure different power grids and avoids localized events.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "408-412"
@@ -6173,7 +6173,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The table lists 120 to 160 km as the recommended range.",
+      "explanation": "120 to 160 km as the recommended range.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "408-414"
@@ -6251,7 +6251,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The table says distance beyond 300 km creates too much latency for real-time replication.",
+      "explanation": "Distance beyond 300 km creates too much latency for real-time replication.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "408-414"
@@ -6266,7 +6266,7 @@
       "section": "Disaster Recovery",
       "topic": "DR sweet spot",
       "difficulty": "medium",
-      "question": "What distance range does the guide call the usual sweet spot?",
+      "question": "What distance range is the usual sweet spot?",
       "choices": [
         {
           "id": "A",
@@ -6485,7 +6485,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The guide give a 4-hour RTO as requiring restoration within 4 hours.",
+      "explanation": "A 4-hour RTO as requiring restoration within 4 hours.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "430-432"
@@ -6563,7 +6563,7 @@
         }
       ],
       "correctChoiceId": "C",
-      "explanation": "The guide explain that a 1-hour RPO means the backup copy must be at most 1 hour old.",
+      "explanation": "A 1-hour RPO means the backup copy must be at most 1 hour old.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "434-438"
@@ -6576,9 +6576,9 @@
     {
       "id": "dc-180",
       "section": "Disaster Recovery",
-      "topic": "RTO table question",
+      "topic": "RTO question",
       "difficulty": "easy",
-      "question": "Which question does RTO answer in the table?",
+      "question": "Which question does RTO answer?",
       "choices": [
         {
           "id": "A",
@@ -6602,7 +6602,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The RTO table row asks how fast recovery must happen.",
+      "explanation": "The RTO asks how fast recovery must happen.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "440-443"
@@ -6615,9 +6615,9 @@
     {
       "id": "dc-181",
       "section": "Disaster Recovery",
-      "topic": "RPO table question",
+      "topic": "RPO question",
       "difficulty": "easy",
-      "question": "Which question does RPO answer in the table?",
+      "question": "Which question does RPO answer?",
       "choices": [
         {
           "id": "A",
@@ -6641,7 +6641,7 @@
         }
       ],
       "correctChoiceId": "E",
-      "explanation": "The RPO table row asks how much data loss is acceptable.",
+      "explanation": "The RPO asks how much data loss is acceptable.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "440-443"
@@ -7112,7 +7112,7 @@
         }
       ],
       "correctChoiceId": "B",
-      "explanation": "The replication-level table says storage/block-level copies raw data blocks.",
+      "explanation": "Storage/block-level copies raw data blocks.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "470-478"
@@ -7190,7 +7190,7 @@
         }
       ],
       "correctChoiceId": "D",
-      "explanation": "The table says database-level log-based replication copies database transaction logs.",
+      "explanation": "Database-level log-based replication copies database transaction logs.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "474-478"
@@ -7268,7 +7268,7 @@
         }
       ],
       "correctChoiceId": "A",
-      "explanation": "The table says application/file-level replication copies specific files or application data.",
+      "explanation": "Application/file-level replication copies specific files or application data.",
       "source": {
         "file": "data-center/DATA_CENTER_EN.md",
         "lines": "474-478"

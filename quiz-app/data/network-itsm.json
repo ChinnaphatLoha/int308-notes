@@ -14,7 +14,7 @@
 			"section": "Introduction",
 			"topic": "Main management areas",
 			"difficulty": "easy",
-			"question": "Which four main areas does network management cover according to the guide?",
+			"question": "Which four main areas does network management cover?",
 			"choices": [
 				{ "id": "A", "text": "Security, Backup, Development, Licensing." },
 				{
@@ -77,7 +77,7 @@
 				}
 			],
 			"correctChoiceId": "D",
-			"explanation": "The guide actually says success requires a written charter and long-range goals; it does not remove that need.",
+			"explanation": "Success requires a written charter and long-range goals; it does not remove that need.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "19-26"
@@ -191,7 +191,7 @@
 				{ "id": "E", "text": "Future product roadmaps from unrelated vendors." }
 			],
 			"correctChoiceId": "B",
-			"explanation": "The guide lists detailed hardware documentation such as diagrams, serial numbers, vendors, purchase dates, warranties, and repair contacts.",
+			"explanation": "Detailed hardware documentation such as diagrams, serial numbers, vendors, purchase dates, warranties, and repair contacts.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "55-68"
@@ -326,7 +326,7 @@
 				{ "id": "E", "text": "100% only" }
 			],
 			"correctChoiceId": "D",
-			"explanation": "The guide specifies a target availability range of 99% to 99.5%.",
+			"explanation": "A target availability range of 99% to 99.5%.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "107-114"
@@ -338,7 +338,7 @@
 			"section": "Measuring Reliability",
 			"topic": "Availability calculation",
 			"difficulty": "medium",
-			"question": "How is monthly availability calculated in the guide?",
+			"question": "How is monthly availability calculated?",
 			"choices": [
 				{ "id": "A", "text": "Hours available ÷ 24" },
 				{ "id": "B", "text": "Hours available ÷ 720" },
@@ -419,7 +419,7 @@
 				{ "id": "E", "text": "To replace the need for SLAs." }
 			],
 			"correctChoiceId": "C",
-			"explanation": "The guide says daily stats are plotted on Quality Control Charts against upper and lower limits to predict failures and plan upgrades.",
+			"explanation": "Daily stats are plotted on Quality Control Charts against upper and lower limits to predict failures and plan upgrades.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "139-147"
@@ -506,7 +506,7 @@
 				{ "id": "E", "text": "Marketing requests for new logos." }
 			],
 			"correctChoiceId": "C",
-			"explanation": "The guide notes software problems are typically the hardest to resolve due to hidden bugs and incompatible settings.",
+			"explanation": "Software problems are typically the hardest to resolve due to hidden bugs and incompatible settings.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "167-178"
@@ -539,7 +539,7 @@
 			"section": "Continuous Training",
 			"topic": "Training methods",
 			"difficulty": "easy",
-			"question": "Which training method is NOT mentioned in the guide?",
+			"question": "Which training method is NOT mentioned?",
 			"choices": [
 				{ "id": "A", "text": "In-class sessions." },
 				{ "id": "B", "text": "Personalized one-on-one instruction." },
@@ -551,7 +551,7 @@
 				{ "id": "E", "text": "Ongoing training as roles and software change." }
 			],
 			"correctChoiceId": "D",
-			"explanation": "The guide mentions in-class, one-on-one instruction and manuals; it does not require mandatory external proctored weekly certification tests.",
+			"explanation": "In-class, one-on-one instruction and manuals; it does not require mandatory external proctored weekly certification tests.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "191-199"
@@ -605,7 +605,7 @@
 				{ "id": "E", "text": "Marketing campaigns for IT." }
 			],
 			"correctChoiceId": "C",
-			"explanation": "The guide states personnel costs typically make up 50–70% of the budget for a 100-user network.",
+			"explanation": "Personnel costs typically make up 50–70% of the budget for a 100-user network.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "215-226"
@@ -632,7 +632,7 @@
 				}
 			],
 			"correctChoiceId": "A",
-			"explanation": "The guide cites Electronic Software Distribution (ESD) and DHCP as automation examples that eliminate many hours of manual labor.",
+			"explanation": "Electronic Software Distribution (ESD) and DHCP as automation examples that eliminate many hours of manual labor.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "227-238"
@@ -725,7 +725,7 @@
 				{ "id": "E", "text": "Fault management is only run by HR." }
 			],
 			"correctChoiceId": "B",
-			"explanation": "The guide states fault management deals with daily breakdowns while incident management addresses disasters such as security breaches or natural disasters.",
+			"explanation": "Fault management deals with daily breakdowns while incident management addresses disasters such as security breaches or natural disasters.",
 			"source": {
 				"file": "network-itsm/NETWORK_ITSM_EN.md",
 				"lines": "257-270"

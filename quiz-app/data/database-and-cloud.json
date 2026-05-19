@@ -3654,7 +3654,7 @@
       "section": "Cloud Security",
       "topic": "NIST note",
       "difficulty": "medium",
-      "question": "What does the NIST Cloud Computing Reference Architecture provide according to the note?",
+      "question": "What does the NIST Cloud Computing Reference Architecture provide?",
       "choices": [
         {
           "id": "A",
