@@ -1,4 +1,4 @@
-# THAI_SHORT_NOTE_SKILL.md
+# SKILL.md
 
 ## Purpose
 

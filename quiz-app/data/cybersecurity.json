@@ -1,0 +1,3226 @@
+{
+  "version": "1.0",
+  "source": {
+    "file": "cybersecurity/CYBERSECURITY_EN.md",
+    "title": "Cybersecurity"
+  },
+  "quiz": {
+    "title": "Cybersecurity Quiz",
+    "choiceCount": 5
+  },
+  "questions": [
+    {
+      "id": "cyber-001",
+      "section": "Introduction to Cybersecurity",
+      "topic": "Cybersecurity purpose",
+      "difficulty": "easy",
+      "question": "What is the central purpose of cybersecurity?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To replace physical security with software-only controls."
+        },
+        {
+          "id": "B",
+          "text": "To make digital information impossible to copy or transmit."
+        },
+        {
+          "id": "C",
+          "text": "To protect digital systems, networks, and data from unauthorized access, damage, or disruption."
+        },
+        {
+          "id": "D",
+          "text": "To ensure every network device uses the same operating system."
+        },
+        {
+          "id": "E",
+          "text": "To remove the need for legal rules about computer crime."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Cybersecurity focuses on protecting digital assets against access, damage, and disruption that are not authorized. It is broader than secrecy alone because availability and system integrity also matter.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "9-11"
+      },
+      "tags": [
+        "cybersecurity",
+        "digital-assets"
+      ]
+    },
+    {
+      "id": "cyber-002",
+      "section": "Introduction to Cybersecurity",
+      "topic": "Digital security shift",
+      "difficulty": "medium",
+      "question": "Why did the arrival of networked computers change the nature of security work?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Information could now be copied, intercepted, and stolen remotely without physical entry."
+        },
+        {
+          "id": "B",
+          "text": "Physical locks stopped being useful for protecting any kind of valuable information."
+        },
+        {
+          "id": "C",
+          "text": "Attackers became easier to identify because every network action leaves a clear trail."
+        },
+        {
+          "id": "D",
+          "text": "Digital systems removed the need to control access to buildings and rooms."
+        },
+        {
+          "id": "E",
+          "text": "The Internet made all information public by design, so secrecy became impossible."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Networked computers changed security because valuable data no longer had to remain in one physical place. An attacker could reach information through a network connection rather than by entering a building.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "5-11"
+      },
+      "tags": [
+        "internet",
+        "remote-threats"
+      ]
+    },
+    {
+      "id": "cyber-003",
+      "section": "Introduction to Cybersecurity",
+      "topic": "Enforcement challenges",
+      "difficulty": "medium",
+      "question": "Which situation best explains why cybercrime enforcement is difficult?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Most cyberattacks require the attacker to remain inside the victim's building."
+        },
+        {
+          "id": "B",
+          "text": "Cybercrime laws are identical worldwide, which creates overlapping investigations."
+        },
+        {
+          "id": "C",
+          "text": "Cybersecurity incidents are always easy to trace but rarely cause measurable damage."
+        },
+        {
+          "id": "D",
+          "text": "Attackers can operate across borders while legal systems and penalties lag behind technology."
+        },
+        {
+          "id": "E",
+          "text": "Digital threats are less serious than physical threats, so governments do not regulate them."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Cybercrime enforcement is hard because attackers may be in another jurisdiction and technology often changes faster than legal frameworks. The result is a gap between harm caused and practical enforcement.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "15-19"
+      },
+      "tags": [
+        "law",
+        "cross-border"
+      ]
+    },
+    {
+      "id": "cyber-004",
+      "section": "Introduction to Cybersecurity",
+      "topic": "Cybersecurity core challenge",
+      "difficulty": "hard",
+      "question": "Which statement best captures the core challenge that makes cybersecurity different from traditional physical security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Physical security is mostly concerned with people, while cybersecurity is only concerned with machines."
+        },
+        {
+          "id": "B",
+          "text": "Physical security protects fixed locations, while cybersecurity protects data that can move globally through networks."
+        },
+        {
+          "id": "C",
+          "text": "Physical security works only after an attack, while cybersecurity works only before an attack."
+        },
+        {
+          "id": "D",
+          "text": "Physical security relies on laws, while cybersecurity relies entirely on voluntary behavior."
+        },
+        {
+          "id": "E",
+          "text": "Physical security can prevent theft, while cybersecurity can only detect theft afterward."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The key distinction is not that one kind of security is important and the other is not. Digital data can exist in transit across global networks, so protection must account for threats that are remote, fast, and often invisible.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "15-21"
+      },
+      "tags": [
+        "physical-security",
+        "data-flow"
+      ]
+    },
+    {
+      "id": "cyber-005",
+      "section": "Network Controls",
+      "topic": "Control categories",
+      "difficulty": "easy",
+      "question": "Which pairing correctly matches a network control type with its purpose?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Preventative controls discover threats that have already occurred."
+        },
+        {
+          "id": "B",
+          "text": "Detective controls repair damage after an incident has ended."
+        },
+        {
+          "id": "C",
+          "text": "Corrective controls fix damage after an incident."
+        },
+        {
+          "id": "D",
+          "text": "Corrective controls stop all threats before they happen."
+        },
+        {
+          "id": "E",
+          "text": "Detective controls eliminate the need for logging and auditing."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Corrective controls are used after damage has occurred to restore normal operation. Preventative controls try to stop incidents in advance, while detective controls reveal incidents that prevention missed.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "29-35"
+      },
+      "tags": [
+        "controls",
+        "corrective"
+      ]
+    },
+    {
+      "id": "cyber-006",
+      "section": "Network Controls",
+      "topic": "Layered control types",
+      "difficulty": "medium",
+      "question": "Why should an organization combine preventative, detective, and corrective controls?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Because each type is legally required to be purchased from a different vendor."
+        },
+        {
+          "id": "B",
+          "text": "Because preventative controls work only for physical threats, while detective controls work only online."
+        },
+        {
+          "id": "C",
+          "text": "Because corrective controls can identify attacks before they reach a network."
+        },
+        {
+          "id": "D",
+          "text": "Because some attacks will bypass prevention, requiring detection and recovery afterward."
+        },
+        {
+          "id": "E",
+          "text": "Because detective controls make recovery plans unnecessary once logging is enabled."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "No control category is sufficient by itself. Prevention reduces incidents, detection reveals what gets through, and correction restores service after damage occurs.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "37-47"
+      },
+      "tags": [
+        "controls",
+        "layered-defense"
+      ]
+    },
+    {
+      "id": "cyber-007",
+      "section": "Network Controls",
+      "topic": "Control examples",
+      "difficulty": "medium",
+      "question": "A system records suspicious login attempts so administrators can investigate them later. Which type of control is this?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Preventative, because it guarantees that the login attempts cannot happen."
+        },
+        {
+          "id": "B",
+          "text": "Detective, because it helps discover activity that has occurred."
+        },
+        {
+          "id": "C",
+          "text": "Corrective, because it automatically repairs damaged accounts."
+        },
+        {
+          "id": "D",
+          "text": "Preventative, because all authentication tools are preventative by definition."
+        },
+        {
+          "id": "E",
+          "text": "Corrective, because logging is only useful after backup restoration."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Logging and auditing are detective controls because they expose events that have happened or are happening. They may support later response, but their direct role is discovery.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "31-39"
+      },
+      "tags": [
+        "detective-controls",
+        "logging"
+      ]
+    },
+    {
+      "id": "cyber-008",
+      "section": "Network Controls",
+      "topic": "Control maintenance",
+      "difficulty": "medium",
+      "question": "Which practice best reflects proper maintenance of security controls?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Assigning accountability, testing controls, and updating them as new threats emerge."
+        },
+        {
+          "id": "B",
+          "text": "Installing controls once and avoiding later changes so the environment stays stable."
+        },
+        {
+          "id": "C",
+          "text": "Disabling controls during reviews so employees can work without restrictions."
+        },
+        {
+          "id": "D",
+          "text": "Replacing formal testing with informal confidence that the control should work."
+        },
+        {
+          "id": "E",
+          "text": "Letting each user decide whether a control should remain active."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Controls degrade or become outdated unless someone owns them, maintains them, tests them, and updates them. Periodic review also confirms whether controls still exist and function as intended.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "49-59"
+      },
+      "tags": [
+        "control-maintenance",
+        "accountability"
+      ]
+    },
+    {
+      "id": "cyber-009",
+      "section": "Risk Assessment",
+      "topic": "Risk assessment purpose",
+      "difficulty": "easy",
+      "question": "What question does risk assessment primarily help an organization answer?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Which security vendor has the newest product release?"
+        },
+        {
+          "id": "B",
+          "text": "Where limited security resources should be spent for the most protection."
+        },
+        {
+          "id": "C",
+          "text": "How to eliminate all uncertainty from a network environment."
+        },
+        {
+          "id": "D",
+          "text": "Which employees should be exempt from security policies."
+        },
+        {
+          "id": "E",
+          "text": "How to avoid measuring the financial impact of incidents."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Risk assessment connects threats, likelihood, and cost so security choices are prioritized rather than arbitrary. It helps decide where protection produces the greatest value.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "65-71"
+      },
+      "tags": [
+        "risk-assessment",
+        "prioritization"
+      ]
+    },
+    {
+      "id": "cyber-010",
+      "section": "Risk Assessment",
+      "topic": "Control spreadsheet",
+      "difficulty": "easy",
+      "question": "What does a control spreadsheet help an organization track?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only the names of employees who have completed security training."
+        },
+        {
+          "id": "B",
+          "text": "Only the cost of software licenses used by the security team."
+        },
+        {
+          "id": "C",
+          "text": "Only confirmed incidents that have already been reported to law enforcement."
+        },
+        {
+          "id": "D",
+          "text": "Network assets, threats facing those assets, and controls currently in place."
+        },
+        {
+          "id": "E",
+          "text": "Public IP addresses that should be hidden from internal users."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "A control spreadsheet creates visibility into assets, threats, and existing protections. That makes gaps easier to see and security investments easier to justify.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "73-75"
+      },
+      "tags": [
+        "control-spreadsheet",
+        "assets"
+      ]
+    },
+    {
+      "id": "cyber-011",
+      "section": "Risk Assessment",
+      "topic": "Asset value factors",
+      "difficulty": "medium",
+      "question": "When estimating the value of a network asset for risk planning, which set of factors is most relevant?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Brand popularity, rack color, and the number of installed fonts."
+        },
+        {
+          "id": "B",
+          "text": "Physical size, cable length, and monitor resolution."
+        },
+        {
+          "id": "C",
+          "text": "Number of users, office location, and preferred browser."
+        },
+        {
+          "id": "D",
+          "text": "Purchase date, employee seniority, and firewall vendor."
+        },
+        {
+          "id": "E",
+          "text": "Replacement cost, personnel time, and revenue loss during downtime."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Asset value is tied to business impact: what it costs to replace, how much labor recovery requires, and how much revenue is lost while it is unavailable.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "77-83"
+      },
+      "tags": [
+        "asset-value",
+        "business-impact"
+      ]
+    },
+    {
+      "id": "cyber-012",
+      "section": "Risk Assessment",
+      "topic": "Business prioritization",
+      "difficulty": "hard",
+      "question": "A public web server processes high-value transactions every hour, while a small internal file share supports only three employees. What risk assessment principle explains why the web server should receive stronger protection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Security priority should reflect the business value and downtime impact of the asset."
+        },
+        {
+          "id": "B",
+          "text": "Public systems should always be protected only with detective controls."
+        },
+        {
+          "id": "C",
+          "text": "Internal file shares cannot face cybersecurity threats."
+        },
+        {
+          "id": "D",
+          "text": "Revenue loss matters less than whether a system is easy to replace."
+        },
+        {
+          "id": "E",
+          "text": "Every asset should receive identical protection regardless of business role."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Risk prioritization is ultimately a business decision. The server with higher revenue impact deserves stronger protection because its failure would cost the organization more.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "77-85"
+      },
+      "tags": [
+        "business-decision",
+        "risk-prioritization"
+      ]
+    },
+    {
+      "id": "cyber-013",
+      "section": "Security Threats Overview",
+      "topic": "Threat categories",
+      "difficulty": "easy",
+      "question": "Which item is an example of a cybersecurity threat category?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A network naming convention."
+        },
+        {
+          "id": "B",
+          "text": "A software licensing audit."
+        },
+        {
+          "id": "C",
+          "text": "A denial-of-service attack."
+        },
+        {
+          "id": "D",
+          "text": "A planned employee training session."
+        },
+        {
+          "id": "E",
+          "text": "A routine password reset policy."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "A denial-of-service attack is a threat because it overwhelms a system to make it unavailable. It belongs with other threat categories such as malware, theft, device failure, and disasters.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "89-100"
+      },
+      "tags": [
+        "threats",
+        "dos"
+      ]
+    },
+    {
+      "id": "cyber-014",
+      "section": "Security Threats Overview",
+      "topic": "Threat cost",
+      "difficulty": "medium",
+      "question": "What is the best lesson to draw from comparing threat frequency and threat cost?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The most frequent threat should always receive the entire security budget."
+        },
+        {
+          "id": "B",
+          "text": "Rare threats can be ignored if their average cost is high."
+        },
+        {
+          "id": "C",
+          "text": "Threats with low hourly cost are always more dangerous than costly attacks."
+        },
+        {
+          "id": "D",
+          "text": "Security planning must consider both how often threats happen and how damaging they can be."
+        },
+        {
+          "id": "E",
+          "text": "Financial impact is too uncertain to help justify security investments."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Viruses may be the most common, while intrusions and DoS attacks can be more expensive. Effective planning weighs both likelihood and impact rather than focusing on only one dimension.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "102-119"
+      },
+      "tags": [
+        "frequency",
+        "impact"
+      ]
+    },
+    {
+      "id": "cyber-015",
+      "section": "Security Threats Overview",
+      "topic": "Virus frequency",
+      "difficulty": "medium",
+      "question": "Which statement accurately describes viruses in the threat landscape?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Viruses are the most common threat, but they are not necessarily the most expensive per incident."
+        },
+        {
+          "id": "B",
+          "text": "Viruses are rare, but each one usually costs more than a major DoS attack."
+        },
+        {
+          "id": "C",
+          "text": "Viruses are mostly physical disasters that damage network hardware."
+        },
+        {
+          "id": "D",
+          "text": "Viruses have no financial consequences if a company has Internet access."
+        },
+        {
+          "id": "E",
+          "text": "Viruses are always created by insiders with authorized accounts."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The material distinguishes frequency from cost. Virus infections occur often, but less frequent events like external intrusions and DoS attacks can create much larger financial damage.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "106-117"
+      },
+      "tags": [
+        "viruses",
+        "cost"
+      ]
+    },
+    {
+      "id": "cyber-016",
+      "section": "Security Threats Overview",
+      "topic": "External intrusions",
+      "difficulty": "medium",
+      "question": "Why can external intrusions be especially costly compared with many internal threats?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "External attackers usually target systems that have no valuable data."
+        },
+        {
+          "id": "B",
+          "text": "External attacks are expensive only because they cannot involve financial data."
+        },
+        {
+          "id": "C",
+          "text": "External intrusions happen less often than every other threat and never repeat."
+        },
+        {
+          "id": "D",
+          "text": "External attackers are automatically blocked once an organization uses backups."
+        },
+        {
+          "id": "E",
+          "text": "Professional attackers often seek high-value targets such as financial data or intellectual property."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "External intrusions can be costly because the attackers may be skilled and motivated by valuable data. Even if they are less frequent than viruses, their impact can be severe.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "108-117"
+      },
+      "tags": [
+        "intrusions",
+        "high-value-targets"
+      ]
+    },
+    {
+      "id": "cyber-017",
+      "section": "Ensuring Business Continuity",
+      "topic": "Business continuity scope",
+      "difficulty": "easy",
+      "question": "What is the goal of business continuity?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To prevent any employee from accessing company systems."
+        },
+        {
+          "id": "B",
+          "text": "To keep an organization operating through disruptions, destruction, or disasters."
+        },
+        {
+          "id": "C",
+          "text": "To replace incident response with only antivirus software."
+        },
+        {
+          "id": "D",
+          "text": "To make disaster recovery plans unnecessary after a firewall is installed."
+        },
+        {
+          "id": "E",
+          "text": "To focus only on disasters that have already happened."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Business continuity is about keeping operations going despite disruptive events. It includes prevention, quick detection, and correction, matching the same logic as network controls.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "123-133"
+      },
+      "tags": [
+        "business-continuity",
+        "resilience"
+      ]
+    },
+    {
+      "id": "cyber-018",
+      "section": "Ensuring Business Continuity",
+      "topic": "DoS and virus defenses",
+      "difficulty": "medium",
+      "question": "Which combination best matches the preventive measures for common malware and DoS threats?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Disk duplexing for viruses, and background checks for DDoS traffic."
+        },
+        {
+          "id": "B",
+          "text": "Offsite backups for viruses, and default passwords for DDoS attacks."
+        },
+        {
+          "id": "C",
+          "text": "Email filtering and antivirus for viruses, plus multiple servers and traffic filtering for DoS."
+        },
+        {
+          "id": "D",
+          "text": "Certificate fingerprints for viruses, plus user profiles for DoS attacks."
+        },
+        {
+          "id": "E",
+          "text": "Access cards for viruses, plus encryption algorithms for DDoS traffic volume."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Virus prevention relies on antivirus and email filtering. DoS defense focuses on absorbing, detecting, and filtering excessive or suspicious traffic before it makes services unavailable.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "137-155"
+      },
+      "tags": [
+        "virus-prevention",
+        "dos-defense"
+      ]
+    },
+    {
+      "id": "cyber-019",
+      "section": "Ensuring Business Continuity",
+      "topic": "Redundancy and decentralization",
+      "difficulty": "medium",
+      "question": "A company wants systems to keep operating when hardware fails and also survive a flood at one facility. Which strategy best matches these goals?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Use only one high-capacity server and store all backups in the same room."
+        },
+        {
+          "id": "B",
+          "text": "Disable spare components so failure evidence is easier to collect."
+        },
+        {
+          "id": "C",
+          "text": "Rely only on a written policy and avoid duplicate hardware."
+        },
+        {
+          "id": "D",
+          "text": "Use redundant components and distribute critical resources across geographically diverse locations."
+        },
+        {
+          "id": "E",
+          "text": "Route all network traffic through a single local power switch."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Redundancy handles device failure by letting backup components take over. Decentralization handles facility-level disasters by placing critical resources in separate geographic locations.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "157-170"
+      },
+      "tags": [
+        "redundancy",
+        "decentralization"
+      ]
+    },
+    {
+      "id": "cyber-020",
+      "section": "Ensuring Business Continuity",
+      "topic": "Disaster recovery plans",
+      "difficulty": "hard",
+      "question": "Why is a disaster recovery plan that has never been tested almost as dangerous as having no plan?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Testing a DRP usually deletes the offsite backups it is supposed to protect."
+        },
+        {
+          "id": "B",
+          "text": "An untested DRP may not work when needed, and personnel may not know their recovery responsibilities."
+        },
+        {
+          "id": "C",
+          "text": "A DRP is useful only if all recovery work is handled by law enforcement."
+        },
+        {
+          "id": "D",
+          "text": "Testing is unnecessary if an organization uses continuous data protection."
+        },
+        {
+          "id": "E",
+          "text": "A DRP should remain secret from the people assigned to execute it."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A DRP must be documented, tested, and assigned to recovery personnel. Without rehearsal, the plan may fail in practice or create confusion during an actual disaster.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "172-196"
+      },
+      "tags": [
+        "drp",
+        "testing"
+      ]
+    },
+    {
+      "id": "cyber-021",
+      "section": "Intrusion Prevention",
+      "topic": "Intruder types",
+      "difficulty": "easy",
+      "question": "Which type of intruder can be especially dangerous because they already have legitimate access?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A malicious insider."
+        },
+        {
+          "id": "B",
+          "text": "A failed disk controller."
+        },
+        {
+          "id": "C",
+          "text": "A packet-level firewall."
+        },
+        {
+          "id": "D",
+          "text": "A public certificate authority."
+        },
+        {
+          "id": "E",
+          "text": "A disaster recovery vendor."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Malicious insiders are dangerous because their access is already authorized. They do not need to bypass the same perimeter defenses that outsiders do.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "202-205"
+      },
+      "tags": [
+        "insider-threat",
+        "intrusion"
+      ]
+    },
+    {
+      "id": "cyber-022",
+      "section": "Intrusion Prevention",
+      "topic": "Proactive security",
+      "difficulty": "medium",
+      "question": "Which action is a proactive approach to intrusion prevention?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Waiting until attackers report vulnerabilities before testing systems."
+        },
+        {
+          "id": "B",
+          "text": "Keeping all sensitive data online so it is easier to manage centrally."
+        },
+        {
+          "id": "C",
+          "text": "Letting each department invent separate security rules after an incident."
+        },
+        {
+          "id": "D",
+          "text": "Replacing security policy with informal employee judgment."
+        },
+        {
+          "id": "E",
+          "text": "Regularly testing systems for vulnerabilities before attackers find them."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Routine security testing is proactive because it discovers weaknesses before attackers do. Keeping sensitive data offline and enforcing security policies are also proactive measures.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "206-212"
+      },
+      "tags": [
+        "security-testing",
+        "proactive-defense"
+      ]
+    },
+    {
+      "id": "cyber-023",
+      "section": "Intrusion Prevention",
+      "topic": "Offline sensitive data",
+      "difficulty": "medium",
+      "question": "Why can keeping sensitive data offline reduce intrusion risk?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Offline data is automatically encrypted with every user's password."
+        },
+        {
+          "id": "B",
+          "text": "Data that is not connected to a network cannot be reached through a network attack."
+        },
+        {
+          "id": "C",
+          "text": "Offline data cannot be stolen by anyone under any circumstances."
+        },
+        {
+          "id": "D",
+          "text": "Offline data removes the need for physical security and access controls."
+        },
+        {
+          "id": "E",
+          "text": "Offline storage makes all security policies unnecessary."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Taking sensitive data off the network removes it from the path of network-based intrusions. This does not eliminate all risk, but it blocks a major attack route.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "208-212"
+      },
+      "tags": [
+        "offline-data",
+        "intrusion-prevention"
+      ]
+    },
+    {
+      "id": "cyber-024",
+      "section": "Intrusion Prevention",
+      "topic": "Security policy role",
+      "difficulty": "medium",
+      "question": "Why is a security policy considered foundational to intrusion prevention?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It guarantees that every attacker will be identified before entering the network."
+        },
+        {
+          "id": "B",
+          "text": "It replaces technical controls such as firewalls, IDS, and access restrictions."
+        },
+        {
+          "id": "C",
+          "text": "It makes security decisions unnecessary during incidents."
+        },
+        {
+          "id": "D",
+          "text": "It defines consistent rules and acceptable behavior instead of leaving security ad hoc."
+        },
+        {
+          "id": "E",
+          "text": "It prevents all employees from using company systems."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Without a security policy, security efforts become inconsistent and reactive. A policy establishes expectations and requirements that guide technical and human decisions.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "214-216"
+      },
+      "tags": [
+        "security-policy",
+        "governance"
+      ]
+    },
+    {
+      "id": "cyber-025",
+      "section": "Security Policy Elements",
+      "topic": "Decision authority",
+      "difficulty": "easy",
+      "question": "Why should a security policy identify decision makers?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "So security decisions can be postponed until after every incident is resolved."
+        },
+        {
+          "id": "B",
+          "text": "So authority is clear and confusion is reduced during security incidents."
+        },
+        {
+          "id": "C",
+          "text": "So employees can ignore incident reporting procedures."
+        },
+        {
+          "id": "D",
+          "text": "So the organization can avoid assigning accountability for controls."
+        },
+        {
+          "id": "E",
+          "text": "So only technical staff need to understand security requirements."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Identifying decision makers creates clear ownership. During an incident, uncertainty about who has authority can delay or disrupt the response.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "220-226"
+      },
+      "tags": [
+        "decision-makers",
+        "policy"
+      ]
+    },
+    {
+      "id": "cyber-026",
+      "section": "Security Policy Elements",
+      "topic": "Access balance",
+      "difficulty": "medium",
+      "question": "What is the main reason a security policy must balance security and access?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Security that is too restrictive can block work, while security that is too lax invites attackers."
+        },
+        {
+          "id": "B",
+          "text": "Access should always be unrestricted so employees never need approval."
+        },
+        {
+          "id": "C",
+          "text": "Security controls should be strict only for outsiders and never for employees."
+        },
+        {
+          "id": "D",
+          "text": "Access control policies matter only when a natural disaster occurs."
+        },
+        {
+          "id": "E",
+          "text": "The best security policy is one that prevents all business operations."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Good policy must protect systems without making legitimate work impossible. The goal is not maximum restriction; it is appropriate restriction based on risk and business needs.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "228-234"
+      },
+      "tags": [
+        "access-control",
+        "policy-balance"
+      ]
+    },
+    {
+      "id": "cyber-027",
+      "section": "Security Policy Elements",
+      "topic": "Training and communication",
+      "difficulty": "medium",
+      "question": "Why are user training and communication essential parts of a security policy?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They allow the organization to remove technical controls from the network."
+        },
+        {
+          "id": "B",
+          "text": "They guarantee that employees will never make mistakes."
+        },
+        {
+          "id": "C",
+          "text": "A policy works only if people know it exists, understand it, and follow it."
+        },
+        {
+          "id": "D",
+          "text": "They are useful only for employees who do not use computers."
+        },
+        {
+          "id": "E",
+          "text": "They replace the need to review and update policy content."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Even a well-written policy fails if employees do not understand or follow it. Training turns policy from a document into actual behavior.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "234-238"
+      },
+      "tags": [
+        "training",
+        "acceptable-use"
+      ]
+    },
+    {
+      "id": "cyber-028",
+      "section": "Security Policy Elements",
+      "topic": "Policy updates",
+      "difficulty": "medium",
+      "question": "Why should security policies be tested and updated regularly?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Because policies should change randomly to confuse attackers."
+        },
+        {
+          "id": "B",
+          "text": "Because older policies automatically expire after every incident."
+        },
+        {
+          "id": "C",
+          "text": "Because policies are only needed until a firewall is purchased."
+        },
+        {
+          "id": "D",
+          "text": "Because threats change, and outdated policies may no longer protect the organization effectively."
+        },
+        {
+          "id": "E",
+          "text": "Because testing policy eliminates the need for incident response structures."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The threat landscape changes constantly. Regular review helps ensure the policy still matches current risks, technologies, and organizational needs.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "236-238"
+      },
+      "tags": [
+        "policy-review",
+        "threat-change"
+      ]
+    },
+    {
+      "id": "cyber-029",
+      "section": "Securing the Network Perimeter",
+      "topic": "Attack vectors",
+      "difficulty": "easy",
+      "question": "Which entry point is described as the most common and dangerous network attack vector?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A locked equipment closet."
+        },
+        {
+          "id": "B",
+          "text": "A local printer queue."
+        },
+        {
+          "id": "C",
+          "text": "An Internet connection."
+        },
+        {
+          "id": "D",
+          "text": "A written disaster recovery plan."
+        },
+        {
+          "id": "E",
+          "text": "An employee orientation handbook."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Internet connections are common and dangerous because they expose the network boundary to outside traffic. LANs and legacy dial-up connections can also be attack vectors.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "244-252"
+      },
+      "tags": [
+        "perimeter",
+        "attack-vectors"
+      ]
+    },
+    {
+      "id": "cyber-030",
+      "section": "Securing the Network Perimeter",
+      "topic": "Firewall function",
+      "difficulty": "easy",
+      "question": "What does a firewall do at a network boundary?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It stores all critical data in encrypted offsite backups."
+        },
+        {
+          "id": "B",
+          "text": "It inspects traffic and decides what should be allowed through or blocked."
+        },
+        {
+          "id": "C",
+          "text": "It issues digital certificates to prove organizational identity."
+        },
+        {
+          "id": "D",
+          "text": "It guarantees that insiders cannot misuse authorized access."
+        },
+        {
+          "id": "E",
+          "text": "It replaces all user authentication and access control policies."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A firewall acts like a checkpoint between the internal network and the outside world. It filters traffic based on rules rather than simply allowing everything through.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "254-256"
+      },
+      "tags": [
+        "firewall",
+        "traffic-filtering"
+      ]
+    },
+    {
+      "id": "cyber-031",
+      "section": "Securing the Network Perimeter",
+      "topic": "Firewall types",
+      "difficulty": "medium",
+      "question": "Which distinction between packet-level and application-level firewalls is accurate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Packet-level firewalls verify user identity through certificates, while application-level firewalls inspect only cable signals."
+        },
+        {
+          "id": "B",
+          "text": "Packet-level firewalls are slower because they understand full application content."
+        },
+        {
+          "id": "C",
+          "text": "Application-level firewalls cannot hide internal computers from outside view."
+        },
+        {
+          "id": "D",
+          "text": "Both types ignore access control lists when making filtering decisions."
+        },
+        {
+          "id": "E",
+          "text": "Packet-level firewalls inspect packet headers, while application-level firewalls act as intermediaries for services."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Packet-level firewalls make faster decisions from header information such as IP addresses and ports. Application-level firewalls are more thorough because they mediate specific application access.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "258-265"
+      },
+      "tags": [
+        "packet-filtering",
+        "application-firewall"
+      ]
+    },
+    {
+      "id": "cyber-032",
+      "section": "Securing the Network Perimeter",
+      "topic": "IP spoofing",
+      "difficulty": "hard",
+      "question": "Why is IP spoofing a particular weakness for packet-level firewalls?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It prevents packets from carrying source and destination addresses."
+        },
+        {
+          "id": "B",
+          "text": "It forces application-level firewalls to reveal all private addresses."
+        },
+        {
+          "id": "C",
+          "text": "It turns encrypted ciphertext back into plaintext before inspection."
+        },
+        {
+          "id": "D",
+          "text": "It lets attackers falsify source IP addresses that packet-level rules may trust."
+        },
+        {
+          "id": "E",
+          "text": "It disables access control lists by deleting firewall policy files."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Packet-level firewalls often rely on claimed source addresses. If an attacker spoofs a trusted IP address, the firewall may allow traffic that appears legitimate even though the claim is false.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "267-273"
+      },
+      "tags": [
+        "ip-spoofing",
+        "packet-firewall"
+      ]
+    },
+    {
+      "id": "cyber-033",
+      "section": "Network Address Translation",
+      "topic": "NAT purpose",
+      "difficulty": "easy",
+      "question": "What protection does Network Address Translation provide?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It scans every attachment for malware before delivery."
+        },
+        {
+          "id": "B",
+          "text": "It replaces the need for public key infrastructure."
+        },
+        {
+          "id": "C",
+          "text": "It hides internal private addresses behind a public address."
+        },
+        {
+          "id": "D",
+          "text": "It creates biometric profiles for authenticated users."
+        },
+        {
+          "id": "E",
+          "text": "It stores forensic evidence after an intrusion."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "NAT translates private internal addresses into a public address for external communication. Outside observers see the public address rather than the internal structure.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "277-285"
+      },
+      "tags": [
+        "nat",
+        "private-addresses"
+      ]
+    },
+    {
+      "id": "cyber-034",
+      "section": "Network Address Translation",
+      "topic": "Address table",
+      "difficulty": "medium",
+      "question": "Why does NAT maintain an address table?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To route returning responses to the correct internal device."
+        },
+        {
+          "id": "B",
+          "text": "To store every user's biometric authentication template."
+        },
+        {
+          "id": "C",
+          "text": "To replace the firewall's access control list."
+        },
+        {
+          "id": "D",
+          "text": "To decide which disaster recovery firm should handle an outage."
+        },
+        {
+          "id": "E",
+          "text": "To identify malware signatures in packet payloads."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "When internal devices share a translated public address, NAT must remember which internal device started each external session. The address table lets responses return to the right device.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "281-287"
+      },
+      "tags": [
+        "nat-table",
+        "routing"
+      ]
+    },
+    {
+      "id": "cyber-035",
+      "section": "Network Address Translation",
+      "topic": "Passive security",
+      "difficulty": "medium",
+      "question": "Why is NAT described as a passive layer of security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It actively analyzes application behavior and blocks users in real time."
+        },
+        {
+          "id": "B",
+          "text": "It hides internal addressing, making specific internal devices harder to target."
+        },
+        {
+          "id": "C",
+          "text": "It replaces all intrusion detection by reporting alerts to a SIEM."
+        },
+        {
+          "id": "D",
+          "text": "It encrypts each packet so attackers cannot read intercepted traffic."
+        },
+        {
+          "id": "E",
+          "text": "It verifies that every public key belongs to the correct organization."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "NAT improves security by concealing the internal network layout rather than by actively inspecting and blocking malicious behavior. That makes it useful, but limited.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "283-290"
+      },
+      "tags": [
+        "passive-security",
+        "address-hiding"
+      ]
+    },
+    {
+      "id": "cyber-036",
+      "section": "Network Address Translation",
+      "topic": "NAT limitations",
+      "difficulty": "medium",
+      "question": "Which statement best describes the limitation of NAT?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "NAT cannot be used unless every internal device has a public IP address."
+        },
+        {
+          "id": "B",
+          "text": "NAT hides internal addresses, but it is not a substitute for firewalls and intrusion detection."
+        },
+        {
+          "id": "C",
+          "text": "NAT makes internal network structure more visible to outside attackers."
+        },
+        {
+          "id": "D",
+          "text": "NAT is useful only after an intrusion has already been confirmed."
+        },
+        {
+          "id": "E",
+          "text": "NAT protects only against employees who have authorized access."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "NAT adds obscurity by hiding internal addresses, but it does not inspect traffic like a firewall or detect attacks like an IDS. It should be part of a layered approach.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "289-290"
+      },
+      "tags": [
+        "nat-limitations",
+        "layered-defense"
+      ]
+    },
+    {
+      "id": "cyber-037",
+      "section": "Intrusion Detection Systems",
+      "topic": "IDS role",
+      "difficulty": "easy",
+      "question": "What is the main role of an Intrusion Detection System?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To issue digital certificates after identity proofing."
+        },
+        {
+          "id": "B",
+          "text": "To hide all internal private IP addresses from the Internet."
+        },
+        {
+          "id": "C",
+          "text": "To restore failed circuits after a natural disaster."
+        },
+        {
+          "id": "D",
+          "text": "To monitor traffic or system activity for suspicious behavior or policy violations."
+        },
+        {
+          "id": "E",
+          "text": "To replace the need for access control policies."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "An IDS watches activity and reports suspicious patterns. It is especially useful when a threat has bypassed preventative controls such as firewalls.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "293-298"
+      },
+      "tags": [
+        "ids",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "cyber-038",
+      "section": "Intrusion Detection Systems",
+      "topic": "Misuse detection",
+      "difficulty": "medium",
+      "question": "Which description best fits misuse detection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It compares observed activity against known attack signatures."
+        },
+        {
+          "id": "B",
+          "text": "It encrypts traffic with a private key before sending it."
+        },
+        {
+          "id": "C",
+          "text": "It identifies every new attack without needing prior patterns."
+        },
+        {
+          "id": "D",
+          "text": "It assigns user permissions based on job roles."
+        },
+        {
+          "id": "E",
+          "text": "It translates private IP addresses into public addresses."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Misuse detection is signature-based. It is strong against known attacks because it looks for cataloged patterns, but it is weak against attacks that have never been seen before.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "301-309"
+      },
+      "tags": [
+        "misuse-detection",
+        "signatures"
+      ]
+    },
+    {
+      "id": "cyber-039",
+      "section": "Intrusion Detection Systems",
+      "topic": "Anomaly detection",
+      "difficulty": "medium",
+      "question": "A marketing campaign causes a sudden legitimate traffic spike, and the IDS raises alerts because the pattern is unusual. Which weakness does this illustrate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Misuse detection cannot identify known signatures."
+        },
+        {
+          "id": "B",
+          "text": "Packet-level firewalls cannot read destination IP addresses."
+        },
+        {
+          "id": "C",
+          "text": "NAT cannot route responses back to internal clients."
+        },
+        {
+          "id": "D",
+          "text": "Digital signatures cannot prove message origin."
+        },
+        {
+          "id": "E",
+          "text": "Anomaly detection can generate false positives from legitimate but unusual activity."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Anomaly detection compares activity to a normal baseline. That helps catch novel attacks, but legitimate deviations can look suspicious and create false positives.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "310-315"
+      },
+      "tags": [
+        "anomaly-detection",
+        "false-positives"
+      ]
+    },
+    {
+      "id": "cyber-040",
+      "section": "Intrusion Detection Systems",
+      "topic": "IDS deployment",
+      "difficulty": "medium",
+      "question": "Why might an organization deploy network-based, host-based, and application-based IDS together?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Each type monitors the same data in exactly the same way, creating duplicate alerts only."
+        },
+        {
+          "id": "B",
+          "text": "Each type provides visibility at a different level of the environment."
+        },
+        {
+          "id": "C",
+          "text": "Host-based IDS can monitor all network segments without touching individual machines."
+        },
+        {
+          "id": "D",
+          "text": "Application-based IDS replaces user authentication for every system."
+        },
+        {
+          "id": "E",
+          "text": "Network-based IDS is useful only when no traffic crosses the network."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Different IDS deployment types observe different layers: network segments, specific hosts, and individual applications. Combining them improves coverage.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "317-327"
+      },
+      "tags": [
+        "ids-deployment",
+        "coverage"
+      ]
+    },
+    {
+      "id": "cyber-041",
+      "section": "Physical Security and Personnel Matters",
+      "topic": "Physical security importance",
+      "difficulty": "medium",
+      "question": "Why does physical security remain important even when a network has strong technical defenses?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Physical security matters only for paper records, not digital systems."
+        },
+        {
+          "id": "B",
+          "text": "Technical defenses automatically stop anyone who reaches the server room."
+        },
+        {
+          "id": "C",
+          "text": "An attacker with physical access may bypass network defenses by touching equipment directly."
+        },
+        {
+          "id": "D",
+          "text": "Firewalls protect cables from being tapped or unplugged."
+        },
+        {
+          "id": "E",
+          "text": "Physical access controls are useful only during natural disasters."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "A firewall cannot stop someone who can walk into a server room and connect to equipment. Physical protection limits access to the tangible infrastructure that digital systems depend on.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "331-345"
+      },
+      "tags": [
+        "physical-security",
+        "server-room"
+      ]
+    },
+    {
+      "id": "cyber-042",
+      "section": "Physical Security and Personnel Matters",
+      "topic": "Cable security",
+      "difficulty": "medium",
+      "question": "Which cable-related practice best improves physical security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Running copper cables openly through public hallways for easy inspection."
+        },
+        {
+          "id": "B",
+          "text": "Using only wireless links because wireless signals cannot leave the building."
+        },
+        {
+          "id": "C",
+          "text": "Leaving switches unsecured so unauthorized connections are easier to notice."
+        },
+        {
+          "id": "D",
+          "text": "Routing cables through protected spaces and using fiber or pressurized cables where appropriate."
+        },
+        {
+          "id": "E",
+          "text": "Disabling pressure alarms so maintenance teams are not interrupted."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Protected routing makes cables harder to access. Fiber is harder to tap than copper, and pressurized cables can detect tampering through pressure drops.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "346-352"
+      },
+      "tags": [
+        "cable-security",
+        "tamper-detection"
+      ]
+    },
+    {
+      "id": "cyber-043",
+      "section": "Physical Security and Personnel Matters",
+      "topic": "Human factor",
+      "difficulty": "medium",
+      "question": "Which set of measures addresses the human factor in security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Background checks, security education, fraud controls, and policy enforcement."
+        },
+        {
+          "id": "B",
+          "text": "Disk mirroring, packet headers, fiber optic cable, and NAT tables."
+        },
+        {
+          "id": "C",
+          "text": "Public keys, private keys, certificates, and ciphertext."
+        },
+        {
+          "id": "D",
+          "text": "DDoS traffic, virus signatures, default passwords, and adware."
+        },
+        {
+          "id": "E",
+          "text": "Floods, fires, earthquakes, and backup generators."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "People can weaken or strengthen security. Screening, education, fraud controls, and enforcement help reduce insider misuse and careless behavior.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "354-362"
+      },
+      "tags": [
+        "human-factor",
+        "personnel-security"
+      ]
+    },
+    {
+      "id": "cyber-044",
+      "section": "Physical Security and Personnel Matters",
+      "topic": "Insider threat controls",
+      "difficulty": "hard",
+      "question": "Why are separation of duties and least privilege especially relevant to insider threats?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They allow insiders to bypass firewalls more quickly during emergencies."
+        },
+        {
+          "id": "B",
+          "text": "They prevent every outsider from sending spoofed IP packets."
+        },
+        {
+          "id": "C",
+          "text": "They make physical locks unnecessary for server rooms."
+        },
+        {
+          "id": "D",
+          "text": "They replace the need for training and fraud controls."
+        },
+        {
+          "id": "E",
+          "text": "They limit what authorized users can do, reducing the damage from abused legitimate access."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Insiders already have valid access, so the goal is to limit unnecessary power. Least privilege reduces access to what is needed, and separation of duties prevents one person from controlling too much.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "354-362"
+      },
+      "tags": [
+        "least-privilege",
+        "insider-threat"
+      ]
+    },
+    {
+      "id": "cyber-045",
+      "section": "Server and Client Protection",
+      "topic": "Security holes",
+      "difficulty": "easy",
+      "question": "What is a security hole?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A planned offsite copy of critical data."
+        },
+        {
+          "id": "B",
+          "text": "A software bug or flaw that creates an unintended entry point for attackers."
+        },
+        {
+          "id": "C",
+          "text": "A public key issued by a trusted certificate authority."
+        },
+        {
+          "id": "D",
+          "text": "A firewall rule that blocks unauthorized traffic."
+        },
+        {
+          "id": "E",
+          "text": "A user profile that limits access by time and location."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A security hole is a vulnerability caused by a software flaw. If attackers exploit it before a patch is applied, the system can be compromised.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "366-374"
+      },
+      "tags": [
+        "vulnerabilities",
+        "patches"
+      ]
+    },
+    {
+      "id": "cyber-046",
+      "section": "Server and Client Protection",
+      "topic": "Patch urgency",
+      "difficulty": "medium",
+      "question": "Why is rapid patching critical after a vulnerability becomes known?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A published patch makes the vulnerability harmless even if it is never installed."
+        },
+        {
+          "id": "B",
+          "text": "Patches are useful only for improving application speed, not security."
+        },
+        {
+          "id": "C",
+          "text": "Attackers may exploit the known flaw on systems where the fix has not been applied."
+        },
+        {
+          "id": "D",
+          "text": "Rapid patching removes the need to change default passwords."
+        },
+        {
+          "id": "E",
+          "text": "A vulnerability cannot be exploited once a vendor has named it publicly."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Once a flaw is known, attackers can race to exploit unpatched systems. The existence of a patch helps only if the organization applies it quickly.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "370-376"
+      },
+      "tags": [
+        "patch-management",
+        "known-vulnerabilities"
+      ]
+    },
+    {
+      "id": "cyber-047",
+      "section": "Server and Client Protection",
+      "topic": "Trojan horses",
+      "difficulty": "medium",
+      "question": "How does a Trojan horse differ from a virus?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A Trojan disguises itself as legitimate software and relies on users to install it, while a virus replicates on its own."
+        },
+        {
+          "id": "B",
+          "text": "A Trojan can only damage hardware, while a virus can only create pop-up advertisements."
+        },
+        {
+          "id": "C",
+          "text": "A Trojan is always harmless unless it is stored on a backup disk."
+        },
+        {
+          "id": "D",
+          "text": "A Trojan is a firewall rule, while a virus is a certificate fingerprint."
+        },
+        {
+          "id": "E",
+          "text": "A Trojan requires no user interaction and always spreads faster than a virus."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Trojans depend on deception and user installation. Their danger is that users intentionally install something that appears useful but secretly contains malicious functionality.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "378-390"
+      },
+      "tags": [
+        "trojans",
+        "malware"
+      ]
+    },
+    {
+      "id": "cyber-048",
+      "section": "Server and Client Protection",
+      "topic": "Trojan payloads",
+      "difficulty": "medium",
+      "question": "Which example best matches a Trojan payload described in the material?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A disaster recovery plan that names response team roles."
+        },
+        {
+          "id": "B",
+          "text": "A certificate authority verifying an organization's identity."
+        },
+        {
+          "id": "C",
+          "text": "A NAT table routing replies to the correct internal device."
+        },
+        {
+          "id": "D",
+          "text": "A user profile restricting access to business hours."
+        },
+        {
+          "id": "E",
+          "text": "Spyware that captures keystrokes and sends passwords to an attacker."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Spyware is a Trojan type that silently monitors user activity. Captured keystrokes can expose passwords and give attackers deeper access.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "384-390"
+      },
+      "tags": [
+        "spyware",
+        "keystrokes"
+      ]
+    },
+    {
+      "id": "cyber-049",
+      "section": "Encryption",
+      "topic": "Encryption purpose",
+      "difficulty": "easy",
+      "question": "What does encryption primarily accomplish if an attacker intercepts data in transit?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It makes the intercepted data unreadable without the correct key."
+        },
+        {
+          "id": "B",
+          "text": "It prevents the attacker from capturing any packets at all."
+        },
+        {
+          "id": "C",
+          "text": "It proves the sender's legal identity without any additional mechanism."
+        },
+        {
+          "id": "D",
+          "text": "It hides the internal IP address of every device on the network."
+        },
+        {
+          "id": "E",
+          "text": "It automatically restores lost data from offsite backups."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Encryption does not necessarily stop interception. It protects confidentiality by turning captured data into unreadable ciphertext unless the attacker has the right key.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "396-415"
+      },
+      "tags": [
+        "encryption",
+        "confidentiality"
+      ]
+    },
+    {
+      "id": "cyber-050",
+      "section": "Encryption",
+      "topic": "Symmetric encryption",
+      "difficulty": "medium",
+      "question": "What is the main challenge of symmetric encryption?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It cannot decrypt ciphertext after encryption."
+        },
+        {
+          "id": "B",
+          "text": "It requires a certificate authority for every message."
+        },
+        {
+          "id": "C",
+          "text": "Both parties need the same secret key, so distributing that key securely is difficult."
+        },
+        {
+          "id": "D",
+          "text": "It uses two unrelated keys that must both be public."
+        },
+        {
+          "id": "E",
+          "text": "It is always slower than asymmetric encryption."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Symmetric encryption is fast and simple, but both sender and receiver must share the same secret key. Securely distributing that key is the hard part.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "417-421"
+      },
+      "tags": [
+        "symmetric-encryption",
+        "key-distribution"
+      ]
+    },
+    {
+      "id": "cyber-051",
+      "section": "Encryption",
+      "topic": "Asymmetric encryption",
+      "difficulty": "medium",
+      "question": "How does asymmetric encryption solve the key distribution problem?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It sends the private key over the network before each message."
+        },
+        {
+          "id": "B",
+          "text": "It uses a public key for encryption and a related private key for decryption."
+        },
+        {
+          "id": "C",
+          "text": "It avoids keys entirely and depends only on hidden algorithms."
+        },
+        {
+          "id": "D",
+          "text": "It requires every recipient to share the same password."
+        },
+        {
+          "id": "E",
+          "text": "It makes the same key public after the message is decrypted."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A sender can encrypt with the recipient's public key, while only the recipient's private key can decrypt. The public key can be shared openly, so no shared secret must be transmitted first.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "432-441"
+      },
+      "tags": [
+        "asymmetric-encryption",
+        "public-key"
+      ]
+    },
+    {
+      "id": "cyber-052",
+      "section": "Encryption",
+      "topic": "Hybrid encryption",
+      "difficulty": "hard",
+      "question": "Why do practical systems often use a hybrid encryption approach?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Because symmetric encryption cannot protect data after a key is exchanged."
+        },
+        {
+          "id": "B",
+          "text": "Because asymmetric encryption is fast enough for all data transfer but cannot exchange keys."
+        },
+        {
+          "id": "C",
+          "text": "Because asymmetric encryption can securely exchange a symmetric key, and symmetric encryption can then transfer data faster."
+        },
+        {
+          "id": "D",
+          "text": "Because hybrid encryption removes the need for any private keys."
+        },
+        {
+          "id": "E",
+          "text": "Because DES is stronger than AES when both are combined."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Asymmetric encryption solves the key exchange problem but is slower. Symmetric encryption is faster for bulk data, so many systems combine the strengths of both.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "423-443"
+      },
+      "tags": [
+        "hybrid-encryption",
+        "performance"
+      ]
+    },
+    {
+      "id": "cyber-053",
+      "section": "Authentication and Digital Signatures",
+      "topic": "Authentication purpose",
+      "difficulty": "easy",
+      "question": "What does authentication verify in secure communication and access?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only whether a network cable is physically protected."
+        },
+        {
+          "id": "B",
+          "text": "Only whether data has been backed up offsite."
+        },
+        {
+          "id": "C",
+          "text": "Only whether an IP address is private or public."
+        },
+        {
+          "id": "D",
+          "text": "Only whether a disk controller has failed."
+        },
+        {
+          "id": "E",
+          "text": "User identity and whether a message came from its claimed sender."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Authentication is about verifying identity and origin. Encryption protects readability, but authentication addresses who the user or sender really is.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "449-457"
+      },
+      "tags": [
+        "authentication",
+        "message-origin"
+      ]
+    },
+    {
+      "id": "cyber-054",
+      "section": "Authentication and Digital Signatures",
+      "topic": "Digital signature mechanism",
+      "difficulty": "medium",
+      "question": "How does a digital signature prove authorship?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The sender creates the signature with their private key, and the receiver verifies it with the sender's public key."
+        },
+        {
+          "id": "B",
+          "text": "The sender encrypts the entire message with the receiver's private key."
+        },
+        {
+          "id": "C",
+          "text": "The receiver signs the message after receiving it with the sender's password."
+        },
+        {
+          "id": "D",
+          "text": "The firewall inserts a signature when a packet crosses the perimeter."
+        },
+        {
+          "id": "E",
+          "text": "NAT creates a signature from the internal IP address table."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Only the sender should have their private key, so a signature that verifies with their public key indicates that the sender created it. This uses asymmetric encryption in reverse.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "458-467"
+      },
+      "tags": [
+        "digital-signatures",
+        "private-key"
+      ]
+    },
+    {
+      "id": "cyber-055",
+      "section": "Authentication and Digital Signatures",
+      "topic": "Signature importance",
+      "difficulty": "medium",
+      "question": "Why are digital signatures important for electronic transactions?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They prevent every denial-of-service attack from reaching a server."
+        },
+        {
+          "id": "B",
+          "text": "They hide internal addressing from outside observers."
+        },
+        {
+          "id": "C",
+          "text": "They make all messages public so anyone can verify them."
+        },
+        {
+          "id": "D",
+          "text": "They provide proof that a specific person agreed to specific terms."
+        },
+        {
+          "id": "E",
+          "text": "They replace the need for user identity verification."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Digital signatures support non-repudiation and legal assurance by tying an action or agreement to a specific signer. That is critical for banking, commerce, and contracts.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "465-467"
+      },
+      "tags": [
+        "electronic-transactions",
+        "non-repudiation"
+      ]
+    },
+    {
+      "id": "cyber-056",
+      "section": "Authentication and Digital Signatures",
+      "topic": "Public key trust problem",
+      "difficulty": "hard",
+      "question": "What problem remains even if digital signature math works correctly?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The receiver must prove that the signature was generated by a firewall."
+        },
+        {
+          "id": "B",
+          "text": "The receiver must know that the public key really belongs to the claimed sender."
+        },
+        {
+          "id": "C",
+          "text": "The sender must publish their private key before a signature can be verified."
+        },
+        {
+          "id": "D",
+          "text": "The message must be stored offline before it can be authenticated."
+        },
+        {
+          "id": "E",
+          "text": "The signature must be checked against a NAT address table."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A valid signature only proves control of the matching private key. If an attacker tricks you into trusting a fake public key, the verification can appear valid for the wrong identity.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "469-471"
+      },
+      "tags": [
+        "public-key-trust",
+        "pki"
+      ]
+    },
+    {
+      "id": "cyber-057",
+      "section": "Public Key Infrastructure",
+      "topic": "PKI purpose",
+      "difficulty": "easy",
+      "question": "What question does Public Key Infrastructure primarily answer?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Which firewall port should be opened for a new application?"
+        },
+        {
+          "id": "B",
+          "text": "How much revenue is lost during server downtime?"
+        },
+        {
+          "id": "C",
+          "text": "How can a public key be trusted as belonging to the claimed identity?"
+        },
+        {
+          "id": "D",
+          "text": "Which disk should receive mirrored data first?"
+        },
+        {
+          "id": "E",
+          "text": "How can employees be prevented from using all company systems?"
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "PKI exists to make public key encryption trustworthy at scale. It links keys to verified identities through certificates, policies, and trusted authorities.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "475-482"
+      },
+      "tags": [
+        "pki",
+        "trust"
+      ]
+    },
+    {
+      "id": "cyber-058",
+      "section": "Public Key Infrastructure",
+      "topic": "Certificate authority",
+      "difficulty": "easy",
+      "question": "What is the role of a Certificate Authority?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To monitor host activity for suspicious behavior."
+        },
+        {
+          "id": "B",
+          "text": "To translate private IP addresses into public addresses."
+        },
+        {
+          "id": "C",
+          "text": "To restore data from continuous backups."
+        },
+        {
+          "id": "D",
+          "text": "To assign role-based permissions to employees."
+        },
+        {
+          "id": "E",
+          "text": "To verify identities and issue trusted digital certificates."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "A Certificate Authority acts as a trusted third party. It verifies identity before issuing certificates that bind public keys to people, organizations, or servers.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "483-491"
+      },
+      "tags": [
+        "certificate-authority",
+        "digital-certificates"
+      ]
+    },
+    {
+      "id": "cyber-059",
+      "section": "Public Key Infrastructure",
+      "topic": "Certificate fingerprints",
+      "difficulty": "medium",
+      "question": "What is the purpose of a certificate fingerprint?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To let users authenticate with a biometric scan instead of a password."
+        },
+        {
+          "id": "B",
+          "text": "To compress an entire backup into a single recovery file."
+        },
+        {
+          "id": "C",
+          "text": "To convert ciphertext back into plaintext without a key."
+        },
+        {
+          "id": "D",
+          "text": "To provide a hash that helps verify a certificate has not been tampered with."
+        },
+        {
+          "id": "E",
+          "text": "To identify the public IP address assigned by NAT."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "A fingerprint is a cryptographic hash of certificate contents. If the certificate changes, the fingerprint changes, making tampering detectable.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "489-495"
+      },
+      "tags": [
+        "fingerprints",
+        "tamper-detection"
+      ]
+    },
+    {
+      "id": "cyber-060",
+      "section": "Public Key Infrastructure",
+      "topic": "PKI in practice",
+      "difficulty": "medium",
+      "question": "When a browser checks an HTTPS website certificate, what is it trying to confirm?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "That the website stores all backups in encrypted form."
+        },
+        {
+          "id": "B",
+          "text": "That the site is really connected to the claimed organization rather than an impersonator."
+        },
+        {
+          "id": "C",
+          "text": "That the site has no role-based access controls."
+        },
+        {
+          "id": "D",
+          "text": "That all traffic comes from private IP addresses."
+        },
+        {
+          "id": "E",
+          "text": "That the site is protected only by anomaly detection."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "HTTPS certificate checking is a practical use of PKI. The browser verifies that a trusted CA has vouched for the identity and public key of the website.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "497-505"
+      },
+      "tags": [
+        "https",
+        "certificate-validation"
+      ]
+    },
+    {
+      "id": "cyber-061",
+      "section": "User Authentication and Access Control",
+      "topic": "Authentication factors",
+      "difficulty": "easy",
+      "question": "Which example correctly matches an authentication factor?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A firewall rule is something you are."
+        },
+        {
+          "id": "B",
+          "text": "A retina scan is something you know."
+        },
+        {
+          "id": "C",
+          "text": "A password is something you have."
+        },
+        {
+          "id": "D",
+          "text": "A backup circuit is something you are."
+        },
+        {
+          "id": "E",
+          "text": "An access card is something you have."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Authentication factors are based on evidence: knowledge, possession, or biometric characteristics. An access card is a physical object, so it is something you have.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "517-528"
+      },
+      "tags": [
+        "authentication-factors",
+        "mfa"
+      ]
+    },
+    {
+      "id": "cyber-062",
+      "section": "User Authentication and Access Control",
+      "topic": "Multi-factor authentication",
+      "difficulty": "medium",
+      "question": "Why do high-security systems use multi-factor authentication?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Combining factors reduces reliance on any one weak or compromised factor."
+        },
+        {
+          "id": "B",
+          "text": "It allows users to skip identity verification after the first login."
+        },
+        {
+          "id": "C",
+          "text": "It makes biometric data easy to change after compromise."
+        },
+        {
+          "id": "D",
+          "text": "It ensures passwords can never be guessed or stolen."
+        },
+        {
+          "id": "E",
+          "text": "It replaces access control decisions with encryption algorithms."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Each factor has weaknesses: passwords can be stolen, cards can be lost, and biometrics cannot easily be changed. MFA improves assurance by requiring multiple kinds of proof.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "521-528"
+      },
+      "tags": [
+        "mfa",
+        "factor-strength"
+      ]
+    },
+    {
+      "id": "cyber-063",
+      "section": "User Authentication and Access Control",
+      "topic": "Access control models",
+      "difficulty": "medium",
+      "question": "Which statement correctly distinguishes Mandatory Access Control from Role-Based Access Control?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "MAC lets users freely change their own classifications, while RBAC is based only on passwords."
+        },
+        {
+          "id": "B",
+          "text": "MAC is used only for email filtering, while RBAC is used only for disk mirroring."
+        },
+        {
+          "id": "C",
+          "text": "MAC assigns permissions by administrator-controlled classification levels, while RBAC assigns permissions by job role."
+        },
+        {
+          "id": "D",
+          "text": "MAC and RBAC are both names for certificate authority proofing levels."
+        },
+        {
+          "id": "E",
+          "text": "RBAC prevents users from changing roles inside an organization."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "MAC is centrally controlled based on classification levels and is common in military or government settings. RBAC ties permissions to roles such as manager or accountant.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "529-541"
+      },
+      "tags": [
+        "mac",
+        "rbac"
+      ]
+    },
+    {
+      "id": "cyber-064",
+      "section": "User Authentication and Access Control",
+      "topic": "Single sign-on",
+      "difficulty": "hard",
+      "question": "Why can single sign-on improve both security and user experience in a large organization?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It gives every system a different unmanaged password, increasing isolation."
+        },
+        {
+          "id": "B",
+          "text": "It removes the need to revoke accounts when employees leave."
+        },
+        {
+          "id": "C",
+          "text": "It lets users reuse weak passwords while administrators avoid credential management."
+        },
+        {
+          "id": "D",
+          "text": "It centralizes authentication so users can use one strong password and administrators manage credentials in one place."
+        },
+        {
+          "id": "E",
+          "text": "It replaces access control with NAT address translation."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "SSO reduces password overload for users and centralizes credential administration. Systems such as Kerberos issue tickets after one login, avoiding repeated logins to many systems.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "542-556"
+      },
+      "tags": [
+        "sso",
+        "kerberos"
+      ]
+    },
+    {
+      "id": "cyber-065",
+      "section": "Social Engineering and User Management",
+      "topic": "Social engineering definition",
+      "difficulty": "easy",
+      "question": "What is social engineering?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A method for encrypting messages with two related keys."
+        },
+        {
+          "id": "B",
+          "text": "A cable design that detects tampering through pressure loss."
+        },
+        {
+          "id": "C",
+          "text": "An attack approach that exploits human psychology to gain access."
+        },
+        {
+          "id": "D",
+          "text": "A firewall technique for filtering packets by port number."
+        },
+        {
+          "id": "E",
+          "text": "A backup technique that captures every transaction in real time."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Social engineering bypasses technical defenses by manipulating people into granting access, revealing credentials, or taking unsafe actions.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "560-571"
+      },
+      "tags": [
+        "social-engineering",
+        "human-psychology"
+      ]
+    },
+    {
+      "id": "cyber-066",
+      "section": "Social Engineering and User Management",
+      "topic": "Phishing and impersonation",
+      "difficulty": "medium",
+      "question": "Which scenario is the clearest example of phishing?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A fraudulent email appears to come from a trusted source and sends users to a fake login page."
+        },
+        {
+          "id": "B",
+          "text": "A disk writes data to two drives at the same time for redundancy."
+        },
+        {
+          "id": "C",
+          "text": "A certificate authority verifies a company's public key."
+        },
+        {
+          "id": "D",
+          "text": "A firewall blocks traffic based on destination port."
+        },
+        {
+          "id": "E",
+          "text": "An IDS compares traffic against a known attack signature."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Phishing uses fraudulent messages that appear trustworthy to trick people into clicking malicious links or entering credentials into fake sites.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "564-571"
+      },
+      "tags": [
+        "phishing",
+        "credentials"
+      ]
+    },
+    {
+      "id": "cyber-067",
+      "section": "Social Engineering and User Management",
+      "topic": "Prevention measures",
+      "difficulty": "medium",
+      "question": "Which defense is most directly aimed at reducing social engineering risk?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Increasing disk controller redundancy."
+        },
+        {
+          "id": "B",
+          "text": "User screening, need-to-know access, security education, and continuous awareness reinforcement."
+        },
+        {
+          "id": "C",
+          "text": "Using only packet-level firewalls and disabling user training."
+        },
+        {
+          "id": "D",
+          "text": "Publishing private keys so users can verify messages."
+        },
+        {
+          "id": "E",
+          "text": "Routing all cables through ceilings without changing access procedures."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Social engineering targets people, so defenses must include identity verification, limited access, education, and repeated reinforcement as tactics evolve.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "573-582"
+      },
+      "tags": [
+        "awareness",
+        "need-to-know"
+      ]
+    },
+    {
+      "id": "cyber-068",
+      "section": "Social Engineering and User Management",
+      "topic": "Human bypass of controls",
+      "difficulty": "hard",
+      "question": "Why can a single phishing click undermine millions spent on technical security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Technical controls work only when employees never use email."
+        },
+        {
+          "id": "B",
+          "text": "Phishing automatically disables every firewall and backup system."
+        },
+        {
+          "id": "C",
+          "text": "Social engineering can cause a trusted user to hand over access or trigger compromise willingly."
+        },
+        {
+          "id": "D",
+          "text": "User education is useful only after all attacks have stopped."
+        },
+        {
+          "id": "E",
+          "text": "Technical systems cannot store logs of user activity."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Technical defenses can be bypassed when an attacker manipulates a human into granting access or entering credentials. That is why user education is as essential as firewalls or encryption.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "560-582"
+      },
+      "tags": [
+        "human-risk",
+        "phishing-impact"
+      ]
+    },
+    {
+      "id": "cyber-069",
+      "section": "Intrusion Detection and Prevention Systems",
+      "topic": "IDPS role",
+      "difficulty": "easy",
+      "question": "How does an IDPS extend the role of an IDS?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It can automatically take action to block threats, not just detect and report them."
+        },
+        {
+          "id": "B",
+          "text": "It removes all need for firewalls at the network perimeter."
+        },
+        {
+          "id": "C",
+          "text": "It verifies public keys by issuing digital certificates."
+        },
+        {
+          "id": "D",
+          "text": "It replaces user profiles and account expiration."
+        },
+        {
+          "id": "E",
+          "text": "It stores routine backups in encrypted offsite form."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "IDS focuses on detection and reporting. IDPS adds prevention capability by taking automatic blocking action when it detects threats.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "586-589"
+      },
+      "tags": [
+        "idps",
+        "prevention"
+      ]
+    },
+    {
+      "id": "cyber-070",
+      "section": "Intrusion Detection and Prevention Systems",
+      "topic": "IDPS detection techniques",
+      "difficulty": "medium",
+      "question": "Which trade-off correctly compares IDPS misuse detection and anomaly detection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Misuse detection finds novel attacks without signatures, while anomaly detection works only from known attack databases."
+        },
+        {
+          "id": "B",
+          "text": "Both techniques are identical and differ only in the name of the vendor product."
+        },
+        {
+          "id": "C",
+          "text": "Misuse detection cannot detect known threats, while anomaly detection cannot detect any unusual behavior."
+        },
+        {
+          "id": "D",
+          "text": "Misuse detection is accurate for known threats but blind to new ones; anomaly detection can catch novel behavior but creates more false alarms."
+        },
+        {
+          "id": "E",
+          "text": "Anomaly detection requires attackers to publish their signatures before detection is possible."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Signature-based misuse detection is strong when an attack pattern is known. Behavior-based anomaly detection can flag new patterns but requires careful tuning to avoid excessive false positives.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "598-610"
+      },
+      "tags": [
+        "idps",
+        "detection-techniques"
+      ]
+    },
+    {
+      "id": "cyber-071",
+      "section": "Intrusion Detection and Prevention Systems",
+      "topic": "Alert fatigue",
+      "difficulty": "medium",
+      "question": "Why is false alarm management important for an IDPS?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "False alarms prove that the IDPS has no signature database."
+        },
+        {
+          "id": "B",
+          "text": "Too many false alarms can cause administrators to ignore alerts, including real threats."
+        },
+        {
+          "id": "C",
+          "text": "False alarms are required before a firewall can filter traffic."
+        },
+        {
+          "id": "D",
+          "text": "False alarms automatically restore systems from clean backups."
+        },
+        {
+          "id": "E",
+          "text": "False alarms are useful because they eliminate the need for tuning."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "An IDPS must be tuned so administrators are not overwhelmed. Alert fatigue makes real attacks easier to miss because people stop trusting or reviewing the alerts.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "605-610"
+      },
+      "tags": [
+        "alert-fatigue",
+        "false-positives"
+      ]
+    },
+    {
+      "id": "cyber-072",
+      "section": "Intrusion Detection and Prevention Systems",
+      "topic": "Defense in depth",
+      "difficulty": "hard",
+      "question": "Why should IDPS usually be deployed alongside firewalls rather than replacing them?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Firewalls are useful only after IDPS has already blocked every attack."
+        },
+        {
+          "id": "B",
+          "text": "IDPS works only when no traffic is allowed through the perimeter."
+        },
+        {
+          "id": "C",
+          "text": "Firewalls and IDPS perform exactly the same task, so one randomly backs up the other."
+        },
+        {
+          "id": "D",
+          "text": "IDPS prevents encryption, while firewalls issue user tickets."
+        },
+        {
+          "id": "E",
+          "text": "Firewalls filter at the perimeter, while IDPS monitors what gets through and compensates for firewall blind spots."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "This is defense in depth. A firewall blocks known bad traffic at the boundary, while IDPS detects or blocks suspicious activity that bypasses perimeter filtering.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "612-620"
+      },
+      "tags": [
+        "defense-in-depth",
+        "firewalls"
+      ]
+    },
+    {
+      "id": "cyber-073",
+      "section": "Intrusion Recovery",
+      "topic": "Response planning",
+      "difficulty": "easy",
+      "question": "What should an effective intrusion recovery plan include before an incident occurs?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only a list of passwords for every administrator account."
+        },
+        {
+          "id": "B",
+          "text": "A rule that no evidence should be documented."
+        },
+        {
+          "id": "C",
+          "text": "Clear response procedures and designated emergency teams such as a CERT."
+        },
+        {
+          "id": "D",
+          "text": "A policy to restore systems before identifying what was breached."
+        },
+        {
+          "id": "E",
+          "text": "A requirement that all incidents be handled without assigned roles."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Intrusion recovery should not be improvised. Documented procedures and trained emergency teams create a practiced response path when an attack succeeds.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "624-634"
+      },
+      "tags": [
+        "incident-response",
+        "cert"
+      ]
+    },
+    {
+      "id": "cyber-074",
+      "section": "Intrusion Recovery",
+      "topic": "Recovery sequence",
+      "difficulty": "medium",
+      "question": "Which sequence best reflects the typical intrusion recovery process?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Identify the breach, contain it, analyze evidence, restore operations, and report criminal activity when appropriate."
+        },
+        {
+          "id": "B",
+          "text": "Restore all systems first, delete logs, then decide whether a breach occurred."
+        },
+        {
+          "id": "C",
+          "text": "Report to law enforcement first, ignore containment, and patch systems later."
+        },
+        {
+          "id": "D",
+          "text": "Change firewall vendors, disable backups, and wait for attackers to leave."
+        },
+        {
+          "id": "E",
+          "text": "Conduct user training, create public keys, and remove all account expiration dates."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Recovery starts by understanding and containing the breach, then analyzing evidence, restoring with clean systems, and reporting crimes with supporting documentation.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "635-644"
+      },
+      "tags": [
+        "recovery-steps",
+        "containment"
+      ]
+    },
+    {
+      "id": "cyber-075",
+      "section": "Intrusion Recovery",
+      "topic": "Forensic analysis",
+      "difficulty": "medium",
+      "question": "What is the purpose of forensic analysis during intrusion recovery?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To make sure no one records evidence that could be used later."
+        },
+        {
+          "id": "B",
+          "text": "To immediately reconnect every affected system before understanding the attack."
+        },
+        {
+          "id": "C",
+          "text": "To replace intrusion detection with user authentication."
+        },
+        {
+          "id": "D",
+          "text": "To examine logs, system states, and evidence to understand what happened and what was affected."
+        },
+        {
+          "id": "E",
+          "text": "To verify that all public keys belong to certificate authorities."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Forensic analysis reconstructs the incident: how the attacker entered, what systems or data were affected, and what damage occurred. That knowledge supports recovery and future prevention.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "637-643"
+      },
+      "tags": [
+        "forensics",
+        "evidence"
+      ]
+    },
+    {
+      "id": "cyber-076",
+      "section": "Intrusion Recovery",
+      "topic": "Recovery documentation",
+      "difficulty": "hard",
+      "question": "Why should every step of intrusion response be documented?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Documentation replaces the need to restore operations from clean backups."
+        },
+        {
+          "id": "B",
+          "text": "It supports legal proceedings, helps identify what went wrong, and improves future response plans."
+        },
+        {
+          "id": "C",
+          "text": "It ensures attackers can review the response and avoid detection next time."
+        },
+        {
+          "id": "D",
+          "text": "It makes containment unnecessary once the breach origin is found."
+        },
+        {
+          "id": "E",
+          "text": "It proves that no intrusion actually occurred."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Good documentation preserves evidence, supports legal action, and turns an incident into a learning opportunity. The goal is not just restoration, but a stronger security posture afterward.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "645-647"
+      },
+      "tags": [
+        "documentation",
+        "resilience"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section": "Introduction to Cybersecurity",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "3-21"
+      },
+      "questionIds": [
+        "cyber-001",
+        "cyber-002",
+        "cyber-003",
+        "cyber-004"
+      ]
+    },
+    {
+      "section": "Network Controls",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "25-61"
+      },
+      "questionIds": [
+        "cyber-005",
+        "cyber-006",
+        "cyber-007",
+        "cyber-008"
+      ]
+    },
+    {
+      "section": "Risk Assessment",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "65-85"
+      },
+      "questionIds": [
+        "cyber-009",
+        "cyber-010",
+        "cyber-011",
+        "cyber-012"
+      ]
+    },
+    {
+      "section": "Security Threats Overview",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "89-119"
+      },
+      "questionIds": [
+        "cyber-013",
+        "cyber-014",
+        "cyber-015",
+        "cyber-016"
+      ]
+    },
+    {
+      "section": "Ensuring Business Continuity",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "123-198"
+      },
+      "questionIds": [
+        "cyber-017",
+        "cyber-018",
+        "cyber-019",
+        "cyber-020"
+      ]
+    },
+    {
+      "section": "Intrusion Prevention",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "202-216"
+      },
+      "questionIds": [
+        "cyber-021",
+        "cyber-022",
+        "cyber-023",
+        "cyber-024"
+      ]
+    },
+    {
+      "section": "Security Policy Elements",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "220-240"
+      },
+      "questionIds": [
+        "cyber-025",
+        "cyber-026",
+        "cyber-027",
+        "cyber-028"
+      ]
+    },
+    {
+      "section": "Securing the Network Perimeter",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "244-273"
+      },
+      "questionIds": [
+        "cyber-029",
+        "cyber-030",
+        "cyber-031",
+        "cyber-032"
+      ]
+    },
+    {
+      "section": "Network Address Translation",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "277-290"
+      },
+      "questionIds": [
+        "cyber-033",
+        "cyber-034",
+        "cyber-035",
+        "cyber-036"
+      ]
+    },
+    {
+      "section": "Intrusion Detection Systems",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "293-327"
+      },
+      "questionIds": [
+        "cyber-037",
+        "cyber-038",
+        "cyber-039",
+        "cyber-040"
+      ]
+    },
+    {
+      "section": "Physical Security and Personnel Matters",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "331-362"
+      },
+      "questionIds": [
+        "cyber-041",
+        "cyber-042",
+        "cyber-043",
+        "cyber-044"
+      ]
+    },
+    {
+      "section": "Server and Client Protection",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "366-392"
+      },
+      "questionIds": [
+        "cyber-045",
+        "cyber-046",
+        "cyber-047",
+        "cyber-048"
+      ]
+    },
+    {
+      "section": "Encryption",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "396-445"
+      },
+      "questionIds": [
+        "cyber-049",
+        "cyber-050",
+        "cyber-051",
+        "cyber-052"
+      ]
+    },
+    {
+      "section": "Authentication and Digital Signatures",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "449-471"
+      },
+      "questionIds": [
+        "cyber-053",
+        "cyber-054",
+        "cyber-055",
+        "cyber-056"
+      ]
+    },
+    {
+      "section": "Public Key Infrastructure",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "475-507"
+      },
+      "questionIds": [
+        "cyber-057",
+        "cyber-058",
+        "cyber-059",
+        "cyber-060"
+      ]
+    },
+    {
+      "section": "User Authentication and Access Control",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "511-556"
+      },
+      "questionIds": [
+        "cyber-061",
+        "cyber-062",
+        "cyber-063",
+        "cyber-064"
+      ]
+    },
+    {
+      "section": "Social Engineering and User Management",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "560-582"
+      },
+      "questionIds": [
+        "cyber-065",
+        "cyber-066",
+        "cyber-067",
+        "cyber-068"
+      ]
+    },
+    {
+      "section": "Intrusion Detection and Prevention Systems",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "586-620"
+      },
+      "questionIds": [
+        "cyber-069",
+        "cyber-070",
+        "cyber-071",
+        "cyber-072"
+      ]
+    },
+    {
+      "section": "Intrusion Recovery",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "624-647"
+      },
+      "questionIds": [
+        "cyber-073",
+        "cyber-074",
+        "cyber-075",
+        "cyber-076"
+      ]
+    }
+  ]
+}
