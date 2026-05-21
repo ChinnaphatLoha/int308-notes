@@ -1,0 +1,3696 @@
+{
+  "version": "1.0",
+  "source": {
+    "file": "cisco-safe/CISCO_SAFE_EN.md",
+    "title": "Cisco SAFE Integrated Architecture"
+  },
+  "quiz": {
+    "title": "Cisco SAFE Integrated Architecture Quiz",
+    "choiceCount": 5
+  },
+  "questions": [
+    {
+      "id": "safe-intg-001",
+      "section": "SAFE Design Method",
+      "topic": "Reference architecture purpose",
+      "difficulty": "easy",
+      "question": "What is the main purpose of Cisco SAFE?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Provide a reusable architecture that connects business needs, threats, controls, and design."
+        },
+        {
+          "id": "B",
+          "text": "Replace security planning with a fixed list of approved network products."
+        },
+        {
+          "id": "C",
+          "text": "Focus only on internet-edge firewalls and ignore internal traffic."
+        },
+        {
+          "id": "D",
+          "text": "Treat compliance reports as the complete measure of security quality."
+        },
+        {
+          "id": "E",
+          "text": "Secure only data centers while leaving branches and cloud systems outside scope."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "SAFE is a reference architecture. Its value is not a product list, but a way to connect business flows, likely threats, required security capabilities, and where those capabilities should be placed.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "10-16"
+      },
+      "tags": [
+        "safe",
+        "architecture"
+      ]
+    },
+    {
+      "id": "safe-intg-002",
+      "section": "SAFE Design Method",
+      "topic": "Fragmented controls",
+      "difficulty": "medium",
+      "question": "A company has endpoint protection, a firewall, identity policies, and cloud logging, but the teams cannot explain how those controls reduce business risk together. What problem is SAFE meant to solve?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The organization has too many security controls to ever document them."
+        },
+        {
+          "id": "B",
+          "text": "The controls are useful individually, but they are not tied into a coherent security architecture."
+        },
+        {
+          "id": "C",
+          "text": "The organization should remove identity controls and rely only on edge filtering."
+        },
+        {
+          "id": "D",
+          "text": "The controls are ineffective because cloud systems cannot be monitored."
+        },
+        {
+          "id": "E",
+          "text": "The organization should prioritize product ownership over business protection."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SAFE addresses fragmentation. A set of isolated controls can still leave the business poorly defended if no architecture explains how they work together across users, data, applications, networks, and operations.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "20-38"
+      },
+      "tags": [
+        "fragmentation",
+        "business-risk"
+      ]
+    },
+    {
+      "id": "safe-intg-003",
+      "section": "SAFE Design Method",
+      "topic": "Design sequence",
+      "difficulty": "easy",
+      "question": "In the SAFE design sequence, what should be analyzed immediately after business flows are understood?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Specific product licenses and renewal dates."
+        },
+        {
+          "id": "B",
+          "text": "Physical rack placement and cooling layout."
+        },
+        {
+          "id": "C",
+          "text": "Threats that could disrupt or abuse the flow."
+        },
+        {
+          "id": "D",
+          "text": "Audit wording for the final compliance report."
+        },
+        {
+          "id": "E",
+          "text": "User interface preferences for the monitoring console."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "SAFE starts with the business flow and then asks what could go wrong. This keeps controls tied to actual risks rather than selected randomly or because a product is popular.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "42-54"
+      },
+      "tags": [
+        "design-sequence",
+        "threats"
+      ]
+    },
+    {
+      "id": "safe-intg-004",
+      "section": "SAFE Design Method",
+      "topic": "Business flows",
+      "difficulty": "medium",
+      "question": "Why does SAFE treat a business flow as more important than a list of individual devices?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Devices are never useful when designing enterprise security controls."
+        },
+        {
+          "id": "B",
+          "text": "Business flows eliminate the need to understand servers or databases."
+        },
+        {
+          "id": "C",
+          "text": "A flow automatically proves which vendor product should be purchased."
+        },
+        {
+          "id": "D",
+          "text": "Attackers usually target business outcomes such as data theft, interruption, or deeper access."
+        },
+        {
+          "id": "E",
+          "text": "A device inventory is only needed after a security incident has occurred."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Attackers care about outcomes. They may move through users, APIs, servers, and databases to steal data or disrupt service, so the flow shows what must be protected end to end.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "56-69"
+      },
+      "tags": [
+        "business-flows",
+        "attack-path"
+      ]
+    },
+    {
+      "id": "safe-intg-005",
+      "section": "SAFE Design Method",
+      "topic": "Security capabilities",
+      "difficulty": "easy",
+      "question": "What is a security capability in SAFE planning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A brand-specific product chosen before threats are understood."
+        },
+        {
+          "id": "B",
+          "text": "A legal document that replaces technical risk analysis."
+        },
+        {
+          "id": "C",
+          "text": "A physical location where all security tools must be installed."
+        },
+        {
+          "id": "D",
+          "text": "A user group that receives the same login script."
+        },
+        {
+          "id": "E",
+          "text": "A type of protection needed in a specific part of the architecture."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "A capability describes what protection is needed, such as identity verification, segmentation, malware analysis, or monitoring. Product selection comes later, after the architecture places the capability correctly.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "80-97"
+      },
+      "tags": [
+        "capabilities",
+        "planning"
+      ]
+    },
+    {
+      "id": "safe-intg-006",
+      "section": "SAFE Design Method",
+      "topic": "Technology implementation",
+      "difficulty": "medium",
+      "question": "Why does SAFE delay technology selection until the architecture is clear?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A product is valuable only when it supports a required capability in the right place."
+        },
+        {
+          "id": "B",
+          "text": "Technology choices are unrelated to business flows and security requirements."
+        },
+        {
+          "id": "C",
+          "text": "Architecture should be created after tools are already deployed everywhere."
+        },
+        {
+          "id": "D",
+          "text": "All parts of a network always need the same product configuration."
+        },
+        {
+          "id": "E",
+          "text": "Security products work best when they are not connected to operations."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "SAFE prevents product-first design. The architecture decides what protection is needed and where; technology then implements that decision.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "98-110"
+      },
+      "tags": [
+        "technology-selection",
+        "architecture"
+      ]
+    },
+    {
+      "id": "safe-intg-007",
+      "section": "SAFE Design Method",
+      "topic": "Architecture placement",
+      "difficulty": "medium",
+      "question": "Which example best represents the architecture step in SAFE?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Buying every security product from a single vendor before reviewing traffic flows."
+        },
+        {
+          "id": "B",
+          "text": "Placing identity checks at access points, firewalls between tiers, and analytics inside the data center."
+        },
+        {
+          "id": "C",
+          "text": "Writing a list of threats but avoiding decisions about where controls belong."
+        },
+        {
+          "id": "D",
+          "text": "Keeping cloud monitoring separate because public cloud is outside enterprise architecture."
+        },
+        {
+          "id": "E",
+          "text": "Relying on server hardware redundancy instead of designing security controls."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Architecture turns requirements into placement decisions. It determines where identity, firewalling, analytics, monitoring, and other capabilities should sit in the flow.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "98-104"
+      },
+      "tags": [
+        "control-placement",
+        "security-architecture"
+      ]
+    },
+    {
+      "id": "safe-intg-008",
+      "section": "SAFE Design Method",
+      "topic": "SAFE reasoning chain",
+      "difficulty": "hard",
+      "question": "Which reasoning chain best summarizes SAFE as a whole?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Products create logs, logs create policies, policies create business flows, and business flows create risk."
+        },
+        {
+          "id": "B",
+          "text": "Compliance creates tools, tools create users, users create networks, and networks create business goals."
+        },
+        {
+          "id": "C",
+          "text": "Business flows create attack surfaces, threats require capabilities, and capabilities must be placed and operated."
+        },
+        {
+          "id": "D",
+          "text": "Data centers create applications, applications create branches, and branches create technology purchases."
+        },
+        {
+          "id": "E",
+          "text": "Cloud platforms replace networks, networks replace identity, and identity replaces security operations."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "SAFE is a method for translating business risk into architecture. It follows the flow from business dependency to attack surface, threat, capability, placement, and ongoing operations.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "1058-1075"
+      },
+      "tags": [
+        "safe-principles",
+        "business-risk"
+      ]
+    },
+    {
+      "id": "safe-intg-009",
+      "section": "SAFE Design Method",
+      "topic": "Risk-based control selection",
+      "difficulty": "medium",
+      "question": "What design mistake is SAFE specifically trying to prevent?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Using business risk to decide where controls should be strongest."
+        },
+        {
+          "id": "B",
+          "text": "Connecting logs, policies, and controls to the services they protect."
+        },
+        {
+          "id": "C",
+          "text": "Selecting controls because they reduce specific threats in business flows."
+        },
+        {
+          "id": "D",
+          "text": "Buying many tools without a clear architecture that connects them to business purpose."
+        },
+        {
+          "id": "E",
+          "text": "Reviewing how users, applications, data, cloud, and operations interact."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "SAFE argues that tools should not come first. Without a clear architecture, organizations may own many controls but still fail to protect the business coherently.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "12-16"
+      },
+      "tags": [
+        "product-first",
+        "risk-based-design"
+      ]
+    },
+    {
+      "id": "safe-intg-010",
+      "section": "SAFE Design Method",
+      "topic": "Different network places",
+      "difficulty": "medium",
+      "question": "Why should a branch, campus, data center, and cloud environment not receive identical security designs?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only data centers process business information that attackers might value."
+        },
+        {
+          "id": "B",
+          "text": "Branches and campuses cannot use identity or segmentation controls."
+        },
+        {
+          "id": "C",
+          "text": "Cloud systems are always simpler than physical network locations."
+        },
+        {
+          "id": "D",
+          "text": "Identical controls always make simple areas too weak and critical areas too complex."
+        },
+        {
+          "id": "E",
+          "text": "Each place has different risks, users, systems, and operating conditions."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "SAFE uses different Places in the Network because each area has its own risk profile. The design should be consistent in method, but not identical in control placement.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "144-150"
+      },
+      "tags": [
+        "pins",
+        "risk-context"
+      ]
+    },
+    {
+      "id": "safe-intg-011",
+      "section": "PINs, Domains, and Management",
+      "topic": "PINs and domains",
+      "difficulty": "easy",
+      "question": "How do Places in the Network and Secure Domains differ in SAFE?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "PINs describe where security happens; Secure Domains describe what security work must be done."
+        },
+        {
+          "id": "B",
+          "text": "PINs describe only cloud systems; Secure Domains describe only physical data centers."
+        },
+        {
+          "id": "C",
+          "text": "PINs are vendor products; Secure Domains are software licenses."
+        },
+        {
+          "id": "D",
+          "text": "PINs replace operations; Secure Domains replace architecture."
+        },
+        {
+          "id": "E",
+          "text": "PINs are temporary alerts; Secure Domains are individual packets."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "PINs organize the enterprise by place, such as branch, campus, cloud, and data center. Secure Domains organize the recurring security functions that must be managed across those places.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "114-125"
+      },
+      "tags": [
+        "pins",
+        "secure-domains"
+      ]
+    },
+    {
+      "id": "safe-intg-012",
+      "section": "PINs, Domains, and Management",
+      "topic": "Secure Data Center PIN",
+      "difficulty": "easy",
+      "question": "What does the Secure Data Center PIN primarily protect?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only public websites hosted outside the organization."
+        },
+        {
+          "id": "B",
+          "text": "Internal servers, applications, databases, and shared services."
+        },
+        {
+          "id": "C",
+          "text": "Only employee laptops and mobile phones."
+        },
+        {
+          "id": "D",
+          "text": "Only WAN provider contracts and service credits."
+        },
+        {
+          "id": "E",
+          "text": "Only audit reports created after an incident."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The Secure Data Center PIN covers the systems that often carry the organization's most important workloads and data, including servers, applications, databases, and shared services.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "129-143"
+      },
+      "tags": [
+        "secure-data-center",
+        "pins"
+      ]
+    },
+    {
+      "id": "safe-intg-013",
+      "section": "PINs, Domains, and Management",
+      "topic": "Cloud PIN risk",
+      "difficulty": "medium",
+      "question": "Why does the Secure Cloud PIN need a design focus different from a traditional static site?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cloud environments never contain sensitive data or identity systems."
+        },
+        {
+          "id": "B",
+          "text": "Cloud environments cannot be segmented or monitored."
+        },
+        {
+          "id": "C",
+          "text": "Cloud resources can be created, changed, and removed quickly on demand."
+        },
+        {
+          "id": "D",
+          "text": "Cloud providers remove all customer security responsibilities."
+        },
+        {
+          "id": "E",
+          "text": "Cloud workloads use no network connectivity."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Cloud environments are dynamic. Developers can create and remove resources quickly, so SAFE designs must account for fast change, visibility gaps, and shared responsibility.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "146-150"
+      },
+      "tags": [
+        "secure-cloud",
+        "dynamic-infrastructure"
+      ]
+    },
+    {
+      "id": "safe-intg-014",
+      "section": "PINs, Domains, and Management",
+      "topic": "Management domain",
+      "difficulty": "medium",
+      "question": "A firewall rule was useful when created, but nobody reviews, records, or removes it after the application is retired. Which SAFE domain is most directly failing?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Security Intelligence, because global threat feeds are missing."
+        },
+        {
+          "id": "B",
+          "text": "Compliance, because encryption keys are too short."
+        },
+        {
+          "id": "C",
+          "text": "Secure Services, because VPN is not enabled."
+        },
+        {
+          "id": "D",
+          "text": "Management, because configuration, policy, monitoring, and workflow discipline are missing."
+        },
+        {
+          "id": "E",
+          "text": "Application Security, because every firewall rule is a source-code defect."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The Management Domain keeps controls configured, updated, monitored, and governed. Without review and documentation, a once-valid rule can become unnecessary exposure.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "173-192"
+      },
+      "tags": [
+        "management-domain",
+        "policy-management"
+      ]
+    },
+    {
+      "id": "safe-intg-015",
+      "section": "PINs, Domains, and Management",
+      "topic": "Time synchronization",
+      "difficulty": "medium",
+      "question": "Why is time synchronization a security requirement rather than a minor clock-setting task?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It prevents every compromised account from logging in successfully."
+        },
+        {
+          "id": "B",
+          "text": "It replaces the need for event logging and incident response."
+        },
+        {
+          "id": "C",
+          "text": "It ensures that all network devices use the same IP address format."
+        },
+        {
+          "id": "D",
+          "text": "It lets users bypass MFA when clocks drift."
+        },
+        {
+          "id": "E",
+          "text": "It allows investigators to correlate logs from different systems into a reliable event sequence."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Investigations depend on event order. If a VPN, server, and database disagree about time, the team may misread how the attacker moved through the environment.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "194-200"
+      },
+      "tags": [
+        "time-sync",
+        "logging"
+      ]
+    },
+    {
+      "id": "safe-intg-016",
+      "section": "PINs, Domains, and Management",
+      "topic": "Configuration documentation",
+      "difficulty": "medium",
+      "question": "How do accurate network records support the SAFE Management Domain?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It gives operators a current map of hardware, software, access rights, and recovery procedures."
+        },
+        {
+          "id": "B",
+          "text": "It proves that monitoring is unnecessary once diagrams are drawn."
+        },
+        {
+          "id": "C",
+          "text": "It allows configuration changes to be made without tracking who changed them."
+        },
+        {
+          "id": "D",
+          "text": "It replaces identity controls with vendor serial numbers."
+        },
+        {
+          "id": "E",
+          "text": "It makes performance and fault management unrelated to security."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "SAFE management depends on knowing what exists and how it is configured. Documentation of devices, software, profiles, and DR procedures makes troubleshooting, planning, and policy review practical.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "22-40"
+      },
+      "tags": [
+        "configuration-management",
+        "documentation"
+      ]
+    },
+    {
+      "id": "safe-intg-017",
+      "section": "PINs, Domains, and Management",
+      "topic": "Trouble tickets",
+      "difficulty": "medium",
+      "question": "A security operations team uses tickets to assign owners, prioritize work, track resolution time, and analyze repeated failures. Which SAFE operational need does this best support?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Replacing vulnerability management with informal chat messages."
+        },
+        {
+          "id": "B",
+          "text": "Turning security and network problems into managed workflow and measurable reporting."
+        },
+        {
+          "id": "C",
+          "text": "Avoiding documentation so responses can be improvised during incidents."
+        },
+        {
+          "id": "D",
+          "text": "Moving all policy decisions from security teams to end users."
+        },
+        {
+          "id": "E",
+          "text": "Treating recurring outages as unrelated events."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Tickets create operational discipline. They help assign responsibility, track timelines, prioritize impact, report availability, and identify recurring patterns that need deeper fixes.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "54-65"
+      },
+      "tags": [
+        "workflow",
+        "trouble-tickets"
+      ]
+    },
+    {
+      "id": "safe-intg-018",
+      "section": "PINs, Domains, and Management",
+      "topic": "Integrated management",
+      "difficulty": "easy",
+      "question": "What operating pattern does network management try to avoid?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Using written goals to coordinate voice, data, LAN, and WAN services."
+        },
+        {
+          "id": "B",
+          "text": "Tracking configuration, performance, support, and cost together."
+        },
+        {
+          "id": "C",
+          "text": "Reactive firefighting where teams only handle immediate breakdowns."
+        },
+        {
+          "id": "D",
+          "text": "Using a long-range charter to guide operational decisions."
+        },
+        {
+          "id": "E",
+          "text": "Reducing redundant departments through service integration."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "SAFE operations need proactive management. Firefighting leaves teams chasing outages and incidents instead of improving the environment before failures affect the business.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "3-18"
+      },
+      "tags": [
+        "network-management",
+        "operations"
+      ]
+    },
+    {
+      "id": "safe-intg-019",
+      "section": "PINs, Domains, and Management",
+      "topic": "Service levels",
+      "difficulty": "medium",
+      "question": "How do service-level agreements support SAFE-style operational control?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They remove the need to monitor availability or response time."
+        },
+        {
+          "id": "B",
+          "text": "They make provider performance a measurable commitment instead of an informal promise."
+        },
+        {
+          "id": "C",
+          "text": "They guarantee that every business flow has the same recovery priority."
+        },
+        {
+          "id": "D",
+          "text": "They replace security policy with a list of device serial numbers."
+        },
+        {
+          "id": "E",
+          "text": "They apply only to user training and never to network services."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SLAs define acceptable performance and consequences when service falls short. That makes availability, response time, and reliability governable rather than vague goals.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "82-86"
+      },
+      "tags": [
+        "sla",
+        "availability"
+      ]
+    },
+    {
+      "id": "safe-intg-020",
+      "section": "PINs, Domains, and Management",
+      "topic": "Cost-aware operations",
+      "difficulty": "hard",
+      "question": "Why can automation and standardization be security-relevant in SAFE operations, not only cost-saving measures?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They allow users to install any software without oversight."
+        },
+        {
+          "id": "B",
+          "text": "They replace monitoring because standardized systems never fail."
+        },
+        {
+          "id": "C",
+          "text": "They make WAN circuits unnecessary for distributed organizations."
+        },
+        {
+          "id": "D",
+          "text": "They shorten troubleshooting and reduce manual configuration work that can cause errors."
+        },
+        {
+          "id": "E",
+          "text": "They move all support responsibility from IT staff to cloud providers."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Personnel time is a major operational cost, and manual work is a source of mistakes. Standardization and automation make support faster and help keep configurations consistent.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "121-138"
+      },
+      "tags": [
+        "automation",
+        "standardization"
+      ]
+    },
+    {
+      "id": "safe-intg-021",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Security intelligence",
+      "difficulty": "easy",
+      "question": "Why does SAFE include a Security Intelligence Domain?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Organizations need external threat context that they cannot observe from their own network alone."
+        },
+        {
+          "id": "B",
+          "text": "Threat feeds replace the need for local logging and monitoring."
+        },
+        {
+          "id": "C",
+          "text": "Malware campaigns are visible only after an organization is breached."
+        },
+        {
+          "id": "D",
+          "text": "Reputation systems are useful only for regulatory audits."
+        },
+        {
+          "id": "E",
+          "text": "Security intelligence applies only to physical building access."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "A single organization cannot see every phishing domain, malware campaign, botnet, or attacker infrastructure. Security intelligence brings broader knowledge into local defense.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "204-226"
+      },
+      "tags": [
+        "security-intelligence",
+        "threat-feeds"
+      ]
+    },
+    {
+      "id": "safe-intg-022",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Threat intelligence use",
+      "difficulty": "medium",
+      "question": "A DNS security control blocks users from reaching a domain already known to host malware. Which SAFE idea does this illustrate?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Compliance evidence replaces active threat prevention."
+        },
+        {
+          "id": "B",
+          "text": "Global threat intelligence can be turned into local protection before malware is downloaded."
+        },
+        {
+          "id": "C",
+          "text": "Only internal logs should be used when deciding whether a destination is risky."
+        },
+        {
+          "id": "D",
+          "text": "DNS security is useful only after a host has already been infected."
+        },
+        {
+          "id": "E",
+          "text": "Threat intelligence removes the need for endpoint protection."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Threat intelligence lets controls act earlier. If a destination or file is already known to be malicious, the local environment can block or quarantine it before a full compromise occurs.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "220-226"
+      },
+      "tags": [
+        "dns-security",
+        "threat-intelligence"
+      ]
+    },
+    {
+      "id": "safe-intg-023",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Compliance versus security",
+      "difficulty": "medium",
+      "question": "How does SAFE distinguish compliance from security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Compliance reduces risk, while security only collects evidence."
+        },
+        {
+          "id": "B",
+          "text": "Compliance applies only to cloud systems, while security applies only to branches."
+        },
+        {
+          "id": "C",
+          "text": "Compliance asks whether required rules are followed; security asks whether risk is actually reduced."
+        },
+        {
+          "id": "D",
+          "text": "Compliance and security are identical once a firewall is deployed."
+        },
+        {
+          "id": "E",
+          "text": "Security is optional when external standards are satisfied."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Compliance matters, but it is not the same as real defense. SAFE treats compliance as one domain inside broader risk reduction, not as a substitute for security.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "244-256"
+      },
+      "tags": [
+        "compliance",
+        "risk-reduction"
+      ]
+    },
+    {
+      "id": "safe-intg-024",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Compliance evidence",
+      "difficulty": "easy",
+      "question": "Which activity best supports the Compliance Domain in a SAFE architecture?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Disabling reporting so auditors cannot question security decisions."
+        },
+        {
+          "id": "B",
+          "text": "Treating policy exceptions as private decisions by individual administrators."
+        },
+        {
+          "id": "C",
+          "text": "Allowing application teams to bypass traceability for urgent releases."
+        },
+        {
+          "id": "D",
+          "text": "Collecting evidence, enforcing policy, and keeping decisions traceable."
+        },
+        {
+          "id": "E",
+          "text": "Using compliance documents only after a breach is fully resolved."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Compliance requires auditability, traceability, policy enforcement, and evidence. These make security decisions visible and provable to auditors, responders, and leaders.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "258-266"
+      },
+      "tags": [
+        "auditability",
+        "evidence"
+      ]
+    },
+    {
+      "id": "safe-intg-025",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Risk assessment",
+      "difficulty": "medium",
+      "question": "How does risk assessment complement the SAFE design sequence?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It ranks every asset equally so controls are distributed uniformly."
+        },
+        {
+          "id": "B",
+          "text": "It focuses only on replacement cost and ignores revenue loss."
+        },
+        {
+          "id": "C",
+          "text": "It replaces architecture with a single spreadsheet of security products."
+        },
+        {
+          "id": "D",
+          "text": "It helps decide where limited security resources produce the most business protection."
+        },
+        {
+          "id": "E",
+          "text": "It proves that low-frequency threats never need controls."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "SAFE starts from business risk, and risk assessment gives that decision structure. It evaluates threats, likelihood, and business cost so the strongest controls go where they matter most.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "65-83"
+      },
+      "tags": [
+        "risk-assessment",
+        "prioritization"
+      ]
+    },
+    {
+      "id": "safe-intg-026",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Business impact",
+      "difficulty": "easy",
+      "question": "A transaction web server earns far more revenue per hour than a small internal file share. Why would SAFE justify stronger protection for the web server?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Business impact makes the web server a higher-priority asset to protect."
+        },
+        {
+          "id": "B",
+          "text": "Internal file shares are never part of an attack surface."
+        },
+        {
+          "id": "C",
+          "text": "Revenue systems cannot be attacked if they use HTTPS."
+        },
+        {
+          "id": "D",
+          "text": "Only internet-facing systems need backups or monitoring."
+        },
+        {
+          "id": "E",
+          "text": "All controls should be assigned by device count rather than business value."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Risk prioritization is a business decision. Replacement cost, staff time, and revenue loss help determine which assets need stronger protection and faster recovery.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "77-83"
+      },
+      "tags": [
+        "business-impact",
+        "asset-value"
+      ]
+    },
+    {
+      "id": "safe-intg-027",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Control mapping",
+      "difficulty": "medium",
+      "question": "Why is a control spreadsheet useful when applying SAFE?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It hides which controls are missing so teams can focus on products already purchased."
+        },
+        {
+          "id": "B",
+          "text": "It maps assets, threats, existing controls, and gaps in one view."
+        },
+        {
+          "id": "C",
+          "text": "It guarantees every threat has already been eliminated."
+        },
+        {
+          "id": "D",
+          "text": "It replaces incident response because spreadsheets are detective controls."
+        },
+        {
+          "id": "E",
+          "text": "It is used only for calculating cooling efficiency."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A control map makes architecture concrete. It helps teams see what assets face which threats, what controls exist, and where the design has gaps.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "73-76"
+      },
+      "tags": [
+        "control-spreadsheet",
+        "gap-analysis"
+      ]
+    },
+    {
+      "id": "safe-intg-028",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Frequency and impact",
+      "difficulty": "hard",
+      "question": "Which risk-planning mistake would conflict with SAFE thinking?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Considering both common malware and less frequent high-impact intrusions."
+        },
+        {
+          "id": "B",
+          "text": "Using business impact to justify controls for critical services."
+        },
+        {
+          "id": "C",
+          "text": "Ignoring costly DoS or intrusion scenarios because they happen less often than viruses."
+        },
+        {
+          "id": "D",
+          "text": "Combining prevention, detection, and recovery planning."
+        },
+        {
+          "id": "E",
+          "text": "Treating threat costs as part of security investment decisions."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Risk is not only frequency. Some less frequent events can be extremely expensive, so SAFE-style planning must consider both likelihood and business impact.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "102-117"
+      },
+      "tags": [
+        "risk-impact",
+        "threat-cost"
+      ]
+    },
+    {
+      "id": "safe-intg-029",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Control maintenance",
+      "difficulty": "medium",
+      "question": "Why must security controls be reviewed after deployment?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Controls stop working unless they are developed, owned, maintained, tested, and updated."
+        },
+        {
+          "id": "B",
+          "text": "Reviews are needed only when no controls are assigned to anyone."
+        },
+        {
+          "id": "C",
+          "text": "A deployed control automatically adapts to every future threat."
+        },
+        {
+          "id": "D",
+          "text": "Testing controls is useful only for compliance and never for security."
+        },
+        {
+          "id": "E",
+          "text": "Temporary control overrides should never be documented."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Controls are operational commitments, not one-time installations. Ownership, maintenance, testing, and updates are needed to keep them effective as systems and threats change.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "49-60"
+      },
+      "tags": [
+        "control-maintenance",
+        "governance"
+      ]
+    },
+    {
+      "id": "safe-intg-030",
+      "section": "Intelligence, Compliance, and Risk",
+      "topic": "Minimum compliance",
+      "difficulty": "hard",
+      "question": "What is the risk of treating compliance as the final goal of security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The organization may exceed every standard by implementing too many controls."
+        },
+        {
+          "id": "B",
+          "text": "Security teams may focus only on reducing real risk."
+        },
+        {
+          "id": "C",
+          "text": "Auditors may refuse to review traceable evidence."
+        },
+        {
+          "id": "D",
+          "text": "Internal policy may become impossible to enforce."
+        },
+        {
+          "id": "E",
+          "text": "The organization may satisfy minimum rules while still leaving important risks poorly defended."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "A system can pass required checks and still be weak. SAFE treats compliance as supporting risk reduction, not replacing it.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "244-256"
+      },
+      "tags": [
+        "compliance-limits",
+        "risk-reduction"
+      ]
+    },
+    {
+      "id": "safe-intg-031",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Segmentation purpose",
+      "difficulty": "easy",
+      "question": "Why is segmentation central to SAFE?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It limits what a compromised user, device, or application can reach next."
+        },
+        {
+          "id": "B",
+          "text": "It guarantees attackers can never gain an initial foothold."
+        },
+        {
+          "id": "C",
+          "text": "It removes the need for monitoring and response."
+        },
+        {
+          "id": "D",
+          "text": "It makes all internal systems equally trusted."
+        },
+        {
+          "id": "E",
+          "text": "It applies only to guest wireless networks."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Segmentation assumes something may eventually be compromised. The goal is to reduce lateral movement and contain damage by placing boundaries between systems.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "270-291"
+      },
+      "tags": [
+        "segmentation",
+        "lateral-movement"
+      ]
+    },
+    {
+      "id": "safe-intg-032",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Traditional segmentation",
+      "difficulty": "easy",
+      "question": "Which set best represents traditional segmentation methods?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "MFA tokens, biometric scans, and digital certificates."
+        },
+        {
+          "id": "B",
+          "text": "VLANs, IP subnets, access control lists, and firewalls."
+        },
+        {
+          "id": "C",
+          "text": "Trouble tickets, charge-back policies, and training manuals."
+        },
+        {
+          "id": "D",
+          "text": "Cooling containment, UPS batteries, and generators."
+        },
+        {
+          "id": "E",
+          "text": "PUE dashboards, humidity ranges, and clean agents."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Traditional segmentation usually divides networks by topology and addressing. VLANs, subnets, ACLs, and firewalls are common tools for that style of separation.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "293-302"
+      },
+      "tags": [
+        "traditional-segmentation",
+        "acl"
+      ]
+    },
+    {
+      "id": "safe-intg-033",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Advanced segmentation",
+      "difficulty": "medium",
+      "question": "What is the main shift in advanced segmentation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "From identity-aware policy to manual cabling diagrams."
+        },
+        {
+          "id": "B",
+          "text": "From application visibility to blind trust of internal servers."
+        },
+        {
+          "id": "C",
+          "text": "From where something is connected toward what it is, what role it has, and what it may do."
+        },
+        {
+          "id": "D",
+          "text": "From micro-segmentation to one flat network for easier administration."
+        },
+        {
+          "id": "E",
+          "text": "From policy-driven access to unrestricted east/west traffic."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Modern environments move too quickly for location alone to define trust. Advanced segmentation uses identity, role, software-defined policy, groups, and micro-segmentation.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "304-316"
+      },
+      "tags": [
+        "advanced-segmentation",
+        "identity-aware-policy"
+      ]
+    },
+    {
+      "id": "safe-intg-034",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Application-tier containment",
+      "difficulty": "medium",
+      "question": "Why should a web server not be allowed to freely connect to every database in a SAFE design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Web servers cannot participate in business flows."
+        },
+        {
+          "id": "B",
+          "text": "Databases do not need protection if the web server has a firewall."
+        },
+        {
+          "id": "C",
+          "text": "All databases should be reachable from every application tier for resilience."
+        },
+        {
+          "id": "D",
+          "text": "A compromised web server could otherwise become a path toward sensitive data."
+        },
+        {
+          "id": "E",
+          "text": "Segmentation applies only between branch offices and the internet."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Segmentation controls the blast radius of a compromise. If a web tier is breached, internal boundaries should prevent easy movement into databases, directory services, or management systems.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "284-291"
+      },
+      "tags": [
+        "application-tiers",
+        "blast-radius"
+      ]
+    },
+    {
+      "id": "safe-intg-035",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Layered defense",
+      "difficulty": "medium",
+      "question": "Which pairing best reflects defense in depth at the network boundary?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "NAT hides addresses, so firewalls and IDPS should be removed."
+        },
+        {
+          "id": "B",
+          "text": "Encryption protects data, so endpoint controls are unnecessary."
+        },
+        {
+          "id": "C",
+          "text": "Physical locks prevent all remote attacks."
+        },
+        {
+          "id": "D",
+          "text": "User training replaces technical traffic inspection."
+        },
+        {
+          "id": "E",
+          "text": "Firewalls filter traffic, while IDPS monitors and blocks threats that pass or emerge inside."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Defense in depth combines controls with different strengths. Firewalls prevent known bad traffic, while IDPS provides detection and prevention for activity that gets through or starts internally.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "612-620"
+      },
+      "tags": [
+        "defense-in-depth",
+        "idps"
+      ]
+    },
+    {
+      "id": "safe-intg-036",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Packet filtering limitation",
+      "difficulty": "medium",
+      "question": "Why is a packet-level firewall alone weak against IP spoofing?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It may trust a packet's claimed source address without fully proving the sender is legitimate."
+        },
+        {
+          "id": "B",
+          "text": "It can inspect application content too deeply and slow down every server."
+        },
+        {
+          "id": "C",
+          "text": "It can only be deployed inside a database management system."
+        },
+        {
+          "id": "D",
+          "text": "It prevents attackers from changing source addresses."
+        },
+        {
+          "id": "E",
+          "text": "It works only when all traffic is encrypted."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Packet-level rules often depend on source and destination addresses. If an attacker falsifies the source address, the firewall may mistake hostile traffic for trusted traffic.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "267-273"
+      },
+      "tags": [
+        "firewalls",
+        "ip-spoofing"
+      ]
+    },
+    {
+      "id": "safe-intg-037",
+      "section": "Segmentation and Threat Defense",
+      "topic": "NAT limitation",
+      "difficulty": "medium",
+      "question": "Why should NAT be treated as only one part of a SAFE boundary design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "NAT actively blocks all malicious traffic before it reaches a firewall."
+        },
+        {
+          "id": "B",
+          "text": "NAT hides internal addresses, but it is not a substitute for active inspection and detection."
+        },
+        {
+          "id": "C",
+          "text": "NAT exposes private addresses directly to external attackers."
+        },
+        {
+          "id": "D",
+          "text": "NAT can be used only when there is no internet connection."
+        },
+        {
+          "id": "E",
+          "text": "NAT replaces access control lists inside databases."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "NAT gives passive protection by hiding internal addressing, but it does not replace firewalls, IDS, IDPS, or policy enforcement.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "277-289"
+      },
+      "tags": [
+        "nat",
+        "boundary-security"
+      ]
+    },
+    {
+      "id": "safe-intg-038",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Detection methods",
+      "difficulty": "easy",
+      "question": "Which detection approach is accurate for known attacks but blind to new attacks that have no stored pattern?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Anomaly detection based only on traffic baselines."
+        },
+        {
+          "id": "B",
+          "text": "Disaster recovery based on offsite backup."
+        },
+        {
+          "id": "C",
+          "text": "Misuse detection based on attack signatures."
+        },
+        {
+          "id": "D",
+          "text": "Role-based access control based on job duties."
+        },
+        {
+          "id": "E",
+          "text": "Data replication based on database logs."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Signature-based detection is strong when an attack pattern is already known. Its weakness is novelty: if the signature database lacks the pattern, it may miss the attack.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "299-315"
+      },
+      "tags": [
+        "ids",
+        "signature-detection"
+      ]
+    },
+    {
+      "id": "safe-intg-039",
+      "section": "Segmentation and Threat Defense",
+      "topic": "False positives",
+      "difficulty": "medium",
+      "question": "Why does anomaly-based detection require careful tuning?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It can only detect attacks that already have public signatures."
+        },
+        {
+          "id": "B",
+          "text": "It disables normal baselines after every software update."
+        },
+        {
+          "id": "C",
+          "text": "It works only on physical access logs."
+        },
+        {
+          "id": "D",
+          "text": "Legitimate unusual activity can trigger alerts and create alert fatigue."
+        },
+        {
+          "id": "E",
+          "text": "It prevents security teams from detecting new behavior."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Anomaly detection can catch novel attacks, but unusual legitimate behavior may also look suspicious. Too many false positives can cause teams to ignore alerts.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "310-315"
+      },
+      "tags": [
+        "anomaly-detection",
+        "false-positives"
+      ]
+    },
+    {
+      "id": "safe-intg-040",
+      "section": "Segmentation and Threat Defense",
+      "topic": "Threat defense scope",
+      "difficulty": "hard",
+      "question": "Why does SAFE threat defense need to operate beyond the internet perimeter?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Modern attacks can enter through phishing, stolen credentials, vulnerable applications, endpoints, cloud mistakes, or partners."
+        },
+        {
+          "id": "B",
+          "text": "The internet perimeter no longer carries any malicious traffic."
+        },
+        {
+          "id": "C",
+          "text": "Perimeter controls are useful only for compliance evidence."
+        },
+        {
+          "id": "D",
+          "text": "Internal networks are always more hostile than external networks."
+        },
+        {
+          "id": "E",
+          "text": "Cloud connections eliminate the need for endpoint monitoring."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Threats can appear at many points in the flow. SAFE therefore combines telemetry, reputation, endpoint behavior, application activity, and context across the whole environment.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "320-353"
+      },
+      "tags": [
+        "threat-defense",
+        "context"
+      ]
+    },
+    {
+      "id": "safe-intg-041",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Human attack surface",
+      "difficulty": "easy",
+      "question": "Who is included in the human attack surface?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only anonymous internet attackers with no legitimate access."
+        },
+        {
+          "id": "B",
+          "text": "Only database administrators working in a data center."
+        },
+        {
+          "id": "C",
+          "text": "Users, privileged administrators, contractors, support teams, partners, and vendors."
+        },
+        {
+          "id": "D",
+          "text": "Only endpoint devices that fail posture checks."
+        },
+        {
+          "id": "E",
+          "text": "Only cloud provider employees outside the organization."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The human attack surface includes anyone who can influence systems or data. That includes ordinary users and high-privilege roles because both can become attack paths.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "398-402"
+      },
+      "tags": [
+        "human-attack-surface",
+        "identity"
+      ]
+    },
+    {
+      "id": "safe-intg-042",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Credential theft",
+      "difficulty": "medium",
+      "question": "Why are stolen administrator credentials especially dangerous in SAFE thinking?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Administrator accounts cannot be logged or monitored."
+        },
+        {
+          "id": "B",
+          "text": "Administrators never use multi-factor authentication."
+        },
+        {
+          "id": "C",
+          "text": "An attacker with valid credentials may appear authorized to downstream controls."
+        },
+        {
+          "id": "D",
+          "text": "Credential theft affects only public cloud systems."
+        },
+        {
+          "id": "E",
+          "text": "Passwords are stronger than identity verification."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Valid credentials can let an attacker look legitimate. This is why SAFE emphasizes identity, MFA, least privilege, and administrative logging.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "412-428"
+      },
+      "tags": [
+        "credential-theft",
+        "admin-access"
+      ]
+    },
+    {
+      "id": "safe-intg-043",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Human controls",
+      "difficulty": "easy",
+      "question": "Which control set best reduces human attack surface risk?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Hot aisle containment, raised floors, and CRAC units."
+        },
+        {
+          "id": "B",
+          "text": "PUE measurement, DCIM dashboards, and leak sensors."
+        },
+        {
+          "id": "C",
+          "text": "VLAN numbers, cable trays, and utility feeds."
+        },
+        {
+          "id": "D",
+          "text": "SQL indexes, primary keys, and database joins."
+        },
+        {
+          "id": "E",
+          "text": "Identity services, MFA, role-based access, least privilege, and administrative logging."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Human risk centers on identity, access, and privilege. Controls that verify users, limit permissions, and log privileged activity reduce the value of stolen or misused accounts.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "418-428"
+      },
+      "tags": [
+        "mfa",
+        "least-privilege"
+      ]
+    },
+    {
+      "id": "safe-intg-044",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Authentication factors",
+      "difficulty": "medium",
+      "question": "Why is multi-factor authentication stronger than a password alone?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It combines different proof types, so stealing one factor is less likely to be enough."
+        },
+        {
+          "id": "B",
+          "text": "It removes the need for user profiles and access permissions."
+        },
+        {
+          "id": "C",
+          "text": "It makes biometric compromise easy to reverse."
+        },
+        {
+          "id": "D",
+          "text": "It guarantees that phishing emails cannot reach users."
+        },
+        {
+          "id": "E",
+          "text": "It works only when all resources are public."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Authentication factors include something you know, have, and are. Combining factors makes access harder to abuse because a stolen password alone is no longer sufficient.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "517-528"
+      },
+      "tags": [
+        "authentication",
+        "mfa"
+      ]
+    },
+    {
+      "id": "safe-intg-045",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Single sign-on",
+      "difficulty": "medium",
+      "question": "How can single sign-on improve both security and operations?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It removes centralized authentication so each system manages credentials differently."
+        },
+        {
+          "id": "B",
+          "text": "It lets users rely on one strong login while administrators manage credentials centrally."
+        },
+        {
+          "id": "C",
+          "text": "It prevents the need for access control after authentication."
+        },
+        {
+          "id": "D",
+          "text": "It stores every user password inside each application database."
+        },
+        {
+          "id": "E",
+          "text": "It is useful only for systems that do not use encryption."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SSO reduces password sprawl and centralizes credential management. This can improve user experience while making account control easier for administrators.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "550-557"
+      },
+      "tags": [
+        "sso",
+        "centralized-authentication"
+      ]
+    },
+    {
+      "id": "safe-intg-046",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Role-based access",
+      "difficulty": "medium",
+      "question": "Why does role-based access control fit SAFE identity-centric security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It gives every user direct access to every table and application."
+        },
+        {
+          "id": "B",
+          "text": "It assigns permissions to network cables rather than people."
+        },
+        {
+          "id": "C",
+          "text": "It ties permissions to job function, making access easier to update when roles change."
+        },
+        {
+          "id": "D",
+          "text": "It prevents administrators from revoking permissions."
+        },
+        {
+          "id": "E",
+          "text": "It replaces the need for authentication."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "RBAC manages access by role instead of assigning every privilege individually. This supports least privilege and reduces mistakes when users join, change jobs, or leave.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "84-90"
+      },
+      "tags": [
+        "rbac",
+        "identity-centric-security"
+      ]
+    },
+    {
+      "id": "safe-intg-047",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Device trust",
+      "difficulty": "medium",
+      "question": "Why is a valid user identity not enough to grant access in SAFE?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "User identity matters only for compliance, not security."
+        },
+        {
+          "id": "B",
+          "text": "A user may be legitimate while the device is infected, unpatched, or non-compliant."
+        },
+        {
+          "id": "C",
+          "text": "Device posture matters only in public Wi-Fi networks."
+        },
+        {
+          "id": "D",
+          "text": "Valid credentials automatically prove that a device is healthy."
+        },
+        {
+          "id": "E",
+          "text": "SAFE treats internal devices as always trusted."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SAFE evaluates identity together with device health, role, resource, and context. A compromised or unpatched device can bridge attackers into internal applications.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "456-468"
+      },
+      "tags": [
+        "device-trust",
+        "posture"
+      ]
+    },
+    {
+      "id": "safe-intg-048",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Device controls",
+      "difficulty": "easy",
+      "question": "Which control set best protects the device attack surface?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "PCI-DSS reports, SOX evidence, and audit sampling."
+        },
+        {
+          "id": "B",
+          "text": "Cold sites, warm sites, and hot sites."
+        },
+        {
+          "id": "C",
+          "text": "Packet-level filtering, NAT, and public IP translation only."
+        },
+        {
+          "id": "D",
+          "text": "Endpoint security, posture assessment, device management, and behavior baselining."
+        },
+        {
+          "id": "E",
+          "text": "PUE reduction, ASHRAE humidity control, and VESDA sensors."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Device risk includes malware, unpatched software, stolen devices, and non-compliance. Endpoint controls and posture checks help decide whether a device should be trusted.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "447-479"
+      },
+      "tags": [
+        "endpoint-security",
+        "device-management"
+      ]
+    },
+    {
+      "id": "safe-intg-049",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Patch management",
+      "difficulty": "medium",
+      "question": "Why is rapid patching important for SAFE device and server protection?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Known vulnerabilities with available fixes are common entry points when patches are not applied."
+        },
+        {
+          "id": "B",
+          "text": "Patches are useful only after an attacker has stolen data."
+        },
+        {
+          "id": "C",
+          "text": "Software bugs cannot create security holes."
+        },
+        {
+          "id": "D",
+          "text": "Default passwords are safer when software remains unchanged."
+        },
+        {
+          "id": "E",
+          "text": "Patch management replaces the need for endpoint monitoring."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Once a vulnerability is known and patched, unpatched systems become attractive targets. Patch management closes those known holes before attackers exploit them.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "370-376"
+      },
+      "tags": [
+        "patch-management",
+        "vulnerabilities"
+      ]
+    },
+    {
+      "id": "safe-intg-050",
+      "section": "Human and Device Attack Surfaces",
+      "topic": "Social engineering",
+      "difficulty": "hard",
+      "question": "Why does social engineering belong in a Cisco SAFE security architecture?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is solved entirely by buying faster firewalls."
+        },
+        {
+          "id": "B",
+          "text": "It can bypass technical controls when people are tricked into granting access or revealing credentials."
+        },
+        {
+          "id": "C",
+          "text": "It affects only users with no access to business data."
+        },
+        {
+          "id": "D",
+          "text": "It is unrelated to identity, training, or need-to-know access."
+        },
+        {
+          "id": "E",
+          "text": "It applies only after disaster recovery has failed."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SAFE includes human risk because attackers often exploit trust and helpfulness. Education, screening, need-to-know access, and reinforcement reduce the chance that one person becomes the entry point.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "560-582"
+      },
+      "tags": [
+        "social-engineering",
+        "security-awareness"
+      ]
+    },
+    {
+      "id": "safe-intg-051",
+      "section": "Network, Application, and Data Security",
+      "topic": "Access layer",
+      "difficulty": "easy",
+      "question": "In the SAFE network hierarchy, where are users and devices first authenticated, authorized, and placed into an initial segment?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Core layer."
+        },
+        {
+          "id": "B",
+          "text": "Services layer."
+        },
+        {
+          "id": "C",
+          "text": "Access layer."
+        },
+        {
+          "id": "D",
+          "text": "Backup layer."
+        },
+        {
+          "id": "E",
+          "text": "Compliance layer."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The Access Layer is the front door of the network. It is the natural place for authentication, authorization, admission control, identity enforcement, and initial segmentation.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "497-517"
+      },
+      "tags": [
+        "access-layer",
+        "network-admission"
+      ]
+    },
+    {
+      "id": "safe-intg-052",
+      "section": "Network, Application, and Data Security",
+      "topic": "Distribution layer",
+      "difficulty": "medium",
+      "question": "Why is the distribution layer often a good place for broader policy enforcement?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is where individual laptops first plug into the network."
+        },
+        {
+          "id": "B",
+          "text": "It aggregates access networks and can act as a boundary for firewalls, IPS, routing controls, and segmentation."
+        },
+        {
+          "id": "C",
+          "text": "It should avoid all security controls to keep every port open."
+        },
+        {
+          "id": "D",
+          "text": "It exists only in cloud provider networks."
+        },
+        {
+          "id": "E",
+          "text": "It stores application databases and encryption keys."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "The distribution layer aggregates access traffic and often forms a policy boundary. That makes it suitable for controls that separate network areas and integrate security services.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "518-531"
+      },
+      "tags": [
+        "distribution-layer",
+        "policy-boundary"
+      ]
+    },
+    {
+      "id": "safe-intg-053",
+      "section": "Network, Application, and Data Security",
+      "topic": "Core layer",
+      "difficulty": "medium",
+      "question": "Why is the core layer usually not the place for complex filtering?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The core should move traffic reliably and quickly between major areas."
+        },
+        {
+          "id": "B",
+          "text": "The core is unable to provide redundant connectivity."
+        },
+        {
+          "id": "C",
+          "text": "The core belongs only to the application attack surface."
+        },
+        {
+          "id": "D",
+          "text": "The core should be used only for user account creation."
+        },
+        {
+          "id": "E",
+          "text": "The core does not carry traffic between network areas."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The core is the high-speed backbone. Heavy inspection can slow it down, so complex policy is usually placed at appropriate boundaries while the core stays fast and resilient.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "533-546"
+      },
+      "tags": [
+        "core-layer",
+        "backbone"
+      ]
+    },
+    {
+      "id": "safe-intg-054",
+      "section": "Network, Application, and Data Security",
+      "topic": "Application-layer risk",
+      "difficulty": "medium",
+      "question": "Why are network firewalls alone insufficient for application security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They can allow traffic with the correct port and protocol even when the application request is malicious."
+        },
+        {
+          "id": "B",
+          "text": "They understand every business rule inside each application."
+        },
+        {
+          "id": "C",
+          "text": "They remove the need to validate user input."
+        },
+        {
+          "id": "D",
+          "text": "They prevent all exposed APIs from being abused."
+        },
+        {
+          "id": "E",
+          "text": "They replace dependency mapping and runtime protection."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "An application request can be network-valid and still logically unsafe. Application security focuses on business logic, input, APIs, and data access that packet filtering may not understand.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "574-594"
+      },
+      "tags": [
+        "application-security",
+        "waf"
+      ]
+    },
+    {
+      "id": "safe-intg-055",
+      "section": "Network, Application, and Data Security",
+      "topic": "Web application firewall",
+      "difficulty": "easy",
+      "question": "Which SAFE application control is specifically meant to protect web applications from common attacks?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Power distribution unit."
+        },
+        {
+          "id": "B",
+          "text": "Web application firewall."
+        },
+        {
+          "id": "C",
+          "text": "Static transfer switch."
+        },
+        {
+          "id": "D",
+          "text": "Quality control chart."
+        },
+        {
+          "id": "E",
+          "text": "Cold standby site."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A WAF is an application-layer control. It is designed to inspect and protect web traffic against common application attacks that ordinary network controls may not recognize.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "582-594"
+      },
+      "tags": [
+        "waf",
+        "application-controls"
+      ]
+    },
+    {
+      "id": "safe-intg-056",
+      "section": "Network, Application, and Data Security",
+      "topic": "SQL injection",
+      "difficulty": "medium",
+      "question": "Why is SQL injection a high-priority application and data threat in SAFE thinking?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It affects only the formatting of query results."
+        },
+        {
+          "id": "B",
+          "text": "It is possible only when a database has no tables."
+        },
+        {
+          "id": "C",
+          "text": "It can let an attacker steal, modify, or delete database information through unsafe input."
+        },
+        {
+          "id": "D",
+          "text": "It is prevented entirely by physical building access controls."
+        },
+        {
+          "id": "E",
+          "text": "It applies only to private clouds and never to web applications."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "SQL injection abuses application input to execute database commands. It can threaten confidentiality, integrity, and availability at the same time.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "94-105"
+      },
+      "tags": [
+        "sql-injection",
+        "data-security"
+      ]
+    },
+    {
+      "id": "safe-intg-057",
+      "section": "Network, Application, and Data Security",
+      "topic": "Parameterized queries",
+      "difficulty": "medium",
+      "question": "Which SQL injection defense best matches SAFE's principle of treating outside input as dangerous?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Concatenating user input directly into SQL commands."
+        },
+        {
+          "id": "B",
+          "text": "Trusting cookies because they came from a user's browser."
+        },
+        {
+          "id": "C",
+          "text": "Waiting for administrators to notice unusual database output manually."
+        },
+        {
+          "id": "D",
+          "text": "Using parameterized queries so input is handled as data rather than executable code."
+        },
+        {
+          "id": "E",
+          "text": "Moving all application input validation to physical security guards."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Parameterized queries separate code from data. They prevent user input from being interpreted as SQL commands, which directly reduces an important application attack path.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "124-138"
+      },
+      "tags": [
+        "parameterized-queries",
+        "secure-coding"
+      ]
+    },
+    {
+      "id": "safe-intg-058",
+      "section": "Network, Application, and Data Security",
+      "topic": "Database views",
+      "difficulty": "medium",
+      "question": "How can database views support least privilege?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They expose every column in every table so users can choose what to avoid."
+        },
+        {
+          "id": "B",
+          "text": "They prevent a DBMS from enforcing concurrent access."
+        },
+        {
+          "id": "C",
+          "text": "They replace primary keys with public passwords."
+        },
+        {
+          "id": "D",
+          "text": "They copy all sensitive data into user browsers."
+        },
+        {
+          "id": "E",
+          "text": "They present only permitted rows or columns through a controlled virtual table."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "A view can hide sensitive columns or limit what a user sees. That supports access control by exposing only the data needed for a role or task.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "39-45"
+      },
+      "tags": [
+        "views",
+        "least-privilege"
+      ]
+    },
+    {
+      "id": "safe-intg-059",
+      "section": "Network, Application, and Data Security",
+      "topic": "Database authorization",
+      "difficulty": "medium",
+      "question": "What role does a database authorization table play in a SAFE-aligned data design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It checks whether a user or role has permission to perform a specific action on data."
+        },
+        {
+          "id": "B",
+          "text": "It stores only cooling and humidity readings for server racks."
+        },
+        {
+          "id": "C",
+          "text": "It allows all users to bypass access checks after login."
+        },
+        {
+          "id": "D",
+          "text": "It converts private IP addresses to public IP addresses."
+        },
+        {
+          "id": "E",
+          "text": "It replaces backups by copying database files to user devices."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Authorization tables enforce confidentiality by checking whether a user or role may read, insert, update, delete, or reference data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "55-83"
+      },
+      "tags": [
+        "database-access-control",
+        "authorization"
+      ]
+    },
+    {
+      "id": "safe-intg-060",
+      "section": "Network, Application, and Data Security",
+      "topic": "Database encryption",
+      "difficulty": "hard",
+      "question": "Why is database encryption powerful but not enough by itself?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It makes stolen data unreadable, but key management and performance trade-offs still need careful handling."
+        },
+        {
+          "id": "B",
+          "text": "It prevents all SQL injection attacks before they reach the application."
+        },
+        {
+          "id": "C",
+          "text": "It removes the need for authorization, logging, and segmentation."
+        },
+        {
+          "id": "D",
+          "text": "It works only when all data is stored in plain text."
+        },
+        {
+          "id": "E",
+          "text": "It is useful only for data that is not sensitive."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Encryption is a strong final layer if database files are stolen, but it depends on protecting keys and can make searching, filtering, and processing harder.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "142-155"
+      },
+      "tags": [
+        "database-encryption",
+        "key-management"
+      ]
+    },
+    {
+      "id": "safe-intg-061",
+      "section": "Secure Data Center Controls",
+      "topic": "Data center purpose",
+      "difficulty": "easy",
+      "question": "Why is a data center a critical SAFE environment?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It provides power, cooling, physical security, connectivity, and monitoring for critical servers."
+        },
+        {
+          "id": "B",
+          "text": "It replaces the need for application security and identity controls."
+        },
+        {
+          "id": "C",
+          "text": "It is mainly a storage room for retired hardware."
+        },
+        {
+          "id": "D",
+          "text": "It guarantees that all internal traffic is safe."
+        },
+        {
+          "id": "E",
+          "text": "It removes the need for disaster recovery planning."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "The data center is a purpose-built environment for keeping critical servers available and protected. SAFE builds on that foundation with segmentation, visibility, threat defense, and access control.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "3-30"
+      },
+      "tags": [
+        "data-center",
+        "availability"
+      ]
+    },
+    {
+      "id": "safe-intg-062",
+      "section": "Secure Data Center Controls",
+      "topic": "Data center standards",
+      "difficulty": "easy",
+      "question": "Which standard is the broad master blueprint for data center design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "TIA-942."
+        },
+        {
+          "id": "B",
+          "text": "Kerberos."
+        },
+        {
+          "id": "C",
+          "text": "RSA."
+        },
+        {
+          "id": "D",
+          "text": "ITIL."
+        },
+        {
+          "id": "E",
+          "text": "RBAC."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "TIA-942 covers layout, cabling, power, cooling, fire protection, and the tier system. It is a physical and infrastructure design reference that supports secure data center planning.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "40-52"
+      },
+      "tags": [
+        "tia-942",
+        "standards"
+      ]
+    },
+    {
+      "id": "safe-intg-063",
+      "section": "Secure Data Center Controls",
+      "topic": "Tier system",
+      "difficulty": "medium",
+      "question": "What does moving from Tier I toward Tier IV mainly improve?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The amount of unrestricted east/west traffic allowed between servers."
+        },
+        {
+          "id": "B",
+          "text": "Reliability, maintainability, and ability to survive failures with less downtime."
+        },
+        {
+          "id": "C",
+          "text": "The number of public IP addresses visible from the internet."
+        },
+        {
+          "id": "D",
+          "text": "The ability to skip disaster recovery and backup planning."
+        },
+        {
+          "id": "E",
+          "text": "The removal of all software and human sources of outages."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Higher tiers add redundancy, multiple paths, concurrent maintainability, and fault tolerance. That directly supports availability for critical business flows.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "77-123"
+      },
+      "tags": [
+        "tier-system",
+        "high-availability"
+      ]
+    },
+    {
+      "id": "safe-intg-064",
+      "section": "Secure Data Center Controls",
+      "topic": "Management and downtime",
+      "difficulty": "hard",
+      "question": "What do common downtime causes imply for SAFE data center operations?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only failed hardware matters, so change management can be ignored."
+        },
+        {
+          "id": "B",
+          "text": "Planned work, software problems, and human error make management process as important as hardware design."
+        },
+        {
+          "id": "C",
+          "text": "Software and maintenance cannot cause availability problems."
+        },
+        {
+          "id": "D",
+          "text": "High tiers eliminate the need for monitoring and documentation."
+        },
+        {
+          "id": "E",
+          "text": "Environmental problems are the only outage source worth measuring."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A data center can have strong infrastructure and still suffer from software, maintenance, and human process failures. SAFE's Management Domain is essential for controlling those risks.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "99-123"
+      },
+      "tags": [
+        "downtime",
+        "management-domain"
+      ]
+    },
+    {
+      "id": "safe-intg-065",
+      "section": "Secure Data Center Controls",
+      "topic": "Power continuity",
+      "difficulty": "medium",
+      "question": "What is the role of the UPS in data center power continuity?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It is the public utility grid that normally powers the site."
+        },
+        {
+          "id": "B",
+          "text": "It distributes power from the rack to each application process."
+        },
+        {
+          "id": "C",
+          "text": "It replaces the generator for several days without fuel."
+        },
+        {
+          "id": "D",
+          "text": "It instantly bridges the gap between utility failure and generator startup."
+        },
+        {
+          "id": "E",
+          "text": "It performs biometric checks before power reaches servers."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "The UPS provides battery power immediately after utility power fails, keeping systems alive long enough for the generator to start.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "157-220"
+      },
+      "tags": [
+        "ups",
+        "power-continuity"
+      ]
+    },
+    {
+      "id": "safe-intg-066",
+      "section": "Secure Data Center Controls",
+      "topic": "Cooling and availability",
+      "difficulty": "medium",
+      "question": "Why does cooling belong in an integrated SAFE view of data center risk?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Overheating can degrade performance, shorten hardware life, and take critical services offline."
+        },
+        {
+          "id": "B",
+          "text": "Cooling systems replace network segmentation."
+        },
+        {
+          "id": "C",
+          "text": "Servers generate no heat when they run at full load."
+        },
+        {
+          "id": "D",
+          "text": "Humidity has no effect on electronic systems."
+        },
+        {
+          "id": "E",
+          "text": "Cooling is relevant only to office comfort, not server availability."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "SAFE protects business availability as well as confidentiality and integrity. Poor cooling can shut down systems or degrade them enough to disrupt services.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "224-247"
+      },
+      "tags": [
+        "cooling",
+        "availability"
+      ]
+    },
+    {
+      "id": "safe-intg-067",
+      "section": "Secure Data Center Controls",
+      "topic": "Hot and cold aisles",
+      "difficulty": "medium",
+      "question": "What is the purpose of hot aisle and cold aisle design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To force all user traffic through a single firewall."
+        },
+        {
+          "id": "B",
+          "text": "To separate cool intake air from hot exhaust air so servers cool efficiently."
+        },
+        {
+          "id": "C",
+          "text": "To make application tiers reachable without segmentation."
+        },
+        {
+          "id": "D",
+          "text": "To replace clean agent fire suppression."
+        },
+        {
+          "id": "E",
+          "text": "To encrypt database traffic between sites."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Hot/cold aisle design controls airflow. Keeping intake and exhaust air separated improves cooling efficiency and helps keep workloads available.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "287-317"
+      },
+      "tags": [
+        "hot-cold-aisle",
+        "cooling-efficiency"
+      ]
+    },
+    {
+      "id": "safe-intg-068",
+      "section": "Secure Data Center Controls",
+      "topic": "Fire protection",
+      "difficulty": "medium",
+      "question": "Why do data centers use very early smoke detection and clean agent suppression?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They increase water exposure so fire damage is easier to measure."
+        },
+        {
+          "id": "B",
+          "text": "They detect fire early and suppress it without destroying electronic equipment."
+        },
+        {
+          "id": "C",
+          "text": "They remove the need for physical security controls."
+        },
+        {
+          "id": "D",
+          "text": "They are used only to monitor internet traffic patterns."
+        },
+        {
+          "id": "E",
+          "text": "They replace disaster recovery sites."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Data centers need to detect smoke before flames spread and suppress fire without soaking servers. VESDA and clean agents reduce both fire risk and suppression damage.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "339-362"
+      },
+      "tags": [
+        "vesda",
+        "clean-agent"
+      ]
+    },
+    {
+      "id": "safe-intg-069",
+      "section": "Secure Data Center Controls",
+      "topic": "Physical access",
+      "difficulty": "medium",
+      "question": "How does a mantrap reduce data center attack surface?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It lets visitors enter faster when they follow an employee."
+        },
+        {
+          "id": "B",
+          "text": "It detects SQL injection inside application requests."
+        },
+        {
+          "id": "C",
+          "text": "It prevents tailgating by requiring one door to close before the next opens."
+        },
+        {
+          "id": "D",
+          "text": "It hides internal IP addresses from external networks."
+        },
+        {
+          "id": "E",
+          "text": "It replaces biometric authentication and visitor logging."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Physical access is part of the attack surface. A mantrap controls entry to sensitive areas and makes it harder for someone to slip in behind an authorized person.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "366-380"
+      },
+      "tags": [
+        "physical-security",
+        "mantrap"
+      ]
+    },
+    {
+      "id": "safe-intg-070",
+      "section": "Secure Data Center Controls",
+      "topic": "NOC and DCIM",
+      "difficulty": "medium",
+      "question": "Why do NOC monitoring and DCIM tools fit SAFE's visibility-first principle?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They hide infrastructure state so only auditors can review it."
+        },
+        {
+          "id": "B",
+          "text": "They centralize visibility into power, cooling, network, security, leaks, environment, and capacity."
+        },
+        {
+          "id": "C",
+          "text": "They replace incident response with static diagrams."
+        },
+        {
+          "id": "D",
+          "text": "They prevent all failures from occurring."
+        },
+        {
+          "id": "E",
+          "text": "They are useful only after a disaster has destroyed the primary site."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "SAFE requires observability. NOC and DCIM tools collect facility and infrastructure status so operators can detect, understand, and respond to problems quickly.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "384-405"
+      },
+      "tags": [
+        "noc",
+        "dcim"
+      ]
+    },
+    {
+      "id": "safe-intg-071",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "North-south traffic",
+      "difficulty": "easy",
+      "question": "What is north-south traffic in a data center security design?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Traffic that moves only between servers inside one application tier."
+        },
+        {
+          "id": "B",
+          "text": "Traffic that enters or leaves the data center."
+        },
+        {
+          "id": "C",
+          "text": "Traffic that never crosses perimeter controls."
+        },
+        {
+          "id": "D",
+          "text": "Traffic limited to power monitoring sensors."
+        },
+        {
+          "id": "E",
+          "text": "Traffic that exists only during offline replication."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "North-south traffic crosses into or out of the data center, such as internet users, VPN users, external APIs, or cloud service connections.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "598-614"
+      },
+      "tags": [
+        "north-south",
+        "traffic-direction"
+      ]
+    },
+    {
+      "id": "safe-intg-072",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "East-west traffic",
+      "difficulty": "medium",
+      "question": "Why does SAFE emphasize east-west traffic inside the data center?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "East-west traffic is always blocked by the internet edge firewall."
+        },
+        {
+          "id": "B",
+          "text": "East-west traffic is used only for public cloud billing."
+        },
+        {
+          "id": "C",
+          "text": "Attackers often move internally after an initial compromise, so internal traffic needs visibility and segmentation."
+        },
+        {
+          "id": "D",
+          "text": "East-west traffic cannot include database or microservice communication."
+        },
+        {
+          "id": "E",
+          "text": "Internal workloads are trusted by default once they are behind a firewall."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "A perimeter-only design misses internal movement. If a web server is compromised, east-west visibility and segmentation help stop movement toward databases, file shares, and management systems.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "615-630"
+      },
+      "tags": [
+        "east-west",
+        "internal-segmentation"
+      ]
+    },
+    {
+      "id": "safe-intg-073",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Flow analytics",
+      "difficulty": "medium",
+      "question": "What question does flow analytics primarily help answer?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Which fire suppression agent evaporates fastest?"
+        },
+        {
+          "id": "B",
+          "text": "Which user manual should be assigned to a new employee?"
+        },
+        {
+          "id": "C",
+          "text": "Which public key belongs to a certificate authority?"
+        },
+        {
+          "id": "D",
+          "text": "Which systems are communicating, how much data moves, and whether the pattern is normal."
+        },
+        {
+          "id": "E",
+          "text": "Which department should pay the WAN charge-back bill?"
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Flow analytics examines traffic metadata. It supports anomaly detection, exfiltration detection, threat hunting, behavioral analysis, and faster incident investigation.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "634-656"
+      },
+      "tags": [
+        "flow-analytics",
+        "telemetry"
+      ]
+    },
+    {
+      "id": "safe-intg-074",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Flow and intelligence",
+      "difficulty": "hard",
+      "question": "How do flow analytics and threat intelligence strengthen each other?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Flow analytics removes the need to know whether a destination is associated with known threats."
+        },
+        {
+          "id": "B",
+          "text": "Threat intelligence replaces local telemetry with vendor marketing reports."
+        },
+        {
+          "id": "C",
+          "text": "Together they show what is happening locally and whether it connects to known malicious infrastructure."
+        },
+        {
+          "id": "D",
+          "text": "Together they prevent the need for segmentation."
+        },
+        {
+          "id": "E",
+          "text": "They apply only to physical access logs."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Flow analytics gives local behavior; threat intelligence gives external context. Combining them makes detection more meaningful than either source alone.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "658-675"
+      },
+      "tags": [
+        "threat-intelligence",
+        "flow-analytics"
+      ]
+    },
+    {
+      "id": "safe-intg-075",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Data extraction",
+      "difficulty": "medium",
+      "question": "What is data extraction in the SAFE Secure Data Center threat model?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Unauthorized theft of sensitive information, often after quiet movement through systems."
+        },
+        {
+          "id": "B",
+          "text": "The normal process of copying public documentation to a training site."
+        },
+        {
+          "id": "C",
+          "text": "A cooling method that removes heat from server racks."
+        },
+        {
+          "id": "D",
+          "text": "A tier rating used to classify data center uptime."
+        },
+        {
+          "id": "E",
+          "text": "A help desk process for resolving common user issues."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Data extraction is often the final goal of an intrusion. Attackers may spend time moving quietly before exfiltrating customer records, credentials, intellectual property, or financial data.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "679-699"
+      },
+      "tags": [
+        "data-exfiltration",
+        "data-center-threats"
+      ]
+    },
+    {
+      "id": "safe-intg-076",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Malware propagation",
+      "difficulty": "medium",
+      "question": "Which controls best limit malware propagation inside a data center?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A single flat network and broad trust between application tiers."
+        },
+        {
+          "id": "B",
+          "text": "Segmentation, endpoint protection, workload visibility, and rapid detection."
+        },
+        {
+          "id": "C",
+          "text": "Only public cloud billing alerts."
+        },
+        {
+          "id": "D",
+          "text": "Only annual compliance reporting."
+        },
+        {
+          "id": "E",
+          "text": "Only raised-floor cable routing."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Malware can spread between servers, tiers, users, infrastructure, and shared services. Segmentation and visibility reduce the chance that one infection becomes a data center-wide event.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "714-726"
+      },
+      "tags": [
+        "malware-propagation",
+        "workload-visibility"
+      ]
+    },
+    {
+      "id": "safe-intg-077",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Software-defined data center",
+      "difficulty": "hard",
+      "question": "Why must security policy become more dynamic in a software-defined data center?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Workloads and services can appear, disappear, and move quickly, so policy must follow them."
+        },
+        {
+          "id": "B",
+          "text": "Software-defined environments do not need monitoring."
+        },
+        {
+          "id": "C",
+          "text": "Automation makes segmentation impossible."
+        },
+        {
+          "id": "D",
+          "text": "Cloud workloads can be trusted automatically."
+        },
+        {
+          "id": "E",
+          "text": "Manual configuration is always faster than orchestration."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "SDDCs change faster than traditional data centers. SAFE supports automation, visibility, and policy-driven segmentation so controls keep pace with dynamic workloads.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "744-769"
+      },
+      "tags": [
+        "sddc",
+        "policy-driven-security"
+      ]
+    },
+    {
+      "id": "safe-intg-078",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Leaf-spine security",
+      "difficulty": "medium",
+      "question": "What is the security takeaway of leaf-spine architecture?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "A fast east-west network automatically blocks attackers."
+        },
+        {
+          "id": "B",
+          "text": "Leaf-spine removes the need for workload segmentation."
+        },
+        {
+          "id": "C",
+          "text": "Leaf-spine is useful for modern traffic patterns, but still needs visibility, segmentation, and policy enforcement."
+        },
+        {
+          "id": "D",
+          "text": "Leaf-spine works only for north-south internet traffic."
+        },
+        {
+          "id": "E",
+          "text": "Leaf-spine prevents all malware from spreading between servers."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Leaf-spine improves bandwidth and latency for east-west traffic, but speed is not security. Without controls, a fast fabric can also help attackers move quickly.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "773-807"
+      },
+      "tags": [
+        "leaf-spine",
+        "east-west-traffic"
+      ]
+    },
+    {
+      "id": "safe-intg-079",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Services layer",
+      "difficulty": "medium",
+      "question": "Why is the Services Layer usually treated as a high-security zone?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It contains only temporary test workloads with no dependencies."
+        },
+        {
+          "id": "B",
+          "text": "It hosts identity, monitoring, analytics, and management services that many systems depend on."
+        },
+        {
+          "id": "C",
+          "text": "It handles only public website images."
+        },
+        {
+          "id": "D",
+          "text": "It is outside the data center attack surface."
+        },
+        {
+          "id": "E",
+          "text": "It cannot be reached by administrators."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "If identity, monitoring, or management services fail or are compromised, many other systems can be affected. SAFE therefore treats this layer as high value.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "811-835"
+      },
+      "tags": [
+        "services-layer",
+        "high-security-zone"
+      ]
+    },
+    {
+      "id": "safe-intg-080",
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "topic": "Endpoint layer",
+      "difficulty": "medium",
+      "question": "What is the key SAFE idea behind protecting the data center Endpoints Layer?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Servers should not be trusted just because they are inside the data center."
+        },
+        {
+          "id": "B",
+          "text": "Host firewalls are useful only on employee laptops."
+        },
+        {
+          "id": "C",
+          "text": "Anti-malware is unnecessary when a server is in a rack."
+        },
+        {
+          "id": "D",
+          "text": "Micro-segmentation applies only to branch offices."
+        },
+        {
+          "id": "E",
+          "text": "Behavior analytics should be disabled for production workloads."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Application and database servers are high-value targets. They still need host firewalls, anti-malware, vulnerability management, micro-segmentation, and behavior analytics.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "837-858"
+      },
+      "tags": [
+        "endpoints-layer",
+        "workload-security"
+      ]
+    },
+    {
+      "id": "safe-intg-081",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Multi-site resilience",
+      "difficulty": "medium",
+      "question": "Why does SAFE connect multi-site data center design back to business flows?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The most critical flows need the strongest resilience and fastest recovery."
+        },
+        {
+          "id": "B",
+          "text": "All services should receive cold standby regardless of impact."
+        },
+        {
+          "id": "C",
+          "text": "Recovery design should be based only on the cheapest available site."
+        },
+        {
+          "id": "D",
+          "text": "Business impact becomes irrelevant once two sites exist."
+        },
+        {
+          "id": "E",
+          "text": "Multi-site data centers eliminate the need for operations teams."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Active/active, warm standby, and cold standby have different cost and recovery trade-offs. SAFE uses business criticality to decide which flows justify stronger resilience.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "862-887"
+      },
+      "tags": [
+        "multi-site",
+        "resilience"
+      ]
+    },
+    {
+      "id": "safe-intg-082",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "RTO and RPO",
+      "difficulty": "easy",
+      "question": "Which disaster recovery metric answers how long a service can afford to be offline?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "RPO."
+        },
+        {
+          "id": "B",
+          "text": "RTO."
+        },
+        {
+          "id": "C",
+          "text": "PUE."
+        },
+        {
+          "id": "D",
+          "text": "MTBF."
+        },
+        {
+          "id": "E",
+          "text": "SHR."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "RTO is the maximum acceptable downtime. RPO is different: it defines how much data loss is acceptable.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "439-458"
+      },
+      "tags": [
+        "rto",
+        "disaster-recovery"
+      ]
+    },
+    {
+      "id": "safe-intg-083",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Replication latency",
+      "difficulty": "hard",
+      "question": "Why is synchronous replication usually limited to shorter distances?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It copies data only in scheduled offline batches."
+        },
+        {
+          "id": "B",
+          "text": "It works only when data is carried physically to the recovery site."
+        },
+        {
+          "id": "C",
+          "text": "It writes to both sites at the same time, so it requires a fast, low-latency connection."
+        },
+        {
+          "id": "D",
+          "text": "It is used only for user training manuals."
+        },
+        {
+          "id": "E",
+          "text": "It deliberately accepts large data loss to reduce cost."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Synchronous replication can provide near-zero data loss because both sites are written together. That benefit depends on low latency, which distance makes harder.",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "460-495"
+      },
+      "tags": [
+        "synchronous-replication",
+        "rpo"
+      ]
+    },
+    {
+      "id": "safe-intg-084",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Hybrid cloud monitoring",
+      "difficulty": "hard",
+      "question": "Why is unified monitoring important in hybrid cloud security?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It lets attackers move between private and public environments without being correlated."
+        },
+        {
+          "id": "B",
+          "text": "It removes customer responsibility for cloud identity and configuration."
+        },
+        {
+          "id": "C",
+          "text": "It replaces encrypted management traffic with public logging."
+        },
+        {
+          "id": "D",
+          "text": "It correlates logs, telemetry, identity, and workload behavior across ownership boundaries."
+        },
+        {
+          "id": "E",
+          "text": "It applies only when no public cloud provider is used."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Hybrid environments cross visibility and ownership boundaries. Unified monitoring helps reveal attack paths that move between private data centers and public cloud.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "891-923"
+      },
+      "tags": [
+        "hybrid-cloud",
+        "unified-monitoring"
+      ]
+    },
+    {
+      "id": "safe-intg-085",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Cloud shared responsibility",
+      "difficulty": "medium",
+      "question": "Why does cloud adoption not mean security has been fully outsourced?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cloud customers still share responsibility for access, configuration, data protection, and monitoring."
+        },
+        {
+          "id": "B",
+          "text": "Cloud providers never operate the physical infrastructure."
+        },
+        {
+          "id": "C",
+          "text": "Cloud services cannot contain sensitive databases."
+        },
+        {
+          "id": "D",
+          "text": "Cloud resources are managed only through local console cables."
+        },
+        {
+          "id": "E",
+          "text": "Public cloud removes all API and credential risks."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Cloud changes ownership, but not accountability. Customers still make critical decisions about identity, APIs, data, configuration, and monitoring.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "214-217"
+      },
+      "tags": [
+        "shared-responsibility",
+        "cloud-security"
+      ]
+    },
+    {
+      "id": "safe-intg-086",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Cloud account hijacking",
+      "difficulty": "medium",
+      "question": "Which cloud risk most directly reinforces SAFE's identity-centric security principle?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cooling efficiency changes when servers use chilled water."
+        },
+        {
+          "id": "B",
+          "text": "Account hijacking and stolen API keys can let attackers control cloud infrastructure remotely."
+        },
+        {
+          "id": "C",
+          "text": "Raised floors can route both network and power cables."
+        },
+        {
+          "id": "D",
+          "text": "Three-phase power delivers more electricity to racks."
+        },
+        {
+          "id": "E",
+          "text": "Hot sites cost more than cold sites."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Cloud resources are controlled through internet-accessible interfaces. If credentials or API keys are compromised, attackers may delete, expose, or steal infrastructure and data.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "200-210"
+      },
+      "tags": [
+        "account-hijacking",
+        "api-security"
+      ]
+    },
+    {
+      "id": "safe-intg-087",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Multi-instance and multi-tenant",
+      "difficulty": "hard",
+      "question": "A regulated workload needs stronger database isolation and deep customization, and cost is secondary. Which cloud database architecture is the better fit?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Multi-tenant, because shared software separation is always stronger than dedicated isolation."
+        },
+        {
+          "id": "B",
+          "text": "Multi-instance, because each customer receives a dedicated isolated database environment."
+        },
+        {
+          "id": "C",
+          "text": "Measured service, because billing controls database access."
+        },
+        {
+          "id": "D",
+          "text": "Community cloud, because all regulated workloads must share one database."
+        },
+        {
+          "id": "E",
+          "text": "Out-of-band injection, because it separates data through attacker-controlled servers."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Multi-instance provides stronger isolation and customization at higher cost. Multi-tenant is efficient, but its security depends on provider software correctly separating tenants.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "218-237"
+      },
+      "tags": [
+        "multi-instance",
+        "tenant-isolation"
+      ]
+    },
+    {
+      "id": "safe-intg-088",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Security as a Service",
+      "difficulty": "medium",
+      "question": "How does Security as a Service relate to SAFE Secure Services?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It delivers security functions such as IAM, cloud firewalls, threat detection, DLP, and backup over the internet."
+        },
+        {
+          "id": "B",
+          "text": "It means the organization no longer needs access control."
+        },
+        {
+          "id": "C",
+          "text": "It applies only to physical guards and building cameras."
+        },
+        {
+          "id": "D",
+          "text": "It prevents cloud resources from being monitored."
+        },
+        {
+          "id": "E",
+          "text": "It replaces all endpoint and application controls with billing records."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "SECaaS is a cloud-delivered way to implement security capabilities. It can protect both cloud resources and local networks, matching SAFE's idea of foundational services used across the environment.",
+      "source": {
+        "file": "database-and-cloud/DB_AND_CLOUD_EN.md",
+        "lines": "238-254"
+      },
+      "tags": [
+        "secaas",
+        "secure-services"
+      ]
+    },
+    {
+      "id": "safe-intg-089",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Zero Trust alignment",
+      "difficulty": "medium",
+      "question": "Which statement best captures SAFE's alignment with Zero Trust?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Trust internal traffic permanently once a device is inside the office."
+        },
+        {
+          "id": "B",
+          "text": "Grant broad access first, then review it only during annual audits."
+        },
+        {
+          "id": "C",
+          "text": "Verify explicitly, use least privilege, and assume breach when evaluating access."
+        },
+        {
+          "id": "D",
+          "text": "Remove device health and context from access decisions."
+        },
+        {
+          "id": "E",
+          "text": "Treat Zero Trust as a rule that no system can ever communicate."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Zero Trust does not mean no communication. It means access is evaluated based on identity, device health, context, and risk instead of assumed safe because it is internal.",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "1024-1032"
+      },
+      "tags": [
+        "zero-trust",
+        "least-privilege"
+      ]
+    },
+    {
+      "id": "safe-intg-090",
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "topic": "Incident learning",
+      "difficulty": "hard",
+      "question": "Why should incident records and learning be part of SAFE operations?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They replace containment, forensic analysis, and restoration."
+        },
+        {
+          "id": "B",
+          "text": "They prove that future intrusions will be identical."
+        },
+        {
+          "id": "C",
+          "text": "They allow emergency teams to avoid clear response procedures."
+        },
+        {
+          "id": "D",
+          "text": "They turn incident evidence into stronger procedures, better defenses, and improved future response."
+        },
+        {
+          "id": "E",
+          "text": "They matter only when law enforcement is not involved."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "SAFE is operational as well as architectural. A documented response helps with evidence, root-cause learning, future control improvement, and more reliable recovery next time.",
+      "source": {
+        "file": "cybersecurity/CYBERSECURITY_EN.md",
+        "lines": "624-647"
+      },
+      "tags": [
+        "incident-response",
+        "continual-improvement"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section": "SAFE Design Method",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "1-150"
+      },
+      "questionIds": [
+        "safe-intg-001",
+        "safe-intg-002",
+        "safe-intg-003",
+        "safe-intg-004",
+        "safe-intg-005",
+        "safe-intg-006",
+        "safe-intg-007",
+        "safe-intg-008",
+        "safe-intg-009",
+        "safe-intg-010"
+      ]
+    },
+    {
+      "section": "PINs, Domains, and Management",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "114-200"
+      },
+      "questionIds": [
+        "safe-intg-011",
+        "safe-intg-012",
+        "safe-intg-013",
+        "safe-intg-014",
+        "safe-intg-015",
+        "safe-intg-016",
+        "safe-intg-017",
+        "safe-intg-018",
+        "safe-intg-019",
+        "safe-intg-020"
+      ]
+    },
+    {
+      "section": "Intelligence, Compliance, and Risk",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "204-266"
+      },
+      "questionIds": [
+        "safe-intg-021",
+        "safe-intg-022",
+        "safe-intg-023",
+        "safe-intg-024",
+        "safe-intg-025",
+        "safe-intg-026",
+        "safe-intg-027",
+        "safe-intg-028",
+        "safe-intg-029",
+        "safe-intg-030"
+      ]
+    },
+    {
+      "section": "Segmentation and Threat Defense",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "270-373"
+      },
+      "questionIds": [
+        "safe-intg-031",
+        "safe-intg-032",
+        "safe-intg-033",
+        "safe-intg-034",
+        "safe-intg-035",
+        "safe-intg-036",
+        "safe-intg-037",
+        "safe-intg-038",
+        "safe-intg-039",
+        "safe-intg-040"
+      ]
+    },
+    {
+      "section": "Human and Device Attack Surfaces",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "377-479"
+      },
+      "questionIds": [
+        "safe-intg-041",
+        "safe-intg-042",
+        "safe-intg-043",
+        "safe-intg-044",
+        "safe-intg-045",
+        "safe-intg-046",
+        "safe-intg-047",
+        "safe-intg-048",
+        "safe-intg-049",
+        "safe-intg-050"
+      ]
+    },
+    {
+      "section": "Network, Application, and Data Security",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "483-594"
+      },
+      "questionIds": [
+        "safe-intg-051",
+        "safe-intg-052",
+        "safe-intg-053",
+        "safe-intg-054",
+        "safe-intg-055",
+        "safe-intg-056",
+        "safe-intg-057",
+        "safe-intg-058",
+        "safe-intg-059",
+        "safe-intg-060"
+      ]
+    },
+    {
+      "section": "Secure Data Center Controls",
+      "source": {
+        "file": "data-center/DATA_CENTER_EN.md",
+        "lines": "3-405"
+      },
+      "questionIds": [
+        "safe-intg-061",
+        "safe-intg-062",
+        "safe-intg-063",
+        "safe-intg-064",
+        "safe-intg-065",
+        "safe-intg-066",
+        "safe-intg-067",
+        "safe-intg-068",
+        "safe-intg-069",
+        "safe-intg-070"
+      ]
+    },
+    {
+      "section": "Data Center Traffic, SDDC, and Resilience",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "598-887"
+      },
+      "questionIds": [
+        "safe-intg-071",
+        "safe-intg-072",
+        "safe-intg-073",
+        "safe-intg-074",
+        "safe-intg-075",
+        "safe-intg-076",
+        "safe-intg-077",
+        "safe-intg-078",
+        "safe-intg-079",
+        "safe-intg-080"
+      ]
+    },
+    {
+      "section": "Hybrid Cloud, Recovery, and SAFE Principles",
+      "source": {
+        "file": "cisco-safe/CISCO_SAFE_EN.md",
+        "lines": "891-1075"
+      },
+      "questionIds": [
+        "safe-intg-081",
+        "safe-intg-082",
+        "safe-intg-083",
+        "safe-intg-084",
+        "safe-intg-085",
+        "safe-intg-086",
+        "safe-intg-087",
+        "safe-intg-088",
+        "safe-intg-089",
+        "safe-intg-090"
+      ]
+    }
+  ]
+}
