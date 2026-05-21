@@ -1,906 +1,1509 @@
 {
-	"version": "1.0",
-	"source": {
-		"file": "network-itsm/NETWORK_ITSM_EN.md",
-		"title": "Network and IT Service Management"
-	},
-	"quiz": {
-		"title": "Network & IT Service Management Quiz",
-		"choiceCount": 5
-	},
-	"questions": [
-		{
-			"id": "nitsm-001",
-			"section": "Overview & Integration",
-			"topic": "Main management areas",
-			"difficulty": "easy",
-			"question": "Which four main areas does network management cover?",
-			"choices": [
-				{ "id": "A", "text": "Security, Backup, Development, Licensing." },
-				{
-					"id": "B",
-					"text": "Configuration; Performance & Faults; End User Support; Cost."
-				},
-				{ "id": "C", "text": "Marketing, Sales, Facilities, HR." },
-				{
-					"id": "D",
-					"text": "Configuration; Patch Management; Cloud Migration; Monitoring."
-				},
-				{ "id": "E", "text": "Performance; Billing; Training; Procurement." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "The document lists Configuration; Performance & Faults; End User Support; and Cost as the four main areas.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "3-12"
-			},
-			"tags": ["overview", "management-areas"]
-		},
-		{
-			"id": "nitsm-002",
-			"section": "Overview & Integration",
-			"topic": "Past separation",
-			"difficulty": "easy",
-			"question": "Historically, who typically managed voice (telephones) and who managed data (computers)?",
-			"choices": [
-				{ "id": "A", "text": "Voice by IT, data by Facilities." },
-				{ "id": "B", "text": "Voice by Facilities, data by IT." },
-				{ "id": "C", "text": "Both by a central Cloud team." },
-				{ "id": "D", "text": "Voice by Vendors, data by Users." },
-				{ "id": "E", "text": "Voice by HR, data by Security." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "The text states voice (telephones) were managed by Facilities and data (computers) by IT.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "13-18"
-			},
-			"tags": ["integration", "roles"]
-		},
-		{
-			"id": "nitsm-003",
-			"section": "Overview & Integration",
-			"topic": "Benefits of integration",
-			"difficulty": "medium",
-			"question": "Which of the following is NOT listed as a benefit of integrating voice, data, LANs and WANs?",
-			"choices": [
-				{ "id": "A", "text": "Reduces costs." },
-				{ "id": "B", "text": "Simplifies the network." },
-				{ "id": "C", "text": "Eliminates redundant departments." },
-				{
-					"id": "D",
-					"text": "Removes the need for any written charter or long-range goals."
-				},
-				{
-					"id": "E",
-					"text": "Requires managers to compromise local policies for site-wide goals."
-				}
-			],
-			"correctChoiceId": "D",
-			"explanation": "Success requires a written charter and long-range goals; it does not remove that need.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "19-26"
-			},
-			"tags": ["integration", "governance"]
-		},
-		{
-			"id": "nitsm-004",
-			"section": "Configuration Management",
-			"topic": "Purpose",
-			"difficulty": "easy",
-			"question": "What does configuration management primarily track?",
-			"choices": [
-				{ "id": "A", "text": "Only software versions." },
-				{ "id": "B", "text": "Hardware, software, and users." },
-				{ "id": "C", "text": "User satisfaction scores." },
-				{ "id": "D", "text": "VPN traffic patterns only." },
-				{ "id": "E", "text": "Cloud provider SLAs." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "Configuration management tracks hardware, software and users, and keeps documentation updated with every change.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "27-34"
-			},
-			"tags": ["configuration", "inventory"]
-		},
-		{
-			"id": "nitsm-005",
-			"section": "Configuration Management",
-			"topic": "Login script",
-			"difficulty": "easy",
-			"question": "What is the primary use of a login script for a new user?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "To automatically map drives or printers at login."
-				},
-				{ "id": "B", "text": "To update the operating system kernel." },
-				{ "id": "C", "text": "To reboot the server every morning." },
-				{ "id": "D", "text": "To encrypt all user files by default." },
-				{ "id": "E", "text": "To disable antivirus temporarily." }
-			],
-			"correctChoiceId": "A",
-			"explanation": "The document says login scripts execute commands at login to map drives or printers for new users.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "35-42"
-			},
-			"tags": ["users", "automation"]
-		},
-		{
-			"id": "nitsm-006",
-			"section": "Configuration Management",
-			"topic": "ESD meaning",
-			"difficulty": "easy",
-			"question": "What does ESD stand for in the context of software updates?",
-			"choices": [
-				{ "id": "A", "text": "Enterprise Service Deployment." },
-				{ "id": "B", "text": "Electronic Software Distribution." },
-				{ "id": "C", "text": "Encrypted Software Delivery." },
-				{ "id": "D", "text": "Endpoint Security Daemon." },
-				{ "id": "E", "text": "Efficient Software Development." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "ESD stands for Electronic Software Distribution used to push updates automatically over the network.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "43-52"
-			},
-			"tags": ["esd", "updates"]
-		},
-		{
-			"id": "nitsm-007",
-			"section": "Configuration Management",
-			"topic": "DMI",
-			"difficulty": "easy",
-			"question": "What is the Desktop Management Interface (DMI) used for?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "A standard framework for managing remote configurations."
-				},
-				{ "id": "B", "text": "A wireless protocol for mobile phones." },
-				{ "id": "C", "text": "A cloud provider's billing portal." },
-				{ "id": "D", "text": "A brand of networking switches." },
-				{ "id": "E", "text": "An encryption standard for emails." }
-			],
-			"correctChoiceId": "A",
-			"explanation": "DMI provides a standard framework for managing remote configurations like software distribution.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "49-54"
-			},
-			"tags": ["dmi", "standards"]
-		},
-		{
-			"id": "nitsm-008",
-			"section": "Configuration Management",
-			"topic": "Hardware documentation",
-			"difficulty": "medium",
-			"question": "Which of these items is explicitly recommended in the hardware documentation list?",
-			"choices": [
-				{ "id": "A", "text": "User performance benchmarks." },
-				{
-					"id": "B",
-					"text": "Network diagrams, serial numbers, vendors, purchase dates, warranty info, and repair contacts."
-				},
-				{ "id": "C", "text": "The vendor's quarterly marketing plan." },
-				{ "id": "D", "text": "Employee social media handles." },
-				{ "id": "E", "text": "Future product roadmaps from unrelated vendors." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "Detailed hardware documentation such as diagrams, serial numbers, vendors, purchase dates, warranties, and repair contacts.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "55-68"
-			},
-			"tags": ["documentation", "hardware"]
-		},
-		{
-			"id": "nitsm-009",
-			"section": "Performance & Fault Management",
-			"topic": "NOC purpose",
-			"difficulty": "easy",
-			"question": "What is the main role of a Network Operations Center (NOC)?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "Designing the user interface for all business apps."
-				},
-				{
-					"id": "B",
-					"text": "A centralized facility that monitors the network and fixes issues before users notice."
-				},
-				{
-					"id": "C",
-					"text": "Handling payroll and benefits for network staff."
-				},
-				{ "id": "D", "text": "Manufacturing networking hardware." },
-				{
-					"id": "E",
-					"text": "Creating marketing materials for network vendors."
-				}
-			],
-			"correctChoiceId": "B",
-			"explanation": "A NOC is a centralized facility using specialized software to monitor the network and correct problems early.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "69-81"
-			},
-			"tags": ["noc", "monitoring"]
-		},
-		{
-			"id": "nitsm-010",
-			"section": "Performance & Fault Management",
-			"topic": "Physical vs logical statistics",
-			"difficulty": "medium",
-			"question": "Which of these is an example of physical statistics collected by the NOC?",
-			"choices": [
-				{ "id": "A", "text": "User response times." },
-				{ "id": "B", "text": "Traffic volume measurements." },
-				{
-					"id": "C",
-					"text": "Hardware data from modems, multiplexers, and circuits."
-				},
-				{ "id": "D", "text": "Service-level indicators." },
-				{ "id": "E", "text": "Application error messages." }
-			],
-			"correctChoiceId": "C",
-			"explanation": "Physical statistics refer to hardware data such as from modems, multiplexers, and circuits; logical stats include response times and traffic volumes.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "75-82"
-			},
-			"tags": ["monitoring", "metrics"]
-		},
-		{
-			"id": "nitsm-011",
-			"section": "Performance & Fault Management",
-			"topic": "Trouble tickets purpose",
-			"difficulty": "medium",
-			"question": "Which of the following is NOT listed as a core purpose of trouble tickets?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "Problem Tracking (assigning personnel and tracking timelines)."
-				},
-				{
-					"id": "B",
-					"text": "Problem Statistics (analyzing which hardware fails often)."
-				},
-				{
-					"id": "C",
-					"text": "Problem Prioritization (fixing critical issues first)."
-				},
-				{
-					"id": "D",
-					"text": "Automatic hardware replacement without human approval."
-				},
-				{
-					"id": "E",
-					"text": "Management Reporting (evaluating availability and vendor responsiveness)."
-				}
-			],
-			"correctChoiceId": "D",
-			"explanation": "The four core purposes are tracking, statistics, prioritization, and reporting; automatic replacement without approval is not listed.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "83-102"
-			},
-			"tags": ["tickets", "fault-management"]
-		},
-		{
-			"id": "nitsm-012",
-			"section": "Performance & Fault Management",
-			"topic": "Trouble log example",
-			"difficulty": "easy",
-			"question": "In the sample trouble log, out of 88 calls, how many were about client computers?",
-			"choices": [
-				{ "id": "A", "text": "2" },
-				{ "id": "B", "text": "10" },
-				{ "id": "C", "text": "49" },
-				{ "id": "D", "text": "88" },
-				{ "id": "E", "text": "0" }
-			],
-			"correctChoiceId": "C",
-			"explanation": "The example states that out of 88 calls, 49 were about client computers while only 2 were about external carriers.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "103-106"
-			},
-			"tags": ["trouble-log", "statistics"]
-		},
-		{
-			"id": "nitsm-013",
-			"section": "Performance & Fault Management",
-			"topic": "Availability target",
-			"difficulty": "easy",
-			"question": "What availability target range is mentioned for networks?",
-			"choices": [
-				{ "id": "A", "text": "50% - 60%" },
-				{ "id": "B", "text": "75% - 80%" },
-				{ "id": "C", "text": "90% - 92%" },
-				{ "id": "D", "text": "99% - 99.5%" },
-				{ "id": "E", "text": "100% only" }
-			],
-			"correctChoiceId": "D",
-			"explanation": "A target availability range of 99% to 99.5%.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "107-114"
-			},
-			"tags": ["availability", "metrics"]
-		},
-		{
-			"id": "nitsm-014",
-			"section": "Performance & Fault Management",
-			"topic": "Availability calculation",
-			"difficulty": "medium",
-			"question": "How is monthly availability calculated?",
-			"choices": [
-				{ "id": "A", "text": "Hours available ÷ 24" },
-				{ "id": "B", "text": "Hours available ÷ 720" },
-				{ "id": "C", "text": "Downtime ÷ 720" },
-				{ "id": "D", "text": "MTBF ÷ MTTR" },
-				{ "id": "E", "text": "Total packets delivered ÷ errors" }
-			],
-			"correctChoiceId": "B",
-			"explanation": "The calculation shown is hours available divided by 720 monthly hours (30 days × 24 hours).",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "110-114"
-			},
-			"tags": ["availability", "calculation"]
-		},
-		{
-			"id": "nitsm-015",
-			"section": "Performance & Fault Management",
-			"topic": "MTBF definition",
-			"difficulty": "easy",
-			"question": "What does MTBF measure?",
-			"choices": [
-				{ "id": "A", "text": "Average time to repair a failed component." },
-				{
-					"id": "B",
-					"text": "Mean Time Between Failures: hours or days of continuous operation before a breakdown."
-				},
-				{ "id": "C", "text": "The number of failed components per month." },
-				{ "id": "D", "text": "Total daily traffic divided by time." },
-				{ "id": "E", "text": "The required vendor SLA response time." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "MTBF is the hours or days of continuous operation before a breakdown; higher MTBF indicates better reliability.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "115-122"
-			},
-			"tags": ["mtbf", "reliability"]
-		},
-		{
-			"id": "nitsm-016",
-			"section": "Performance & Fault Management",
-			"topic": "MTTR phases",
-			"difficulty": "medium",
-			"question": "Which of the following is NOT one of the MTTR phases listed?",
-			"choices": [
-				{ "id": "A", "text": "MTTDiagnose (finding root cause)." },
-				{ "id": "B", "text": "MTTRespond (waiting for vendor/technician)." },
-				{ "id": "C", "text": "MTTFix (resolving the issue)." },
-				{
-					"id": "D",
-					"text": "MTTReport (preparing public marketing reports)."
-				},
-				{ "id": "E", "text": "All three of A, B and C are actual MTTR phases." }
-			],
-			"correctChoiceId": "D",
-			"explanation": "MTTR includes MTTDiagnose, MTTRespond, and MTTFix; MTTReport is not part of MTTR.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "123-138"
-			},
-			"tags": ["mttr", "diagnosis"]
-		},
-		{
-			"id": "nitsm-017",
-			"section": "Performance & Fault Management",
-			"topic": "Quality Control Charts",
-			"difficulty": "medium",
-			"question": "Why are daily statistics plotted on Quality Control Charts?",
-			"choices": [
-				{ "id": "A", "text": "To entertain NOC staff during downtime." },
-				{ "id": "B", "text": "To hide performance issues from management." },
-				{
-					"id": "C",
-					"text": "To predict failures and plan hardware upgrades by comparing against acceptable limits."
-				},
-				{ "id": "D", "text": "To calculate employee bonuses." },
-				{ "id": "E", "text": "To replace the need for SLAs." }
-			],
-			"correctChoiceId": "C",
-			"explanation": "Daily stats are plotted on Quality Control Charts against upper and lower limits to predict failures and plan upgrades.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "139-147"
-			},
-			"tags": ["qcc", "monitoring"]
-		},
-		{
-			"id": "nitsm-018",
-			"section": "Performance & Fault Management",
-			"topic": "Policy-Based Management",
-			"difficulty": "easy",
-			"question": "Why would TCP/IP QoS be used to prioritize videoconferencing traffic?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "Because a delayed video call greatly degrades the call, while a delay in file download is less noticeable."
-				},
-				{
-					"id": "B",
-					"text": "Because videoconferencing uses less bandwidth than file downloads."
-				},
-				{
-					"id": "C",
-					"text": "Because QoS encrypts the video stream by default."
-				},
-				{
-					"id": "D",
-					"text": "Because file downloads are always blocked when QoS is enabled."
-				},
-				{ "id": "E", "text": "Because QoS reduces CPU utilization on servers." }
-			],
-			"correctChoiceId": "A",
-			"explanation": "The text explains that delay will ruin a video call but won't be noticed in a file download, therefore QoS prioritizes video traffic.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "148-157"
-			},
-			"tags": ["qos", "policy"]
-		},
-		{
-			"id": "nitsm-019",
-			"section": "Performance & Fault Management",
-			"topic": "SLA examples",
-			"difficulty": "medium",
-			"question": "Which of these sample SLA metrics appears in the document?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "99% availability; <2 minutes response; MTBF >120 days."
-				},
-				{
-					"id": "B",
-					"text": "50% availability; <60 minutes response; MTBF >5 days."
-				},
-				{ "id": "C", "text": "100% availability with no penalties." },
-				{ "id": "D", "text": "Only uptime measured in packet counts." },
-				{ "id": "E", "text": "No response time guarantees at all." }
-			],
-			"correctChoiceId": "A",
-			"explanation": "The sample SLA shown lists 99% availability, under 2 minutes response time, and MTBF greater than 120 days.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "158-166"
-			},
-			"tags": ["sla", "service-level"]
-		},
-		{
-			"id": "nitsm-020",
-			"section": "End User Support",
-			"topic": "Issue categories",
-			"difficulty": "easy",
-			"question": "Which category is usually the hardest to resolve?",
-			"choices": [
-				{ "id": "A", "text": "Hardware failures (e.g., broken monitors)." },
-				{ "id": "B", "text": "Lack of knowledge (user training issues)." },
-				{
-					"id": "C",
-					"text": "Software problems (hidden bugs or incompatible settings)."
-				},
-				{
-					"id": "D",
-					"text": "Printer paper jams that are obvious and quick to fix."
-				},
-				{ "id": "E", "text": "Marketing requests for new logos." }
-			],
-			"correctChoiceId": "C",
-			"explanation": "Software problems are typically the hardest to resolve due to hidden bugs and incompatible settings.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "167-178"
-			},
-			"tags": ["support", "issues"]
-		},
-		{
-			"id": "nitsm-021",
-			"section": "End User Support",
-			"topic": "Support tiers",
-			"difficulty": "easy",
-			"question": "Which tier is said to solve about 85% of common everyday issues?",
-			"choices": [
-				{ "id": "A", "text": "Level 1 (Help Desk)." },
-				{ "id": "B", "text": "Level 2 (Specialized Staff)." },
-				{ "id": "C", "text": "Level 3 (Technical Specialists)." },
-				{ "id": "D", "text": "Vendor Support only." },
-				{ "id": "E", "text": "No tier solves issues; all are automated." }
-			],
-			"correctChoiceId": "A",
-			"explanation": "The document states Level 1 help desk solves approximately 85% of everyday issues.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "179-190"
-			},
-			"tags": ["support", "tiers"]
-		},
-		{
-			"id": "nitsm-022",
-			"section": "End User Support",
-			"topic": "Training methods",
-			"difficulty": "easy",
-			"question": "Which training method is NOT mentioned?",
-			"choices": [
-				{ "id": "A", "text": "In-class sessions." },
-				{ "id": "B", "text": "Personalized one-on-one instruction." },
-				{ "id": "C", "text": "Detailed training manuals." },
-				{
-					"id": "D",
-					"text": "Mandatory weekly certification tests with external proctors."
-				},
-				{ "id": "E", "text": "Ongoing training as roles and software change." }
-			],
-			"correctChoiceId": "D",
-			"explanation": "In-class, one-on-one instruction and manuals; it does not require mandatory external proctored weekly certification tests.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "191-199"
-			},
-			"tags": ["training", "staff-development"]
-		},
-		{
-			"id": "nitsm-023",
-			"section": "Cost Management",
-			"topic": "TCO vs NCO",
-			"difficulty": "medium",
-			"question": "Which statement correctly contrasts TCO and NCO?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "TCO is always lower than NCO because it excludes user productivity."
-				},
-				{
-					"id": "B",
-					"text": "TCO (~$5,000–$10,000/year) includes wasted user productivity; NCO (~$1,500–$3,500/year) excludes it."
-				},
-				{
-					"id": "C",
-					"text": "NCO includes hidden productivity losses while TCO does not."
-				},
-				{
-					"id": "D",
-					"text": "Both TCO and NCO refer to network uptime percentages."
-				},
-				{ "id": "E", "text": "TCO measures only hardware purchase price." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "TCO measures the full annual cost including wasted productivity ($5k–$10k); NCO measures direct hard costs excluding wasted time ($1.5k–$3.5k).",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "200-214"
-			},
-			"tags": ["tco", "nco", "costs"]
-		},
-		{
-			"id": "nitsm-024",
-			"section": "Cost Management",
-			"topic": "Budget allocation",
-			"difficulty": "easy",
-			"question": "For a typical 100-user network, which expense category is the largest portion of the budget?",
-			"choices": [
-				{ "id": "A", "text": "Hardware upgrades and replacements." },
-				{ "id": "B", "text": "Software licensing only." },
-				{ "id": "C", "text": "Personnel costs (50–70%)." },
-				{ "id": "D", "text": "Office snacks and utilities." },
-				{ "id": "E", "text": "Marketing campaigns for IT." }
-			],
-			"correctChoiceId": "C",
-			"explanation": "Personnel costs typically make up 50–70% of the budget for a 100-user network.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "215-226"
-			},
-			"tags": ["budget", "personnel"]
-		},
-		{
-			"id": "nitsm-025",
-			"section": "Cost Management",
-			"topic": "Automation examples",
-			"difficulty": "medium",
-			"question": "Which pair of technologies is given as examples of automation that save hundreds of hours?",
-			"choices": [
-				{ "id": "A", "text": "ESD for software and DHCP for IP addresses." },
-				{ "id": "B", "text": "Manual CD installs and static IP assignment." },
-				{ "id": "C", "text": "Paper ticketing and fax backups." },
-				{
-					"id": "D",
-					"text": "Hiring more technicians to manually update each PC."
-				},
-				{
-					"id": "E",
-					"text": "Replacing NOC with individual user monitoring apps."
-				}
-			],
-			"correctChoiceId": "A",
-			"explanation": "Electronic Software Distribution (ESD) and DHCP as automation examples that eliminate many hours of manual labor.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "227-238"
-			},
-			"tags": ["automation", "esd", "dhcp"]
-		},
-		{
-			"id": "nitsm-026",
-			"section": "Cost Management",
-			"topic": "Thin clients",
-			"difficulty": "easy",
-			"question": "What cost benefits do thin clients provide?",
-			"choices": [
-				{ "id": "A", "text": "They increase software licensing fees." },
-				{
-					"id": "B",
-					"text": "They require more local support than full desktops."
-				},
-				{
-					"id": "C",
-					"text": "They reduce software licensing and local support costs."
-				},
-				{
-					"id": "D",
-					"text": "They are primarily used to increase power consumption."
-				},
-				{ "id": "E", "text": "They replace the need for a NOC." }
-			],
-			"correctChoiceId": "C",
-			"explanation": "Thin clients are lightweight systems that reduce software licensing and local support costs.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "239-246"
-			},
-			"tags": ["thin-clients", "cost-savings"]
-		},
-		{
-			"id": "nitsm-027",
-			"section": "Cost Management",
-			"topic": "Charge-back policies",
-			"difficulty": "medium",
-			"question": "Charge-back policies (charging departments for their IT usage) are noted as being: ",
-			"choices": [
-				{
-					"id": "A",
-					"text": "Easy to implement for LANs but impossible for WANs."
-				},
-				{
-					"id": "B",
-					"text": "Common for easily measured WAN/Mainframe usage, but harder to implement for LANs."
-				},
-				{ "id": "C", "text": "Always illegal under ITIL rules." },
-				{
-					"id": "D",
-					"text": "Only used for cloud billing and never for on-premise services."
-				},
-				{
-					"id": "E",
-					"text": "A replacement for standardization and automation."
-				}
-			],
-			"correctChoiceId": "B",
-			"explanation": "The document says charge-back policies work well for WAN/Mainframe usage where usage is measurable, but are harder for LANs.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "247-256"
-			},
-			"tags": ["charge-back", "finance"]
-		},
-		{
-			"id": "nitsm-028",
-			"section": "Incident Management & ITSM",
-			"topic": "Incident vs fault management",
-			"difficulty": "easy",
-			"question": "Which statement correctly describes the difference between fault management and incident management?",
-			"choices": [
-				{
-					"id": "A",
-					"text": "Fault management handles disasters; incident management handles printer jams."
-				},
-				{
-					"id": "B",
-					"text": "Fault management handles daily breakdowns; incident management handles disasters like major failures or security breaches."
-				},
-				{ "id": "C", "text": "They are identical and interchangeable terms." },
-				{
-					"id": "D",
-					"text": "Incident management is only about marketing communication after an outage."
-				},
-				{ "id": "E", "text": "Fault management is only run by HR." }
-			],
-			"correctChoiceId": "B",
-			"explanation": "Fault management deals with daily breakdowns while incident management addresses disasters such as security breaches or natural disasters.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "257-270"
-			},
-			"tags": ["incident", "fault-management"]
-		},
-		{
-			"id": "nitsm-029",
-			"section": "Incident Management & ITSM",
-			"topic": "Primary goal",
-			"difficulty": "easy",
-			"question": "What is the primary goal of Incident Management?",
-			"choices": [
-				{ "id": "A", "text": "Maximize vendor profits." },
-				{
-					"id": "B",
-					"text": "Minimize business impact and restore normal operations quickly."
-				},
-				{ "id": "C", "text": "Postpone recovery until budget approval." },
-				{ "id": "D", "text": "Replace all servers immediately." },
-				{
-					"id": "E",
-					"text": "Never document incidents to protect company image."
-				}
-			],
-			"correctChoiceId": "B",
-			"explanation": "The document clearly states the primary goal is to minimize business impact and restore normal operations as quickly as possible.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "271-276"
-			},
-			"tags": ["incident", "goals"]
-		},
-		{
-			"id": "nitsm-030",
-			"section": "Incident Management & ITSM",
-			"topic": "Five elements",
-			"difficulty": "medium",
-			"question": "Which of these is one of the five key elements of a successful incident response?",
-			"choices": [
-				{ "id": "A", "text": "Detection and Identification." },
-				{ "id": "B", "text": "Advertising management." },
-				{ "id": "C", "text": "Employee relocation." },
-				{ "id": "D", "text": "Product sales forecasting." },
-				{ "id": "E", "text": "Vendor marketing training." }
-			],
-			"correctChoiceId": "A",
-			"explanation": "The five elements listed include Detection and Identification, Assessment and Prioritization, Response, Resolution and Recovery, and Documentation and Learning.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "277-288"
-			},
-			"tags": ["incident-response", "process"]
-		},
-		{
-			"id": "nitsm-031",
-			"section": "Incident Management & ITSM",
-			"topic": "ITSM lifecycle",
-			"difficulty": "easy",
-			"question": "Which stage is part of the core ITSM lifecycle?",
-			"choices": [
-				{ "id": "A", "text": "Service Strategy." },
-				{ "id": "B", "text": "Monthly cafeteria menu planning." },
-				{ "id": "C", "text": "Office layout redesign unrelated to IT." },
-				{ "id": "D", "text": "Daily social media posting." },
-				{ "id": "E", "text": "Quarterly fashion reviews." }
-			],
-			"correctChoiceId": "A",
-			"explanation": "Service Strategy is one of the stages in the ITSM lifecycle (Service Strategy, Service Design, Service Transition, Service Operation, Continual Service Improvement).",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "289-300"
-			},
-			"tags": ["itsm", "lifecycle"]
-		},
-		{
-			"id": "nitsm-032",
-			"section": "Incident Management & ITSM",
-			"topic": "Frameworks",
-			"difficulty": "easy",
-			"question": "Which of the following frameworks is recommended as a guide for ITSM practices in the document?",
-			"choices": [
-				{ "id": "A", "text": "ITIL." },
-				{ "id": "B", "text": "COBIT." },
-				{ "id": "C", "text": "ISO/IEC 20000." },
-				{ "id": "D", "text": "All of the above." },
-				{ "id": "E", "text": "None of the above." }
-			],
-			"correctChoiceId": "D",
-			"explanation": "The document cites ITIL, COBIT, and ISO/IEC 20000 as established ITSM frameworks organizations can follow.",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "301-314"
-			},
-			"tags": ["frameworks", "governance"]
-		}
-	],
-	"coverage": [
-		{
-			"section": "Overview & Integration",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "1-12"
-			},
-			"questionIds": ["nitsm-001", "nitsm-002", "nitsm-003"]
-		},
-		{
-			"section": "Configuration Management",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "13-70"
-			},
-			"questionIds": [
-				"nitsm-004",
-				"nitsm-005",
-				"nitsm-006",
-				"nitsm-007",
-				"nitsm-008"
-			]
-		},
-		{
-			"section": "Performance & Fault Management",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "71-166"
-			},
-			"questionIds": [
-				"nitsm-009",
-				"nitsm-010",
-				"nitsm-011",
-				"nitsm-012",
-				"nitsm-013",
-				"nitsm-014",
-				"nitsm-015",
-				"nitsm-016",
-				"nitsm-017",
-				"nitsm-018",
-				"nitsm-019"
-			]
-		},
-		{
-			"section": "End User Support",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "167-199"
-			},
-			"questionIds": ["nitsm-020", "nitsm-021", "nitsm-022"]
-		},
-		{
-			"section": "Cost Management",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "200-256"
-			},
-			"questionIds": [
-				"nitsm-023",
-				"nitsm-024",
-				"nitsm-025",
-				"nitsm-026",
-				"nitsm-027"
-			]
-		},
-		{
-			"section": "Incident Management & ITSM",
-			"source": {
-				"file": "network-itsm/NETWORK_ITSM_EN.md",
-				"lines": "257-314"
-			},
-			"questionIds": [
-				"nitsm-028",
-				"nitsm-029",
-				"nitsm-030",
-				"nitsm-031",
-				"nitsm-032"
-			]
-		}
-	]
+  "version": "1.0",
+  "source": {
+    "file": "network-itsm/NETWORK_ITSM_EN.md",
+    "title": "Network and IT Service Management"
+  },
+  "quiz": {
+    "title": "Network & IT Service Management Quiz",
+    "choiceCount": 5
+  },
+  "questions": [
+    {
+      "id": "nitsm-001",
+      "section": "Overview & Integration",
+      "topic": "Purpose of network management",
+      "difficulty": "easy",
+      "question": "What is the main purpose of network management?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To operate and control the network so it works properly and creates business value."
+        },
+        {
+          "id": "B",
+          "text": "To replace all technical planning with emergency troubleshooting after failures."
+        },
+        {
+          "id": "C",
+          "text": "To keep voice, data, LAN, and WAN systems permanently separated."
+        },
+        {
+          "id": "D",
+          "text": "To track only hardware purchases while ignoring users and software."
+        },
+        {
+          "id": "E",
+          "text": "To remove the need for written goals and long-range planning."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Network management is not just repair work. Its purpose is to operate and control the network so the business can rely on it, which requires planning, monitoring, support, and cost control.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "3-12"
+      },
+      "tags": [
+        "network-management",
+        "business-value"
+      ]
+    },
+    {
+      "id": "nitsm-002",
+      "section": "Overview & Integration",
+      "topic": "Reactive firefighting",
+      "difficulty": "medium",
+      "question": "What risk does an organization face when it lacks a network management plan?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Voice and data networks automatically become cheaper to run."
+        },
+        {
+          "id": "B",
+          "text": "IT teams fall into reactive firefighting instead of improving the system proactively."
+        },
+        {
+          "id": "C",
+          "text": "End user support becomes unnecessary because users solve their own problems."
+        },
+        {
+          "id": "D",
+          "text": "Performance problems disappear because no metrics are being collected."
+        },
+        {
+          "id": "E",
+          "text": "Cost management becomes simpler because network traffic stops growing."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Without a plan, teams spend their time reacting to breakdowns. Proactive management matters because it prevents problems, improves service, and avoids treating every issue as an emergency.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "5-12"
+      },
+      "tags": [
+        "planning",
+        "reactive-support"
+      ]
+    },
+    {
+      "id": "nitsm-003",
+      "section": "Overview & Integration",
+      "topic": "Four management areas",
+      "difficulty": "easy",
+      "question": "Which set correctly names the four main areas of network management?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cabling, encryption, fire protection, and payroll."
+        },
+        {
+          "id": "B",
+          "text": "Marketing, procurement, legal review, and facilities."
+        },
+        {
+          "id": "C",
+          "text": "Configuration, performance and faults, end user support, and cost."
+        },
+        {
+          "id": "D",
+          "text": "Voice switching, office furniture, software licenses, and audits."
+        },
+        {
+          "id": "E",
+          "text": "Disaster recovery, cloud billing, web design, and recruitment."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The four areas cover the operational reality of a network: what exists, how well it works, how users get help, and how money is controlled.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "7-12"
+      },
+      "tags": [
+        "management-areas",
+        "operations"
+      ]
+    },
+    {
+      "id": "nitsm-004",
+      "section": "Overview & Integration",
+      "topic": "Voice and data integration",
+      "difficulty": "medium",
+      "question": "Why do organizations integrate voice, data, LANs, and WANs into one managed system?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To make each department build its own local policy without compromise."
+        },
+        {
+          "id": "B",
+          "text": "To eliminate the need for a written charter and long-range goals."
+        },
+        {
+          "id": "C",
+          "text": "To ensure Facilities manages computers while IT manages telephones."
+        },
+        {
+          "id": "D",
+          "text": "To reduce cost, simplify the network, and remove redundant departments."
+        },
+        {
+          "id": "E",
+          "text": "To make LANs and WANs technically independent again."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Integration reduces duplicated work and simplifies operations, but it also requires governance. Managers may need to compromise local preferences in favor of broader organizational goals.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "14-18"
+      },
+      "tags": [
+        "integration",
+        "governance"
+      ]
+    },
+    {
+      "id": "nitsm-005",
+      "section": "Overview & Integration",
+      "topic": "Organizational compromise",
+      "difficulty": "hard",
+      "question": "A department wants to keep a local network rule that conflicts with the organization's integrated voice-data strategy. Which response best fits effective network management?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Keep the local rule because integration should not affect department policies."
+        },
+        {
+          "id": "B",
+          "text": "Remove all written goals so every department can act independently."
+        },
+        {
+          "id": "C",
+          "text": "Let Facilities and IT manage the same service separately to avoid conflict."
+        },
+        {
+          "id": "D",
+          "text": "Treat the disagreement as a hardware fault instead of a management issue."
+        },
+        {
+          "id": "E",
+          "text": "Evaluate the rule against the written charter and long-range organizational goals."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Integration creates value only when local policies align with shared goals. The written charter provides the basis for deciding when local preferences should give way to the integrated system.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "14-18"
+      },
+      "tags": [
+        "policy",
+        "integration"
+      ]
+    },
+    {
+      "id": "nitsm-006",
+      "section": "Overview & Integration",
+      "topic": "Past separation",
+      "difficulty": "easy",
+      "question": "How were voice and data systems commonly managed before integration became the norm?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Voice was managed by Facilities, while data was managed by IT."
+        },
+        {
+          "id": "B",
+          "text": "Voice was managed by IT, while data was managed by Legal."
+        },
+        {
+          "id": "C",
+          "text": "Both were managed only by external service providers."
+        },
+        {
+          "id": "D",
+          "text": "Both were managed by end users through self-service tools."
+        },
+        {
+          "id": "E",
+          "text": "Voice, data, LANs, and WANs were never managed separately."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Historically, telephones and computers often belonged to different operational groups. Modern integration changes that boundary by treating communication systems as one coordinated network.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "14-18"
+      },
+      "tags": [
+        "voice-data",
+        "organizational-structure"
+      ]
+    },
+    {
+      "id": "nitsm-007",
+      "section": "Configuration Management",
+      "topic": "Configuration management purpose",
+      "difficulty": "easy",
+      "question": "What does configuration management primarily track?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only monthly WAN invoices and charge-back reports."
+        },
+        {
+          "id": "B",
+          "text": "Hardware, software, users, and documentation changes."
+        },
+        {
+          "id": "C",
+          "text": "Only end user training manuals and classroom schedules."
+        },
+        {
+          "id": "D",
+          "text": "Only incidents that qualify as major disasters."
+        },
+        {
+          "id": "E",
+          "text": "Only service frameworks such as ITIL and COBIT."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Configuration management answers the basic operational question: what exists and how is it configured? Without accurate configuration information, troubleshooting and planning become guesswork.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "22-24"
+      },
+      "tags": [
+        "configuration-management",
+        "documentation"
+      ]
+    },
+    {
+      "id": "nitsm-008",
+      "section": "Configuration Management",
+      "topic": "Login scripts",
+      "difficulty": "easy",
+      "question": "What is a login script mainly used for when a new user joins?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To calculate network availability from monthly operating hours."
+        },
+        {
+          "id": "B",
+          "text": "To replace a trouble ticket after a user reports a problem."
+        },
+        {
+          "id": "C",
+          "text": "To automatically run commands such as mapping drives or printers at login."
+        },
+        {
+          "id": "D",
+          "text": "To generate charge-back invoices for WAN and mainframe usage."
+        },
+        {
+          "id": "E",
+          "text": "To define compensation if an SLA target is missed."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "A login script standardizes setup for users. It reduces manual work by applying routine configuration automatically when the user signs in.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "26-30"
+      },
+      "tags": [
+        "login-script",
+        "user-setup"
+      ]
+    },
+    {
+      "id": "nitsm-009",
+      "section": "Configuration Management",
+      "topic": "ESD and DMI",
+      "difficulty": "medium",
+      "question": "Which statement best explains the relationship between ESD and DMI?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "ESD measures user response time, while DMI defines compensation for outages."
+        },
+        {
+          "id": "B",
+          "text": "ESD replaces disaster recovery plans, while DMI replaces user groups."
+        },
+        {
+          "id": "C",
+          "text": "ESD is a help desk tier, while DMI is a trouble ticket category."
+        },
+        {
+          "id": "D",
+          "text": "ESD pushes software updates, while DMI provides a standard framework for remote configuration management."
+        },
+        {
+          "id": "E",
+          "text": "ESD documents hardware warranties, while DMI handles charge-back pricing."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Electronic Software Distribution automates software deployment over the network. DMI is broader: it gives a standard way to manage remote configurations such as software distribution.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "26-30"
+      },
+      "tags": [
+        "esd",
+        "dmi"
+      ]
+    },
+    {
+      "id": "nitsm-010",
+      "section": "Configuration Management",
+      "topic": "Documentation contents",
+      "difficulty": "medium",
+      "question": "Which item belongs in network configuration documentation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Marketing forecasts for new product launches."
+        },
+        {
+          "id": "B",
+          "text": "Only the personal preferences of individual end users."
+        },
+        {
+          "id": "C",
+          "text": "Only the list of incidents already reported to executives."
+        },
+        {
+          "id": "D",
+          "text": "Public cloud provider pricing pages without local context."
+        },
+        {
+          "id": "E",
+          "text": "Hardware diagrams, serial numbers, vendors, warranties, and repair contacts."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Documentation is the network's map. Hardware details, software versions, access profiles, and procedures let teams troubleshoot faster and plan changes with less risk.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "32-40"
+      },
+      "tags": [
+        "documentation",
+        "hardware-inventory"
+      ]
+    },
+    {
+      "id": "nitsm-011",
+      "section": "Configuration Management",
+      "topic": "Access profiles",
+      "difficulty": "medium",
+      "question": "Why are user and application access profiles part of configuration documentation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They record who can access which files, supporting troubleshooting and control."
+        },
+        {
+          "id": "B",
+          "text": "They replace the need to track hardware and software versions."
+        },
+        {
+          "id": "C",
+          "text": "They prove that every help desk issue is caused by user error."
+        },
+        {
+          "id": "D",
+          "text": "They are used only to calculate personnel costs in the annual budget."
+        },
+        {
+          "id": "E",
+          "text": "They remove the need for Disaster Recovery Plans."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Access profiles are configuration data because permissions affect how systems behave for users and applications. Missing or outdated profiles can cause support and security problems.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "32-40"
+      },
+      "tags": [
+        "profiles",
+        "access-rights"
+      ]
+    },
+    {
+      "id": "nitsm-012",
+      "section": "Configuration Management",
+      "topic": "Documentation discipline",
+      "difficulty": "hard",
+      "question": "A team frequently fixes issues but forgets to update diagrams, software versions, and repair contacts. What is the likely long-term result?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "The network becomes easier to troubleshoot because fewer records exist."
+        },
+        {
+          "id": "B",
+          "text": "Future troubleshooting and planning become slower because the recorded network no longer matches reality."
+        },
+        {
+          "id": "C",
+          "text": "ESD stops working because it requires WAN charge-back policies."
+        },
+        {
+          "id": "D",
+          "text": "All user training can be cancelled because fixes are already complete."
+        },
+        {
+          "id": "E",
+          "text": "The organization automatically meets every SLA target."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Configuration documentation must be updated with every change. If records drift away from reality, teams lose the map they need for troubleshooting, planning, and recovery.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "22-40"
+      },
+      "tags": [
+        "documentation-drift",
+        "planning"
+      ]
+    },
+    {
+      "id": "nitsm-013",
+      "section": "Performance & Fault Management",
+      "topic": "Performance and fault management",
+      "difficulty": "easy",
+      "question": "How do performance management and fault management differ?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Performance management handles user training, while fault management handles annual budgets."
+        },
+        {
+          "id": "B",
+          "text": "Performance management applies only after disasters, while fault management applies only before installation."
+        },
+        {
+          "id": "C",
+          "text": "Performance management keeps the network efficient, while fault management prevents, detects, and corrects breakdowns."
+        },
+        {
+          "id": "D",
+          "text": "Performance management tracks hardware warranties, while fault management assigns software licenses."
+        },
+        {
+          "id": "E",
+          "text": "Performance management and fault management are unrelated to monitoring."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "The two disciplines are connected but not identical. Performance focuses on efficiency and service quality; fault management focuses on breakdowns and recovery.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "43-49"
+      },
+      "tags": [
+        "performance-management",
+        "fault-management"
+      ]
+    },
+    {
+      "id": "nitsm-014",
+      "section": "Performance & Fault Management",
+      "topic": "NOC monitoring",
+      "difficulty": "medium",
+      "question": "What is the main value of a Network Operations Center?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It eliminates the need to collect physical and logical network statistics."
+        },
+        {
+          "id": "B",
+          "text": "It handles only classroom training and software manuals."
+        },
+        {
+          "id": "C",
+          "text": "It replaces service level agreements with informal promises."
+        },
+        {
+          "id": "D",
+          "text": "It centralizes monitoring so managers can detect and fix issues before users notice."
+        },
+        {
+          "id": "E",
+          "text": "It avoids specialized software so all faults remain manual."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "A NOC provides centralized visibility. By collecting statistics and watching the network continuously, it can detect problems early instead of waiting for users to complain.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "45-53"
+      },
+      "tags": [
+        "noc",
+        "monitoring"
+      ]
+    },
+    {
+      "id": "nitsm-015",
+      "section": "Performance & Fault Management",
+      "topic": "Physical vs logical statistics",
+      "difficulty": "medium",
+      "question": "Which pair correctly distinguishes physical statistics from logical information?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Physical statistics are response times; logical information is modem hardware data."
+        },
+        {
+          "id": "B",
+          "text": "Physical statistics are repair contacts; logical information is purchase dates."
+        },
+        {
+          "id": "C",
+          "text": "Physical statistics are training manuals; logical information is classroom attendance."
+        },
+        {
+          "id": "D",
+          "text": "Physical statistics are charge-back invoices; logical information is office furniture inventory."
+        },
+        {
+          "id": "E",
+          "text": "Physical statistics are hardware data from devices and circuits; logical information includes response times and traffic volumes."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Physical statistics describe the behavior of hardware such as circuits and devices. Logical information describes service experience and traffic, such as response time and volume.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "49-53"
+      },
+      "tags": [
+        "statistics",
+        "monitoring-data"
+      ]
+    },
+    {
+      "id": "nitsm-016",
+      "section": "Performance & Fault Management",
+      "topic": "Trouble tickets",
+      "difficulty": "medium",
+      "question": "Why are trouble tickets useful beyond solving one user's immediate problem?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "They track ownership, support statistics, prioritization, reporting, and recurring failure patterns."
+        },
+        {
+          "id": "B",
+          "text": "They erase recurring patterns so every problem is handled as a new surprise."
+        },
+        {
+          "id": "C",
+          "text": "They replace all monitoring tools used by the NOC."
+        },
+        {
+          "id": "D",
+          "text": "They guarantee that vendors arrive before a fault is diagnosed."
+        },
+        {
+          "id": "E",
+          "text": "They are used only for incidents involving natural disasters."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Tickets create operational memory. They help assign work, measure failure patterns, prioritize critical issues, and report availability or vendor responsiveness.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "54-66"
+      },
+      "tags": [
+        "trouble-tickets",
+        "problem-statistics"
+      ]
+    },
+    {
+      "id": "nitsm-017",
+      "section": "Performance & Fault Management",
+      "topic": "Reliability metrics",
+      "difficulty": "medium",
+      "question": "Which interpretation of MTBF and MTTR is correct?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "MTBF measures repair speed; MTTR measures how often components work before failing."
+        },
+        {
+          "id": "B",
+          "text": "MTBF measures time between failures; MTTR measures average time to restore operation."
+        },
+        {
+          "id": "C",
+          "text": "MTBF measures budget growth; MTTR measures annual support training."
+        },
+        {
+          "id": "D",
+          "text": "MTBF measures user satisfaction; MTTR measures network ownership cost."
+        },
+        {
+          "id": "E",
+          "text": "MTBF and MTTR both mean monthly trouble ticket count."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "A high MTBF means components run longer before breaking. A low MTTR means the organization can diagnose, respond, and fix failures quickly.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "67-80"
+      },
+      "tags": [
+        "mtbf",
+        "mttr"
+      ]
+    },
+    {
+      "id": "nitsm-018",
+      "section": "Performance & Fault Management",
+      "topic": "QoS prioritization",
+      "difficulty": "hard",
+      "question": "A congested network must carry both live videoconferencing and large file downloads. Which policy-based management decision is best?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Prioritize file downloads because they are less sensitive to delay."
+        },
+        {
+          "id": "B",
+          "text": "Disable all priorities because congestion cannot be managed by software."
+        },
+        {
+          "id": "C",
+          "text": "Prioritize videoconferencing because delay immediately damages the user experience."
+        },
+        {
+          "id": "D",
+          "text": "Route both traffic types through the help desk before transmission."
+        },
+        {
+          "id": "E",
+          "text": "Use charge-back policies instead of QoS to remove packet delay."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Policy-based management uses rules such as QoS to protect time-sensitive services. A short delay can ruin a live call, while a file download usually tolerates delay better.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "82-86"
+      },
+      "tags": [
+        "qos",
+        "policy-based-management"
+      ]
+    },
+    {
+      "id": "nitsm-019",
+      "section": "End User Support",
+      "topic": "Support categories",
+      "difficulty": "easy",
+      "question": "Which user support issue category is usually the hardest to resolve?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Broken monitors and other obvious hardware failures."
+        },
+        {
+          "id": "B",
+          "text": "Lack of knowledge about a routine task."
+        },
+        {
+          "id": "C",
+          "text": "Requests that can be handled by a training manual."
+        },
+        {
+          "id": "D",
+          "text": "Software problems involving hidden bugs or incompatible settings."
+        },
+        {
+          "id": "E",
+          "text": "Simple questions solved by step-by-step guidance."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Hardware failures are often visible and straightforward, while knowledge gaps can be solved with guidance. Software problems are harder because causes may be hidden inside bugs or configuration interactions.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "90-97"
+      },
+      "tags": [
+        "end-user-support",
+        "software-problems"
+      ]
+    },
+    {
+      "id": "nitsm-020",
+      "section": "End User Support",
+      "topic": "Support tiers",
+      "difficulty": "easy",
+      "question": "What is the role of Level 1 support?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "To handle only the most complex vendor-level system problems."
+        },
+        {
+          "id": "B",
+          "text": "To write service strategy frameworks for the entire business."
+        },
+        {
+          "id": "C",
+          "text": "To replace training manuals and all user documentation."
+        },
+        {
+          "id": "D",
+          "text": "To negotiate WAN communication circuit pricing."
+        },
+        {
+          "id": "E",
+          "text": "To solve most common everyday issues at the help desk."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Level 1 support handles common issues and resolves the majority of tickets. More specialized or complex problems escalate to Level 2 or Level 3.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "98-105"
+      },
+      "tags": [
+        "help-desk",
+        "support-tiers"
+      ]
+    },
+    {
+      "id": "nitsm-021",
+      "section": "End User Support",
+      "topic": "Escalation",
+      "difficulty": "medium",
+      "question": "When should a support issue move from Level 1 to higher support levels?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "When the issue requires specific expertise or complex technical work beyond common help desk fixes."
+        },
+        {
+          "id": "B",
+          "text": "Whenever a user asks for help, even if the issue is common and routine."
+        },
+        {
+          "id": "C",
+          "text": "Only when the issue involves a charge-back invoice."
+        },
+        {
+          "id": "D",
+          "text": "Only after the organization creates a new ITSM framework."
+        },
+        {
+          "id": "E",
+          "text": "Never, because all problems should remain at Level 1."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Support tiers prevent specialists from being overloaded with routine issues while still making deeper expertise available when the problem requires it.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "98-105"
+      },
+      "tags": [
+        "escalation",
+        "support-process"
+      ]
+    },
+    {
+      "id": "nitsm-022",
+      "section": "End User Support",
+      "topic": "Continuous training",
+      "difficulty": "medium",
+      "question": "Why is user training an ongoing responsibility rather than a one-time event?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Because training removes the need for support tickets."
+        },
+        {
+          "id": "B",
+          "text": "Because employees change roles and software keeps changing through updates."
+        },
+        {
+          "id": "C",
+          "text": "Because hardware failures can be prevented by classroom attendance."
+        },
+        {
+          "id": "D",
+          "text": "Because training is only useful before any software is installed."
+        },
+        {
+          "id": "E",
+          "text": "Because trained users should manage all WAN circuits themselves."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Training must keep up with people and systems. Role changes and software updates create new knowledge gaps, so support includes continuing education, not just ticket handling.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "106-108"
+      },
+      "tags": [
+        "training",
+        "knowledge-gaps"
+      ]
+    },
+    {
+      "id": "nitsm-023",
+      "section": "End User Support",
+      "topic": "Ticket creation",
+      "difficulty": "medium",
+      "question": "Why should a trouble ticket be created when a user requests help?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It guarantees the issue is a major incident rather than a support request."
+        },
+        {
+          "id": "B",
+          "text": "It replaces the need for any user training."
+        },
+        {
+          "id": "C",
+          "text": "It makes the issue visible, trackable, and available for escalation if needed."
+        },
+        {
+          "id": "D",
+          "text": "It proves that software problems are easier than hardware failures."
+        },
+        {
+          "id": "E",
+          "text": "It is used only for vendor compensation after SLA violations."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "A ticket gives the support process structure. It records the request, supports tiered resolution, and creates history for later analysis.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "98-105"
+      },
+      "tags": [
+        "trouble-ticket",
+        "support-workflow"
+      ]
+    },
+    {
+      "id": "nitsm-024",
+      "section": "End User Support",
+      "topic": "Support strategy",
+      "difficulty": "hard",
+      "question": "A company sends every user problem directly to senior technical specialists. What is the likely management weakness?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It has too much Level 1 support for everyday user problems."
+        },
+        {
+          "id": "B",
+          "text": "It uses training manuals too often for complex system failures."
+        },
+        {
+          "id": "C",
+          "text": "It treats hardware failures as easier than software problems."
+        },
+        {
+          "id": "D",
+          "text": "It lacks a tiered support process that filters common issues before escalation."
+        },
+        {
+          "id": "E",
+          "text": "It has implemented ITSM service strategy too strictly."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Tiered support preserves specialist time for problems that actually need deeper expertise. Routing everything to senior staff wastes expensive capability on issues Level 1 could resolve.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "98-108"
+      },
+      "tags": [
+        "tiered-support",
+        "resource-management"
+      ]
+    },
+    {
+      "id": "nitsm-025",
+      "section": "Cost Management",
+      "topic": "TCO vs NCO",
+      "difficulty": "easy",
+      "question": "What is the key difference between TCO and NCO?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "TCO measures only WAN circuits, while NCO measures only software licenses."
+        },
+        {
+          "id": "B",
+          "text": "TCO is always lower because it excludes support and training."
+        },
+        {
+          "id": "C",
+          "text": "NCO includes every indirect productivity loss caused by outages."
+        },
+        {
+          "id": "D",
+          "text": "TCO and NCO are identical terms for annual hardware cost."
+        },
+        {
+          "id": "E",
+          "text": "TCO includes wasted user productivity, while NCO excludes that estimated user time."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "TCO tries to capture the full annual cost of ownership, including productivity lost when systems fail. NCO is narrower because it counts direct hard costs but excludes estimated wasted user time.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "112-120"
+      },
+      "tags": [
+        "tco",
+        "nco"
+      ]
+    },
+    {
+      "id": "nitsm-026",
+      "section": "Cost Management",
+      "topic": "Budget priorities",
+      "difficulty": "medium",
+      "question": "Why should network cost reduction often focus on saving IT staff time?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Because personnel costs are typically the largest part of the network budget."
+        },
+        {
+          "id": "B",
+          "text": "Because WAN circuits usually have no measurable cost."
+        },
+        {
+          "id": "C",
+          "text": "Because hardware upgrades are never part of network budgets."
+        },
+        {
+          "id": "D",
+          "text": "Because cheaper hardware always reduces support work automatically."
+        },
+        {
+          "id": "E",
+          "text": "Because user productivity is irrelevant to ownership cost."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Personnel can consume 50-70% of the budget. A cheaper device that creates more support work may cost more overall than a standard, easier-to-support option.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "121-130"
+      },
+      "tags": [
+        "budget",
+        "personnel-costs"
+      ]
+    },
+    {
+      "id": "nitsm-027",
+      "section": "Cost Management",
+      "topic": "Standardization",
+      "difficulty": "medium",
+      "question": "How does standardization reduce network costs?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It forces every department to buy unrelated tools independently."
+        },
+        {
+          "id": "B",
+          "text": "It makes troubleshooting and training faster by reducing unnecessary variation."
+        },
+        {
+          "id": "C",
+          "text": "It eliminates all need for help desk staff."
+        },
+        {
+          "id": "D",
+          "text": "It increases support complexity by maximizing hardware diversity."
+        },
+        {
+          "id": "E",
+          "text": "It removes the need to monitor performance metrics."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Standard hardware and software reduce the number of scenarios support staff must understand. That lowers troubleshooting time and simplifies training.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "131-138"
+      },
+      "tags": [
+        "standardization",
+        "cost-reduction"
+      ]
+    },
+    {
+      "id": "nitsm-028",
+      "section": "Cost Management",
+      "topic": "Automation",
+      "difficulty": "medium",
+      "question": "Which cost reduction example best illustrates automation?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Sending all support issues directly to vendors before diagnosis."
+        },
+        {
+          "id": "B",
+          "text": "Buying many different hardware models for each department."
+        },
+        {
+          "id": "C",
+          "text": "Using ESD for software and DHCP for IP addresses to reduce manual labor."
+        },
+        {
+          "id": "D",
+          "text": "Avoiding documentation so changes happen faster."
+        },
+        {
+          "id": "E",
+          "text": "Replacing trouble tickets with informal phone calls."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "Automation reduces repeated manual effort. ESD and DHCP are examples because they handle common configuration work that would otherwise consume many staff hours.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "131-135"
+      },
+      "tags": [
+        "automation",
+        "dhcp"
+      ]
+    },
+    {
+      "id": "nitsm-029",
+      "section": "Cost Management",
+      "topic": "Charge-back policies",
+      "difficulty": "medium",
+      "question": "Why are charge-back policies easier for WAN or mainframe usage than for LAN usage?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "LAN usage has no cost and therefore never needs management."
+        },
+        {
+          "id": "B",
+          "text": "Charge-back policies apply only to classroom training sessions."
+        },
+        {
+          "id": "C",
+          "text": "WAN services cannot be used by multiple departments."
+        },
+        {
+          "id": "D",
+          "text": "WAN and mainframe usage is often easier to measure directly by department."
+        },
+        {
+          "id": "E",
+          "text": "LAN traffic is always billed by cloud providers."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Charge-back works best when usage can be measured cleanly. WAN and mainframe usage can often be traced more easily than shared LAN usage.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "131-138"
+      },
+      "tags": [
+        "charge-back",
+        "cost-allocation"
+      ]
+    },
+    {
+      "id": "nitsm-030",
+      "section": "Cost Management",
+      "topic": "Cost tradeoff",
+      "difficulty": "hard",
+      "question": "A company buys cheap nonstandard PCs, but support tickets and training time increase sharply. Which cost concept explains why this may be a bad decision?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "NCO, because it counts only user frustration and excludes hard costs."
+        },
+        {
+          "id": "B",
+          "text": "SLA, because it measures only classroom attendance."
+        },
+        {
+          "id": "C",
+          "text": "MTBF, because it means annual hardware purchase cost."
+        },
+        {
+          "id": "D",
+          "text": "ITSM, because it forbids any hardware standardization."
+        },
+        {
+          "id": "E",
+          "text": "TCO, because ownership cost includes support, training, and productivity effects, not just purchase price."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "Low purchase price can be misleading. TCO captures the larger cost picture, including extra support work, training, downtime, and lost productivity.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "116-138"
+      },
+      "tags": [
+        "tco",
+        "standardization"
+      ]
+    },
+    {
+      "id": "nitsm-031",
+      "section": "Incident Management & ITSM",
+      "topic": "Incident vs fault management",
+      "difficulty": "easy",
+      "question": "How does incident management differ from daily fault management?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Incident management handles major disruptions such as breaches, disasters, or major technical failures."
+        },
+        {
+          "id": "B",
+          "text": "Incident management handles only routine problems such as a jammed printer."
+        },
+        {
+          "id": "C",
+          "text": "Fault management handles only natural disasters and security breaches."
+        },
+        {
+          "id": "D",
+          "text": "Incident management is unrelated to restoring normal operations."
+        },
+        {
+          "id": "E",
+          "text": "Fault management and incident management both exclude documentation."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Fault management handles everyday breakdowns. Incident management is for larger events where the priority is minimizing business impact and restoring normal operations quickly.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "141-148"
+      },
+      "tags": [
+        "incident-management",
+        "fault-management"
+      ]
+    },
+    {
+      "id": "nitsm-032",
+      "section": "Incident Management & ITSM",
+      "topic": "Incident response elements",
+      "difficulty": "medium",
+      "question": "Which sequence belongs to successful incident response?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Charge-back pricing, vendor selection, standardization, classroom training, software licensing."
+        },
+        {
+          "id": "B",
+          "text": "Detection and identification, assessment and prioritization, response, recovery, documentation and learning."
+        },
+        {
+          "id": "C",
+          "text": "Hardware purchase, WAN billing, user grouping, password reset, office relocation."
+        },
+        {
+          "id": "D",
+          "text": "Trouble log creation, thin client purchase, ESD scheduling, DHCP leasing, NCO calculation."
+        },
+        {
+          "id": "E",
+          "text": "Service strategy, service design, service transition, service operation, continual improvement."
+        }
+      ],
+      "correctChoiceId": "B",
+      "explanation": "Incident response follows a lifecycle: find the incident, understand its importance, respond, recover, and learn from the event. Skipping documentation weakens future response.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "149-155"
+      },
+      "tags": [
+        "incident-response",
+        "recovery"
+      ]
+    },
+    {
+      "id": "nitsm-033",
+      "section": "Incident Management & ITSM",
+      "topic": "ITSM philosophy",
+      "difficulty": "medium",
+      "question": "What is the main philosophy behind IT Service Management?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "IT should avoid frameworks because every organization must invent rules from scratch."
+        },
+        {
+          "id": "B",
+          "text": "IT should focus only on device inventory and ignore business outcomes."
+        },
+        {
+          "id": "C",
+          "text": "IT should be treated as delivering services to the business, not merely managing computers."
+        },
+        {
+          "id": "D",
+          "text": "IT should separate service operation from all continual improvement."
+        },
+        {
+          "id": "E",
+          "text": "IT should be measured only by the number of servers owned."
+        }
+      ],
+      "correctChoiceId": "C",
+      "explanation": "ITSM reframes IT around business service delivery. That shift connects technical work to strategy, design, operation, improvement, and business value.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "157-169"
+      },
+      "tags": [
+        "itsm",
+        "service-delivery"
+      ]
+    },
+    {
+      "id": "nitsm-034",
+      "section": "Incident Management & ITSM",
+      "topic": "ITSM lifecycle",
+      "difficulty": "medium",
+      "question": "Which item is part of the ITSM lifecycle?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Static Transfer Switching."
+        },
+        {
+          "id": "B",
+          "text": "Electronic Software Distribution."
+        },
+        {
+          "id": "C",
+          "text": "Mean Time To Repair."
+        },
+        {
+          "id": "D",
+          "text": "Continual Service Improvement."
+        },
+        {
+          "id": "E",
+          "text": "Net Cost of Ownership."
+        }
+      ],
+      "correctChoiceId": "D",
+      "explanation": "Continual Service Improvement is one stage of the ITSM lifecycle. It ensures service management does not stop at operation but keeps improving over time.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "161-167"
+      },
+      "tags": [
+        "itsm-lifecycle",
+        "csi"
+      ]
+    },
+    {
+      "id": "nitsm-035",
+      "section": "Incident Management & ITSM",
+      "topic": "ITSM frameworks",
+      "difficulty": "easy",
+      "question": "Which set contains examples of ITSM frameworks or standards?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "DHCP, ESD, and DMI."
+        },
+        {
+          "id": "B",
+          "text": "MTBF, MTTR, and SLA."
+        },
+        {
+          "id": "C",
+          "text": "WAN, LAN, and NOC."
+        },
+        {
+          "id": "D",
+          "text": "TCO, NCO, and charge-back."
+        },
+        {
+          "id": "E",
+          "text": "ITIL, COBIT, and ISO/IEC 20000."
+        }
+      ],
+      "correctChoiceId": "E",
+      "explanation": "ITIL, COBIT, and ISO/IEC 20000 provide established management guidance. They help organizations avoid inventing service management practices from nothing.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "169-169"
+      },
+      "tags": [
+        "itil",
+        "frameworks"
+      ]
+    },
+    {
+      "id": "nitsm-036",
+      "section": "Incident Management & ITSM",
+      "topic": "Learning after incidents",
+      "difficulty": "hard",
+      "question": "Why is documentation and learning part of incident management rather than an optional afterthought?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "It turns the incident into evidence for improvement, helping future responses become faster and more reliable."
+        },
+        {
+          "id": "B",
+          "text": "It replaces the need for detection, response, and recovery."
+        },
+        {
+          "id": "C",
+          "text": "It proves that incidents should be handled without prioritization."
+        },
+        {
+          "id": "D",
+          "text": "It makes ITSM frameworks unnecessary for service management."
+        },
+        {
+          "id": "E",
+          "text": "It ensures every future incident will be identical."
+        }
+      ],
+      "correctChoiceId": "A",
+      "explanation": "Documentation closes the loop. By recording what happened and what worked, teams can improve procedures, reduce repeated mistakes, and align incident response with continual service improvement.",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "149-169"
+      },
+      "tags": [
+        "documentation",
+        "continual-improvement"
+      ]
+    }
+  ],
+  "coverage": [
+    {
+      "section": "Overview & Integration",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "3-18"
+      },
+      "questionIds": [
+        "nitsm-001",
+        "nitsm-002",
+        "nitsm-003",
+        "nitsm-004",
+        "nitsm-005",
+        "nitsm-006"
+      ]
+    },
+    {
+      "section": "Configuration Management",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "22-40"
+      },
+      "questionIds": [
+        "nitsm-007",
+        "nitsm-008",
+        "nitsm-009",
+        "nitsm-010",
+        "nitsm-011",
+        "nitsm-012"
+      ]
+    },
+    {
+      "section": "Performance & Fault Management",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "43-86"
+      },
+      "questionIds": [
+        "nitsm-013",
+        "nitsm-014",
+        "nitsm-015",
+        "nitsm-016",
+        "nitsm-017",
+        "nitsm-018"
+      ]
+    },
+    {
+      "section": "End User Support",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "90-108"
+      },
+      "questionIds": [
+        "nitsm-019",
+        "nitsm-020",
+        "nitsm-021",
+        "nitsm-022",
+        "nitsm-023",
+        "nitsm-024"
+      ]
+    },
+    {
+      "section": "Cost Management",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "112-138"
+      },
+      "questionIds": [
+        "nitsm-025",
+        "nitsm-026",
+        "nitsm-027",
+        "nitsm-028",
+        "nitsm-029",
+        "nitsm-030"
+      ]
+    },
+    {
+      "section": "Incident Management & ITSM",
+      "source": {
+        "file": "network-itsm/NETWORK_ITSM_EN.md",
+        "lines": "141-169"
+      },
+      "questionIds": [
+        "nitsm-031",
+        "nitsm-032",
+        "nitsm-033",
+        "nitsm-034",
+        "nitsm-035",
+        "nitsm-036"
+      ]
+    }
+  ]
 }
